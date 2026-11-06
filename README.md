@@ -2,6 +2,10 @@
 
 Private archival repository for Matteo Del Prato's master's thesis on aesthetic ambient information in BMW Panoramic Vision.
 
+**Online copy:** [MttDpt/master_thesis on GitHub](https://github.com/MttDpt/master_thesis) — private repository; sign in to GitHub as **MttDpt** to access it.
+
+This project is saved locally and on GitHub; the external-drive copy is in `Area52/master_thesis/`.
+
 | Area | Retained material |
 | --- | --- |
 | [Thesis](overleaf/examplethesis.tex) | [Final PDF](overleaf/final-thesis.pdf), final Overleaf LaTeX source, required KTH template/runtime and all 34 referenced figures |
