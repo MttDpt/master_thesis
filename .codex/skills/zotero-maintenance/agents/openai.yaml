@@ -1,0 +1,7 @@
+interface:
+  display_name: "Zotero Maintenance"
+  short_description: "Run deterministic thesis Zotero maintenance"
+  default_prompt: "Use $zotero-maintenance to plan and run scoped Zotero maintenance through the canonical project entry point."
+
+policy:
+  allow_implicit_invocation: true

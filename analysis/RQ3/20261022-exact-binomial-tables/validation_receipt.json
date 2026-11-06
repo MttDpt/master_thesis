@@ -1,0 +1,20 @@
+{
+  "status": "validated_for_requested_table_update",
+  "method": "Two-sided exact 95% binomial (Clopper–Pearson)",
+  "interval_cells": 16,
+  "trial_rows": 72,
+  "source_sha256": {
+    "analysis/RQ3/20261015-ch4-inference-adoption/input.csv": "edcf634b84377cf38e8f99658e34c909b8b86010a4a2720dd01c33e7b6723f97",
+    "analysis/RQ3/coding/full-corpus-trial-codes.csv": "29ea01e45a7fef9953edee664c331562f3ce27397ae1fe19cdafa1beb7bab89e",
+    "analysis/RQ3/20261016-compound-detection-outcomes/animation_scores.csv": "7a2593c2c01890d0cdf547c4617dd264a3e4a340deb5727d0707d8041ca721dc"
+  },
+  "checks": [
+    "72 unique trial keys and condition denominators",
+    "binary outcomes",
+    "recognition and interpretation totals match retained summaries",
+    "full + partial and failure categories reconcile",
+    "beta quantiles match scipy exact binomial intervals",
+    "compound score identity and unchanged source hashes"
+  ],
+  "limits": "Marginal per-condition binary success intervals; no interval for compound scores; no between-animation tests."
+}

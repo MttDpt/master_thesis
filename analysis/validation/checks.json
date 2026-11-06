@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-06",
+  "verified_frozen_source_files": 531,
+  "final_numerical_checks_passed": 200,
+  "adopted_independent_checks_passed": 126,
+  "portable_coding_builder": "72 trial codes and 534 evidence details reproduced byte-for-byte",
+  "published_figures_verified": 34,
+  "cited_pdfs": 45,
+  "preserved_zotero_annotations": 453,
+  "citation_archive_crc_and_sha256": "passed",
+  "internal_markdown_links": "passed",
+  "secret_pattern_scan": "no credential matches; Swedish URL false positive resolved by token-boundary matching",
+  "visibility_selection": "private: participant material and unverified paper redistribution rights",
+  "validation_limits": "No fresh ordinal confidence-model refit or full claim-by-claim thesis audit; source-provided validation evidence preserved",
+  "pdf_build": {
+    "compiler": "Tectonic 0.17.0",
+    "success": true,
+    "pages": 78,
+    "source_unchanged": true,
+    "rendered_chapter_pages": [
+      {
+        "chapter": "chapter-3",
+        "pdf_page": 18
+      },
+      {
+        "chapter": "chapter-4",
+        "pdf_page": 30
+      },
+      {
+        "chapter": "chapter-5",
+        "pdf_page": 39
+      },
+      {
+        "chapter": "chapter-6",
+        "pdf_page": 45
+      }
+    ],
+    "undefined_citations_or_references": false,
+    "retained_warnings": [
+      "TeX requests a rerun after its six-pass limit; the PDF resolves citations/references",
+      "IEEEtran hyphenation-pattern notices and underfull/overfull typography diagnostics"
+    ]
+  },
+  "layout_update": {
+    "date": "2026-11-06",
+    "changes": "Removed provisional/approved/archive wrappers; relocated verification commands; retained numeric tables unchanged",
+    "numerical_checks_rerun_passed": 200,
+    "adopted_independent_checks_rerun_passed": 126,
+    "coding_csvs_reproduced_byte_for_byte": true,
+    "active_codex_skills": 34,
+    "skill_placement": "Codex only; deprecated aliases and non-Codex project skill placements removed in original project and archive",
+    "native_markdown_link_check": "passed, including retained skill documentation",
+    "openknowledge_scoped_audit": "Unavailable for hidden .codex/skills scope; audit refused hidden path and scanned zero documents",
+    "skill_validation": "33 custom skills passed generic quick_validate; built-in open-knowledge preserved verbatim, generic validator does not recognise its compatibility metadata"
+  },
+  "original_checkouts_at_initial_curation": {
+    "knowledge": {
+      "status_unchanged": true,
+      "unstaged_diff_unchanged": true,
+      "staged_diff_unchanged": true
+    },
+    "overleaf": {
+      "status_unchanged": true,
+      "unstaged_diff_unchanged": true,
+      "staged_diff_unchanged": true
+    }
+  }
+}

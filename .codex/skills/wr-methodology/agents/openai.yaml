@@ -1,0 +1,6 @@
+interface:
+  display_name: "Write Methodology"
+  short_description: "Methodology narrative and reproducibility rules"
+  default_prompt: "Use $wr-general and $wr-methodology to revise this Methodology prose."
+policy:
+  allow_implicit_invocation: true

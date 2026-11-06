@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adversarial Reviewer"
+  short_description: "Stress-test targets until they withstand review"
+  default_prompt: "Use $gen-adversarial-reviewer to stress-test this target and help me harden it."

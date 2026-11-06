@@ -1,0 +1,6 @@
+interface:
+  display_name: "Update RQ Analysis Contract"
+  short_description: "Keep the matching RQ contract in sync"
+  default_prompt: "Use $da-rq-contract to record the RQ-specific analytical specification established in this discussion."
+policy:
+  allow_implicit_invocation: true

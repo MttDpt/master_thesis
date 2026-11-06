@@ -1,0 +1,2331 @@
+{
+  "created": "2026-11-06",
+  "source_knowledge_revision": "920d5acf1a6b3f3e18ee676294ccdfc0dee42446",
+  "source_overleaf_revision": "cb0a5f1cb5c933d4c273a40d177c6634f7af10b6",
+  "selected_files": {
+    "analysis/dataset/manifest.csv": {
+      "sha256": "dd983acc3c50d347de9422be02a9145d24a50971b55ed3d63ee17dc436a54baf",
+      "source": "analysis/dataset/manifest.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-provenance/derived-simulator-manifest.csv": {
+      "sha256": "3bede0c79f5a08bed8d651ef1da8d3646bd11110c01097a38157ddab3269f8a9",
+      "source": "analysis/dataset/simulator-data/simulator-data-provenance/derived-simulator-manifest.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P16_t2_simulator.csv": {
+      "sha256": "20f89fc0829bef4951a73fa4b6fe7291dcc00a9e1d803662e9e060c3d0c4b336",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P16_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P11_t3_simulator.csv": {
+      "sha256": "16ac21388623bbff1d98ea94da4eedbdbfb97d1b6b6aff3fc9598da0be713b7c",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P11_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P12_t1_simulator.csv": {
+      "sha256": "455eba49052840ebd3a9ee49f431930dd43716942c67128f8277bbc4c7a53cb9",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P12_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P09_t2_simulator.csv": {
+      "sha256": "24c7383d6ee23c1167b16ab7fc3ec317f3c9ee524ed712e0c306960ddb60abb8",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P09_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P24_t3_simulator.csv": {
+      "sha256": "34d9e38d87ca5c7c90b60cfaa036c04374930a165273966d404572e8beb1e7fb",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P24_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P23_t2_simulator.csv": {
+      "sha256": "32e443f48ab6c5791dd6bdcacf0b062173da1be723c9dbb3c82ec906ff1bc6f3",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P23_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P02_t2_simulator.csv": {
+      "sha256": "606903a6b26126be5e3441b21c69d49336f352c8d780b7fc3fb9a4c52d0d10d5",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P02_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P19_t1_simulator.csv": {
+      "sha256": "8235aa37e0458702221c5a7bb773103e35b4a855fdfcf53631a1db2ab9508ca5",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P19_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P05_t3_simulator.csv": {
+      "sha256": "6a1033f0f4f8a45a8e8d0e587e340bcd47663bf186bc251801c2cc0fb2b1e6aa",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P05_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P01_t3_simulator.csv": {
+      "sha256": "93f2a46ea9a7347482398205888e4854768e5e80c85748898d33bbe6982ea414",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P01_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P23_t1_simulator.csv": {
+      "sha256": "6601927e0f1c2e0c7ae055ea22fc5fe192fef67d340e523b5722accce3b78101",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P23_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P02_t1_simulator.csv": {
+      "sha256": "0dca0c496e7729209d8f4a4875b8db618cb0e74ec3c2c128376c3bad7a18da78",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P02_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P20_t3_simulator.csv": {
+      "sha256": "e58c1550e17ae77b474845f5c41ef302ac67177bf2d7ce44fca86dc738ac72be",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P20_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P19_t2_simulator.csv": {
+      "sha256": "e6266b51b1dab857509da45826c3917686d0430a0580bcd3aeb1e068806c0910",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P19_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P16_t1_simulator.csv": {
+      "sha256": "2ce4cda98dd1531ef7fee776d6e63327e9bd2b8ef427a656d87efca90b858523",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P16_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P12_t2_simulator.csv": {
+      "sha256": "830778f059e69ed8aaef77b5f706ab966e1244ca1cefae9c70a03a706c103cd1",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P12_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P09_t1_simulator.csv": {
+      "sha256": "18686cf6cb14fb98950609d4d6f2503e07844db1a1be75875b4a76c7befa27ab",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P09_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P15_t3_simulator.csv": {
+      "sha256": "8bcd3fec596fc227fae3989fe4bf07a69ce213e307e24cfce411c7188c1aa65a",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P15_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P08_t2_simulator.csv": {
+      "sha256": "65ef98387d202b62da90c82861a4cd106373155943d722044ca387fb8081ee5b",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P08_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P13_t1_simulator.csv": {
+      "sha256": "9d47cce6bd31050ba7574674f5e0efc53841c6377ac3363961893228cb6412d9",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P13_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P10_t3_simulator.csv": {
+      "sha256": "5eac939a1dea2aa7f2acd5e865f6a461fceaf33a2a207c45f7b0568f351ed942",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P10_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P17_t2_simulator.csv": {
+      "sha256": "2dce851080e3b3aee5fc28f9b0ac5d3f0a87f81fe15ef4817f805acb7872ec01",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P17_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P26_t1_simulator.csv": {
+      "sha256": "1a5a50010a6354866b19cb00c0c859f55abe2915d90e50f9e7bfe9a0669774d8",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P26_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P18_t1_simulator.csv": {
+      "sha256": "0537c5b6dc7a011128671f0d0a945329d3730c7fa0f492be52f90448502f2d7e",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P18_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P04_t3_simulator.csv": {
+      "sha256": "7d5cc5a894cfd45a79837df7c9d3b59e0657695cf09558651a075a3ba207ae98",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P04_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P03_t2_simulator.csv": {
+      "sha256": "07bcc1cc4d9298c3a2ee4ccac77861a2d39be25cbf3187c3eb38ef7defb1feff",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P03_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P22_t2_simulator.csv": {
+      "sha256": "f7e43437898bbe66cc1e3dc8a1e1ed3d892b2c9d205f5c3b4e06cd42cf04899a",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P22_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P25_t3_simulator.csv": {
+      "sha256": "b345fb9c4d56d618f6e19195ff1e59151f5099761f95d9a80493896be5351200",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P25_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P18_t2_simulator.csv": {
+      "sha256": "a10fa17de6009e4499a0e780fc781ed87423786370a5c71f9576f6a5413b2bd7",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P18_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P26_t2_simulator.csv": {
+      "sha256": "c001459ded6135793b6b84803b8e247d7ac6de43a88c52f0552bb0a2723e9a97",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P26_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P03_t1_simulator.csv": {
+      "sha256": "8cc13c12c8bdb35fd9567db6d06bdb3fbc8ebe0a29c13254b4ed0e7dc04c5ea3",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P03_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P21_t3_simulator.csv": {
+      "sha256": "b20b6674df7a8f130e065ae35bc5df2090ff18d77dd8d60aa2ad1c32753ce409",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P21_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P22_t1_simulator.csv": {
+      "sha256": "eaa7b2b5da7eb0bcc612db1f42f2474f2d2806bb6fb9e4a430f83cdbe49f3463",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P22_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P08_t1_simulator.csv": {
+      "sha256": "632ed03fb3b0fa49d142772027680cd327583c871257ad68c2a2b221b869fd1f",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P08_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P14_t3_simulator.csv": {
+      "sha256": "abc71342e383a2d76086f49238bc9cec74e4c2fd1464ac57f5aa1c6c48b53d9f",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P14_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P13_t2_simulator.csv": {
+      "sha256": "23c06cba6fad46f69a23e155938cabe5133b339d10bb9c0c81243be3b0bb5992",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P13_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P17_t1_simulator.csv": {
+      "sha256": "3530998095549270e9bb4338a6a27b876b26ded6fd338fc5ffd17ca208d8bbfc",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P17_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P25_t1_simulator.csv": {
+      "sha256": "0b47317431ae462811e0d1148dc3df19900c2676ca03c6d1e65d75e8249560b5",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P25_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P21_t2_simulator.csv": {
+      "sha256": "e6c6c746f14bdfc09a625725f830ec6032476cf76725426ce0c1aac344a3d361",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P21_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P04_t1_simulator.csv": {
+      "sha256": "ab0193c9cb43956db6573d73edb8739c51c3f2b71940b2a2d0383749672dfb6e",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P04_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P18_t3_simulator.csv": {
+      "sha256": "f3deee2633afa831ccdd08ae36367c807c37b21c8bfd38a1ea2e66d38a2b63f8",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P18_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P26_t3_simulator.csv": {
+      "sha256": "4173e38bb34921e373e9b1287a1b781c0dbad8f18edb5b56267f36404200cd70",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P26_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P10_t1_simulator.csv": {
+      "sha256": "c185bb85180cead4b6e39e2a88ef6c4764e7e85375cead57c4fc8dc6abc11e59",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P10_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P13_t3_simulator.csv": {
+      "sha256": "f006cdb3268f2259c9b50216106bb84abd79cb97a82aa5bdebaa7e184eda4c30",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P13_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P14_t2_simulator.csv": {
+      "sha256": "bcc563f98782c8f31cc43b2fd954f17d7128b3d2d03db1823aec27f21b4219dd",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P14_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P17_t3_simulator.csv": {
+      "sha256": "e780a9014377c16131d27a2b728ff126a1638638f403aac766aa02ad72668efb",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P17_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P10_t2_simulator.csv": {
+      "sha256": "2b72a5e5158b4523b72881a17dd23b035c1a4c66a016436c03e13e2a9c97d8ef",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P10_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P14_t1_simulator.csv": {
+      "sha256": "2cab126dbd1e07a0554f4a396155a06d6998b3ed93e15368b96e38b191c44b7e",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P14_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P08_t3_simulator.csv": {
+      "sha256": "13a79f1857c7bdbd106b5e1f283957d236fddcdcab49b851ead81f585591e1ca",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P08_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P25_t2_simulator.csv": {
+      "sha256": "756f3badf25c45ecbfe2534155fe2b141fdac97bfdbf8388a39fc41c1c26ce03",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P25_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P22_t3_simulator.csv": {
+      "sha256": "6048fca3ab13096990a6497a5ab6a42bfd6de07aa5f0ef96de2251c4c9805b36",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P22_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P21_t1_simulator.csv": {
+      "sha256": "00886c689cded5b8b1e199e420997d154ded4ffe4dbc17e579d9e750f5f890ca",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P21_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P03_t3_simulator.csv": {
+      "sha256": "b12193e28b9452434a5730c317e0252ccb880d42bbd596d62df076ae4ef4bb77",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P03_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P04_t2_simulator.csv": {
+      "sha256": "50e107163b0a10b3be5ae058036716c4cd7734369ca97577c0d4be462fbd25f6",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P04_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P05_t1_simulator.csv": {
+      "sha256": "1f42fea14330d8a03d5dd4c95837cdc6e2346093330c7e44c59eaa171066a60d",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P05_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P19_t3_simulator.csv": {
+      "sha256": "ab564f78164965c8984cbf62dbc192e51f4c126d225cedbfdc4d2f7730d00ac1",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P19_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P20_t2_simulator.csv": {
+      "sha256": "dab6ad14422490a7d57720c3fa26b2a846cf551f5c9ba0b462113dccb3da7618",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P20_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P01_t2_simulator.csv": {
+      "sha256": "65d647c52d2e7369c48984add2581e6654ff6fca2785c636832fb8c08b7c8890",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P01_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P24_t1_simulator.csv": {
+      "sha256": "86d58979ea66c8cd3b3ec2491e712575f630049d1ffd409d40d4352affa71c5b",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P24_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P15_t2_simulator.csv": {
+      "sha256": "a03ea66b2ac22d845d9a666cb116aaaaa90cc211429b33288e5843980d384602",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P15_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P12_t3_simulator.csv": {
+      "sha256": "74d5d7a612f902dfba8fc931a220cec31f6a676ed6262ee0422698fdcf8881ce",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P12_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P11_t1_simulator.csv": {
+      "sha256": "b60ec1de0ba5b70906f631e0af4cfa062740214b4013619146998f6cf6915d58",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P11_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P15_t1_simulator.csv": {
+      "sha256": "89f0f7e64e6646a0cccf2d3e1949ec6ba79bf1ca7c59ecbfa0ffec08fa9df83c",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P15_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P09_t3_simulator.csv": {
+      "sha256": "1453046660e958b3514e104035ee2a8c8dd1757929fa753aab86a96623819953",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P09_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P11_t2_simulator.csv": {
+      "sha256": "1909b447d8b877210ecc3cadcab9108cd045ebabb93dbd320ba4f4aa324d28c9",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P11_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P16_t3_simulator.csv": {
+      "sha256": "65fa981d4e5e1f09fa938acff0c6afb9cdb0394f6b65e52c542f7b413b418c0d",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P16_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P05_t2_simulator.csv": {
+      "sha256": "7f4b97b98b94c21769e6e35cb8336afc83dc4342846da573e33ee38379813934",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P05_t2_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P20_t1_simulator.csv": {
+      "sha256": "0657ddaa18ac4cdf1d7d516a032bc91e7f447a800ce9ec4a0cbdcefb72840fa0",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P20_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P02_t3_simulator.csv": {
+      "sha256": "67ac3b56913f3cb9de0615030b8132d059558218946f930527e0ac85d69e57c5",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P02_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P23_t3_simulator.csv": {
+      "sha256": "934f86a134f99e9c433938e16467c014a378430dabad62dbe03f8192f3a8d417",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P23_t3_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P01_t1_simulator.csv": {
+      "sha256": "55c80bf51577505c881ca66b2e6f944c915721dd4de67f7c7edc278e99a99240",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P01_t1_simulator.csv"
+    },
+    "analysis/dataset/simulator-data/simulator-data-overall/P24_t2_simulator.csv": {
+      "sha256": "1c25807c6730efe5040c421bdc5d76b196c1e323276b03129469165fde2bfe01",
+      "source": "analysis/dataset/simulator-data/simulator-data-overall/P24_t2_simulator.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/participant_press_summary.csv": {
+      "sha256": "2c27a9614267f412430e21660947adb3e2be5208e6eb44e6ee51162140dc9432",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/participant_press_summary.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/press_count_by_condition.csv": {
+      "sha256": "2c4015811ba1502db243404c3209a637bd454e1206cdf6d6a6d0cfbcf87cbf7a",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/press_count_by_condition.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/participant_event_summary.csv": {
+      "sha256": "905f0a772edababa52e5e9d3c7633ce2a7f80d4815f61dd36a4bff75bfc05112",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/participant_event_summary.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/press_classification_by_condition.csv": {
+      "sha256": "f1fb3d62b663c84dd4b0f30746dc4da5907220b9f50bcce41175bf361a671390",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/press_classification_by_condition.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/event_detection_by_condition.csv": {
+      "sha256": "c129a95c1516f66a2d09d64885a633b92976aa1c53c3c3bfd019213af3ef8bf1",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/event_detection_by_condition.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/coverage_by_condition.csv": {
+      "sha256": "afbf6814d5560d6071cd047db0db1277828ad17b074a3955239986f9055953ce",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/coverage_by_condition.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/trial_diagnostics.csv": {
+      "sha256": "9a14a4f0f8787db4a73a498d86f80d0c933614f3dae26172fac3ba26d4f8273f",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/trial_diagnostics.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/latency_by_condition_event.csv": {
+      "sha256": "6a1b474e347a077d8995583cc486267d7c8e1c0818da6eb5b9af628075ef9afe",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/latency_by_condition_event.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/nt_false_alarm_summary.csv": {
+      "sha256": "6e133e88cbe5478f62f96ca5de9c4c7535b7f5c19f987eb0553c7d8278474ca6",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/nt_false_alarm_summary.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/coverage_summary.csv": {
+      "sha256": "323523edf69e2c303d79dee9423daf9fde7a9cb8b9e18642679181b57ddb996b",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/coverage_summary.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-overall/condition_overview.csv": {
+      "sha256": "c08b4ffec157cf8d22bb4502d21f1c8b4f5e59b89af7cb61be18c7db46cb4a9f",
+      "source": "analysis/dataset/trigger-data/trigger-data-overall/condition_overview.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-cleaning/trigger_trials.csv": {
+      "sha256": "2c229d4e0e79885354ef709aaac6b7965cf090cd1a8ce515afc23844ad1be8d9",
+      "source": "analysis/dataset/trigger-data/trigger-data-cleaning/trigger_trials.csv"
+    },
+    "analysis/dataset/trigger-data/trigger-data-cleaning/reconcile_trial_end.py": {
+      "sha256": "6f325eac1d7bec2fc4e78a93f38b796a929ac2db77e36cf1fadefa17bcf417f9",
+      "source": "analysis/dataset/trigger-data/trigger-data-cleaning/reconcile_trial_end.py",
+      "source_sha256": "843216276aa5f3fa924396b997c51f4fb8ad68f52951a06dccbf7de4a23b5ded"
+    },
+    "analysis/dataset/trigger-data/trigger-data-cleaning/trigger_presses.csv": {
+      "sha256": "dcd8a11173ee1937bc92839376703c80cea5f1f3bf965a3e936e334b8aa49d01",
+      "source": "analysis/dataset/trigger-data/trigger-data-cleaning/trigger_presses.csv"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/t3_lineage_summary.csv": {
+      "sha256": "47daed684c1aa0ba8fe3ff3cce50b5e7523d9c7e7df44d108cccc71659805820",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/t3_lineage_summary.csv"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/analysis_receipt.json": {
+      "sha256": "6e3f156dfbb8ab0820bdffc404ffec0542195e1524b0aec15a52713b2ce56fba",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/analysis_receipt.json"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/delivery_receipt.json": {
+      "sha256": "f7741018ac0fc8cc10407c5848e008999745edb1d809f0b30db3eaee8f94ede3",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/delivery_receipt.json"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/source_inventory.csv": {
+      "sha256": "2681ade1ad75e2b063782142ff20fab84770c8020aa26cf28976d9b4d47106a4",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/source_inventory.csv"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/t3_group_scenario_counts.csv": {
+      "sha256": "da085244df7e1134a4279a34c5601f9c3680df1a4f8962ad959a15256fdd957b",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/t3_group_scenario_counts.csv"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/t3_duplicate_sensitivity.csv": {
+      "sha256": "f6fd271f3bf672a7096609cc19bbe8e56c11b13b520a16de2c12971d04027f1e",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/t3_duplicate_sensitivity.csv"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/t2_domain_summary.csv": {
+      "sha256": "5ffb57acd46c5106191c69bbd806356d7013f56202dade0e290368e427a9a867",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/t2_domain_summary.csv"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/t2_group_domain_matrix.csv": {
+      "sha256": "3ae4b0dc399ac2e4f2f62172d24b097b179f0c3dcb3c389736e4f933aa06b9a1",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/t2_group_domain_matrix.csv"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/chart_map.csv": {
+      "sha256": "57548613d608476eebb1b39897ba634df05b5d81adbe7e0c2c7dc8c68973ce96",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/chart_map.csv"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/t3_scenario_matrix.csv": {
+      "sha256": "2e0b6776e2f9677ecc87438f9a8f6d225e231c2edb2bc0998ec09c95e28fa832",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/t3_scenario_matrix.csv"
+    },
+    "analysis/dataset/workshop-data/workshop-data-overall/t3_priority_rank1.csv": {
+      "sha256": "a31dc575dfcf826e494b59d0543081d523fafdfe1711a542dd6c110c503e9aca",
+      "source": "analysis/dataset/workshop-data/workshop-data-overall/t3_priority_rank1.csv"
+    },
+    "analysis/dataset/originals/transcripts/trials/P17_t2.docx": {
+      "sha256": "d0ae145774addf4cb2d1426849eed5bd21e264b9ad3a1057e63b57644ec322c1",
+      "source": "analysis/dataset/originals/transcripts/trials/P17_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P16_t3.docx": {
+      "sha256": "61e4ddc88ceb6995603587bec8d95e71c4acefeb39b6242546f83ee4557d9776",
+      "source": "analysis/dataset/originals/transcripts/trials/P16_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P12_t1.docx": {
+      "sha256": "08008251c07d6df36506e62d4872394183a05cc3340020663e19821db40b8909",
+      "source": "analysis/dataset/originals/transcripts/trials/P12_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P02_t1.docx": {
+      "sha256": "070f13699790c522fe204cca50e57f07b0612e47ad592e076066370a9e3e1930",
+      "source": "analysis/dataset/originals/transcripts/trials/P02_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P24_t1.docx": {
+      "sha256": "61bdc359c3984909815a52d7a199964b594ac2a49e91caa456c593445e5c1f2f",
+      "source": "analysis/dataset/originals/transcripts/trials/P24_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P20_t3.docx": {
+      "sha256": "84043dd633818c54e0d36b099c8ce531dca69b9064083d73ea6a64c0798879a1",
+      "source": "analysis/dataset/originals/transcripts/trials/P20_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P21_t2.docx": {
+      "sha256": "98b669b0469be0216262935dc436b63ff6e3a29d7312b409bc8dda3bfa9ae837",
+      "source": "analysis/dataset/originals/transcripts/trials/P21_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P25_t1.docx": {
+      "sha256": "6c4983b42961e4e24255ca4d9aacd7b908d491435264bee0b1d53240259ec228",
+      "source": "analysis/dataset/originals/transcripts/trials/P25_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P21_t3.docx": {
+      "sha256": "6dc2a475f134caaa0e9755d723652572acd5ea448fb6f2bf9d5a680f323fd6ed",
+      "source": "analysis/dataset/originals/transcripts/trials/P21_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P20_t2.docx": {
+      "sha256": "3eacad7eff2cd6ce0292cfa8f71e89c9d74864d34b0c3f4c2fd8f3206cf663ef",
+      "source": "analysis/dataset/originals/transcripts/trials/P20_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P16_t2.docx": {
+      "sha256": "85bad882a44506c41499cc538a580895304d153dfa6cb9831e711640af39cbdc",
+      "source": "analysis/dataset/originals/transcripts/trials/P16_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P17_t3.docx": {
+      "sha256": "d239dc631ea767cdda59f51234fe71b39900fcee00b97967be1476c4dce6b9b0",
+      "source": "analysis/dataset/originals/transcripts/trials/P17_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P03_t1.docx": {
+      "sha256": "819e436e0853f710a5eac4bce8b223bbe2c5008bfdda62eecff1e67c94a20dca",
+      "source": "analysis/dataset/originals/transcripts/trials/P03_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P13_t1.docx": {
+      "sha256": "1701888e2b7551b96e657cbe4575b23a356774e3ead3d3c886c80e87674580c8",
+      "source": "analysis/dataset/originals/transcripts/trials/P13_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P23_t3.docx": {
+      "sha256": "6b8b051646be02d6ea29272588f31981d0eef87c13b9ae716960de8370ab4d0f",
+      "source": "analysis/dataset/originals/transcripts/trials/P23_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P08_t1.docx": {
+      "sha256": "010e0db96b2e93a5634473e304d27b1aed3acc564d1367019ab53ca57969b7ae",
+      "source": "analysis/dataset/originals/transcripts/trials/P08_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P18_t1.docx": {
+      "sha256": "97e4613fc2a4cf5180098a2c3f34e706b933d8e2a078039a4042b93b45c29660",
+      "source": "analysis/dataset/originals/transcripts/trials/P18_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P22_t2.docx": {
+      "sha256": "cd783cc9e708a65eb0f5ca74cb1d8a939606199b52e751a736db188ed9ba4a6d",
+      "source": "analysis/dataset/originals/transcripts/trials/P22_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P14_t2.docx": {
+      "sha256": "4bc757114851a6b0040d83f4c8366b5a1cba75c618b75719952d34eaab717e8d",
+      "source": "analysis/dataset/originals/transcripts/trials/P14_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P04_t2.docx": {
+      "sha256": "8d5357e5c818325f9379fef45555c1059aab1d63e31c2a2ff4204f8a06e532da",
+      "source": "analysis/dataset/originals/transcripts/trials/P04_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P11_t1.docx": {
+      "sha256": "feb0844f2f8f0a3578e4e9483989ee47c571b77fbd3cdc7bf786322514b41072",
+      "source": "analysis/dataset/originals/transcripts/trials/P11_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P01_t1.docx": {
+      "sha256": "c96d95508d5050e11b33a631fcf5d15c83631d2730b77ae7e6036964ea2672a2",
+      "source": "analysis/dataset/originals/transcripts/trials/P01_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P05_t3.docx": {
+      "sha256": "000805b00713e5d9125e6ebba4c3921177418ed54d8145a4824064368b35d29c",
+      "source": "analysis/dataset/originals/transcripts/trials/P05_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P15_t3.docx": {
+      "sha256": "5804f720fc60a5dddb30b5114e0791d747c67a27421d7bb128a812c19eb772c3",
+      "source": "analysis/dataset/originals/transcripts/trials/P15_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P05_t2.docx": {
+      "sha256": "471ba0fa6e43f1a99d0cbc1fcd12385770cf0243e2cae4a905ed65e100fea3b8",
+      "source": "analysis/dataset/originals/transcripts/trials/P05_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P15_t2.docx": {
+      "sha256": "182135178618872730dee2da6639e9f40af414bd0477d10dd654bce166ff1f6f",
+      "source": "analysis/dataset/originals/transcripts/trials/P15_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P10_t1.docx": {
+      "sha256": "86337cb77bf8deeb42dbcec121bf0387c8deef28630139d2d9be570c3b5c6940",
+      "source": "analysis/dataset/originals/transcripts/trials/P10_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P14_t3.docx": {
+      "sha256": "8e09c24fecaa268c4f754b388bb9e5912afa801d1c813f80f0de431146074bdc",
+      "source": "analysis/dataset/originals/transcripts/trials/P14_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P04_t3.docx": {
+      "sha256": "0bc2208fc8464267037c80e8741d7a2b32388c31decab502c9fee3fea41c151e",
+      "source": "analysis/dataset/originals/transcripts/trials/P04_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P22_t3.docx": {
+      "sha256": "8c2cbba70f93d908b85ae4e63eda6b54065c5c2e8b4d448a62a783fb7e86066d",
+      "source": "analysis/dataset/originals/transcripts/trials/P22_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P26_t1.docx": {
+      "sha256": "63ab64c46e8be5d8f6a212e7786bbd79586e2c2274e8db23addb6deb3749fba2",
+      "source": "analysis/dataset/originals/transcripts/trials/P26_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P23_t2.docx": {
+      "sha256": "36ca1f444395721fc7111db8b36f3758d76e0646ccda9efdd3431affa645a309",
+      "source": "analysis/dataset/originals/transcripts/trials/P23_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P19_t1.docx": {
+      "sha256": "c36d9a27215b77d9caab600ee1cda21fa7ebc63b6085cbcfc3ffaebd851e07c5",
+      "source": "analysis/dataset/originals/transcripts/trials/P19_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P09_t1.docx": {
+      "sha256": "66dd9ea5194ddc3516de14e7acc875c38f0434f51efcd8c068b7b9e7f7abef1c",
+      "source": "analysis/dataset/originals/transcripts/trials/P09_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P18_t3.docx": {
+      "sha256": "36b293bfa0c28d46fcb35e201cd76396154440f292e2e1e9756552a3eda72d46",
+      "source": "analysis/dataset/originals/transcripts/trials/P18_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P08_t3.docx": {
+      "sha256": "bd72efff1460a4243b58ee15fd255c27e500941e0523a850da48ec9bf864a37c",
+      "source": "analysis/dataset/originals/transcripts/trials/P08_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P26_t2.docx": {
+      "sha256": "f9a715b8e459e30b45ab1029450ac2ac8bba8a9eb1ced88ee74d4c5d99fa3e61",
+      "source": "analysis/dataset/originals/transcripts/trials/P26_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P23_t1.docx": {
+      "sha256": "0843d30f5530201d386d7e6871aabbf43c2918fdd8630eb6f63210fc86995531",
+      "source": "analysis/dataset/originals/transcripts/trials/P23_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P09_t2.docx": {
+      "sha256": "41739bc40d080a2e25a1a96f406fa781a741788913254877e29160f4189be5eb",
+      "source": "analysis/dataset/originals/transcripts/trials/P09_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P19_t2.docx": {
+      "sha256": "f3ca6994c9f8f6b1479f6544267ab3ad28239aa489b4dc5e049ac12e98ce6457",
+      "source": "analysis/dataset/originals/transcripts/trials/P19_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P15_t1.docx": {
+      "sha256": "ea44275d5abc48dc4cab8da12f608e976df43ef358346a4960267e5535c82479",
+      "source": "analysis/dataset/originals/transcripts/trials/P15_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P05_t1.docx": {
+      "sha256": "87a8c0cb21b5f617753f1dd63d654362b792dbc81dc3c4eb2b67c5cd2d73b3e7",
+      "source": "analysis/dataset/originals/transcripts/trials/P05_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P01_t3.docx": {
+      "sha256": "2b391af8c07f66baf0533609c73eb0ea0d5741507063e2221f2f47aa692db9c8",
+      "source": "analysis/dataset/originals/transcripts/trials/P01_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P11_t3.docx": {
+      "sha256": "78113b25589e2e6a519c85df8eb686e866fd2aed9ad2db4d3a1d1f0754fd9fe9",
+      "source": "analysis/dataset/originals/transcripts/trials/P11_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P10_t2.docx": {
+      "sha256": "23e0ca5500ec69448e964050d6a72fb8d047a05f2382a18385cf22abd657df43",
+      "source": "analysis/dataset/originals/transcripts/trials/P10_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P04_t1.docx": {
+      "sha256": "579ccece1b83d87b3c255cc81477a3f09cc7eed001f97fdf5ca72e3e9884d574",
+      "source": "analysis/dataset/originals/transcripts/trials/P04_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P14_t1.docx": {
+      "sha256": "935f7df97929a168320b26bb98bb78af495fba82326f6a9dcdab678d6723354e",
+      "source": "analysis/dataset/originals/transcripts/trials/P14_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P10_t3.docx": {
+      "sha256": "31af04ddcefc17c6d4e4fbb83831f3b6670ec34b00eaa2d11c5e4be4690b6be2",
+      "source": "analysis/dataset/originals/transcripts/trials/P10_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P01_t2.docx": {
+      "sha256": "fd6aa2a460a28cebe3f07cb078e5a33d1df1867f76440bffa2c9094469846731",
+      "source": "analysis/dataset/originals/transcripts/trials/P01_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P11_t2.docx": {
+      "sha256": "000ec293022072ee9c04dea16b6d5065407edc222fa90c9df685efd58fbaef00",
+      "source": "analysis/dataset/originals/transcripts/trials/P11_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P09_t3.docx": {
+      "sha256": "7d681b922c38a223cf91c6e0a37f4a66f3d2761ed8cd6870950581d5b1e7f76d",
+      "source": "analysis/dataset/originals/transcripts/trials/P09_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P19_t3.docx": {
+      "sha256": "d0fb34a1132c65dc6915b1a4b5654dfa22f4e5881dd09890bd99657224ee4326",
+      "source": "analysis/dataset/originals/transcripts/trials/P19_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P26_t3.docx": {
+      "sha256": "a1e4eba5eb3edfaaa195d584f8457d3c923338c6f5f89e1f551cfc44574d7dae",
+      "source": "analysis/dataset/originals/transcripts/trials/P26_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P18_t2.docx": {
+      "sha256": "c65a1861db99a464dd9378767f0c682851662fd7ddb5fedb9858a37d452106e3",
+      "source": "analysis/dataset/originals/transcripts/trials/P18_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P08_t2.docx": {
+      "sha256": "317df9854135d25c0ebb6b614fd82f61a38b1bb32d574861e166683c56bee489",
+      "source": "analysis/dataset/originals/transcripts/trials/P08_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P22_t1.docx": {
+      "sha256": "ce1233809350a0fe2c5399955bce801d0cb6aa1c86ff8c15e5a229ca40c0d73a",
+      "source": "analysis/dataset/originals/transcripts/trials/P22_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P02_t3.docx": {
+      "sha256": "fc48b71f9b74d5153a62fe4d91aac79ad322a7e20f12f155416d7f45ca1d26eb",
+      "source": "analysis/dataset/originals/transcripts/trials/P02_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P12_t3.docx": {
+      "sha256": "1fb5fa7f458c2d019413a1b3c94b424069b05854e399fa358d4cf3c8a09bd72d",
+      "source": "analysis/dataset/originals/transcripts/trials/P12_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P16_t1.docx": {
+      "sha256": "575cf24d847d14d6a4ac7ee24052544043e8a05cac20ee00668f2d125452e67a",
+      "source": "analysis/dataset/originals/transcripts/trials/P16_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P13_t2.docx": {
+      "sha256": "4fc13b8bb8ca403cdc71eb9c19f44bebc2e94b7e45f53dbd4ca5753d7b655199",
+      "source": "analysis/dataset/originals/transcripts/trials/P13_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P03_t2.docx": {
+      "sha256": "5e2f8417c1e02e4ae6f809fcaf32dd439fa680887c19222338b7456ef44722cc",
+      "source": "analysis/dataset/originals/transcripts/trials/P03_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P25_t2.docx": {
+      "sha256": "ed9a3b3bee2e956b15c7f37aeb3bff14bd0fb1e97a8e8e7ba76a355f7cdddfcc",
+      "source": "analysis/dataset/originals/transcripts/trials/P25_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P20_t1.docx": {
+      "sha256": "2f075a9db48ce798c9c70377a6db98eeeb1a92563eaa5c02bfb60853be558e09",
+      "source": "analysis/dataset/originals/transcripts/trials/P20_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P24_t3.docx": {
+      "sha256": "5cc154e447070d61851f699de67b856f639b462f2042285eb7fa5612ccb01290",
+      "source": "analysis/dataset/originals/transcripts/trials/P24_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P24_t2.docx": {
+      "sha256": "7ab5019f679d0772b500c629685446544c8abc3319e066e6a5d0805f0d0298af",
+      "source": "analysis/dataset/originals/transcripts/trials/P24_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P21_t1.docx": {
+      "sha256": "2fecfd27e567707e768ee7d0e356194e79567603e0feb0a899efaa7e0ab68515",
+      "source": "analysis/dataset/originals/transcripts/trials/P21_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P25_t3.docx": {
+      "sha256": "53f4f0dd969f46775542b82fb94f9fa8b4bc2661965e80cd1fc1204931a54a13",
+      "source": "analysis/dataset/originals/transcripts/trials/P25_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P13_t3.docx": {
+      "sha256": "92846930b2de35d08f46df333cb964c5b2bf06499ab975d30ada5900bc14cda1",
+      "source": "analysis/dataset/originals/transcripts/trials/P13_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P03_t3.docx": {
+      "sha256": "1c7caf9c1715e952ad464566d252ba4cb474dfe2e3b3445bff7c89925842eeb1",
+      "source": "analysis/dataset/originals/transcripts/trials/P03_t3.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P17_t1.docx": {
+      "sha256": "70b8ab2564cb097356f8f7bb7ba8442558de8c7208dc9899037bbf6c0d623609",
+      "source": "analysis/dataset/originals/transcripts/trials/P17_t1.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P02_t2.docx": {
+      "sha256": "83068079e89a558d1fc0692377778da2c16a8c94ee85ac5ff70ef69ac6afbb15",
+      "source": "analysis/dataset/originals/transcripts/trials/P02_t2.docx"
+    },
+    "analysis/dataset/originals/transcripts/trials/P12_t2.docx": {
+      "sha256": "97c2fcf98686a3b1120f23a490f4a0d8fcad2c6ed7b8aa3a62f3012a396e10a4",
+      "source": "analysis/dataset/originals/transcripts/trials/P12_t2.docx"
+    },
+    "analysis/dataset/originals/workshop-data/t3_placements.csv": {
+      "sha256": "a5f7cf84a0b5544865479b734a133cb790f04379666286d8b0520b4f14f93ef9",
+      "source": "analysis/dataset/originals/workshop-data/t3_placements.csv"
+    },
+    "analysis/dataset/originals/workshop-data/t2_ideas.csv": {
+      "sha256": "c73ae4d7249b6ad7bbc62f326a22af57e71a46a90b4bb75d2c0d6923d5ca7417",
+      "source": "analysis/dataset/originals/workshop-data/t2_ideas.csv"
+    },
+    "analysis/dataset/originals/workshop-data/codebook.csv": {
+      "sha256": "1828d06a3b72b02d47fffb80160ba07750b4853eb92a8940b2904c43c23ef427",
+      "source": "analysis/dataset/originals/workshop-data/codebook.csv"
+    },
+    "analysis/dataset/originals/workshop-data/workshop.sqlite": {
+      "sha256": "7cb01f2cdbe7ac8e811b5ea5fc6fd5d48b114104a7c84f54b1417c4134f40771",
+      "source": "analysis/dataset/originals/workshop-data/workshop.sqlite"
+    },
+    "analysis/dataset/originals/workshop-data/artifact.json": {
+      "sha256": "e2ea2a687e8a0b774278a18a0348b3e5b33ea177c9c908c9acb6a4a2570d1ad7",
+      "source": "analysis/dataset/originals/workshop-data/artifact.json"
+    },
+    "analysis/dataset/originals/questionnaire-data/data-aggregated.xlsx": {
+      "sha256": "d87a3a115ea8d57bd553bc200e5082e209f4eca10569ae6e7a28d49b44d8a6f4",
+      "source": "analysis/dataset/originals/questionnaire-data/data-aggregated.xlsx"
+    },
+    "analysis/dataset/originals/questionnaire-data/UEQ.xlsx": {
+      "sha256": "a4d0b2e0f3a0da1218791123e013de8b69fade22fd6e04e07a4048817c45e56c",
+      "source": "analysis/dataset/originals/questionnaire-data/UEQ.xlsx"
+    },
+    "analysis/dataset/originals/questionnaire-data/nasa-tlx.xlsx": {
+      "sha256": "e221fe2308b4c446e838537d37c5abc02cfb149df93406c35982c694891ed30c",
+      "source": "analysis/dataset/originals/questionnaire-data/nasa-tlx.xlsx"
+    },
+    "analysis/dataset/originals/questionnaire-data/study_design.xlsx": {
+      "sha256": "2912d1e12f5d45aa290e865cdd96cb6127bd3dc9d295c7eced4a5f30cd62e9cd",
+      "source": "analysis/dataset/originals/questionnaire-data/study_design.xlsx"
+    },
+    "analysis/dataset/originals/questionnaire-data/discrimination-questionnaire.xlsx": {
+      "sha256": "72b4e47eceeace06d5e665301ced342053a950ee5d6739db1e27b0a1f8f1cf1b",
+      "source": "analysis/dataset/originals/questionnaire-data/discrimination-questionnaire.xlsx"
+    },
+    "analysis/dataset/originals/gaze-data/P20_t2_gaze.csv": {
+      "sha256": "6f38fc945e527e552751520d6c506852cbd5032c2e1cbac473f15c70d0d1b735",
+      "source": "analysis/dataset/originals/gaze-data/P20_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P20_t3_gaze.csv": {
+      "sha256": "08f9cabca5146ddd66308c3b2584bd228e783e4779765247b6c6c9bd9b49a1bc",
+      "source": "analysis/dataset/originals/gaze-data/P20_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P13_t1_gaze.csv": {
+      "sha256": "a1df1b2537163b5bcb42fba448488c4de2a1ece7073f86107cda7d76ec98212d",
+      "source": "analysis/dataset/originals/gaze-data/P13_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P12_t2_gaze.csv": {
+      "sha256": "bc3ef386e24c090f32de4562aeeac804713befdf473e1e80a17855731d20b89d",
+      "source": "analysis/dataset/originals/gaze-data/P12_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P12_t3_gaze.csv": {
+      "sha256": "96d880cf88fbbe47795204daa7d891648caee8a8fdcca77898c57689444eb5ce",
+      "source": "analysis/dataset/originals/gaze-data/P12_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P21_t1_gaze.csv": {
+      "sha256": "af7c7b7c6fcc59c37225be0923114cc909a0b4d1df31140c4e492e99df9e9da6",
+      "source": "analysis/dataset/originals/gaze-data/P21_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P25_t2_gaze.csv": {
+      "sha256": "1db00e79bc65f94dacdc180f64864853dd028db25de3f006d678fb841da575b0",
+      "source": "analysis/dataset/originals/gaze-data/P25_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P25_t3_gaze.csv": {
+      "sha256": "6dd4eccbfc02594761e7763075452471dec61bab0aac43f0829c5dc5d515a8e8",
+      "source": "analysis/dataset/originals/gaze-data/P25_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P16_t1_gaze.csv": {
+      "sha256": "796979ae131c123951e8ce25479c0ee6d862a58078cfc2401857aa343361c626",
+      "source": "analysis/dataset/originals/gaze-data/P16_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P17_t2_gaze.csv": {
+      "sha256": "603eeb0fe3f64c40feea4997e7205fd86bd6d120a471f47e64d07fe93c13a6b0",
+      "source": "analysis/dataset/originals/gaze-data/P17_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P17_t3_gaze.csv": {
+      "sha256": "92e85e57cc2e6cba655554b1694ad23b6eb3bcacf4d992ae9ec9432bdba85198",
+      "source": "analysis/dataset/originals/gaze-data/P17_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P24_t1_gaze.csv": {
+      "sha256": "854d05a21f0b0a7858d1bdd4cdd7cb0137d83d7ff73a5c156b11f8dd7c0559e4",
+      "source": "analysis/dataset/originals/gaze-data/P24_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P02_t3_gaze.csv": {
+      "sha256": "bd56695b8ecabc61d873442d8369fff30d7844b3ba61916bf214730ffb8259c4",
+      "source": "analysis/dataset/originals/gaze-data/P02_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P02_t2_gaze.csv": {
+      "sha256": "0e7044fef3c1384a9861f936259796ca2bae2b1d85c67401f5b89b56122748ae",
+      "source": "analysis/dataset/originals/gaze-data/P02_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P03_t1_gaze.csv": {
+      "sha256": "370dbd45333add83e478ad19ec70ea6721c36328e3644f9d4d9d8a9e617a430d",
+      "source": "analysis/dataset/originals/gaze-data/P03_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P01_t3_gaze.csv": {
+      "sha256": "918565bd6b90b2ce5b56908989c8eed10357be88a3e99d86d3ffe954284e4e89",
+      "source": "analysis/dataset/originals/gaze-data/P01_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P01_t2_gaze.csv": {
+      "sha256": "b28aff2a6f856325407c55f74d81953efb356eab7e4c6467eb4f83d3cdb79eb3",
+      "source": "analysis/dataset/originals/gaze-data/P01_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P14_t2_gaze.csv": {
+      "sha256": "5baa6b6a51fad84722ea9ceca571dd9b6f5adf87b2ec83ec7d4b3ed12e15baf2",
+      "source": "analysis/dataset/originals/gaze-data/P14_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P14_t3_gaze.csv": {
+      "sha256": "696238bb1c5844799f780d6d22656d093a3ec443e946ba8fabfc498627166156",
+      "source": "analysis/dataset/originals/gaze-data/P14_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P09_t1_gaze.csv": {
+      "sha256": "e876c6077efdd512048308d5f593e6db5e8d62320f1dfa695489f51997e2d774",
+      "source": "analysis/dataset/originals/gaze-data/P09_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P15_t1_gaze.csv": {
+      "sha256": "b36f7c33161ebb74233ccfd59f50052c366b5253cd836f25ce8182cb7f256f7a",
+      "source": "analysis/dataset/originals/gaze-data/P15_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P26_t2_gaze.csv": {
+      "sha256": "2342992d9baea4268460f703e50d2b3e680fc822769d67587ea2bc4d90e59d06",
+      "source": "analysis/dataset/originals/gaze-data/P26_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P26_t3_gaze.csv": {
+      "sha256": "ce28c6cafadf7f2114e8f50962cdf821d68ef8a1b0051ff03b41939ba300f101",
+      "source": "analysis/dataset/originals/gaze-data/P26_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P08_t2_gaze.csv": {
+      "sha256": "720a1ef28a68a3209b8f4cb6b8a965325e473416f796bdcfadf18b437b187401",
+      "source": "analysis/dataset/originals/gaze-data/P08_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P08_t3_gaze.csv": {
+      "sha256": "84d84db1c9d3d9fe3e9e5572cb95d63169b5cfe68991b7cdc2bbb2e1e4e46ec9",
+      "source": "analysis/dataset/originals/gaze-data/P08_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P22_t1_gaze.csv": {
+      "sha256": "6fea65236e185fd8af9a7e9ed0af6dd40156beb75b3dc9048b920e59c5787c32",
+      "source": "analysis/dataset/originals/gaze-data/P22_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P11_t2_gaze.csv": {
+      "sha256": "1305fadc8d9dee598337d9042ec6e76cebb347b17b560a2bddef03a366b58dce",
+      "source": "analysis/dataset/originals/gaze-data/P11_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P11_t3_gaze.csv": {
+      "sha256": "25255cd26d2d45f74ec0f464d950eeefb7e65204fff8ad18ed0476dd0977c2d0",
+      "source": "analysis/dataset/originals/gaze-data/P11_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P10_t1_gaze.csv": {
+      "sha256": "2df451ac850ee8cb1b9ddebe53870d44d795ee94fc7411a8225c4b9b9bf00815",
+      "source": "analysis/dataset/originals/gaze-data/P10_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P23_t2_gaze.csv": {
+      "sha256": "6d2097c2253e74fb950cef7ef0b0f6ff7530a82aa9e3cd10efa59e977dcb6e57",
+      "source": "analysis/dataset/originals/gaze-data/P23_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P23_t3_gaze.csv": {
+      "sha256": "5f7ee6ca289bc72d37dbfd9014608ee42626efefb0d13a5ad1ff073daa41d90f",
+      "source": "analysis/dataset/originals/gaze-data/P23_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P05_t1_gaze.csv": {
+      "sha256": "67a960cd7a6d733e5b71a4a1adf9d1c33322539151410c6cbeb1153795832f84",
+      "source": "analysis/dataset/originals/gaze-data/P05_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P18_t3_gaze.csv": {
+      "sha256": "3c02ed6e45786695667b9bf1128c1f67ad8ad547f7ab46f1a649322ece906379",
+      "source": "analysis/dataset/originals/gaze-data/P18_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P18_t2_gaze.csv": {
+      "sha256": "6a3ed1084f646a3b65d1afbb47f94ad608fe160eed0b3d1074588e5be890b08f",
+      "source": "analysis/dataset/originals/gaze-data/P18_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P04_t3_gaze.csv": {
+      "sha256": "4d56a7f4bce0f3fc6c15d5cf5912e1c547235703d9c5dc91bbadca46344ef0ad",
+      "source": "analysis/dataset/originals/gaze-data/P04_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P04_t2_gaze.csv": {
+      "sha256": "6b5864cce7f8dd8449174647e1dcb59bc24ab77f809f1727a7c3a9316ca66807",
+      "source": "analysis/dataset/originals/gaze-data/P04_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P19_t1_gaze.csv": {
+      "sha256": "9bb0cc4959a462c730135414339ddda285bf0c58e4603bb90b77a7c48ea9e989",
+      "source": "analysis/dataset/originals/gaze-data/P19_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P02_t1_gaze.csv": {
+      "sha256": "3cd58cc9c2f72a5901e99ed5a7d3ce79136f3082b9899d61484768b93a97aa42",
+      "source": "analysis/dataset/originals/gaze-data/P02_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P03_t2_gaze.csv": {
+      "sha256": "089c2bf673058de131aad20040b8dd1a95936ebac9686234cf8160685a488b99",
+      "source": "analysis/dataset/originals/gaze-data/P03_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P03_t3_gaze.csv": {
+      "sha256": "269f3068ffcb439cee4ffd3cda9f24f45760f22774c625a90df451ef9659f1a5",
+      "source": "analysis/dataset/originals/gaze-data/P03_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P25_t1_gaze.csv": {
+      "sha256": "eb4d46398da922fbee854a07915997b0dd32de437660be1f0879fb7c78f23a4d",
+      "source": "analysis/dataset/originals/gaze-data/P25_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P16_t3_gaze.csv": {
+      "sha256": "5c4886aef8bea2afbde9c81c86d556ec548eac618167ea116ceffd3a54e4b589",
+      "source": "analysis/dataset/originals/gaze-data/P16_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P16_t2_gaze.csv": {
+      "sha256": "4e43e611d742343ba8f5072251e5efd8245c5413ebc2e4c66a946607e3a34b9b",
+      "source": "analysis/dataset/originals/gaze-data/P16_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P17_t1_gaze.csv": {
+      "sha256": "debff72edf51acad63cd684190b0765bed9fc07a7d1da87a0571411e1f1af9e0",
+      "source": "analysis/dataset/originals/gaze-data/P17_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P24_t3_gaze.csv": {
+      "sha256": "29bc351a396f0f073797d4ae340b1c137635a2038d93215bc4541705d224f1c9",
+      "source": "analysis/dataset/originals/gaze-data/P24_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P24_t2_gaze.csv": {
+      "sha256": "efdc39769f3e8918b359d62298e720560d5cea56898b04fd6f279e426789108e",
+      "source": "analysis/dataset/originals/gaze-data/P24_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P20_t1_gaze.csv": {
+      "sha256": "7d8b2e15068d35b94e2037c728d00d0d8de70cad1e7386451e247cb2ffdd2a93",
+      "source": "analysis/dataset/originals/gaze-data/P20_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P13_t3_gaze.csv": {
+      "sha256": "07cedfa3c1baad4bc869c1f9df67906b013a8b5d994a49c289fb3e24e1ac9863",
+      "source": "analysis/dataset/originals/gaze-data/P13_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P13_t2_gaze.csv": {
+      "sha256": "588588a474a53b1335ad15f9e7c42982024429767f1ef2b5f4795266756593f2",
+      "source": "analysis/dataset/originals/gaze-data/P13_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P12_t1_gaze.csv": {
+      "sha256": "75c58588060f0cb0e193d778f3f00d7f43295cb78e429da376cdd06879adddd8",
+      "source": "analysis/dataset/originals/gaze-data/P12_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P21_t3_gaze.csv": {
+      "sha256": "dba154437afd6268a6740ab66264aab77989dd26651d5bef69df5a7a62fdeea6",
+      "source": "analysis/dataset/originals/gaze-data/P21_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P21_t2_gaze.csv": {
+      "sha256": "4eade0b39cae9d767070e8aeb25a937c6f23f589231970f7fed25b56d84da009",
+      "source": "analysis/dataset/originals/gaze-data/P21_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P05_t2_gaze.csv": {
+      "sha256": "68e4b98897302f369d4e582c934564bc8eb92ff70ff15584c41a95f20069400b",
+      "source": "analysis/dataset/originals/gaze-data/P05_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P05_t3_gaze.csv": {
+      "sha256": "4e2d7659b37c3dfbbeba2ca313fe9d94aad50d53d93113f9fb8a3d8ec8831b20",
+      "source": "analysis/dataset/originals/gaze-data/P05_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P18_t1_gaze.csv": {
+      "sha256": "f00afaa82a309069584a2c29ef8382620e2f64349bbbf7515f5d39981305bb84",
+      "source": "analysis/dataset/originals/gaze-data/P18_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P04_t1_gaze.csv": {
+      "sha256": "a835eab433dae007abb8e9969b2054f98da3e4577d0e4461ed5b5e790e27df56",
+      "source": "analysis/dataset/originals/gaze-data/P04_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P19_t2_gaze.csv": {
+      "sha256": "5b7a6706c4d625290e2bde6fe18fc87d5ffcb0a18a160b86b931340074aa8716",
+      "source": "analysis/dataset/originals/gaze-data/P19_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P19_t3_gaze.csv": {
+      "sha256": "d462751be10e9f14f15b6ea63c85e2181ff4afecd8af503292c751bf51f2a7d0",
+      "source": "analysis/dataset/originals/gaze-data/P19_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P22_t3_gaze.csv": {
+      "sha256": "c13edb63cde7e40168651203cb0a38dcdff062c5124206234eb8f7e8a78057c6",
+      "source": "analysis/dataset/originals/gaze-data/P22_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P22_t2_gaze.csv": {
+      "sha256": "c92442af7eb67c630306b5edcbb35b5207c1dea9f901750e5ef9f69d1b6b1aa1",
+      "source": "analysis/dataset/originals/gaze-data/P22_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P11_t1_gaze.csv": {
+      "sha256": "f1702c4af8b6276a5a99f69eaba09b0720f4765b1286b39f4e8c7995bbd2de35",
+      "source": "analysis/dataset/originals/gaze-data/P11_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P10_t3_gaze.csv": {
+      "sha256": "ef8b33b9ad5325ecf9875a9c6c4631623e49f2cf8fa1fa3daa28dc9a579ead6d",
+      "source": "analysis/dataset/originals/gaze-data/P10_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P10_t2_gaze.csv": {
+      "sha256": "ce6c32f5a6cbd2489649a8646534a02aab549d90bedc1960d5200501b07d9b94",
+      "source": "analysis/dataset/originals/gaze-data/P10_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P23_t1_gaze.csv": {
+      "sha256": "aa27d89811970f218d7e20bf3b7d80e2f051dc05f3b17ac69ad98a5ea9c57fde",
+      "source": "analysis/dataset/originals/gaze-data/P23_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P14_t1_gaze.csv": {
+      "sha256": "6d25f11ce41028d0e552257cf33873b4e05a55102b35d5d0f2aae3ec0ef68dbb",
+      "source": "analysis/dataset/originals/gaze-data/P14_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P09_t3_gaze.csv": {
+      "sha256": "ae2f67dcd52f25ad110404971dc249f339977cb4e86b449956dcfe19286f464e",
+      "source": "analysis/dataset/originals/gaze-data/P09_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P09_t2_gaze.csv": {
+      "sha256": "bbc2467fe54210d346e48299583aaae65e15a115125dbb4cd102a284ef0d9f62",
+      "source": "analysis/dataset/originals/gaze-data/P09_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P15_t3_gaze.csv": {
+      "sha256": "c2c4a51fceebc36632bcfabbc2a63d3f8bae459212405a6920881feef08fb539",
+      "source": "analysis/dataset/originals/gaze-data/P15_t3_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P15_t2_gaze.csv": {
+      "sha256": "e67c7570b9cf8485d275259900755d158db6be3ad81609f1965dddd96a1ccf00",
+      "source": "analysis/dataset/originals/gaze-data/P15_t2_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P26_t1_gaze.csv": {
+      "sha256": "282e8122736a7674056a12efefc0a377b1fe7dafda7fd248a4a2c6ec6b030ef8",
+      "source": "analysis/dataset/originals/gaze-data/P26_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P08_t1_gaze.csv": {
+      "sha256": "f23cd957fe66e4573f3e2e1694486cbbbb3e6ac73e281dc45733a4ec376921c5",
+      "source": "analysis/dataset/originals/gaze-data/P08_t1_gaze.csv"
+    },
+    "analysis/dataset/originals/gaze-data/P01_t1_gaze.csv": {
+      "sha256": "0bfb9c26fc3844eb17b59a809c68c74dd724187bec5c9463476de0a7de1048a5",
+      "source": "analysis/dataset/originals/gaze-data/P01_t1_gaze.csv"
+    },
+    "analysis/dataset/trial-data/trial-data-crosswalk/72-trial-map.csv": {
+      "sha256": "b96b98785aab99629ee066e90757e273481f0b8634dcfe830df5cd2fab9dd362",
+      "source": "analysis/dataset/trial-data/trial-data-crosswalk/72-trial-map.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-event-qualification/event_gaze_qualification.csv": {
+      "sha256": "0ebf7c90d5561f65042d7cc833b5f3ac9a8e53642c3496db75fb09b861b14133",
+      "source": "analysis/dataset/gaze-data/gaze-data-event-qualification/event_gaze_qualification.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P20_t2_gaze.csv": {
+      "sha256": "f19859517a9ec9cd8e65cbb955fbdb0cbe5adbedbde5cbf89d9a4ffd28b24242",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P20_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P20_t3_gaze.csv": {
+      "sha256": "7a0db8783346d8474c2725fead9e29497077ef3eb427bad1dde0adf2f205f5ad",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P20_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P13_t1_gaze.csv": {
+      "sha256": "df81c97c8e6fb6006a5bc7bcc641b93f9962da46b0f7757735f54d4997d78995",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P13_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P12_t2_gaze.csv": {
+      "sha256": "d24e0d2d4c1498b1b03110604911bc368952f09deefa2b1880ae4aa1f40b2d55",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P12_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P12_t3_gaze.csv": {
+      "sha256": "ce87da91991218596cb923e5192bce7aaa108266cc830cf9b54f0823e31aa30f",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P12_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P21_t1_gaze.csv": {
+      "sha256": "80f39569e0edc8348b8930d5eb8005edbf33548c3fef7bffd5aec520d3c4a8eb",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P21_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P25_t2_gaze.csv": {
+      "sha256": "4638123e14989ff1421f645a45a4d714ca42835b82ca5c1c10ae911cf9b2d406",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P25_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P25_t3_gaze.csv": {
+      "sha256": "4a1923773ec7d1dd1f156ff9e9e314e85278cf5f27ab75ba21be2b5832c6350f",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P25_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P16_t1_gaze.csv": {
+      "sha256": "e7c61ebf2ca5c7886f837e47d1319becd22d55f16672ef8d26bb9beaaa87d8b7",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P16_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P17_t2_gaze.csv": {
+      "sha256": "224d9a22c78a2c81bec97b2713bbb26570dfbbd26ff23e09238037e58276d48c",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P17_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P17_t3_gaze.csv": {
+      "sha256": "6830d1ea4ff5470c4ec8b84d816b9ff4c35a9567e686fa0e01924479dbafc89a",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P17_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P24_t1_gaze.csv": {
+      "sha256": "f5d2cff91aa70676c43059f410e911e4fd9e048057554c2eea3f02297e52d24c",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P24_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P02_t3_gaze.csv": {
+      "sha256": "baaf2f50651bca5cb5bd03b836b796d71242aaf55b384099fd72f4b22813dd31",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P02_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P02_t2_gaze.csv": {
+      "sha256": "09fc5248f9388be8f1665936c33803bb75e62157e4abe982f7a7d0a271cf46d3",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P02_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P03_t1_gaze.csv": {
+      "sha256": "6622366d03aed3a21ecd06fb478f6601d9b9b2b517cd190bf002b6f0c7e45100",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P03_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P01_t3_gaze.csv": {
+      "sha256": "b4e32cbd7b8bbb4bfb3bf6a697dd162aa926e5e61af50453a66a76077600006d",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P01_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P01_t2_gaze.csv": {
+      "sha256": "042f588ed8690ce6c1fbbbd2daaf5c6e21ccd00c748447a5c9d8cf3a85e82212",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P01_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P14_t2_gaze.csv": {
+      "sha256": "1d4eb608df54ef6d91e8f82d998bb9a3677a98e3b80692db087919942e675abe",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P14_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P14_t3_gaze.csv": {
+      "sha256": "4e726bb6c75d9fa0a22d75e6be2e77fb9f07f78d4fc4c88152155a912862c772",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P14_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P09_t1_gaze.csv": {
+      "sha256": "4ed0aca644e70f31059df7d466ff7e961656e4750f39d127b9b857b228f75901",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P09_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P15_t1_gaze.csv": {
+      "sha256": "d79ab3a9d71d61ca9807d1327814dd2774c22ad924cd1045b03697096ec442ca",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P15_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P26_t2_gaze.csv": {
+      "sha256": "8d4567f37dad09d2040c68c378fa995742a7cdb4f495c634ac31b9ef338fe1ed",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P26_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P26_t3_gaze.csv": {
+      "sha256": "7c2e20aef531d4da3b23783c796a1212a6f6a92a1687965f65211d51cf50eb06",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P26_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P08_t2_gaze.csv": {
+      "sha256": "91ae76cb096f0b68170f1289ba1e852c7ce47251d7d819bc6805b50268324db2",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P08_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P08_t3_gaze.csv": {
+      "sha256": "e2aa447a1c017404489ca00e31c45ee9304223a79d69d36626ddd87d7ac10710",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P08_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P22_t1_gaze.csv": {
+      "sha256": "44144c0e8dcbe32480b0a33b6f9a36dc3724f2ea29c0d2c96b719273f332b394",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P22_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P11_t2_gaze.csv": {
+      "sha256": "fd22a0e9bafffcae4ecd4eab37358080ba547c6d561dbf30c840e64546bbaf4b",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P11_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P11_t3_gaze.csv": {
+      "sha256": "62cd0f6a3a7d869a7fd974e616e0cebec10053ab7c2aae70602aa55e86ba4d42",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P11_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P10_t1_gaze.csv": {
+      "sha256": "c42a79309fb10084ba5b3f66461a0d661de454e3cf6512a46785629cd5140821",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P10_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P23_t2_gaze.csv": {
+      "sha256": "777462b8ba6ecb6960e30a0689e9f37936464780700d3e3b8dda0367150d4291",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P23_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P23_t3_gaze.csv": {
+      "sha256": "bfef299375f54a5025b7351b6af774d18f660d9c1e13f93c1c05b786e23f222c",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P23_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P05_t1_gaze.csv": {
+      "sha256": "23aa0d0c0cee0da2a24411c3355a0996d54236697757eaa4be7f88fbe1517cf3",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P05_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P18_t3_gaze.csv": {
+      "sha256": "caf495d93454321a735372b2f3645bc02e8626617eb35de46b018c813fff23dd",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P18_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P18_t2_gaze.csv": {
+      "sha256": "ce491d122e3e6b8b449a4a77f25cad213d421d48d7d026a2728fe21fa73d612d",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P18_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P04_t3_gaze.csv": {
+      "sha256": "43a1d58d2d13f6e1f47938a3624574278f887dee86db884d3be3959e08c2d53e",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P04_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P04_t2_gaze.csv": {
+      "sha256": "d94dabe43934b68360970fe05e90db37e945926d074c1ceb1d989de44c504a17",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P04_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P19_t1_gaze.csv": {
+      "sha256": "94c6b97726cb3d603810346640f386a8d9d3c2370e279d2aa0d671c1f7528565",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P19_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P02_t1_gaze.csv": {
+      "sha256": "5f1819ef22ef44bc4479f5c6aa45c2d498c9e467021e77358ed49e98d701a1a4",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P02_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P03_t2_gaze.csv": {
+      "sha256": "79b30d03528c4e9a6b7dea7e66cafa17aaeb1426ab1863d4abacfbbac4fccf1a",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P03_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P03_t3_gaze.csv": {
+      "sha256": "491a2187ebee2247db8f5c55141f1483f9b612aacaa327f7686e314e5001c408",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P03_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P25_t1_gaze.csv": {
+      "sha256": "2a174174c00020375a53bbccb399e36ac0388ecd13d765018bfa2cbdae3d5da1",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P25_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P16_t3_gaze.csv": {
+      "sha256": "5ec72b32358b49d6117955be479766977a9eb91d10f7686bd1e519b73423a011",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P16_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P16_t2_gaze.csv": {
+      "sha256": "1441120d1960a51a12e0aa85fdb05908ec14f4f4b5f0a3ec7bc42637d943ae50",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P16_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P17_t1_gaze.csv": {
+      "sha256": "4c5997a1e43a889560fe838a187fe8a1c5ae2237d0ed099e1a57960fbece3a42",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P17_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P24_t3_gaze.csv": {
+      "sha256": "41740fe3b959aa444b1876e8f41a77ff7e6b8521ccb3409bcdb14240391f47eb",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P24_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P24_t2_gaze.csv": {
+      "sha256": "a9ee271b819dca943fb92a23dce5288e36bf0b011191708b0102286f7d94cafd",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P24_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P20_t1_gaze.csv": {
+      "sha256": "27563cd0442450cc901c13e257b128033c284ca21ef0333643827e2a9f1569d8",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P20_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P13_t3_gaze.csv": {
+      "sha256": "b1ef60cacd54253a18c43a941510c3e7fe0fdda0e2d2dcc056931445287c6efa",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P13_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P13_t2_gaze.csv": {
+      "sha256": "fb7c62b246dbe596223e7d5e9d436b7f31ee9b68f09c14a6cb5c09db261b65f4",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P13_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/manifest.csv": {
+      "sha256": "18965b8d82be6751e833432e41e8fdf05fa5152056100ba97b92bffde2f7c52d",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/manifest.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P12_t1_gaze.csv": {
+      "sha256": "dc85bcb53f2c8fa0ba049d9d1963e635d681e306e92d4178ea1d770e5c5cc0ed",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P12_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P21_t3_gaze.csv": {
+      "sha256": "3f498b747e51493295b36d1c05b617a306c29c3cad7e218a24d12305b4248d72",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P21_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P21_t2_gaze.csv": {
+      "sha256": "e2e8de2267fc0bbc121258373f6ab1a3b3928c7f39f40c05f2ed49b7fcdf0af2",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P21_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P05_t2_gaze.csv": {
+      "sha256": "26d4ce3c87c4c33bb00d15c0deaffb62758b4dbc3ab887d68fdd3f39f707a4df",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P05_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P05_t3_gaze.csv": {
+      "sha256": "c5bc51e0c224c475f6b3df132d2d63ee815c40ee4534e9224c8cdb52a1ecdd50",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P05_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P18_t1_gaze.csv": {
+      "sha256": "49a753c425bbff9c95c7cf10f6f9f1340145e845ebbe2b1d37dfcaeb4607b0c6",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P18_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P04_t1_gaze.csv": {
+      "sha256": "aecba7a4feb71b7481dbfc90db1840810f987b834e649f588d7984042151754f",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P04_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P19_t2_gaze.csv": {
+      "sha256": "7beeedb9910867c800b110f8b7b638c2aa72a958532cf864acb7786582000d43",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P19_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P19_t3_gaze.csv": {
+      "sha256": "768ba06470a0e0df6853dcb476505cedf8456bb1edf052dddec1ee65fab05a78",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P19_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P22_t3_gaze.csv": {
+      "sha256": "6180e5cc1a4f9755e1b932dd81b6c927e9ea6cfbc3aa4a61c65c91f00ce93587",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P22_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P22_t2_gaze.csv": {
+      "sha256": "8028992720561af9d7069766813d43c1e32bc13fb1953499c4c45c68e73b52b7",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P22_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P11_t1_gaze.csv": {
+      "sha256": "6b4b3c1c62457dc74768e1debd077d8b1356057225418c7896d41dd32d97fac0",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P11_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P10_t3_gaze.csv": {
+      "sha256": "7e41b8de2d176a537a3f9534e60b6810ecd74c7c7c47d494f56442f5eab822ae",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P10_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P10_t2_gaze.csv": {
+      "sha256": "9d107c4e49bd454f36b4dc75836a0f4bc461535fa22d636d94f029d906e8eb84",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P10_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P23_t1_gaze.csv": {
+      "sha256": "3f3d1004c7839299efde7c03f309df48a7a2a02b54020e708bafcab00d48b464",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P23_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P14_t1_gaze.csv": {
+      "sha256": "85753b568f22f8c007d9abef4bba1876495d89609a3a693e3fe58906dc0b9848",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P14_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P09_t3_gaze.csv": {
+      "sha256": "758a83f4e3d702fdf4000d02648e40824d0fc406a40bffcf50da323be7ad0112",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P09_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P09_t2_gaze.csv": {
+      "sha256": "e14d2c695224e1383283ef247ebaece9d0461e001cd4c9227f4dda5bdaf5b72f",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P09_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P15_t3_gaze.csv": {
+      "sha256": "a1b9cd7b5453d9d8ec24e6f6b0b90c4a709b029fe67a017af8bd6befe06d3fff",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P15_t3_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P15_t2_gaze.csv": {
+      "sha256": "ac6f4aa9d8dfaea885a5c0bb497dba44861ec8962203c08e2a17e5588987a04d",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P15_t2_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P26_t1_gaze.csv": {
+      "sha256": "a5874416acf35d852ce1475037c8a45416e3e64ae9370dd0d274782f2c48b3c9",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P26_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P08_t1_gaze.csv": {
+      "sha256": "886fac877d1693b900f0ae82935bdef6ced031a440409d6865426c56547fead8",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P08_t1_gaze.csv"
+    },
+    "analysis/dataset/gaze-data/gaze-data-cleaning/P01_t1_gaze.csv": {
+      "sha256": "6a6d6110c574f320a1ee942498e82d94633b2f99b86ec18e934a69280a1bb770",
+      "source": "analysis/dataset/gaze-data/gaze-data-cleaning/P01_t1_gaze.csv"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/input.csv": {
+      "sha256": "edcf634b84377cf38e8f99658e34c909b8b86010a4a2720dd01c33e7b6723f97",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/input.csv"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/run_analysis.py": {
+      "sha256": "80119c0aacfc5076569271e05975cd1c2fb60a73cbb215c06157d03dbd278546",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/run_analysis.py",
+      "source_sha256": "d0052509040a645737f3ccb64ab9eed5448374b9e3a66fd87c6f4aacd3603d2c"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/cross_outcome_leave_one_out.csv": {
+      "sha256": "b4c44dc7f64e3c95b513d46b434e66fc725c1315df721a4fe965175274903f47",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/cross_outcome_leave_one_out.csv"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/cross_outcome_tests.csv": {
+      "sha256": "9435ece06cbbedf9eb0900269911b030213afe0dc318ac70bc84b001309cbe38",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/cross_outcome_tests.csv"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/validate_outputs.py": {
+      "sha256": "c3f3b87e122dfe65819200090f20dd89bcf5b3e0867edc1a6d342f0725df90cf",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/validate_outputs.py",
+      "source_sha256": "5f423e2ce9bd4f6732ecf7a1981bb8b7fcca42485b2882c94976e1f28e0e558a"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/condition_summaries.csv": {
+      "sha256": "422ecff9dfa2ff70aa4e91c29d71523b132f6262a90cc5d2dd74bc2e9f195066",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/condition_summaries.csv"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/interpretation_tests.csv": {
+      "sha256": "4859711b623c93f497caf14112206f324502c69c9afdd22c5a1c400297b3610e",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/interpretation_tests.csv"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/independent_validation.json": {
+      "sha256": "60f462bf32c39a3fb4b7ad69a8b468374d5b2d6ba50f5d7775e9892060f7135d",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/independent_validation.json"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/input_snapshot_receipt.json": {
+      "sha256": "4bd993487cfeb991a9bff88cbf5320f6ed767099b45038b793545fb778eb584f",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/input_snapshot_receipt.json",
+      "source_sha256": "1407e7143148627a008b82541614d47cb59d735cd98b131a27b4dc3c880bda7a"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/independent_checks.csv": {
+      "sha256": "87443aea544a84080dec125492c1a3fd274f85f53174a2abb934ea5b1e2b5650",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/independent_checks.csv"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/validation_checks.csv": {
+      "sha256": "a4ac3ebcf55d2e03879f99e8685fb7f998d80377009c95653939fe3e2a1bc305",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/validation_checks.csv"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/participant_means.csv": {
+      "sha256": "71d92beb1374a7267cef2aa4bb33f54cc0ef02bb73769be1fdde180693d5896f",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/participant_means.csv"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/interpretation_pairs.csv": {
+      "sha256": "3231c549374f618016ea096a55abe654feff1659cfc2e84674998bf77280794d",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/interpretation_pairs.csv"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/snapshot_inputs.py": {
+      "sha256": "428e6d41382d08c60ccc4702dfdc1cdf3e3c64b18d5c33d83ed6e052c532303b",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/snapshot_inputs.py",
+      "source_sha256": "ed988527e1777606cd497a23d8eda6f2f01a21abfd1952f2fc431535f5ea40bb"
+    },
+    "analysis/RQ3/20261015-ch4-inference-adoption/receipt.json": {
+      "sha256": "984bc1c899acbad738b00a4863f3e7871c83fd44b6460e50e697bd0bf35eed8b",
+      "source": "analysis/RQ3/provisional/20261015-ch4-inference-adoption/receipt.json",
+      "source_sha256": "7580cc97db7f193052e9eb06d4e7a05e25b75d12694f0eaddd67cd43eaa93ac9"
+    },
+    "analysis/RQ3/20261016-compound-detection-outcomes/run_analysis.py": {
+      "sha256": "dd79d73209c7ffcf43059de045e96cd172b31a33f19d8db45c91e3d817dc685e",
+      "source": "analysis/RQ3/provisional/20261016-compound-detection-outcomes/run_analysis.py"
+    },
+    "analysis/RQ3/20261016-compound-detection-outcomes/retained_uncertainty.csv": {
+      "sha256": "1d9140d5c8357249398c2a9aedb1a6394720e19cfb2a326a267bcb2973965327",
+      "source": "analysis/RQ3/provisional/20261016-compound-detection-outcomes/retained_uncertainty.csv"
+    },
+    "analysis/RQ3/20261016-compound-detection-outcomes/retained_deletion_diagnostics.csv": {
+      "sha256": "4f13d01ab0ab81c0dd5e4ba0c634c3d4de057fbdb4fafa3203080e9fe0ada9bf",
+      "source": "analysis/RQ3/provisional/20261016-compound-detection-outcomes/retained_deletion_diagnostics.csv"
+    },
+    "analysis/RQ3/20261016-compound-detection-outcomes/scope_scores.csv": {
+      "sha256": "53a7407e8e75309ba96830fb05ce4c41ffc4a170a6e12c597f24fecb7bfb64b9",
+      "source": "analysis/RQ3/provisional/20261016-compound-detection-outcomes/scope_scores.csv"
+    },
+    "analysis/RQ3/20261016-compound-detection-outcomes/tests.csv": {
+      "sha256": "2597d02817cdcf4aba3dbc3d3e2e769d5d48c63492bff0e5888aff8d0c863417",
+      "source": "analysis/RQ3/provisional/20261016-compound-detection-outcomes/tests.csv"
+    },
+    "analysis/RQ3/20261016-compound-detection-outcomes/animation_scores.csv": {
+      "sha256": "7a2593c2c01890d0cdf547c4617dd264a3e4a340deb5727d0707d8041ca721dc",
+      "source": "analysis/RQ3/provisional/20261016-compound-detection-outcomes/animation_scores.csv"
+    },
+    "analysis/RQ3/20261016-compound-detection-outcomes/participant_means.csv": {
+      "sha256": "11cae5f712fc809a72b4b6f8b81c715dd64093883e9e67d79718dd867ac8bbf2",
+      "source": "analysis/RQ3/provisional/20261016-compound-detection-outcomes/participant_means.csv"
+    },
+    "analysis/RQ3/20261016-compound-detection-outcomes/receipt.json": {
+      "sha256": "c87ea75ebb94ac2d3734656cf962e0ab171d1ed51418532edddadb2e6651279a",
+      "source": "analysis/RQ3/provisional/20261016-compound-detection-outcomes/receipt.json",
+      "source_sha256": "e7501fd3ce449c2d360f36c471c4ebd8ed2fc2cbf1acf4c1b8e5619e9e18aaff"
+    },
+    "analysis/RQ3/20261022-exact-binomial-tables/run_analysis.py": {
+      "sha256": "87db999699d1c4a59e5bd54b6b6900da3506fb9101bfc7cd70555deec3e58086",
+      "source": "analysis/RQ3/provisional/20261022-exact-binomial-tables/run_analysis.py",
+      "source_sha256": "548543e20a4ebeb4bc464d5e9efa27a408a80daf25e85580aa784b7ebdeb8c54"
+    },
+    "analysis/RQ3/20261022-exact-binomial-tables/interpretation_categories.csv": {
+      "sha256": "00cc113f8ba67401c3dea81b414f823b02a396f4a49028d341c4568e8604967d",
+      "source": "analysis/RQ3/provisional/20261022-exact-binomial-tables/interpretation_categories.csv"
+    },
+    "analysis/RQ3/20261022-exact-binomial-tables/exact_intervals.csv": {
+      "sha256": "0b3990cbd90fa91c9872721d5144486ba593eb3a320c2c0406e02f74cefe0d14",
+      "source": "analysis/RQ3/provisional/20261022-exact-binomial-tables/exact_intervals.csv"
+    },
+    "analysis/RQ3/20261022-exact-binomial-tables/validation_receipt.json": {
+      "sha256": "cd2fad2cdd1bf32c39d5849e0a7edbcbf00e054c7cff3b5e81589bfb9ab7b6d6",
+      "source": "analysis/RQ3/provisional/20261022-exact-binomial-tables/validation_receipt.json",
+      "source_sha256": "269ed0e5ab591644af7425452bb21b1d220b6182e7b85d2b8b1e03357b7beba6"
+    },
+    "analysis/RQ1/statistical-tests/20261015-ch4-inference-adoption/input.csv": {
+      "sha256": "725738b6f203739d684be5d494d0966c9bcb73adc8de91fe7b725acea5e278f0",
+      "source": "analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/input.csv"
+    },
+    "analysis/RQ1/statistical-tests/20261015-ch4-inference-adoption/run_analysis.py": {
+      "sha256": "70e617c3c552f239139a2e45eb1b81a040de88c3e033dfc2bd19824c2e6969ca",
+      "source": "analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/run_analysis.py",
+      "source_sha256": "ca6299155844dc0637c2b6b6ebbb4ce66d13e2adcc24d56c4766420d67eff4b2"
+    },
+    "analysis/RQ1/statistical-tests/20261015-ch4-inference-adoption/within_animation_detection.csv": {
+      "sha256": "f71947cb9fe1e6cbf8cedc7cf5e9a0d01f541d22d243fc633b36344f1cd0edb8",
+      "source": "analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/within_animation_detection.csv"
+    },
+    "analysis/RQ1/statistical-tests/20261015-ch4-inference-adoption/validation_checks.csv": {
+      "sha256": "a4ac3ebcf55d2e03879f99e8685fb7f998d80377009c95653939fe3e2a1bc305",
+      "source": "analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/validation_checks.csv"
+    },
+    "analysis/RQ1/statistical-tests/20261015-ch4-inference-adoption/pooled_detection.csv": {
+      "sha256": "05b9c71ca8ff7fcb3a56fee72302a46cbd49e296980fd8be2808f108b2e9a7c2",
+      "source": "analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/pooled_detection.csv"
+    },
+    "analysis/RQ1/statistical-tests/20261015-ch4-inference-adoption/receipt.json": {
+      "sha256": "e65890bf100ce1424d5c8e042a6527cadfc68e1d321d8188189cd33677724e62",
+      "source": "analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/receipt.json",
+      "source_sha256": "38fa58ee3d68336979b7ee18c051c54ace12ba74271693d71bfbf0f4c3d9ff8e"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/R_session_info.txt": {
+      "sha256": "100fd34562c5f20c499493e6ec06a3fc82197c03c57174ba124156a171c19f93",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/R_session_info.txt"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/input.csv": {
+      "sha256": "0986275159ad327d826bf684329af47a96ca26bad8705e79f58c23a554b3eac5",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/input.csv"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/ordinal_fit.rds": {
+      "sha256": "090090167c5fd732ee0f3e5b9899eeb7b1edbbd1f9da5f03aa246bdf085b9b0f",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/ordinal_fit.rds"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/ordinal_contrasts.csv": {
+      "sha256": "584c23c8980c86f25197c79646418781205dc959c4ab54c2576a3bfa6b8eba4c",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/ordinal_contrasts.csv"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/rerun_confidence.R": {
+      "sha256": "80b200ed64ce02d5b8caa966c9e097aa6906c9b2a58a75a4b8c627f10ddbc0ad",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/rerun_confidence.R",
+      "source_sha256": "0ae35aac54e2ce622f6b24126fab53dbd916f239024d7ecdd91b6fdf10a1c6cf"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/pooled_accuracy.csv": {
+      "sha256": "0c0dfcd9ece7595f7172a2144134a72ebc624612139d5484956ac16b20456d76",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/pooled_accuracy.csv"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/R_stdout.txt": {
+      "sha256": "d76025a656a363360cc2155b5660c7df4cacdd34834ed0418578f13eb0d8b475",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/R_stdout.txt"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/validation_checks.csv": {
+      "sha256": "a4ac3ebcf55d2e03879f99e8685fb7f998d80377009c95653939fe3e2a1bc305",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/validation_checks.csv"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/mean_confidence_tests.csv": {
+      "sha256": "320535e918346bd42aeec16998cb97542bff0c3726466f38ff451d254a9a73b3",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/mean_confidence_tests.csv"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/confidence_family15.csv": {
+      "sha256": "5872f5a58f48a50ebe63d62ec586f8d04e4e0904a8baa80510e9338df32bdde6",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/confidence_family15.csv"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/within_condition_accuracy.csv": {
+      "sha256": "3c18ddf24f4636437215feda09d5a3c0dfed6feec8031323edf2ad2efc39d609",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/within_condition_accuracy.csv"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/ordinal_fit_diagnostics.txt": {
+      "sha256": "0e98c9030efe37d43640ce6dacf58f2f80e96e8f30648be333ead49455488143",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/ordinal_fit_diagnostics.txt"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/receipt.json": {
+      "sha256": "0a5e17b279cc435331b169ddbfffcf7d46c7271799977ca433756ecd6ac11f1c",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/receipt.json",
+      "source_sha256": "8db449cadd859f8a52071a112e9e1013718d5fa7a87eb8e0414f3e70321df8a3"
+    },
+    "analysis/RQ2/statistical-tests/20261015-ch4-inference-adoption/R_stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/R_stderr.txt"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/paired_phase_comparison.csv": {
+      "sha256": "608a51aa267e3a01fef99a6b45a2c647eb8d4d5922fbb9d509eb15cfc6f255bc",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/paired_phase_comparison.csv"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/run_analysis.py": {
+      "sha256": "875ada107b2f72aca6361a5f9cfe01c7caee6e878f00a3e75833085f6946ab61",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/run_analysis.py"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/condition_summary.csv": {
+      "sha256": "2f7614e249dab7873ac38003e9d70a3ef3ba3af8433b40cf7ba4513eb4a386c1",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/condition_summary.csv"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/figure-4-5-comparison.csv": {
+      "sha256": "ee2cdcd54e6e99fe0fd958ba32d4f97a93fa71f70c16daba1f9b1836f41fcce3",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/figure-4-5-comparison.csv"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/render_figure.py": {
+      "sha256": "55c7b9c3eacfabd52baf3155eac4e99c1d84d5d7132b1b958a9c874427b7ede4",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/render_figure.py",
+      "source_sha256": "134a0b26534805a894d5cb44c0b2e854c7677ea049e38fd0405fa950edce3927"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/paired_phase_summary.csv": {
+      "sha256": "9548dbaf18a11eed9bf467377c4b6df5348cad49d6edcf128c7780b113a2dc99",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/paired_phase_summary.csv"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/figure_validation.json": {
+      "sha256": "fdc92d57a995f8e68efeef15e02a7dca34c95630b012a59284aab02ff0d926cd",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/figure_validation.json",
+      "source_sha256": "fba68a439a1a1a038e2e093761f56456ab77a0585a676bd4a26720b54843011d"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/whole_trial_measures.csv": {
+      "sha256": "0a74624c077bc6fbb7d791047165f8dc07308b6b469e49b066c9cfaa1d23dfd6",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/whole_trial_measures.csv"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/document_validation.json": {
+      "sha256": "0e1a410fe1a234c37995cac1d36fb4800970ba87bc580aff9e07a5c712ec2bd0",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/document_validation.json",
+      "source_sha256": "982cbbd4d672a0fe3f4732c6cb672aac99dac980de33963a32d35e4de87e4dc3"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/whole_trial_condition_summary.csv": {
+      "sha256": "38c2377750c5a239c46f72bbc0deeb434556227871ed2d5da6ef8b6c79bca63e",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/whole_trial_condition_summary.csv"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/validation_checks.csv": {
+      "sha256": "7d16d8d1510f67d23d0f7a0735bffffcfdf2d4656d81f889e584e439f79841b3",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/validation_checks.csv"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/caption.txt": {
+      "sha256": "093ea4d868463c54b3a6d50703dcdeb4426a0a7f36326dff252d0caaebc8e91c",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/caption.txt"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/window_measures.csv": {
+      "sha256": "12277999c6afd38a97e0728f22b2eaf8267bf6f3868f3b03df33a40b70051fba",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/window_measures.csv"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/validation_receipt.json": {
+      "sha256": "531c64a93cf7342f6702fa2c93162018247a001598af09e93dddc803f4acdbc8",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/validation_receipt.json",
+      "source_sha256": "0aebc652afeb388fc880296def00618c267ef19313da29e2248295a423391a59"
+    },
+    "analysis/RQ1/20261022-contact-frequency-update/whole_trial_group_summary.csv": {
+      "sha256": "e348253212a91aaa6a02e0d563aa738c78bf6463e3f53242735539385485e183",
+      "source": "analysis/RQ1/provisional/20261022-contact-frequency-update/whole_trial_group_summary.csv"
+    },
+    "analysis/RQ1/20261022-lane-distance-summary/run_analysis.py": {
+      "sha256": "1004375264de4753bd78157a3e389f7112f71d06f78efd03b444466ef5653560",
+      "source": "analysis/RQ1/provisional/20261022-lane-distance-summary/run_analysis.py",
+      "source_sha256": "e4585c34b88aae7a0e17fd33d22f52e9bf95b2d40e106d3c6f429bbb5164cfd4"
+    },
+    "analysis/RQ1/20261022-lane-distance-summary/source_checks.csv": {
+      "sha256": "e1e435d1fc357f04bcdf876125854290d28e4ce4374e93f3d0701c236f4b3511",
+      "source": "analysis/RQ1/provisional/20261022-lane-distance-summary/source_checks.csv"
+    },
+    "analysis/RQ1/20261022-lane-distance-summary/validation_receipt.json": {
+      "sha256": "677d9bb01dc487e2a5efe51429e12bf92a27ef751b7326e14b5a61f8e1c00b07",
+      "source": "analysis/RQ1/provisional/20261022-lane-distance-summary/validation_receipt.json",
+      "source_sha256": "d2481d9ed71778830b83e9aee0dd2644ca4a61ca315fdf674fc975cf38537079"
+    },
+    "analysis/RQ1/20261022-lane-distance-summary/group_summary.csv": {
+      "sha256": "e8efbbdbd504e408739b7dded6831826d7d19cdc7445ee1ed9ddb1078b645929",
+      "source": "analysis/RQ1/provisional/20261022-lane-distance-summary/group_summary.csv"
+    },
+    "analysis/RQ1/20261022-lane-distance-summary/trial_window_measures.csv": {
+      "sha256": "99e09bbf866f5b60cb95ec68c5362c22df21f7e44f8b80b240b7c86c26977342",
+      "source": "analysis/RQ1/provisional/20261022-lane-distance-summary/trial_window_measures.csv"
+    },
+    "analysis/RQ3/coding/full-corpus-inclusion-receipt.json": {
+      "sha256": "e98b0e43e2963c4ac4c36c0ed7150bf88ef14749967ef5006a0073380521ab9b",
+      "source": "analysis/RQ3/provisional/coding/full-corpus-inclusion-receipt.json"
+    },
+    "analysis/RQ3/coding/full-corpus-summary.json": {
+      "sha256": "cc70e2ffadc0b7110bedc0e874f9c3bd994ec73a2788d338d9da108c6110356f",
+      "source": "analysis/RQ3/provisional/coding/full-corpus-summary.json"
+    },
+    "analysis/RQ3/coding/full-corpus-report-values.json": {
+      "sha256": "c98ba0469b80fe1e51d55ca8a010f44e92f622ae8e50c4194111c40434f9db3a",
+      "source": "analysis/RQ3/provisional/coding/full-corpus-report-values.json"
+    },
+    "analysis/RQ3/coding/full-corpus-code-evidence.csv": {
+      "sha256": "7ee182b4b8c46e6d01ce6640ad7d9f3cfc9b5a0aa9b03487353a4edd3372ac27",
+      "source": "analysis/RQ3/provisional/coding/full-corpus-code-evidence.csv"
+    },
+    "analysis/RQ3/coding/build_full_corpus.py": {
+      "sha256": "3c5856b73464b2fa38dcc6dd0d63ebd61895174e65a5c89fa237eaf27153a6a3",
+      "source": "analysis/RQ3/provisional/coding/build_full_corpus.py",
+      "source_sha256": "b3e5006e73a358b5f24b0d248e366dbef3006032773bb0b8019499de6e757d24"
+    },
+    "analysis/RQ3/coding/full-corpus-trial-codes.csv": {
+      "sha256": "29ea01e45a7fef9953edee664c331562f3ce27397ae1fe19cdafa1beb7bab89e",
+      "source": "analysis/RQ3/provisional/coding/full-corpus-trial-codes.csv"
+    },
+    "analysis/RQ3/coding/full-corpus-source-manifest.csv": {
+      "sha256": "340988c89240b7cf3885cee5f228361a6ff125af3aa6f2fc7e841108b4d576e3",
+      "source": "analysis/RQ3/provisional/coding/full-corpus-source-manifest.csv"
+    },
+    "analysis/RQ3/coding/full-corpus-validation.json": {
+      "sha256": "eda0f7ea1cac43fa8722a6131c04c5dcc8489acc6068f46791ec91880031b4eb",
+      "source": "analysis/RQ3/provisional/coding/full-corpus-validation.json"
+    },
+    "analysis/additional-measures/20261009-results-revision/run_analysis.py": {
+      "sha256": "0dc68650fcfeddb209b98a6316bceb7a6fe868915c13b4c15e8c855beafdf562",
+      "source": "analysis/additional-measures/provisional/20261009-results-revision/run_analysis.py",
+      "source_sha256": "cce72b81c05bcc83c62130be082e17678d6656219942914f728e2182c407930a"
+    },
+    "analysis/additional-measures/20261009-results-revision/settings.json": {
+      "sha256": "237f48add189bf86b820c0f82151293d79baa39086edb33d5b73727b6ae51e1d",
+      "source": "analysis/additional-measures/provisional/20261009-results-revision/settings.json"
+    },
+    "analysis/additional-measures/20261009-results-revision/trial_input.csv": {
+      "sha256": "d0a3f4ddf924ff4eae6cbe7f4e117aa34fe4b14fb2d82fb558271f0584e407cd",
+      "source": "analysis/additional-measures/provisional/20261009-results-revision/trial_input.csv"
+    },
+    "analysis/additional-measures/20261009-results-revision/nasa_descriptive.csv": {
+      "sha256": "195cf5fbb0972b2d7e8b944d158f072b67505b7633663aa0f161f688f211c375",
+      "source": "analysis/additional-measures/provisional/20261009-results-revision/nasa_descriptive.csv"
+    },
+    "analysis/additional-measures/20261009-results-revision/independent_validation.json": {
+      "sha256": "a4d92d2f087468e8318dca641d8b6cbd860d05b4ae1f580912ec2cd4c43c480f",
+      "source": "analysis/additional-measures/provisional/20261009-results-revision/independent_validation.json"
+    },
+    "analysis/additional-measures/20261009-results-revision/ueq_summary.csv": {
+      "sha256": "8adda4e7d9aaf5e8e9d270d870dfb3fd6c9ee491c1ff9e5ea52b294e597cfa1d",
+      "source": "analysis/additional-measures/provisional/20261009-results-revision/ueq_summary.csv"
+    },
+    "analysis/additional-measures/20261009-results-revision/ueq_participant_scores.csv": {
+      "sha256": "e9c11f5ce16c1beec18a5ae5393e63f3cb50ec6c6e27d0dd930fb4930ad0002f",
+      "source": "analysis/additional-measures/provisional/20261009-results-revision/ueq_participant_scores.csv"
+    },
+    "analysis/additional-measures/20261009-results-revision/independent_checks.csv": {
+      "sha256": "f589054e1df8fb6487043c0bedca611f2badca981957c9d960ea950cff28a1d2",
+      "source": "analysis/additional-measures/provisional/20261009-results-revision/independent_checks.csv"
+    },
+    "analysis/additional-measures/20261009-results-revision/validation_checks.csv": {
+      "sha256": "2543e177453c70b600eb6c5f4d4d4fdbddbff20a4effc925a23530d754e8ea56",
+      "source": "analysis/additional-measures/provisional/20261009-results-revision/validation_checks.csv"
+    },
+    "analysis/additional-measures/20261009-results-revision/receipt.json": {
+      "sha256": "d05ddf254d97ae49a9b4b42d2dfd5c40c0b9e6fc938cb3dc5549c048ec32caaf",
+      "source": "analysis/additional-measures/provisional/20261009-results-revision/receipt.json",
+      "source_sha256": "8fe9df6cd7c268531226768fbfbd39397717cc036f445fad527cf72ee81d576b"
+    },
+    "analysis/additional-measures/additional-measures-final.html": {
+      "sha256": "f184aa0b595fce65020d2072ef0b8757c1c6476dd6334503632e23301d993e84",
+      "source": "analysis/additional-measures/approved/additional-measures-final.html",
+      "source_sha256": "d72148ee77e16698069de389593c144558fe50adc0b083bb828d6d55c30c8c25"
+    },
+    "analysis/RQ3/20261008-nt-cross-rq/run_analysis.py": {
+      "sha256": "f12064f7ec378c7407946f8f709ef4e83e187e48850775c97edce0b0da8104d2",
+      "source": "analysis/RQ3/provisional/20261008-nt-cross-rq/run_analysis.py",
+      "source_sha256": "45f1a08470a704866abd28545d44a9ab4c8dc49ffbcca4c99d5babc73d405962"
+    },
+    "analysis/RQ3/20261008-nt-cross-rq/settings.json": {
+      "sha256": "579f055dd0b5d4c7c0539b4a1331194c44fb0aa002d19ea956118c51265f6ecd",
+      "source": "analysis/RQ3/provisional/20261008-nt-cross-rq/settings.json"
+    },
+    "analysis/RQ3/20261008-nt-cross-rq/input.csv": {
+      "sha256": "edcf634b84377cf38e8f99658e34c909b8b86010a4a2720dd01c33e7b6723f97",
+      "source": "analysis/RQ3/provisional/20261008-nt-cross-rq/input.csv"
+    },
+    "analysis/RQ3/20261008-combined-detection-confidence/run_analysis.py": {
+      "sha256": "28045280862702f9c736dcfbc6784dbb54ff7f3dbf0f42190c7d5ac8ae957ca1",
+      "source": "analysis/RQ3/provisional/20261008-combined-detection-confidence/run_analysis.py",
+      "source_sha256": "775cb73c093727da7c1d9e95dbbc586cf7d9c39a923fdda1a21ed462eca3d149"
+    },
+    "analysis/RQ3/20261008-combined-detection-confidence/input.csv": {
+      "sha256": "6fa2f2e338df617238185f5dbf210c2060210ff85abbce83c2ca049fcc0d065c",
+      "source": "analysis/RQ3/provisional/20261008-combined-detection-confidence/input.csv"
+    },
+    "analysis/RQ3/20261008-combined-detection-confidence/tests.csv": {
+      "sha256": "94775dcc3d30557f1a82fbe6ce73cef9e99f4e097a5a5d2a0a51677b68b92c3e",
+      "source": "analysis/RQ3/provisional/20261008-combined-detection-confidence/tests.csv"
+    },
+    "analysis/RQ3/20261008-combined-detection-confidence/receipt.json": {
+      "sha256": "23b6d0008522500782c8073c7b59b7aaf8f19a857aaa57c9ada0df25fd5d5950",
+      "source": "analysis/RQ3/provisional/20261008-combined-detection-confidence/receipt.json",
+      "source_sha256": "9ce50e452d41e914dfb7111fa77bae637afa0cb7438b6dc239fdbddc6b968b0a"
+    },
+    "analysis/RQ3/20261014-three-scope-outcome-comparisons/input.csv": {
+      "sha256": "edcf634b84377cf38e8f99658e34c909b8b86010a4a2720dd01c33e7b6723f97",
+      "source": "analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/input.csv"
+    },
+    "analysis/RQ3/20261014-three-scope-outcome-comparisons/tests.csv": {
+      "sha256": "c672e606780a67723bc9e9682e82a7a66fee7296e30f93523e96da3f78ce11fc",
+      "source": "analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/tests.csv"
+    },
+    "analysis/RQ3/20261015-interpretation-binary-score/pairwise_tests.csv": {
+      "sha256": "adcbf23d9004b5249df737bbfc839e3b64c610ad590193c6e20fd61f20e0339a",
+      "source": "analysis/RQ3/provisional/20261015-interpretation-binary-score/pairwise_tests.csv"
+    },
+    "analysis/RQ3/20261014-mean-score-comparisons/within_scope_tests.csv": {
+      "sha256": "1d9140d5c8357249398c2a9aedb1a6394720e19cfb2a326a267bcb2973965327",
+      "source": "analysis/RQ3/provisional/20261014-mean-score-comparisons/within_scope_tests.csv"
+    },
+    "analysis/RQ3/20261014-mean-score-comparisons/within_leave_one_out.csv": {
+      "sha256": "4f13d01ab0ab81c0dd5e4ba0c634c3d4de057fbdb4fafa3203080e9fe0ada9bf",
+      "source": "analysis/RQ3/provisional/20261014-mean-score-comparisons/within_leave_one_out.csv"
+    },
+    "analysis/RQ1/statistical-tests/exact-mcnemar/tables/results.csv": {
+      "sha256": "32d9691374c5024272e6e2ddf612d9770b61d50f4354b2abc5d7a3c3cd42dafb",
+      "source": "analysis/RQ1/provisional/statistical-tests/exact-mcnemar/tables/results.csv"
+    },
+    "analysis/RQ2/statistical-tests/20261009-within-animation-confidence/expanded_family15.csv": {
+      "sha256": "59c316bd9e3307b0ebc7fe6f70e97484aee74643757e3a71a274fe11362745c1",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/expanded_family15.csv"
+    },
+    "analysis/RQ1/20261003-ambient-contacts/run_analysis.py": {
+      "sha256": "a061bb3a768057be2425142a58a5805a95e48588a2c2df48b2b753745977a661",
+      "source": "analysis/RQ1/provisional/20261003-ambient-contacts/run_analysis.py",
+      "source_sha256": "9e4f195cc1b323b56b9e4893d79a1ba942db273173ee5e823394973e3cdc1fcf"
+    },
+    "analysis/RQ1/20261003-ambient-contacts/window_measures.csv": {
+      "sha256": "2bbaaa3ceb0edbe0fbe73c75f3d4217455dbeeb8141fe2e85425d5c46879f068",
+      "source": "analysis/RQ1/provisional/20261003-ambient-contacts/window_measures.csv"
+    },
+    "analysis/RQ1/20261003-ambient-contacts/condition_summary.csv": {
+      "sha256": "f50f27228082f21f330c3ffd3cc1bb42397ea229283877e82dfe31f741206c98",
+      "source": "analysis/RQ1/provisional/20261003-ambient-contacts/condition_summary.csv"
+    },
+    "analysis/RQ1/20261008-whole-trial-gaze-response/run_analysis.py": {
+      "sha256": "c0cdb81b19246667e0c1f3455a5dd858f175ddebe79cc7eeee2f0f7e00d28fc5",
+      "source": "analysis/RQ1/provisional/20261008-whole-trial-gaze-response/run_analysis.py",
+      "source_sha256": "c3068c90a35ab03b3c6709e835df08bb39c3142fd2b8d7dc5094340b901eb797"
+    },
+    "analysis/RQ1/20261008-whole-trial-gaze-response/trial_measures.csv": {
+      "sha256": "5d34528802068bbd5b6028584a60fe2a254b04ec7800ef08ba2965159a11115c",
+      "source": "analysis/RQ1/provisional/20261008-whole-trial-gaze-response/trial_measures.csv"
+    },
+    "analysis/RQ1/20261008-lane-distance/run_analysis.py": {
+      "sha256": "041449afc1586a718b7032b07733135a83f4051e0a3c6f1aeb977cfc505decff",
+      "source": "analysis/RQ1/provisional/20261008-lane-distance/run_analysis.py",
+      "source_sha256": "574d2f6c5c7e6b7d7d8b7ae1548fbf83546587a4561a718e95e559335ebc3cb3"
+    },
+    "analysis/RQ1/20261008-lane-distance/trial_measures.csv": {
+      "sha256": "d0981f98fe8198516a2fb2693605a6b53ff8cf99e0d8b281a1accb4e8ad00f34",
+      "source": "analysis/RQ1/provisional/20261008-lane-distance/trial_measures.csv"
+    },
+    "analysis/RQ1/20261008-lane-distance/group_summary.csv": {
+      "sha256": "d0dd15427485082e1fb0a713e09a9a1e44ce3ebacffe01db97a7ab54c536d5d4",
+      "source": "analysis/RQ1/provisional/20261008-lane-distance/group_summary.csv"
+    },
+    "analysis/additional-measures/nasa_tlx_summary.csv": {
+      "sha256": "764888d6e17a0af4c6422073bc0f6b653a6ef182456f13d8b15720e722267271",
+      "source": "analysis/additional-measures/approved/nasa_tlx_summary.csv"
+    },
+    "analysis/RQ2/statistical-tests/20261006-paired-correctness-binary-confidence/tables/sanitized_input.csv": {
+      "sha256": "7f0b2dc46e8034cc709a36e224ea373cef24aedf18ecc993c869724854907781",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/tables/sanitized_input.csv"
+    },
+    "analysis/RQ2/statistical-tests/20261006-paired-correctness-binary-confidence/receipts/independent_validation.json": {
+      "sha256": "e3827b9021d9207ac028ee0ab8fc154c48248bf9a5d2f7e7818bae2da7a1b4f3",
+      "source": "analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/receipts/independent_validation.json"
+    },
+    "analysis/RQ3/20261008-cross-rq-gaps/input.csv": {
+      "sha256": "ba396d0144bc05224f1ac8ad81ab5e3547ebf6a934f3ec46d480880db00c5101",
+      "source": "analysis/RQ3/provisional/20261008-cross-rq-gaps/input.csv"
+    },
+    "analysis/RQ3/20261007-cross-rq/settings.json": {
+      "sha256": "bf83a70b6a0ea19d43321ae36fb1415566dc051aad130650ae54d3add9abd3e5",
+      "source": "analysis/RQ3/provisional/20261007-cross-rq/settings.json"
+    },
+    "analysis/RQ1/response-tables/detection_summary.csv": {
+      "sha256": "0acd01abd1a978b5ba45acbec2fb8f4316be18006820d0515420b41f1e9a72fe",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/detection_summary.csv"
+    },
+    "analysis/RQ1/response-tables/detection_profiles.csv": {
+      "sha256": "e19ed1619e98c262f73a33a5d83ceb52119f7aa819af34c4b3acd0690b8c5426",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/detection_profiles.csv"
+    },
+    "analysis/RQ1/response-tables/nt_count_distribution.csv": {
+      "sha256": "9a902abaf290c5f8f57ecbecaec95237611db9ebd7efa9e2be186b35df24a3bc",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/nt_count_distribution.csv"
+    },
+    "analysis/RQ1/response-tables/reaction_time_summary.csv": {
+      "sha256": "bc27f4cfd08de7b63d63a4cc7fd11111fc7494e732b5f999c1678025d923a546",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/reaction_time_summary.csv"
+    },
+    "analysis/RQ1/response-tables/early_extra_prevalence.csv": {
+      "sha256": "5b72bfbbcc43e3ce5db3b03fa10594116ea507266a6475e81ba762cdb28eef77",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/early_extra_prevalence.csv"
+    },
+    "analysis/RQ1/response-tables/early_extra_profiles.csv": {
+      "sha256": "2dcb3769b9f05a717c9c6148db2e94046d26d4e4d9116ecb09700a20f9509098",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/early_extra_profiles.csv"
+    },
+    "analysis/RQ1/response-tables/nt_trigger_summary.csv": {
+      "sha256": "aebc567446e4e1b3981d85b15445a31e6412091c0e487d6bac934ee219755473",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/nt_trigger_summary.csv"
+    },
+    "analysis/RQ1/response-tables/nt_trial_counts.csv": {
+      "sha256": "e5632a0808d899c58d455d50bb43c115f18175d4f3e9751a6de4d69b3102d4b7",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/nt_trial_counts.csv"
+    },
+    "analysis/RQ1/response-tables/trigger_events.csv": {
+      "sha256": "2ff2f632cd10e297d1767dfff5e0c35b5a6259d6aab068fe8a111b3d4d0c7330",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/trigger_events.csv"
+    },
+    "analysis/RQ1/response-tables/gaze_events.csv": {
+      "sha256": "c991584c58ca4b39aed5391e72e048244e4116be035d156d00c0b4c2247ac347",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/gaze_events.csv"
+    },
+    "analysis/RQ1/response-tables/nt_gaze_trials.csv": {
+      "sha256": "f57829ae8a6ef6a804357111c438e0e14ba770e0c2bcf881602abe292da8ccba",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/nt_gaze_trials.csv"
+    },
+    "analysis/RQ1/response-tables/nt_gaze_summary.csv": {
+      "sha256": "5a1b06e1f9187a8e36e4534d563f61f3d960b791bb50034809f5453f6a991af0",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/nt_gaze_summary.csv"
+    },
+    "analysis/RQ1/response-tables/press_aligned_lane.csv": {
+      "sha256": "d62f1bb7a9735d3d7918b81c1ed3c70f75562cf1b085e37c2c9b9c79bfa95560",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/press_aligned_lane.csv"
+    },
+    "analysis/RQ1/response-tables/lane_summary.csv": {
+      "sha256": "4709c5fec2317ebb4169ca0f802c3d650d45808aebc6c0af7d4d20a3472484c9",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/lane_summary.csv"
+    },
+    "analysis/RQ1/response-tables/participant_trial_manifest.csv": {
+      "sha256": "5ff4565fd15bc73877def907ddde511aaa2b6d1fb55ed8865bbbb492a026c649",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/participant_trial_manifest.csv"
+    },
+    "analysis/RQ1/response-tables/animated_press_timing.csv": {
+      "sha256": "41c6e4d7dc84e0bdde61bde5923652ac4fbdba0539808037807a95e6251ce04f",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/animated_press_timing.csv"
+    },
+    "analysis/RQ1/response-tables/nt_press_times.csv": {
+      "sha256": "5a4480886797d635433c347c14d0dc20c41011e278cd64e6c47cd6c054d09670",
+      "source": "archive/RQ1/runs/20260914-revised-rq1/outputs/nt_press_times.csv"
+    },
+    "analysis/additional-measures/generate_questionnaire_figures.py": {
+      "sha256": "6d479fcfae84a074a7b2dae2ee569a6719e190662a9333db1a5a7a7a09d810bd",
+      "source": "analysis/additional-measures/approved/generate_questionnaire_figures.py",
+      "source_sha256": "e5b96f3f408144d97f7bff882eb8ad48c0be8cb361907ea7aefd0f822c4515a7"
+    },
+    "overleaf/figures/ch2_bmw_panoramic_idrive.jpeg": {
+      "sha256": "36eb9d7ad2a88de1c900005a24ed0e484339bd27dabfd9194cd6c00ea40d55c9",
+      "source": "overleaf/figures/ch2_bmw_panoramic_idrive.jpeg"
+    },
+    "overleaf/figures/ch3_phud_reference.png": {
+      "sha256": "7086ea2d7e3fceed68664ead82b60142dd090c7f945a3584a50b691fb22d3119",
+      "source": "overleaf/figures/ch3_phud_reference.png"
+    },
+    "overleaf/figures/ch3_prototype_cockpit.png": {
+      "sha256": "c29758e3e7481a972a3bd754fd35566e833b20ef0b4a30428fcabf606ca737db",
+      "source": "overleaf/figures/ch3_prototype_cockpit.png"
+    },
+    "overleaf/figures/V1_01.png": {
+      "sha256": "6d419361ba1eccfd5f18c9cb32e4192527d3c6b2fd97796a870496089bdadd46",
+      "source": "overleaf/figures/V1_01.png"
+    },
+    "overleaf/figures/V1_02.png": {
+      "sha256": "da594b8d825e157dff341ef9b8ba1dddb7c70f2dcb52d42c03b8bcbc2041215c",
+      "source": "overleaf/figures/V1_02.png"
+    },
+    "overleaf/figures/V1_03.png": {
+      "sha256": "8f852563e42f494bef9f1ef026614c568407d1e8f25a05ad0093ac112415693f",
+      "source": "overleaf/figures/V1_03.png"
+    },
+    "overleaf/figures/V2_01.png": {
+      "sha256": "1b79bcc8e1a8dddb2ae5b0793927083c83bf2e11801846b1761303c34b566a00",
+      "source": "overleaf/figures/V2_01.png"
+    },
+    "overleaf/figures/V2_02.png": {
+      "sha256": "dbacd3172bbc52eed62633c17e20b2567106056f904f5cca89e13d25f7c4c044",
+      "source": "overleaf/figures/V2_02.png"
+    },
+    "overleaf/figures/V2_03.png": {
+      "sha256": "6061965f21ec32d69d3be5ebf21349182f7c8e6503819538663d6739d9575b7b",
+      "source": "overleaf/figures/V2_03.png"
+    },
+    "overleaf/figures/V3_01.png": {
+      "sha256": "cbc56a3a3fdfa36c6da369802a5919f6b432ffaebb4618f729b0ab77ca93df83",
+      "source": "overleaf/figures/V3_01.png"
+    },
+    "overleaf/figures/V3_02.png": {
+      "sha256": "cdb56cb209ae245b1a3f39f36a8e7c64d17b5376cfa289124524735846127e73",
+      "source": "overleaf/figures/V3_02.png"
+    },
+    "overleaf/figures/V3_03.png": {
+      "sha256": "fb8271571a566181c5fda6642d9383627a11b7a8a6f8803971503bb50fa0404d",
+      "source": "overleaf/figures/V3_03.png"
+    },
+    "overleaf/figures/NT.png": {
+      "sha256": "a24dc80ac8eae2eeef190a3c7fe2edce5c26c3c851edbbbf295fdd321995d08d",
+      "source": "overleaf/figures/NT.png"
+    },
+    "overleaf/figures/new.png": {
+      "sha256": "c0a82cbf798120a5e95b5d86383a3d56021ad7aead63a4c0d46651c649bafbd4",
+      "source": "overleaf/figures/new.png"
+    },
+    "overleaf/figures/ch3-simulator-setup-photos.png": {
+      "sha256": "95856e3c149733112944287a45d4728348ae25076fd1c6541d3d76bda26aca37",
+      "source": "overleaf/figures/ch3-simulator-setup-photos.png"
+    },
+    "overleaf/figures/study-overview-three-trial-rows.pdf": {
+      "sha256": "fa724e757ba0d4bc39984015555e880e68cea7514547933ed45e142d8aed2272",
+      "source": "overleaf/figures/study-overview-three-trial-rows.pdf"
+    },
+    "overleaf/figures/A_mean_scores_with_brackets.pdf": {
+      "sha256": "aabf6a48882b045aa3f80fa2eb61d9abc15a6c3a43b1381f5f7ba3093fe640f8",
+      "source": "overleaf/figures/A_mean_scores_with_brackets.pdf"
+    },
+    "overleaf/figures/animation_mean_scores.pdf": {
+      "sha256": "badbae7dd204a9b51caf19759eff079dfe6b4ddb1c754c4e6b568ba5755e7c64",
+      "source": "overleaf/figures/animation_mean_scores.pdf"
+    },
+    "overleaf/figures/table42_43_onset_completion_bars.pdf": {
+      "sha256": "064c2166ede542bf51a38e16b5f75cb00adf5b2448725e5afa726bac9c890a36",
+      "source": "overleaf/figures/table42_43_onset_completion_bars.pdf"
+    },
+    "overleaf/figures/ch4_display_looking_time_restyled.png": {
+      "sha256": "5b75179d84619700ed9e819a5af111cd33c64abf81e47aaa12ba1edf380a514c",
+      "source": "overleaf/figures/ch4_display_looking_time_restyled.png"
+    },
+    "overleaf/figures/figure_4_5_contacts_per_minute.pdf": {
+      "sha256": "3d8d8f9cb52ed3b9e3237eb3a428e77011725789d03fe06c140a5db89f386f79",
+      "source": "overleaf/figures/figure_4_5_contacts_per_minute.pdf"
+    },
+    "overleaf/figures/recognition_thesis_reordered.pdf": {
+      "sha256": "e062708cacd486aea90b5945e274c7e2d426dad6f6e762e7733183e8c370ec27",
+      "source": "overleaf/figures/recognition_thesis_reordered.pdf"
+    },
+    "overleaf/figures/workshop-template-crazy8.png": {
+      "sha256": "dd5673fe059183b6f708d0b9316c4c1955be763a811da70314dc5e9c1b93b175",
+      "source": "overleaf/figures/workshop-template-crazy8.png"
+    },
+    "overleaf/figures/workshop-template-scenario-canvas.png": {
+      "sha256": "f1711c8e72c5e5703ca9817f31cf91e6bb70f7ff963cce7a4918b3cb856dcb24",
+      "source": "overleaf/figures/workshop-template-scenario-canvas.png"
+    },
+    "overleaf/figures/workshop-group1-task1-crazy8.png": {
+      "sha256": "774bdb585aefc2e81a93807a9811b6e947413dd4475cd22ee92d0180770cc3c7",
+      "source": "overleaf/figures/workshop-group1-task1-crazy8.png"
+    },
+    "overleaf/figures/workshop-group4-task1-crazy8.png": {
+      "sha256": "1e87133060029f88221d59e516347b8f388125be2d5c238f7f57304a7f6c2882",
+      "source": "overleaf/figures/workshop-group4-task1-crazy8.png"
+    },
+    "overleaf/figures/workshop-group3-task2-selection.png": {
+      "sha256": "e7cbaf98e890d3502bac5ba20209979cf6e3a02bb3f3775a50602f408253e502",
+      "source": "overleaf/figures/workshop-group3-task2-selection.png"
+    },
+    "overleaf/figures/workshop-group4-task2-selection.png": {
+      "sha256": "63be1c294f79311861280a25e92254b069af4527c82e6ec2edd4a290eb1f5201",
+      "source": "overleaf/figures/workshop-group4-task2-selection.png"
+    },
+    "overleaf/figures/workshop-task4-artefact-01.png": {
+      "sha256": "a14ddfdf3d27a5210a5a77b8133cb381cea64be38ae4fb54ecd4f7fbb824cf29",
+      "source": "overleaf/figures/workshop-task4-artefact-01.png"
+    },
+    "overleaf/figures/workshop-task4-artefact-02.png": {
+      "sha256": "72760fe3be759746a8f611d2c38f99cd3679effb8cbed00ca32150f481ce4c4e",
+      "source": "overleaf/figures/workshop-task4-artefact-02.png"
+    },
+    "overleaf/figures/workshop-task4-artefact-03.png": {
+      "sha256": "98991600dbfc5cc52600d41cab14e7a17aa5bd544eb4a587b42ef567cbe6f629",
+      "source": "overleaf/figures/workshop-task4-artefact-03.png"
+    },
+    "overleaf/figures/workshop-task4-artefact-04.png": {
+      "sha256": "6a17e18f4979e9e82064a5e7c1f172d59cc731a75066f5c9df3bd954278030f9",
+      "source": "overleaf/figures/workshop-task4-artefact-04.png"
+    },
+    "overleaf/figures/ch3_protopie_ipad.png": {
+      "sha256": "fa023de41a9cf54a5e8fb29832d5c23154c2ae7dd5ae586cef9ce067052594a8",
+      "source": "overleaf/figures/ch3_protopie_ipad.png"
+    },
+    "overleaf/figures/ch3_protopie_iphone.png": {
+      "sha256": "9421dbe832faaff641077abe77484e1c420f58272b2764ce45a251650a011a31",
+      "source": "overleaf/figures/ch3_protopie_iphone.png"
+    },
+    "overleaf/examplethesis.tex": {
+      "sha256": "b581aa17eef16ca65691afa09ed9498b527e4f7fa567431b1e6179cde2c9f9be",
+      "source": "overleaf/examplethesis.tex"
+    },
+    "overleaf/examplethesis.ist": {
+      "sha256": "c64162f05bc77a3227ff7d9f1b165d9badf9eb6e168807d8b1a1fb30b0498f9d",
+      "source": "overleaf/examplethesis.ist"
+    },
+    "overleaf/kth_logo.png": {
+      "sha256": "caaa387360367ac798b593e2e2618991afd826d44d59af085ff1522ace365f51",
+      "source": "overleaf/kth_logo.png"
+    },
+    "overleaf/KTH_ROYAL_INSTITUTE_OF_TECHNOLOGY_logotype.png": {
+      "sha256": "a90771a7a2eff6674f1657f0ed766babce8ee164bd63016a1a98a20d53464cc6",
+      "source": "overleaf/KTH_ROYAL_INSTITUTE_OF_TECHNOLOGY_logotype.png"
+    },
+    "overleaf/references.bib": {
+      "sha256": "c930916913d1bdca00226a5fa06ad03531d4a34c3f2eabd3b85b38bfbe7924ed",
+      "source": "overleaf/references.bib"
+    },
+    "overleaf/KTH_logo_RGB_bla.png": {
+      "sha256": "9fafade5f8a410d1947a965751101a008cc5094c664c67f1b2c5ad8bd23cc4b2",
+      "source": "overleaf/KTH_logo_RGB_bla.png"
+    },
+    "overleaf/kththesis.cls": {
+      "sha256": "85495f542538548c9ec9d0c3cabe59b9ac699ac091cef6f588f356a9358af7a4",
+      "source": "overleaf/kththesis.cls"
+    },
+    "overleaf/Generate_titles_in_plain_text.tex": {
+      "sha256": "1fcc02c90dc2c16121b856c2a83e6df0bb6c9eb5a32797844f39f8a1613a2d12",
+      "source": "overleaf/Generate_titles_in_plain_text.tex"
+    },
+    "overleaf/hyperxmp.sty": {
+      "sha256": "d201042232c23af0ef9b8935510082c388265cb0a2c740650e9aebedc38107ad",
+      "source": "overleaf/hyperxmp.sty"
+    },
+    "overleaf/custom_configuration.tex": {
+      "sha256": "850c613c481e19ca99c57a35dd447b01a6fa7276396c19b1579664f638829800",
+      "source": "overleaf/custom_configuration.tex"
+    },
+    "overleaf/lib/includes-after-hyperref.tex": {
+      "sha256": "a0816f66a2cbf30858e483943a1b3812ef3a898692cb94bc2c016efeb490320d",
+      "source": "overleaf/lib/includes-after-hyperref.tex"
+    },
+    "overleaf/lib/acronyms.tex": {
+      "sha256": "6966153c7671af18fc2f79d9b146b64668c8d77d2ca59d47309f1e148d0fb5dd",
+      "source": "overleaf/lib/acronyms.tex"
+    },
+    "overleaf/lib/schools_and_programs.ins": {
+      "sha256": "79bad2ef666e87a4f23c71e33390fb5244e9f3c9204f14207f7d33f6ddfdf5d9",
+      "source": "overleaf/lib/schools_and_programs.ins"
+    },
+    "overleaf/lib/defines.tex": {
+      "sha256": "f46179113c81d150ada7762cec365cf4ab44a739b57b2a15e9f6bf1244c4915d",
+      "source": "overleaf/lib/defines.tex"
+    },
+    "overleaf/lib/kthcolors.tex": {
+      "sha256": "1484e6c1de4144eb60bdbbebaefe67dc4980f523db2a17b71b47e21d0a39ba6e",
+      "source": "overleaf/lib/kthcolors.tex"
+    },
+    "overleaf/lib/placeHolder_lbx_files.tex": {
+      "sha256": "12c1ffe9f8895bc36caec5517a6d72b146615cf3497cc862a6bc5c1e96b59b97",
+      "source": "overleaf/lib/placeHolder_lbx_files.tex"
+    },
+    "overleaf/lib/includes.tex": {
+      "sha256": "85591cb216a961726901a75413e25953a31f6d0d25f8b52982004664fd10fe8b",
+      "source": "overleaf/lib/includes.tex"
+    },
+    "overleaf/lib/pdf_related_includes.tex": {
+      "sha256": "1607da64b06546451909b1d31e1ec1a7c2e8063b9305f6effa58c3a2223f10f4",
+      "source": "overleaf/lib/pdf_related_includes.tex"
+    },
+    "overleaf/lib/acronyms-for-pdflatex.tex": {
+      "sha256": "091ad90f07daca759e6b139bbef8ae12886c8642af1e7f9fe014dfaa70dfce76",
+      "source": "overleaf/lib/acronyms-for-pdflatex.tex"
+    },
+    "overleaf/kth/kth-commands.tex": {
+      "sha256": "122ede950c39cb8915e1d4f92065712c885341751a94447c5804229fda66d849",
+      "source": "overleaf/kth/kth-commands.tex"
+    },
+    "overleaf/kth/kth-packages.tex": {
+      "sha256": "1af4baa8243e75394cbf025f1aecb06228386491888a4a51c6c042dea6ec071d",
+      "source": "overleaf/kth/kth-packages.tex"
+    },
+    "overleaf/kth/kth-sanity-checks.tex": {
+      "sha256": "a443556991eb4a9c878622bc3cd6f139731a41b33e0f9691ca61982403c5103c",
+      "source": "overleaf/kth/kth-sanity-checks.tex"
+    },
+    "overleaf/kth/kth-layout.tex": {
+      "sha256": "d1938baeaf261ef70c98e51aeaa55846e347aabe4cc99355df301e18f26f9b42",
+      "source": "overleaf/kth/kth-layout.tex"
+    },
+    "overleaf/kth/kth-fonts.tex": {
+      "sha256": "d1a4f78cb10f39c1040187b4c6660e624d5b4edb37ec94115e961020ea713847",
+      "source": "overleaf/kth/kth-fonts.tex"
+    },
+    "overleaf/bibstyle/myIEEEtran.bst": {
+      "sha256": "9a87e829c2d532079eda7db8e1af05b413504a99100690a2769cb65eab568f0a",
+      "source": "overleaf/bibstyle/myIEEEtran.bst"
+    },
+    "overleaf/data/results-curation/20261018-gaze-outcome-receipt.json": {
+      "sha256": "a83809464bcc92e0875eec055c312ae92617172e9ffb2dc9a1df211cd33ce45a",
+      "source": "overleaf/data/results-curation/20261018-gaze-outcome-receipt.json",
+      "source_sha256": "7a36ef95e087f1f320e38182c1999f17df8a6461c1393f2a8d182305922ba648"
+    },
+    "overleaf/data/results-curation/detection-mcnemar.csv": {
+      "sha256": "32d9691374c5024272e6e2ddf612d9770b61d50f4354b2abc5d7a3c3cd42dafb",
+      "source": "overleaf/data/results-curation/detection-mcnemar.csv"
+    },
+    "overleaf/data/results-curation/20261018-gaze-outcome-summaries.csv": {
+      "sha256": "c9372411681e0670b46aa2e4e63b12353495a102d71ba190ad555016a5187986",
+      "source": "overleaf/data/results-curation/20261018-gaze-outcome-summaries.csv"
+    },
+    "overleaf/data/results-curation/20261015-detection-scores-figure.py": {
+      "sha256": "93ee4b96af81ffd4465897dbebb67ad0d553039f86dbdb84966984b6fa0bae28",
+      "source": "overleaf/data/results-curation/20261015-detection-scores-figure.py"
+    },
+    "overleaf/data/results-curation/20261018-gaze-outcome-inputs.csv": {
+      "sha256": "8ed0598007ab0aefc1828ce6d6a91e50c6cbe066b1c6afd7b779cdddee1fc486",
+      "source": "overleaf/data/results-curation/20261018-gaze-outcome-inputs.csv"
+    },
+    "overleaf/data/results-curation/20261018-gaze-figure-reference.csv": {
+      "sha256": "6912c29f78a703d739424b89fa13e8349131479b08dba128786692fd31f10587",
+      "source": "overleaf/data/results-curation/20261018-gaze-figure-reference.csv"
+    },
+    "overleaf/data/results-curation/20261015-detection-score-publication.json": {
+      "sha256": "e1fe8378d8cdf144d831ec2a815f5436c781aa8081e83843edce8586c4d22a4c",
+      "source": "overleaf/data/results-curation/20261015-detection-score-publication.json"
+    },
+    "overleaf/data/results-curation/20261014-reaction-time-summary.csv": {
+      "sha256": "bc27f4cfd08de7b63d63a4cc7fd11111fc7494e732b5f999c1678025d923a546",
+      "source": "overleaf/data/results-curation/20261014-reaction-time-summary.csv"
+    },
+    "overleaf/data/results-curation/20261018-gaze-outcome-tables.py": {
+      "sha256": "fa74be6d93323d827b0df1d658bf0ab0bfdf4820f928c5ef93609fcaeb242ae7",
+      "source": "overleaf/data/results-curation/20261018-gaze-outcome-tables.py",
+      "source_sha256": "3d04768cda153bba7558760e4be10bea8e4ed25d86f992f10836f414c7abc5c2"
+    },
+    "references/archive-check.json": {
+      "sha256": "5c048215e502c5c1253c7204a9f63f5445ac41c2747641a583c9e62115bf0bba",
+      "source": "references/archive-check.json"
+    },
+    "references/cited-references.bib": {
+      "sha256": "5d1f5bc0d29b08ead0b2c6fcc075c186557b648b507c70cd319fe512cbb227fd",
+      "source": "references/cited-references.bib"
+    },
+    "references/cited-papers.zip": {
+      "sha256": "4ba146fd9ba0c3bfa09083f7b2aa2424cb0eb4009d92ee243871f2f9332147fc",
+      "source": "references/cited-papers.zip"
+    },
+    "references/manifest.json": {
+      "sha256": "8d414530cc8049a94367fec6216f330d8c2ab9de5f64e824a2395f6d5d13c150",
+      "source": "references/manifest.json"
+    }
+  },
+  "unavailable_requested_paths": [],
+  "active_codex_skills": [
+    "da-code",
+    "da-code-rules",
+    "da-explainer",
+    "da-numbers-apa",
+    "da-preprocessing",
+    "da-report",
+    "da-review",
+    "da-rq-contract",
+    "gen-adversarial-reviewer",
+    "gen-todo",
+    "humanizer",
+    "methodology-context",
+    "open-knowledge",
+    "overleaf-asset",
+    "overleaf-build-audit",
+    "overleaf-git-sync",
+    "overleaf-local-edit",
+    "overleaf-maintenance-audit",
+    "overleaf-review-ingest",
+    "prj-architecture",
+    "prj-change-audit",
+    "prj-local-asset",
+    "research-paper-writing",
+    "thesis-conventions",
+    "thesis-router",
+    "wr-abstract",
+    "wr-background",
+    "wr-conclusion",
+    "wr-discussion",
+    "wr-general",
+    "wr-introduction",
+    "wr-methodology",
+    "wr-results",
+    "zotero-maintenance"
+  ],
+  "skill_files": {
+    ".codex/skills/wr-abstract/SKILL.md": "2b415deb1997d3682772e120713d2c4a37b54cbefbeea3fe0c4d22bbe60993e9",
+    ".codex/skills/wr-abstract/agents/openai.yaml": "f4ff73e9763e60c341ef7bf1135e8a799fcf31f9b217a54c5735cbbbbe7f5f75",
+    ".codex/skills/overleaf-git-sync/SKILL.md": "d54b1ed359658c566f95b478402ea8d2a687d052737b7b7b00b89239194d71ad",
+    ".codex/skills/overleaf-build-audit/SKILL.md": "23136c068fa105dc2c82537f0aaf497f5d21f1ad1da5750e6f3b31936f728f73",
+    ".codex/skills/da-review/SKILL.md": "56da1ac84e9893cab0f1efa5b03e7f49ac1e1e9787bfc658639ee2c7fe8e538b",
+    ".codex/skills/thesis-conventions/SKILL.md": "8527afd952bf2ba4b32647db5b1e06edaee67750b8cd3f8d89c794e47fc8ccbe",
+    ".codex/skills/wr-introduction/SKILL.md": "d03ddaf823062a3537c3e9c4f98fb1adf92f1d429c1680f073d7b7a95ea996c0",
+    ".codex/skills/wr-introduction/agents/openai.yaml": "b0ba3a0ac5160223136ad2a7baacd2a99d4c1d3ab82c10bfd418b7fc6be940c3",
+    ".codex/skills/wr-background/SKILL.md": "2c695b754051b99e68f08747c0d1b0075a8bc2737222fb42ee8f13cf34f8eb74",
+    ".codex/skills/wr-background/agents/openai.yaml": "2aa7b6539005e51968651702ca47c87f452d0f445ee08c16ab78d39aba9ff37a",
+    ".codex/skills/open-knowledge/SKILL.md": "db9b1fc31c54f86af1825d76cbf6f872192c404965eb6929fd52b4d3b32752eb",
+    ".codex/skills/open-knowledge/references/linking.md": "510d1cdc28cd523ef7b7d8d8f38dc4a0126db9d84f86aa628524763dc21e26f0",
+    ".codex/skills/open-knowledge/references/doc-editing.md": "be436b0998d9098131aee6379a6594cab7b6eadda2cbdbc6c643cbe243646084",
+    ".codex/skills/open-knowledge/references/cadence-and-logs.md": "f33d49b5668365a3960e21fd1a70d53631ac27cdc1c670a9b012473d777725ea",
+    ".codex/skills/open-knowledge/references/setup.md": "e0e1586cb6e2314c18a04e8b0c507d853827a6f9fa11a104905030d2bda6477f",
+    ".codex/skills/open-knowledge/references/corpus-qa.md": "8c840694f5ceca7244eda403b3815763f94fcbbfe5ea83260715fbffc7060ddf",
+    ".codex/skills/open-knowledge/references/components-and-visuals.md": "7e42e6fd115f2e404a010cc97e3a5ff1b383fc53c50ec9c3e6665fcfa5e1b9f7",
+    ".codex/skills/open-knowledge/references/conflict-resolution.md": "50461feddbc5f498dc12fd1d39af1135a37c5651e4e8d2b0156f94e46dc88fdc",
+    ".codex/skills/open-knowledge/references/media-and-assets.md": "961adaaa7b87d1de14b3165ca796d6a1bfceb24ca9b92e44940ad35ca6520ee6",
+    ".codex/skills/open-knowledge/references/ingest-and-sources.md": "0c86aa76c1d6de319389278b85db66b2f659b8b99651d105da284287db201328",
+    ".codex/skills/open-knowledge/references/writing.md": "1a244f66d296d483ab290f95a1fe038e00c02ce6486d7beb81bb2e7056b2bdb7",
+    ".codex/skills/open-knowledge/references/template-authoring.md": "3a1ee7581e924a889df836a511d2fbf2152ebcae5fd9bff0c29324e2ab26151e",
+    ".codex/skills/open-knowledge/references/preview.md": "d81aa8202ebf998d09a25eaac63843ca1e9cbabe4421030ef48b40952a720454",
+    ".codex/skills/open-knowledge/references/anti-patterns.md": "9a1436fa18414ca34ee78531dde1b1718f3284baefb6e7904cb65e0b38cd8651",
+    ".codex/skills/open-knowledge/references/onboard-existing-repo.md": "30cf63dd877f2939f98a9ea680ae2b97e72a88e47842033ae585329bb2d973ed",
+    ".codex/skills/open-knowledge/references/starter-packs.md": "b211ce2f5fe2a5c9733b487bdaab6258d2669926f72bb2f165130f8478e86ddc",
+    ".codex/skills/open-knowledge/references/folder-model.md": "c9475a875a48ca5fef3e075a6d94aacde60e1849b58d4dfb624563a61105d040",
+    ".codex/skills/zotero-maintenance/SKILL.md": "ad9e650cc24f8cb2c83e439ca26a94877ab8b69c2b52e136bc9e04d5b9cba3f3",
+    ".codex/skills/zotero-maintenance/agents/openai.yaml": "154d8209c208880a389db9e494a51038ead2e0aff3e7917d9b13f4bbfb121122",
+    ".codex/skills/da-code/SKILL.md": "1ebc1df8e1a429a8280597fb685707b08a65d1a5d82aabc6cc777487e1c4ebcd",
+    ".codex/skills/da-code/agents/openai.yaml": "58ffa6325843423953773ceb02ea4e6481e7db51119fcb7e74dd0745b6ff6e5f",
+    ".codex/skills/methodology-context/SKILL.md": "edf01ad48a355d17a380157b6ae08fbd41687604bddbe4339cfe4bd6545d8e6a",
+    ".codex/skills/methodology-context/agents/openai.yaml": "9cc66642c6cdcc44ebffec89a16455cf7869bb4c12e691f00ba98b0a11a34e3a",
+    ".codex/skills/wr-results/SKILL.md": "c6bc4d4cc6c52d3aa2d8dbd4aa797acc03793ed81950ce919fe6a50f341046f6",
+    ".codex/skills/wr-results/agents/openai.yaml": "d0864955607551a617dd880a27f6c3788b69b7da8fce08f6efca041eedb4738a",
+    ".codex/skills/overleaf-asset/SKILL.md": "c4332044e6b2cf552ea9e52bbd17094cf3e9657bf099496f0d725aa4cdf0c11d",
+    ".codex/skills/overleaf-asset/agents/openai.yaml": "553af02f0c80dea363233e0b70b105359f3267eec822f82bad58c2481762e6dc",
+    ".codex/skills/da-code-rules/SKILL.md": "afdf7842dee73790851a92ec003f8d22f17aa0c5a7b10ba17eb6770aa72984bf",
+    ".codex/skills/overleaf-maintenance-audit/SKILL.md": "74dc5c58700868d1dc2c262d0641ebfb834c48c4c8a4359b0afc8dfb566d47de",
+    ".codex/skills/overleaf-maintenance-audit/agents/openai.yaml": "60fbefd6869393bafc93cb381ffdf1b6ae137cc0823d365e0d7f6849903d9f41",
+    ".codex/skills/prj-change-audit/SKILL.md": "b9d98a97f268660e88a9799b7276a05fad25053079ce03f56b8aca2a46819555",
+    ".codex/skills/da-report/SKILL.md": "583521e98bd94b72bf7eae1ded406c7b8bd4db1870e3355cdaaa37ceffc9e4a5",
+    ".codex/skills/da-report/agents/openai.yaml": "ca6effc3d809925ca06a554720419921a789cdc6a6b3d6aff07cdff16ced4ede",
+    ".codex/skills/prj-local-asset/SKILL.md": "303a611ca574b36e7a751d8fba40eeb8bd9dbd29ecf22ec4e27fbfeafcedb5e6",
+    ".codex/skills/prj-local-asset/agents/openai.yaml": "63796184f66fa71fb1ebf71b8e0444dc82147f2675f12b3fd1ed8bbd1bdb6e69",
+    ".codex/skills/overleaf-review-ingest/SKILL.md": "9a89b6ee291ed057e91355c6e33b39d0ba771984b60d8f6d5153768ab0ec4feb",
+    ".codex/skills/overleaf-review-ingest/scripts/extract_pdf_annotations.py": "29fbc13b2033339ce98922543a57ffc40c3f9dc30d4f732db3121c72d14374dd",
+    ".codex/skills/overleaf-local-edit/SKILL.md": "971b77e6acbee6de541aa8e6e1e04b86ce18e8be71ed60b1f103c73913d0c484",
+    ".codex/skills/thesis-router/SKILL.md": "6d62ce600896bb364049ce30cec2005ec95d164bca248792cfcb292745675f73",
+    ".codex/skills/thesis-router/references/project.md": "07a8269e0c321a70003e9bea2a58ee384704d683bc967f7b45f6e5197bb528ba",
+    ".codex/skills/thesis-router/references/analysis.md": "f8f5fee5ac940ac01a1d5cd1cea05b28a253f46391b3bf58b2920f83b520ec13",
+    ".codex/skills/thesis-router/references/writing.md": "95f8e25b64ceec149b7bd49bc3112687bf84eb4ff84a245521de9a66e78c28c9",
+    ".codex/skills/thesis-router/references/overleaf.md": "68cd16e9f40e3dd53a6736a7885f7bca33b0ff982e29a9b7cc85dbd0e4caa92b",
+    ".codex/skills/thesis-router/agents/openai.yaml": "b0e083a2e8fef71f54a06c594dcac50071f9aa491bab748270a4fd6420919938",
+    ".codex/skills/wr-general/SKILL.md": "6bf580def64aa2a15a2f26ff15a22002be6cee7315d7322f1c89b3f709fcfafd",
+    ".codex/skills/wr-general/references/source-map.md": "915fe8be3f2a9f9451113de868ac50f41c0ecc52c8e9287be2450a0b6d2e1726",
+    ".codex/skills/wr-general/references/study-results-wording.md": "df0805822ab117c6268bd0cd16cc51dbb90e10ff85de83a67a0cf1b6d43b474c",
+    ".codex/skills/wr-general/agents/openai.yaml": "d44494aa25dbac0a3f3d21aee294105e7601b2f298f442a8890baf5d3fa98e77",
+    ".codex/skills/wr-methodology/SKILL.md": "8c8174276acdc963de50a9519f9385bdddd6895ae6ddb2f89649f71f985fd0fd",
+    ".codex/skills/wr-methodology/agents/openai.yaml": "9eee6ec14dc28195c9a08af3f27f61ac1afe281ec2121fc4d4b6b94a5b7e644f",
+    ".codex/skills/da-explainer/SKILL.md": "d103aaa2d681078fd8ab4d3cc5b075d93a81d4fe9b8462a2140158ff81e8cea3",
+    ".codex/skills/da-rq-contract/SKILL.md": "6f7e2f5b314331ce475e284616525a696ad8f2f33141d4485d5c4de86dd4399b",
+    ".codex/skills/da-rq-contract/agents/openai.yaml": "89e82bf30b5d630b772d59b8d0a01d71623f5b63d3eb930ec6356f4f4fc3c5c2",
+    ".codex/skills/da-numbers-apa/SKILL.md": "6e54b034ebcb6be71b37095fc8bbe6c21420b6535d524f260552ccc53c82c4ad",
+    ".codex/skills/humanizer/LICENSE": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+    ".codex/skills/humanizer/CHANGELOG.md": "b3591fe203429f1a6bd2f713c79272e9a8e58a487843d0908d2bbe0700722afa",
+    ".codex/skills/humanizer/README.md": "a07a054f230dca1e3d25e32ba6c808905b743cc6fa56bf8b6868cee0b12a0432",
+    ".codex/skills/humanizer/SKILL.md": "5ddee8851d8773b77e9f3d4596f6f665267c3c599cbb214ad90c45cc9105ea48",
+    ".codex/skills/humanizer/AGENTS.md": "de84a449da400454df1225ddb1ced728c35bf0be7811b239e3370c7dbe1f4e69",
+    ".codex/skills/humanizer/.cursor-plugin/plugin.json": "d1e0b50594cf4bbe57fd164b771b401713a91b76b5a213ebe8f4558bb2036546",
+    ".codex/skills/humanizer/agents/openai.yaml": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736",
+    ".codex/skills/humanizer/scripts/validate-package.py": "97fbcc18f71471739a2e110fdcb644ea7ef232e7e214bbf0a4634e2d39692e3c",
+    ".codex/skills/humanizer/.claude-plugin/marketplace.json": "e539740285b660d2288a38b6d9b237396c6769828c671c46b9f91e760db6cc29",
+    ".codex/skills/humanizer/.claude-plugin/plugin.json": "054c0afeeb03c12f01a7f156da949edfdec3a2b756588f5ff4ee7357b0c07f6a",
+    ".codex/skills/humanizer/.github/workflows/validate.yml": "f2d6a8780fb0b3cf6fa7d2ffccd72d0fc8bee29b4e63ea0fd65924712c9055fd",
+    ".codex/skills/humanizer/.github/ISSUE_TEMPLATE/config.yml": "cb7e95de7606d07654024c8d47916796b307033e23ddb2b0a821a9bf89e999ef",
+    ".codex/skills/humanizer/.github/ISSUE_TEMPLATE/rewrite-problem.yml": "ecfe5e82c5b6d44683e0cb63cfad117dfdd16e30cc6f03510ef335414eea4947",
+    ".codex/skills/humanizer/.github/ISSUE_TEMPLATE/new-pattern.yml": "7436d578fa0056a09da5da6da950a03cb49f3ce27cf268ae295eb3d7ca19f604",
+    ".codex/skills/wr-conclusion/SKILL.md": "5d559be85eaf1c45f64fc3482bef0caa7b52cdaf374d939709729beb376e3395",
+    ".codex/skills/wr-conclusion/agents/openai.yaml": "92719fd38ebbf03d36d2314e7bb20f108db72d0c19c07dd00d87e733179f26eb",
+    ".codex/skills/wr-discussion/SKILL.md": "758c929a0204f55a36b608c49a82c8ae1e95c81c38d875b9df1b881e825ee563",
+    ".codex/skills/wr-discussion/agents/openai.yaml": "10d80db032dd53642e27efd6f478ea0d0d472a2c73b29cc627e591740821691c",
+    ".codex/skills/gen-adversarial-reviewer/SKILL.md": "eebb5ac7a62ce25f8ff2ebad74096dba5cc2491841501296ef4b1122c50ae275",
+    ".codex/skills/gen-adversarial-reviewer/agents/openai.yaml": "f4a6d16d6f7c852f895f770721b308933d28e2f57b0083c39d0f96b8960f43a5",
+    ".codex/skills/research-paper-writing/SKILL.md": "9085f5010960b06c58d36ff1fd40f0fc2756fb17e75ed60ed5f1e79c5efc0ad1",
+    ".codex/skills/research-paper-writing/references/paper-review.md": "74839347431dc8fbd178a7bbb25a5239825f00e50127d8bf67a95c4f2ee7a311",
+    ".codex/skills/research-paper-writing/references/conclusion.md": "64de66f24ceb42ff5cefb4498a8bd16f595661bbaa604d9cde6e743b39dab9c6",
+    ".codex/skills/research-paper-writing/references/method.md": "a11a743cadd5137bb633c5d031f0d5d179e4092070696206bcd8c92de20df57c",
+    ".codex/skills/research-paper-writing/references/experiments.md": "c006493e48996121af46332af8a833b6607508773668ade35b374cb5081a8812",
+    ".codex/skills/research-paper-writing/references/related-work.md": "2b37fce3ae4ea604492689215e835d45f85cc39ed74e6f6132b2723bbe506e0d",
+    ".codex/skills/research-paper-writing/references/introduction.md": "dafee03483388185bf923fafd3bbf8b4988fc9e5672628690653892cc6367cd0",
+    ".codex/skills/research-paper-writing/references/abstract.md": "992251e754bdbe6d9e49070cde496f2ca23e78bfce940bd32421a2a70d01e574",
+    ".codex/skills/research-paper-writing/references/does-my-writing-flow-source.md": "5514ad42f4ba28ba5e9d8222a8261d6a5ebc75e16081c69ef4495f7241a0adab",
+    ".codex/skills/research-paper-writing/references/examples/introduction-examples.md": "0fb5b62e4353f71e586f8873881d2a60a86ad756e02bd0e7ef626dcafa0e5d71",
+    ".codex/skills/research-paper-writing/references/examples/index.md": "8652823627fd0f56a5e2be3eff192dcc5925f482380d7b45321cd9cfc6ba4b03",
+    ".codex/skills/research-paper-writing/references/examples/method-examples.md": "8a8499c32096fbdf9baac6d00d71df750fba2909d29a0bc37e559ebd02d10210",
+    ".codex/skills/research-paper-writing/references/examples/abstract-examples.md": "8228ce8ec4a35b8339bcb439c4292bb2d678e5be17af2ef1d7631d03ebf40010",
+    ".codex/skills/research-paper-writing/references/examples/abstract/template-a.md": "c4cec6346be6d76350bfacea36c1abad5bce669e810f7facc2c884b664a8d83e",
+    ".codex/skills/research-paper-writing/references/examples/abstract/template-c.md": "4f6269a1b1ad47055eb4287cdd0410ea1d1d1198dbf02d74671f50d3fa0d1447",
+    ".codex/skills/research-paper-writing/references/examples/abstract/template-b.md": "dc41e8d5206fca72dd41b2cd188ec447b7735b54c164b6da1785bd88c2e0b78d",
+    ".codex/skills/research-paper-writing/references/examples/introduction/pipeline-version-2-two-contributions.md": "fc6d13cfdd6e69b9bf7238e86f400e7d120d35c053718a56ae9faf442f0e86f1",
+    ".codex/skills/research-paper-writing/references/examples/introduction/novel-task-challenge-decomposition.md": "5613ddd24911efde77aaf35a7ff883a9ef886b99b9863782aeec426282cd286c",
+    ".codex/skills/research-paper-writing/references/examples/introduction/pipeline-not-recommended-abstract-only.md": "33ab449b0eadc7cc968c0ff4cddcc4538811d2abc2a0497ebca15c629da80cd2",
+    ".codex/skills/research-paper-writing/references/examples/introduction/pipeline-version-4-observation-driven.md": "f5e59e8c578cd3996870c3863ac1f2ce503fe74ec76c909a66a9cb9100020e70",
+    ".codex/skills/research-paper-writing/references/examples/introduction/technical-challenge-version-1-existing-task.md": "470195180f159d7f240409c0685a927fea21c82ed7d7c766a03b76ed3765e276",
+    ".codex/skills/research-paper-writing/references/examples/introduction/version-2-application-first.md": "3f57603bd5fd56bc185a3d78f12edc43bd202e2593b01d1bda943f3745af7ea5",
+    ".codex/skills/research-paper-writing/references/examples/introduction/version-4-open-with-challenge.md": "974379058c3d5448bbb95ad989b68564ede2dc7e262f4b9bb82820058ad098b1",
+    ".codex/skills/research-paper-writing/references/examples/introduction/version-1-task-then-application.md": "d9296f2f23e8589e068a06fd063d2b9291b30b630ffeac19f0cf0290fde52284",
+    ".codex/skills/research-paper-writing/references/examples/introduction/technical-challenge-version-3-novel-task.md": "3b3b58cc0cffe2e1ae1e192b2344223924f9dfb880eeae3c955e09cd923269ef",
+    ".codex/skills/research-paper-writing/references/examples/introduction/version-3-general-to-specific-setting.md": "0afbf79dd9c47e65ec0d9debf08c701838b5398327a0864b8f8a0421ea786a2a",
+    ".codex/skills/research-paper-writing/references/examples/introduction/technical-challenge-version-2-existing-task-insight-backed-by-traditional.md": "b90e9edf376f9dc2cac1fcbe9174b8878a090763dac08302a301c8b743301b1f",
+    ".codex/skills/research-paper-writing/references/examples/introduction/pipeline-version-1-one-contribution-multi-advantages.md": "a39b95c76a19f7fd214048dd2e8861d825495662b9144529326abc4ab94c7f23",
+    ".codex/skills/research-paper-writing/references/examples/introduction/pipeline-version-3-new-module-on-existing-pipeline.md": "71fe9465e12602517ca47a693572bd7db0c08b7cd046ae1c55ec88ba679e1d49",
+    ".codex/skills/research-paper-writing/references/examples/method/pre-writing-questions.md": "b6466d5d6fbe8785a45a0b67134c9c08a0d8b3e14f2e17db2f2fe3a2053b3c69",
+    ".codex/skills/research-paper-writing/references/examples/method/neural-body-annotated-figure-text.md": "f671d284186011497291fcec22dadd1dabe835f60fb97dc607cfa0246d08b6be",
+    ".codex/skills/research-paper-writing/references/examples/method/module-design-instant-ngp.md": "a7c72221545e83d05b3becc4209b9fec71188a9a758434aa1ae3c4bc673e1dad",
+    ".codex/skills/research-paper-writing/references/examples/method/overview-template.md": "3328ea5b1100e8068bfd94455486a5934d55a888bf0095df727eef9ec7eadf93",
+    ".codex/skills/research-paper-writing/references/examples/method/section-skeleton.md": "e437a48be1e608bed3200844e1033b8b9da900aa1e4512dccb80f778e6fe0590",
+    ".codex/skills/research-paper-writing/references/examples/method/method-writing-common-issues-note.md": "265ca143a785401c29d754d022e761aca41cce7f17db316a3a12cf2e35b5bfa9",
+    ".codex/skills/research-paper-writing/references/examples/method/example-of-the-three-elements.md": "a08a1201e6b4a9629262e16827b8d95e62eeee97f6117a1d97659a37200a4dea",
+    ".codex/skills/research-paper-writing/references/examples/method/module-triad-neural-body.md": "eabc41af8b001bcab30bc8373bb44b798ab0a21d32045d01d6b672d49c1ed76f",
+    ".codex/skills/research-paper-writing/references/examples/method/module-motivation-patterns.md": "0d1476b9e31662ecd135eec0ec70bc959f91235622e874e2a1e12a5234d195ce",
+    ".codex/skills/research-paper-writing/agents/openai.yaml": "8b3beea770d261fe257c5dde00803594aa436f225c768c1fca7f4904216d80de",
+    ".codex/skills/prj-architecture/SKILL.md": "016416e1837e255aec1821862f25ba587d8ada2da6ca66c001147d78a2eafa4b",
+    ".codex/skills/gen-todo/SKILL.md": "e6c30a45106da0d8ffdbcc7cf8edf49f4596425f468598668b133d78e21fa94b",
+    ".codex/skills/gen-todo/agents/openai.yaml": "39f31c9e3302894d11c8d39c2de0f11487077cbeed0092d04066441a85f5e9bc",
+    ".codex/skills/da-preprocessing/SKILL.md": "8072aebd59da84e59f6201d9c8679bc453e12bb674441ef1e28e07a9fc3b1213",
+    ".codex/skills/da-preprocessing/agents/openai.yaml": "5cc8bbffe5f890bcf1c278c8835e39a47641e9b86ec0454b3d68ce90d6707673"
+  },
+  "layout_note": "Source paths identify the original closed project; current files are the dictionary keys. Changed code/receipt hashes reflect relocation only; CSV, PDF, ZIP, workbook and transcript payloads were retained byte-for-byte."
+}

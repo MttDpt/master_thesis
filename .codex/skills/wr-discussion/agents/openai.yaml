@@ -1,0 +1,6 @@
+interface:
+  display_name: "Write Discussion"
+  short_description: "Discussion narrative and interpretation rules"
+  default_prompt: "Use $wr-general and $wr-discussion to revise this Discussion prose."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Data Analysis Report"
+  short_description: "Explain a validated analysis package"
+  default_prompt: "Use $da-report to assemble and explain this validated thesis analysis package as a concise standalone report."
+policy:
+  allow_implicit_invocation: true

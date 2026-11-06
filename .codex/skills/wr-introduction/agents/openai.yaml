@@ -1,0 +1,6 @@
+interface:
+  display_name: "Write Introduction"
+  short_description: "Introduction narrative and operational rules"
+  default_prompt: "Use $wr-general and $wr-introduction to revise this Introduction prose."
+policy:
+  allow_implicit_invocation: true

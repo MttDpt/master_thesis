@@ -125,8 +125,8 @@ Every subquestion records: the question; evidence and data; unit of analysis and
 - **Unit and denominator:** 24 paired participant means over three trials overall (72) or two animated trials (48); retain misses and incorrect answers.
 - **Measures:** Q1 and Q2 accuracy on 0–1 scales; first-minus-second mean gaps.
 - **Operation and comparison:** two-sided paired t-tests on participant averages; reuse the two corresponding rows in the 18-comparison cross-outcome family, without a separate two-test correction or duplicate corroboration.
-- **Uncertainty and diagnostics:** mean-gap t intervals, whole-participant bootstrap and leave-one-participant-out diagnostics in the [retained matching cross-outcome uncertainty](RQ3/provisional/20261016-compound-detection-outcomes/retained_uncertainty.csv); independent participant bundles and appropriate paired-mean assumptions.
-- **Output:** [pooled accuracy tests](RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/pooled_accuracy.csv) and RQ2 results.
+- **Uncertainty and diagnostics:** mean-gap t intervals, whole-participant bootstrap and leave-one-participant-out diagnostics in the [retained matching cross-outcome uncertainty](RQ3/20261016-compound-detection-outcomes/retained_uncertainty.csv); independent participant bundles and appropriate paired-mean assumptions.
+- **Output:** [pooled accuracy tests](RQ2/statistical-tests/20261015-ch4-inference-adoption/pooled_accuracy.csv) and RQ2 results.
 - **Boundary:** post hoc mean-score comparisons under the observed exposure schedule, not participant-direction tests, every-condition superiority or causality.
 
 ### 8. Participant-level Q1–Q2 confidence difference
@@ -137,7 +137,7 @@ Every subquestion records: the question; evidence and data; unit of analysis and
 - **Measures:** numerical means and Q1-minus-Q2 gaps; equally spaced rating steps are assumed.
 - **Operation and comparison:** two-sided paired t-tests, retaining the original expanded Holm-15 family. Recompute all nine numerical t-tests and six ordinal-model contrasts described in the [current specification](inference_ch4.md); only six within-scope/condition numerical question contrasts lead Results. Participant-direction sign tests are superseded, not members of this family.
 - **Uncertainty and diagnostics:** t intervals, paired counts, missingness and cumulative-logit model convergence/gradient/Hessian checks; preserve the family even for unselected supporting members.
-- **Output:** [confidence results](RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/mean_confidence_tests.csv), [complete family](RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/confidence_family15.csv) and [rerun code](RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/rerun_confidence.R).
+- **Output:** [confidence results](RQ2/statistical-tests/20261015-ch4-inference-adoption/mean_confidence_tests.csv), [complete family](RQ2/statistical-tests/20261015-ch4-inference-adoption/confidence_family15.csv) and [rerun code](RQ2/statistical-tests/20261015-ch4-inference-adoption/rerun_confidence.R).
 - **Boundary:** means are not marginal medians, probability calibration, confidence predicting correctness or ordinal participant direction; post hoc selection and order/exposure limits remain.
 
 ### 9. Direct confidence-median comparisons
@@ -152,7 +152,7 @@ The earlier median-comparison package is historical and superseded for current i
 - **Measures:** exact binary paired counts, Q1/Q2 proportions and Q1-minus-Q2 mean gap.
 - **Operation and comparison:** exact two-sided conditional McNemar for NT, sun-to-moon, buildings and red-sphere; Holm across these four tests. The NT comparison also occurs in Holm-18, so retain both family labels and do not count it as independent evidence.
 - **Uncertainty and diagnostics:** verify paired counts, unique participants and exact binomial arithmetic; report raw and adjusted p-values. No between-animation difference-of-gaps model is selected for current Results.
-- **Output:** [current within-condition accuracy](RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/within_condition_accuracy.csv); the earlier gap-interaction package remains historical.
+- **Output:** [current within-condition accuracy](RQ2/statistical-tests/20261015-ch4-inference-adoption/within_condition_accuracy.csv); the earlier gap-interaction package remains historical.
 - **Boundary:** comparisons concern each observed condition separately; unequal significance labels do not establish an interaction, animation ranking, causation or equivalence.
 
 ## Current definitions

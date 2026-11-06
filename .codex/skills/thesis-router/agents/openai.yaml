@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thesis Router"
+  short_description: "Choose the right thesis project skills"
+  default_prompt: "Use $thesis-router to inspect this thesis project request and choose the right project skills."

@@ -13,7 +13,7 @@ import re
 import statistics as st
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[1]
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "analysis").is_dir() and (p / "overleaf").is_dir())
 INPUT = HERE / '20261018-gaze-outcome-inputs.csv'
 METRICS = {
     'total_ambient_s': 'Time looking at the display (s)',
@@ -138,8 +138,8 @@ def main():
                'fixed_window_usable': 66, 'fixed_window_eligible': 96,
                'whole_trial_usable': 43, 'whole_trial_eligible': 72,
                'SD': 'sample (n-1)', 'quartiles': 'linear interpolation',
-               'sources': ['LLM_wiki/analysis/RQ1/provisional/20261003-ambient-contacts/window_measures.csv',
-                           'LLM_wiki/analysis/RQ1/provisional/20261008-whole-trial-gaze-response/trial_measures.csv',
+               'sources': ['LLM_wiki/analysis/RQ1/20261003-ambient-contacts/window_measures.csv',
+                           'LLM_wiki/analysis/RQ1/20261008-whole-trial-gaze-response/trial_measures.csv',
                            'LLM_wiki/analysis/dataset/trigger-data/trigger-data-cleaning/trigger_trials.csv'],
                'scope': 'descriptive presentation only; fixed windows include post-press gaze; no new tests'}
     (HERE / '20261018-gaze-outcome-receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')

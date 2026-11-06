@@ -2,7 +2,7 @@
 from pathlib import Path
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[4]
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "analysis").is_dir() and (p / "overleaf").is_dir())
 CLEAN = Path(__file__).resolve().parent
 OVERALL = CLEAN.parent / "trigger-data-overall"
 KEYS = {"P02_t1", "P10_t1", "P13_t2", "P19_t3"}
@@ -49,7 +49,7 @@ def main():
 
 def sync_overall_from_rq1():
     """Call after the revised RQ1 bootstrap has been recomputed."""
-    out = ROOT / "archive/RQ1/runs/20260914-revised-rq1/outputs"
+    out = ROOT / "analysis/RQ1/response-tables"
     detection = pd.read_csv(out / "detection_summary.csv")
     reaction = pd.read_csv(out / "reaction_time_summary.csv")
     detection = detection.loc[detection.condition.ne("pooled")].rename(columns={

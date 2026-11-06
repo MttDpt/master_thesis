@@ -1,0 +1,4 @@
+interface:
+  display_name: "Overleaf Assets"
+  short_description: "Publish and verify figures in the Overleaf checkout"
+  default_prompt: "Use $overleaf-asset to publish this prepared thesis asset in Overleaf."

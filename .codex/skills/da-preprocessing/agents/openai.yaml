@@ -1,0 +1,6 @@
+interface:
+  display_name: "Update Pre-processing Rules"
+  short_description: "Keep current preprocessing rules in sync"
+  default_prompt: "Use $da-preprocessing to record the current pre-processing rule established in this discussion."
+policy:
+  allow_implicit_invocation: true

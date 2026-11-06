@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local Thesis Assets"
+  short_description: "Manage the local thesis asset lifecycle"
+  default_prompt: "Use $prj-local-asset to receive, inventory, or prepare a local thesis asset."

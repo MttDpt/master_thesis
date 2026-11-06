@@ -1,0 +1,4 @@
+interface:
+  display_name: "To-do"
+  short_description: "Maintain the user’s stored to-do list"
+  default_prompt: "Use the gen-todo skill to add, complete, or remove stored tasks."

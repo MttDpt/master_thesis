@@ -1,0 +1,6 @@
+interface:
+  display_name: "Write Conclusion"
+  short_description: "Conclusion and future-work narrative rules"
+  default_prompt: "Use $wr-general and $wr-conclusion to revise this Conclusion prose."
+policy:
+  allow_implicit_invocation: true

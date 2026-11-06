@@ -1,0 +1,6 @@
+interface:
+  display_name: "Write Results"
+  short_description: "Results narrative and reporting rules"
+  default_prompt: "Use $wr-general and $wr-results to revise this Results prose."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Overleaf Maintenance Audit"
+  short_description: "Audit thesis links, floats, acronyms, figures, and tables"
+  default_prompt: "Use $overleaf-maintenance-audit to audit this Overleaf thesis project and report any integrity or layout findings."

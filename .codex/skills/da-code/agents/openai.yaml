@@ -1,0 +1,6 @@
+interface:
+  display_name: "Data Analysis"
+  short_description: "Build and run reproducible RQ analysis code"
+  default_prompt: "Use $da-code to implement and execute one approved thesis RQ analysis as a validated provisional output package."
+policy:
+  allow_implicit_invocation: true

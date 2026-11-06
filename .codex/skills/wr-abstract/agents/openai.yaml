@@ -1,0 +1,6 @@
+interface:
+  display_name: "Abstract Writing"
+  short_description: "Concise abstracts grounded in three writing guides"
+  default_prompt: "Use $wr-abstract with $wr-general to write a concise abstract from the approved study findings."
+policy:
+  allow_implicit_invocation: true

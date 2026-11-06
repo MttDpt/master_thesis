@@ -1,0 +1,4 @@
+interface:
+  display_name: "Methodology Context"
+  short_description: "Retrieve and maintain evolving study knowledge"
+  default_prompt: "Use $methodology-context to answer this methodology or analysis question from the realised study context."

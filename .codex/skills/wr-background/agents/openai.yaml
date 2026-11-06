@@ -1,0 +1,6 @@
+interface:
+  display_name: "Write Background"
+  short_description: "Background and related-work narrative rules"
+  default_prompt: "Use $wr-general and $wr-background to revise this Background prose."
+policy:
+  allow_implicit_invocation: true
