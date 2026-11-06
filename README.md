@@ -4,7 +4,7 @@ Private archival repository for Matteo Del Prato's master's thesis on aesthetic 
 
 **Online copy:** [MttDpt/master_thesis on GitHub](https://github.com/MttDpt/master_thesis) — private repository; sign in to GitHub as **MttDpt** to access it.
 
-This project is saved locally and on GitHub; the external-drive copy is in `Area52/master_thesis/`.
+This project is saved locally and on GitHub.
 
 | Area | Retained material |
 | --- | --- |
