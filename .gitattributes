@@ -3,5 +3,5 @@
 # Frozen evidence/template whitespace is provenance, not a new formatting edit.
 analysis/** -whitespace
 archive/** -whitespace
-thesis/** -whitespace
+overleaf/** -whitespace
 *.md whitespace=blank-at-eol,blank-at-eof,space-before-tab

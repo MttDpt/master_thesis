@@ -2,7 +2,7 @@
 
 | Thesis content | Retained evidence |
 | --- | --- |
-| Chapter 3: study, stimuli and procedure | [Study record](../context/methods_study-methodology.md), [preparation record](../context/methods_data-preparation.md), source questionnaires/workshop data and 34 published figures in `thesis/figures/` |
+| Chapter 3: study, stimuli and procedure | [Study record](../context/methods_study-methodology.md), [preparation record](../context/methods_data-preparation.md), source questionnaires/workshop data and 34 published figures in `overleaf/figures/` |
 | Chapter 4: cross-outcome scores | [Compound Holm-18 tests](../analysis/RQ3/provisional/20261016-compound-detection-outcomes/tests.csv), participant means, scope/animation scores and retained uncertainty/deletion tables |
 | Chapter 4: detection and response times | [Within-animation detection](../analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/within_animation_detection.csv), [pooled detection](../analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/pooled_detection.csv), [descriptive response tables](../archive/RQ1/runs/20260914-revised-rq1/outputs/detection_summary.csv), original/derived trigger tables |
 | Chapter 4: gaze | [Full-window contact frequency](../analysis/RQ1/provisional/20261022-contact-frequency-update/condition_summary.csv), fixed/whole-trial measures, source contact implementation and gaze recordings; quality exclusions and zero-contact cases retained |
@@ -12,6 +12,6 @@
 | Supplementary driving behaviour | [Mean-based lane summaries](../analysis/RQ1/provisional/20261022-lane-distance-summary/group_summary.csv), 72 derived simulator logs and provenance |
 | Supplementary workload and experience | [Final report](../analysis/additional-measures/approved/additional-measures-final.html), descriptive NASA-TLX tables (72 trials), corrected UEQ tables and item scores (24 participants) |
 | Chapter 5 | The preceding final evidence, [study limitations](../analysis/limitations.md), coded response evidence and the [cited-source archive](../references/index.md); the manuscript distinguishes explanations/design proposals from findings |
-| Chapter 6 | Final thesis synthesis and proposed applications in [the manuscript](../thesis/examplethesis.tex), grounded in the same retained evidence; proposed brand/customisation benefits are not measured study outcomes |
+| Chapter 6 | Final thesis synthesis and proposed applications in [the manuscript](../overleaf/examplethesis.tex), grounded in the same retained evidence; proposed brand/customisation benefits are not measured study outcomes |
 
 Only the selected families in the [inferential authority](../analysis/inference_ch4.md) lead current reporting. Supporting ordinal members preserve the confidence correction scope; their presence is not an additional lead finding. Historical comparison files retained solely as generator inputs or validation goldens are labelled in the [selection manifest](../provenance/selection.json).

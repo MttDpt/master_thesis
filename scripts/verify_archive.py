@@ -5,8 +5,8 @@ R=Path(__file__).resolve().parents[1]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 s=json.loads((R/'provenance/selection.json').read_text())['selected_files']
 for n,x in s.items():assert (R/n).is_file() and sha(R/n)==x['sha256'],n
-images=set(re.findall(r'\\includegraphics(?:\[[^\]]*\])?\{([^}]+)\}',(R/'thesis/examplethesis.tex').read_text()));assert len(images)==34
-for n in images:assert (R/'thesis'/n).is_file(),n
+images=set(re.findall(r'\\includegraphics(?:\[[^\]]*\])?\{([^}]+)\}',(R/'overleaf/examplethesis.tex').read_text()));assert len(images)==34
+for n in images:assert (R/'overleaf'/n).is_file(),n
 for p in R.rglob('*.md'):
  if '.git' in p.parts or '.build' in p.parts:continue
  for target in re.findall(r'!?\[[^\]]*\]\(([^\n)]+)\)',p.read_text()):

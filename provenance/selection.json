@@ -3676,7 +3676,7 @@
       "sha256": "e5b96f3f408144d97f7bff882eb8ad48c0be8cb361907ea7aefd0f822c4515a7",
       "bytes": 7285
     },
-    "thesis/figures/ch2_bmw_panoramic_idrive.jpeg": {
+    "overleaf/figures/ch2_bmw_panoramic_idrive.jpeg": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/ch2_bmw_panoramic_idrive.jpeg",
       "source_relative": "overleaf/figures/ch2_bmw_panoramic_idrive.jpeg",
       "reason": "Figure referenced by final thesis",
@@ -3684,7 +3684,7 @@
       "sha256": "36eb9d7ad2a88de1c900005a24ed0e484339bd27dabfd9194cd6c00ea40d55c9",
       "bytes": 159574
     },
-    "thesis/figures/ch3_phud_reference.png": {
+    "overleaf/figures/ch3_phud_reference.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/ch3_phud_reference.png",
       "source_relative": "overleaf/figures/ch3_phud_reference.png",
       "reason": "Figure referenced by final thesis",
@@ -3692,7 +3692,7 @@
       "sha256": "7086ea2d7e3fceed68664ead82b60142dd090c7f945a3584a50b691fb22d3119",
       "bytes": 253687
     },
-    "thesis/figures/ch3_prototype_cockpit.png": {
+    "overleaf/figures/ch3_prototype_cockpit.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/ch3_prototype_cockpit.png",
       "source_relative": "overleaf/figures/ch3_prototype_cockpit.png",
       "reason": "Figure referenced by final thesis",
@@ -3700,7 +3700,7 @@
       "sha256": "c29758e3e7481a972a3bd754fd35566e833b20ef0b4a30428fcabf606ca737db",
       "bytes": 3006672
     },
-    "thesis/figures/V1_01.png": {
+    "overleaf/figures/V1_01.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/V1_01.png",
       "source_relative": "overleaf/figures/V1_01.png",
       "reason": "Figure referenced by final thesis",
@@ -3708,7 +3708,7 @@
       "sha256": "6d419361ba1eccfd5f18c9cb32e4192527d3c6b2fd97796a870496089bdadd46",
       "bytes": 350669
     },
-    "thesis/figures/V1_02.png": {
+    "overleaf/figures/V1_02.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/V1_02.png",
       "source_relative": "overleaf/figures/V1_02.png",
       "reason": "Figure referenced by final thesis",
@@ -3716,7 +3716,7 @@
       "sha256": "da594b8d825e157dff341ef9b8ba1dddb7c70f2dcb52d42c03b8bcbc2041215c",
       "bytes": 325676
     },
-    "thesis/figures/V1_03.png": {
+    "overleaf/figures/V1_03.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/V1_03.png",
       "source_relative": "overleaf/figures/V1_03.png",
       "reason": "Figure referenced by final thesis",
@@ -3724,7 +3724,7 @@
       "sha256": "8f852563e42f494bef9f1ef026614c568407d1e8f25a05ad0093ac112415693f",
       "bytes": 437295
     },
-    "thesis/figures/V2_01.png": {
+    "overleaf/figures/V2_01.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/V2_01.png",
       "source_relative": "overleaf/figures/V2_01.png",
       "reason": "Figure referenced by final thesis",
@@ -3732,7 +3732,7 @@
       "sha256": "1b79bcc8e1a8dddb2ae5b0793927083c83bf2e11801846b1761303c34b566a00",
       "bytes": 708521
     },
-    "thesis/figures/V2_02.png": {
+    "overleaf/figures/V2_02.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/V2_02.png",
       "source_relative": "overleaf/figures/V2_02.png",
       "reason": "Figure referenced by final thesis",
@@ -3740,7 +3740,7 @@
       "sha256": "dbacd3172bbc52eed62633c17e20b2567106056f904f5cca89e13d25f7c4c044",
       "bytes": 709784
     },
-    "thesis/figures/V2_03.png": {
+    "overleaf/figures/V2_03.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/V2_03.png",
       "source_relative": "overleaf/figures/V2_03.png",
       "reason": "Figure referenced by final thesis",
@@ -3748,7 +3748,7 @@
       "sha256": "6061965f21ec32d69d3be5ebf21349182f7c8e6503819538663d6739d9575b7b",
       "bytes": 832003
     },
-    "thesis/figures/V3_01.png": {
+    "overleaf/figures/V3_01.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/V3_01.png",
       "source_relative": "overleaf/figures/V3_01.png",
       "reason": "Figure referenced by final thesis",
@@ -3756,7 +3756,7 @@
       "sha256": "cbc56a3a3fdfa36c6da369802a5919f6b432ffaebb4618f729b0ab77ca93df83",
       "bytes": 429550
     },
-    "thesis/figures/V3_02.png": {
+    "overleaf/figures/V3_02.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/V3_02.png",
       "source_relative": "overleaf/figures/V3_02.png",
       "reason": "Figure referenced by final thesis",
@@ -3764,7 +3764,7 @@
       "sha256": "cdb56cb209ae245b1a3f39f36a8e7c64d17b5376cfa289124524735846127e73",
       "bytes": 426373
     },
-    "thesis/figures/V3_03.png": {
+    "overleaf/figures/V3_03.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/V3_03.png",
       "source_relative": "overleaf/figures/V3_03.png",
       "reason": "Figure referenced by final thesis",
@@ -3772,7 +3772,7 @@
       "sha256": "fb8271571a566181c5fda6642d9383627a11b7a8a6f8803971503bb50fa0404d",
       "bytes": 684139
     },
-    "thesis/figures/NT.png": {
+    "overleaf/figures/NT.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/NT.png",
       "source_relative": "overleaf/figures/NT.png",
       "reason": "Figure referenced by final thesis",
@@ -3780,7 +3780,7 @@
       "sha256": "a24dc80ac8eae2eeef190a3c7fe2edce5c26c3c851edbbbf295fdd321995d08d",
       "bytes": 561428
     },
-    "thesis/figures/new.png": {
+    "overleaf/figures/new.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/new.png",
       "source_relative": "overleaf/figures/new.png",
       "reason": "Figure referenced by final thesis",
@@ -3788,7 +3788,7 @@
       "sha256": "c0a82cbf798120a5e95b5d86383a3d56021ad7aead63a4c0d46651c649bafbd4",
       "bytes": 2221126
     },
-    "thesis/figures/ch3-simulator-setup-photos.png": {
+    "overleaf/figures/ch3-simulator-setup-photos.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/ch3-simulator-setup-photos.png",
       "source_relative": "overleaf/figures/ch3-simulator-setup-photos.png",
       "reason": "Figure referenced by final thesis",
@@ -3796,7 +3796,7 @@
       "sha256": "95856e3c149733112944287a45d4728348ae25076fd1c6541d3d76bda26aca37",
       "bytes": 7181055
     },
-    "thesis/figures/study-overview-three-trial-rows.pdf": {
+    "overleaf/figures/study-overview-three-trial-rows.pdf": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/study-overview-three-trial-rows.pdf",
       "source_relative": "overleaf/figures/study-overview-three-trial-rows.pdf",
       "reason": "Figure referenced by final thesis",
@@ -3804,7 +3804,7 @@
       "sha256": "fa724e757ba0d4bc39984015555e880e68cea7514547933ed45e142d8aed2272",
       "bytes": 17338
     },
-    "thesis/figures/A_mean_scores_with_brackets.pdf": {
+    "overleaf/figures/A_mean_scores_with_brackets.pdf": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/A_mean_scores_with_brackets.pdf",
       "source_relative": "overleaf/figures/A_mean_scores_with_brackets.pdf",
       "reason": "Figure referenced by final thesis",
@@ -3812,7 +3812,7 @@
       "sha256": "aabf6a48882b045aa3f80fa2eb61d9abc15a6c3a43b1381f5f7ba3093fe640f8",
       "bytes": 94562
     },
-    "thesis/figures/animation_mean_scores.pdf": {
+    "overleaf/figures/animation_mean_scores.pdf": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/animation_mean_scores.pdf",
       "source_relative": "overleaf/figures/animation_mean_scores.pdf",
       "reason": "Figure referenced by final thesis",
@@ -3820,7 +3820,7 @@
       "sha256": "badbae7dd204a9b51caf19759eff079dfe6b4ddb1c754c4e6b568ba5755e7c64",
       "bytes": 407200
     },
-    "thesis/figures/table42_43_onset_completion_bars.pdf": {
+    "overleaf/figures/table42_43_onset_completion_bars.pdf": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/table42_43_onset_completion_bars.pdf",
       "source_relative": "overleaf/figures/table42_43_onset_completion_bars.pdf",
       "reason": "Figure referenced by final thesis",
@@ -3828,7 +3828,7 @@
       "sha256": "064c2166ede542bf51a38e16b5f75cb00adf5b2448725e5afa726bac9c890a36",
       "bytes": 20661
     },
-    "thesis/figures/ch4_display_looking_time_restyled.png": {
+    "overleaf/figures/ch4_display_looking_time_restyled.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/ch4_display_looking_time_restyled.png",
       "source_relative": "overleaf/figures/ch4_display_looking_time_restyled.png",
       "reason": "Figure referenced by final thesis",
@@ -3836,7 +3836,7 @@
       "sha256": "5b75179d84619700ed9e819a5af111cd33c64abf81e47aaa12ba1edf380a514c",
       "bytes": 140669
     },
-    "thesis/figures/figure_4_5_contacts_per_minute.pdf": {
+    "overleaf/figures/figure_4_5_contacts_per_minute.pdf": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/figure_4_5_contacts_per_minute.pdf",
       "source_relative": "overleaf/figures/figure_4_5_contacts_per_minute.pdf",
       "reason": "Figure referenced by final thesis",
@@ -3844,7 +3844,7 @@
       "sha256": "3d8d8f9cb52ed3b9e3237eb3a428e77011725789d03fe06c140a5db89f386f79",
       "bytes": 28227
     },
-    "thesis/figures/recognition_thesis_reordered.pdf": {
+    "overleaf/figures/recognition_thesis_reordered.pdf": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/recognition_thesis_reordered.pdf",
       "source_relative": "overleaf/figures/recognition_thesis_reordered.pdf",
       "reason": "Figure referenced by final thesis",
@@ -3852,7 +3852,7 @@
       "sha256": "e062708cacd486aea90b5945e274c7e2d426dad6f6e762e7733183e8c370ec27",
       "bytes": 108088
     },
-    "thesis/figures/workshop-template-crazy8.png": {
+    "overleaf/figures/workshop-template-crazy8.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/workshop-template-crazy8.png",
       "source_relative": "overleaf/figures/workshop-template-crazy8.png",
       "reason": "Figure referenced by final thesis",
@@ -3860,7 +3860,7 @@
       "sha256": "dd5673fe059183b6f708d0b9316c4c1955be763a811da70314dc5e9c1b93b175",
       "bytes": 36165
     },
-    "thesis/figures/workshop-template-scenario-canvas.png": {
+    "overleaf/figures/workshop-template-scenario-canvas.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/workshop-template-scenario-canvas.png",
       "source_relative": "overleaf/figures/workshop-template-scenario-canvas.png",
       "reason": "Figure referenced by final thesis",
@@ -3868,7 +3868,7 @@
       "sha256": "f1711c8e72c5e5703ca9817f31cf91e6bb70f7ff963cce7a4918b3cb856dcb24",
       "bytes": 165489
     },
-    "thesis/figures/workshop-group1-task1-crazy8.png": {
+    "overleaf/figures/workshop-group1-task1-crazy8.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/workshop-group1-task1-crazy8.png",
       "source_relative": "overleaf/figures/workshop-group1-task1-crazy8.png",
       "reason": "Figure referenced by final thesis",
@@ -3876,7 +3876,7 @@
       "sha256": "774bdb585aefc2e81a93807a9811b6e947413dd4475cd22ee92d0180770cc3c7",
       "bytes": 1594545
     },
-    "thesis/figures/workshop-group4-task1-crazy8.png": {
+    "overleaf/figures/workshop-group4-task1-crazy8.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/workshop-group4-task1-crazy8.png",
       "source_relative": "overleaf/figures/workshop-group4-task1-crazy8.png",
       "reason": "Figure referenced by final thesis",
@@ -3884,7 +3884,7 @@
       "sha256": "1e87133060029f88221d59e516347b8f388125be2d5c238f7f57304a7f6c2882",
       "bytes": 506969
     },
-    "thesis/figures/workshop-group3-task2-selection.png": {
+    "overleaf/figures/workshop-group3-task2-selection.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/workshop-group3-task2-selection.png",
       "source_relative": "overleaf/figures/workshop-group3-task2-selection.png",
       "reason": "Figure referenced by final thesis",
@@ -3892,7 +3892,7 @@
       "sha256": "e7cbaf98e890d3502bac5ba20209979cf6e3a02bb3f3775a50602f408253e502",
       "bytes": 3588399
     },
-    "thesis/figures/workshop-group4-task2-selection.png": {
+    "overleaf/figures/workshop-group4-task2-selection.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/workshop-group4-task2-selection.png",
       "source_relative": "overleaf/figures/workshop-group4-task2-selection.png",
       "reason": "Figure referenced by final thesis",
@@ -3900,7 +3900,7 @@
       "sha256": "63be1c294f79311861280a25e92254b069af4527c82e6ec2edd4a290eb1f5201",
       "bytes": 1948701
     },
-    "thesis/figures/workshop-task4-artefact-01.png": {
+    "overleaf/figures/workshop-task4-artefact-01.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/workshop-task4-artefact-01.png",
       "source_relative": "overleaf/figures/workshop-task4-artefact-01.png",
       "reason": "Figure referenced by final thesis",
@@ -3908,7 +3908,7 @@
       "sha256": "a14ddfdf3d27a5210a5a77b8133cb381cea64be38ae4fb54ecd4f7fbb824cf29",
       "bytes": 415720
     },
-    "thesis/figures/workshop-task4-artefact-02.png": {
+    "overleaf/figures/workshop-task4-artefact-02.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/workshop-task4-artefact-02.png",
       "source_relative": "overleaf/figures/workshop-task4-artefact-02.png",
       "reason": "Figure referenced by final thesis",
@@ -3916,7 +3916,7 @@
       "sha256": "72760fe3be759746a8f611d2c38f99cd3679effb8cbed00ca32150f481ce4c4e",
       "bytes": 1037298
     },
-    "thesis/figures/workshop-task4-artefact-03.png": {
+    "overleaf/figures/workshop-task4-artefact-03.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/workshop-task4-artefact-03.png",
       "source_relative": "overleaf/figures/workshop-task4-artefact-03.png",
       "reason": "Figure referenced by final thesis",
@@ -3924,7 +3924,7 @@
       "sha256": "98991600dbfc5cc52600d41cab14e7a17aa5bd544eb4a587b42ef567cbe6f629",
       "bytes": 492266
     },
-    "thesis/figures/workshop-task4-artefact-04.png": {
+    "overleaf/figures/workshop-task4-artefact-04.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/workshop-task4-artefact-04.png",
       "source_relative": "overleaf/figures/workshop-task4-artefact-04.png",
       "reason": "Figure referenced by final thesis",
@@ -3932,7 +3932,7 @@
       "sha256": "6a17e18f4979e9e82064a5e7c1f172d59cc731a75066f5c9df3bd954278030f9",
       "bytes": 554820
     },
-    "thesis/figures/ch3_protopie_ipad.png": {
+    "overleaf/figures/ch3_protopie_ipad.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/ch3_protopie_ipad.png",
       "source_relative": "overleaf/figures/ch3_protopie_ipad.png",
       "reason": "Figure referenced by final thesis",
@@ -3940,7 +3940,7 @@
       "sha256": "fa023de41a9cf54a5e8fb29832d5c23154c2ae7dd5ae586cef9ce067052594a8",
       "bytes": 181361
     },
-    "thesis/figures/ch3_protopie_iphone.png": {
+    "overleaf/figures/ch3_protopie_iphone.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/figures/ch3_protopie_iphone.png",
       "source_relative": "overleaf/figures/ch3_protopie_iphone.png",
       "reason": "Figure referenced by final thesis",
@@ -3948,7 +3948,7 @@
       "sha256": "9421dbe832faaff641077abe77484e1c420f58272b2764ce45a251650a011a31",
       "bytes": 76747
     },
-    "thesis/examplethesis.tex": {
+    "overleaf/examplethesis.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/examplethesis.tex",
       "source_relative": "overleaf/examplethesis.tex",
       "reason": "Final manuscript source or required KTH template runtime",
@@ -3956,7 +3956,7 @@
       "sha256": "b581aa17eef16ca65691afa09ed9498b527e4f7fa567431b1e6179cde2c9f9be",
       "bytes": 148770
     },
-    "thesis/examplethesis.ist": {
+    "overleaf/examplethesis.ist": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/examplethesis.ist",
       "source_relative": "overleaf/examplethesis.ist",
       "reason": "Final manuscript source or required KTH template runtime",
@@ -3964,7 +3964,7 @@
       "sha256": "c64162f05bc77a3227ff7d9f1b165d9badf9eb6e168807d8b1a1fb30b0498f9d",
       "bytes": 927
     },
-    "thesis/kth_logo.png": {
+    "overleaf/kth_logo.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/kth_logo.png",
       "source_relative": "overleaf/kth_logo.png",
       "reason": "Final manuscript source or required KTH template runtime",
@@ -3972,7 +3972,7 @@
       "sha256": "caaa387360367ac798b593e2e2618991afd826d44d59af085ff1522ace365f51",
       "bytes": 21431
     },
-    "thesis/KTH_ROYAL_INSTITUTE_OF_TECHNOLOGY_logotype.png": {
+    "overleaf/KTH_ROYAL_INSTITUTE_OF_TECHNOLOGY_logotype.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/KTH_ROYAL_INSTITUTE_OF_TECHNOLOGY_logotype.png",
       "source_relative": "overleaf/KTH_ROYAL_INSTITUTE_OF_TECHNOLOGY_logotype.png",
       "reason": "Final manuscript source or required KTH template runtime",
@@ -3980,7 +3980,7 @@
       "sha256": "a90771a7a2eff6674f1657f0ed766babce8ee164bd63016a1a98a20d53464cc6",
       "bytes": 5962
     },
-    "thesis/references.bib": {
+    "overleaf/references.bib": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/references.bib",
       "source_relative": "overleaf/references.bib",
       "reason": "Final manuscript source or required KTH template runtime",
@@ -3988,7 +3988,7 @@
       "sha256": "c930916913d1bdca00226a5fa06ad03531d4a34c3f2eabd3b85b38bfbe7924ed",
       "bytes": 256650
     },
-    "thesis/KTH_logo_RGB_bla.png": {
+    "overleaf/KTH_logo_RGB_bla.png": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/KTH_logo_RGB_bla.png",
       "source_relative": "overleaf/KTH_logo_RGB_bla.png",
       "reason": "Final manuscript source or required KTH template runtime",
@@ -3996,7 +3996,7 @@
       "sha256": "9fafade5f8a410d1947a965751101a008cc5094c664c67f1b2c5ad8bd23cc4b2",
       "bytes": 211821
     },
-    "thesis/kththesis.cls": {
+    "overleaf/kththesis.cls": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/kththesis.cls",
       "source_relative": "overleaf/kththesis.cls",
       "reason": "Final manuscript source or required KTH template runtime",
@@ -4004,7 +4004,7 @@
       "sha256": "85495f542538548c9ec9d0c3cabe59b9ac699ac091cef6f588f356a9358af7a4",
       "bytes": 5410
     },
-    "thesis/Generate_titles_in_plain_text.tex": {
+    "overleaf/Generate_titles_in_plain_text.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/Generate_titles_in_plain_text.tex",
       "source_relative": "overleaf/Generate_titles_in_plain_text.tex",
       "reason": "Final manuscript source or required KTH template runtime",
@@ -4012,7 +4012,7 @@
       "sha256": "1fcc02c90dc2c16121b856c2a83e6df0bb6c9eb5a32797844f39f8a1613a2d12",
       "bytes": 33751
     },
-    "thesis/hyperxmp.sty": {
+    "overleaf/hyperxmp.sty": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/hyperxmp.sty",
       "source_relative": "overleaf/hyperxmp.sty",
       "reason": "Final manuscript source or required KTH template runtime",
@@ -4020,7 +4020,7 @@
       "sha256": "d201042232c23af0ef9b8935510082c388265cb0a2c740650e9aebedc38107ad",
       "bytes": 61974
     },
-    "thesis/custom_configuration.tex": {
+    "overleaf/custom_configuration.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/custom_configuration.tex",
       "source_relative": "overleaf/custom_configuration.tex",
       "reason": "Final manuscript source or required KTH template runtime",
@@ -4028,7 +4028,7 @@
       "sha256": "850c613c481e19ca99c57a35dd447b01a6fa7276396c19b1579664f638829800",
       "bytes": 9111
     },
-    "thesis/lib/includes-after-hyperref.tex": {
+    "overleaf/lib/includes-after-hyperref.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/lib/includes-after-hyperref.tex",
       "source_relative": "overleaf/lib/includes-after-hyperref.tex",
       "reason": "Required LaTeX template runtime",
@@ -4036,7 +4036,7 @@
       "sha256": "a0816f66a2cbf30858e483943a1b3812ef3a898692cb94bc2c016efeb490320d",
       "bytes": 694
     },
-    "thesis/lib/acronyms.tex": {
+    "overleaf/lib/acronyms.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/lib/acronyms.tex",
       "source_relative": "overleaf/lib/acronyms.tex",
       "reason": "Required LaTeX template runtime",
@@ -4044,7 +4044,7 @@
       "sha256": "6966153c7671af18fc2f79d9b146b64668c8d77d2ca59d47309f1e148d0fb5dd",
       "bytes": 3703
     },
-    "thesis/lib/schools_and_programs.ins": {
+    "overleaf/lib/schools_and_programs.ins": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/lib/schools_and_programs.ins",
       "source_relative": "overleaf/lib/schools_and_programs.ins",
       "reason": "Required LaTeX template runtime",
@@ -4052,7 +4052,7 @@
       "sha256": "79bad2ef666e87a4f23c71e33390fb5244e9f3c9204f14207f7d33f6ddfdf5d9",
       "bytes": 19371
     },
-    "thesis/lib/defines.tex": {
+    "overleaf/lib/defines.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/lib/defines.tex",
       "source_relative": "overleaf/lib/defines.tex",
       "reason": "Required LaTeX template runtime",
@@ -4060,7 +4060,7 @@
       "sha256": "f46179113c81d150ada7762cec365cf4ab44a739b57b2a15e9f6bf1244c4915d",
       "bytes": 327665
     },
-    "thesis/lib/kthcolors.tex": {
+    "overleaf/lib/kthcolors.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/lib/kthcolors.tex",
       "source_relative": "overleaf/lib/kthcolors.tex",
       "reason": "Required LaTeX template runtime",
@@ -4068,7 +4068,7 @@
       "sha256": "1484e6c1de4144eb60bdbbebaefe67dc4980f523db2a17b71b47e21d0a39ba6e",
       "bytes": 3032
     },
-    "thesis/lib/placeHolder_lbx_files.tex": {
+    "overleaf/lib/placeHolder_lbx_files.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/lib/placeHolder_lbx_files.tex",
       "source_relative": "overleaf/lib/placeHolder_lbx_files.tex",
       "reason": "Required LaTeX template runtime",
@@ -4076,7 +4076,7 @@
       "sha256": "12c1ffe9f8895bc36caec5517a6d72b146615cf3497cc862a6bc5c1e96b59b97",
       "bytes": 526
     },
-    "thesis/lib/includes.tex": {
+    "overleaf/lib/includes.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/lib/includes.tex",
       "source_relative": "overleaf/lib/includes.tex",
       "reason": "Required LaTeX template runtime",
@@ -4084,7 +4084,7 @@
       "sha256": "85591cb216a961726901a75413e25953a31f6d0d25f8b52982004664fd10fe8b",
       "bytes": 8961
     },
-    "thesis/lib/pdf_related_includes.tex": {
+    "overleaf/lib/pdf_related_includes.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/lib/pdf_related_includes.tex",
       "source_relative": "overleaf/lib/pdf_related_includes.tex",
       "reason": "Required LaTeX template runtime",
@@ -4092,7 +4092,7 @@
       "sha256": "1607da64b06546451909b1d31e1ec1a7c2e8063b9305f6effa58c3a2223f10f4",
       "bytes": 4443
     },
-    "thesis/lib/acronyms-for-pdflatex.tex": {
+    "overleaf/lib/acronyms-for-pdflatex.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/lib/acronyms-for-pdflatex.tex",
       "source_relative": "overleaf/lib/acronyms-for-pdflatex.tex",
       "reason": "Required LaTeX template runtime",
@@ -4100,7 +4100,7 @@
       "sha256": "091ad90f07daca759e6b139bbef8ae12886c8642af1e7f9fe014dfaa70dfce76",
       "bytes": 3455
     },
-    "thesis/kth/kth-commands.tex": {
+    "overleaf/kth/kth-commands.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/kth/kth-commands.tex",
       "source_relative": "overleaf/kth/kth-commands.tex",
       "reason": "Required LaTeX template runtime",
@@ -4108,7 +4108,7 @@
       "sha256": "122ede950c39cb8915e1d4f92065712c885341751a94447c5804229fda66d849",
       "bytes": 41817
     },
-    "thesis/kth/kth-packages.tex": {
+    "overleaf/kth/kth-packages.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/kth/kth-packages.tex",
       "source_relative": "overleaf/kth/kth-packages.tex",
       "reason": "Required LaTeX template runtime",
@@ -4116,7 +4116,7 @@
       "sha256": "1af4baa8243e75394cbf025f1aecb06228386491888a4a51c6c042dea6ec071d",
       "bytes": 551
     },
-    "thesis/kth/kth-sanity-checks.tex": {
+    "overleaf/kth/kth-sanity-checks.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/kth/kth-sanity-checks.tex",
       "source_relative": "overleaf/kth/kth-sanity-checks.tex",
       "reason": "Required LaTeX template runtime",
@@ -4124,7 +4124,7 @@
       "sha256": "a443556991eb4a9c878622bc3cd6f139731a41b33e0f9691ca61982403c5103c",
       "bytes": 21477
     },
-    "thesis/kth/kth-layout.tex": {
+    "overleaf/kth/kth-layout.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/kth/kth-layout.tex",
       "source_relative": "overleaf/kth/kth-layout.tex",
       "reason": "Required LaTeX template runtime",
@@ -4132,7 +4132,7 @@
       "sha256": "d1938baeaf261ef70c98e51aeaa55846e347aabe4cc99355df301e18f26f9b42",
       "bytes": 17140
     },
-    "thesis/kth/kth-fonts.tex": {
+    "overleaf/kth/kth-fonts.tex": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/kth/kth-fonts.tex",
       "source_relative": "overleaf/kth/kth-fonts.tex",
       "reason": "Required LaTeX template runtime",
@@ -4140,7 +4140,7 @@
       "sha256": "d1a4f78cb10f39c1040187b4c6660e624d5b4edb37ec94115e961020ea713847",
       "bytes": 3359
     },
-    "thesis/bibstyle/myIEEEtran.bst": {
+    "overleaf/bibstyle/myIEEEtran.bst": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/bibstyle/myIEEEtran.bst",
       "source_relative": "overleaf/bibstyle/myIEEEtran.bst",
       "reason": "Required LaTeX template runtime",
@@ -4148,7 +4148,7 @@
       "sha256": "9a87e829c2d532079eda7db8e1af05b413504a99100690a2769cb65eab568f0a",
       "bytes": 61819
     },
-    "thesis/data/results-curation/20261018-gaze-outcome-receipt.json": {
+    "overleaf/data/results-curation/20261018-gaze-outcome-receipt.json": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/data/results-curation/20261018-gaze-outcome-receipt.json",
       "source_relative": "overleaf/data/results-curation/20261018-gaze-outcome-receipt.json",
       "reason": "Final figure/table curation inputs or generators",
@@ -4156,7 +4156,7 @@
       "sha256": "7a36ef95e087f1f320e38182c1999f17df8a6461c1393f2a8d182305922ba648",
       "bytes": 743
     },
-    "thesis/data/results-curation/detection-mcnemar.csv": {
+    "overleaf/data/results-curation/detection-mcnemar.csv": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/data/results-curation/detection-mcnemar.csv",
       "source_relative": "overleaf/data/results-curation/detection-mcnemar.csv",
       "reason": "Final figure/table curation inputs or generators",
@@ -4164,7 +4164,7 @@
       "sha256": "32d9691374c5024272e6e2ddf612d9770b61d50f4354b2abc5d7a3c3cd42dafb",
       "bytes": 761
     },
-    "thesis/data/results-curation/20261018-gaze-outcome-summaries.csv": {
+    "overleaf/data/results-curation/20261018-gaze-outcome-summaries.csv": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/data/results-curation/20261018-gaze-outcome-summaries.csv",
       "source_relative": "overleaf/data/results-curation/20261018-gaze-outcome-summaries.csv",
       "reason": "Final figure/table curation inputs or generators",
@@ -4172,7 +4172,7 @@
       "sha256": "c9372411681e0670b46aa2e4e63b12353495a102d71ba190ad555016a5187986",
       "bytes": 6591
     },
-    "thesis/data/results-curation/20261015-detection-scores-figure.py": {
+    "overleaf/data/results-curation/20261015-detection-scores-figure.py": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/data/results-curation/20261015-detection-scores-figure.py",
       "source_relative": "overleaf/data/results-curation/20261015-detection-scores-figure.py",
       "reason": "Final figure/table curation inputs or generators",
@@ -4180,7 +4180,7 @@
       "sha256": "93ee4b96af81ffd4465897dbebb67ad0d553039f86dbdb84966984b6fa0bae28",
       "bytes": 2521
     },
-    "thesis/data/results-curation/20261018-gaze-outcome-inputs.csv": {
+    "overleaf/data/results-curation/20261018-gaze-outcome-inputs.csv": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/data/results-curation/20261018-gaze-outcome-inputs.csv",
       "source_relative": "overleaf/data/results-curation/20261018-gaze-outcome-inputs.csv",
       "reason": "Final figure/table curation inputs or generators",
@@ -4188,7 +4188,7 @@
       "sha256": "8ed0598007ab0aefc1828ce6d6a91e50c6cbe066b1c6afd7b779cdddee1fc486",
       "bytes": 17729
     },
-    "thesis/data/results-curation/20261018-gaze-figure-reference.csv": {
+    "overleaf/data/results-curation/20261018-gaze-figure-reference.csv": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/data/results-curation/20261018-gaze-figure-reference.csv",
       "source_relative": "overleaf/data/results-curation/20261018-gaze-figure-reference.csv",
       "reason": "Final figure/table curation inputs or generators",
@@ -4196,7 +4196,7 @@
       "sha256": "6912c29f78a703d739424b89fa13e8349131479b08dba128786692fd31f10587",
       "bytes": 2423
     },
-    "thesis/data/results-curation/20261015-detection-score-publication.json": {
+    "overleaf/data/results-curation/20261015-detection-score-publication.json": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/data/results-curation/20261015-detection-score-publication.json",
       "source_relative": "overleaf/data/results-curation/20261015-detection-score-publication.json",
       "reason": "Final figure/table curation inputs or generators",
@@ -4204,7 +4204,7 @@
       "sha256": "e1fe8378d8cdf144d831ec2a815f5436c781aa8081e83843edce8586c4d22a4c",
       "bytes": 2784
     },
-    "thesis/data/results-curation/20261014-reaction-time-summary.csv": {
+    "overleaf/data/results-curation/20261014-reaction-time-summary.csv": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/data/results-curation/20261014-reaction-time-summary.csv",
       "source_relative": "overleaf/data/results-curation/20261014-reaction-time-summary.csv",
       "reason": "Final figure/table curation inputs or generators",
@@ -4212,7 +4212,7 @@
       "sha256": "bc27f4cfd08de7b63d63a4cc7fd11111fc7494e732b5f999c1678025d923a546",
       "bytes": 487
     },
-    "thesis/data/results-curation/20261018-gaze-outcome-tables.py": {
+    "overleaf/data/results-curation/20261018-gaze-outcome-tables.py": {
       "source": "/Users/matteodelprato/Documents/edu/master_thesis/overleaf/data/results-curation/20261018-gaze-outcome-tables.py",
       "source_relative": "overleaf/data/results-curation/20261018-gaze-outcome-tables.py",
       "reason": "Final figure/table curation inputs or generators",

@@ -4,7 +4,7 @@ Private archival repository for Matteo Del Prato's master's thesis on aesthetic 
 
 | Area | Retained material |
 | --- | --- |
-| [Thesis](thesis/examplethesis.tex) | [Final PDF](thesis/final-thesis.pdf), final Overleaf LaTeX source, required KTH template/runtime and all 34 referenced figures |
+| [Thesis](overleaf/examplethesis.tex) | [Final PDF](overleaf/final-thesis.pdf), final Overleaf LaTeX source, required KTH template/runtime and all 34 referenced figures |
 | [Study records](context/index.md) | Realised methodology, research questions and preparation definitions |
 | [Evidence map](evidence/index.md) | Final supporting evidence for Chapters 3–6 and appendices |
 | [Analysis authority](analysis/inference_ch4.md) | Adopted correction families, scoring and reporting limits |
@@ -27,7 +27,7 @@ These commands read frozen evidence and do not regenerate approved outputs. The 
 
 ## Build the thesis
 
-From `thesis/`, use Tectonic with bibliography support:
+From `overleaf/`, use Tectonic with bibliography support:
 
 ```sh
 tectonic --keep-logs --outdir ../.build examplethesis.tex
