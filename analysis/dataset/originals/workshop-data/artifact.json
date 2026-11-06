@@ -1,0 +1,1066 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Workshop results: from feature breadth to scenario fit",
+    "description": "Independent structured content analysis of the fully recoverable Task 2 and Task 3 workshop boards.",
+    "generatedAt": "2026-07-20T12:49:37Z",
+    "charts": [
+      {
+        "id": "t2_domains_chart",
+        "title": "Task 2 idea cards by primary domain",
+        "subtitle": "Forty group-level cards; primary domains are mutually exclusive.",
+        "type": "horizontalBar",
+        "intent": "comparison",
+        "question": "Which information domains were most developed in Task 2?",
+        "rationale": "Sorted horizontal bars support direct comparison across nine domains with long labels.",
+        "comparisonContext": {
+          "denominator": "40 T2 cards",
+          "grain": "group-level idea card",
+          "unit": "cards"
+        },
+        "dataset": "t2_domain_summary",
+        "sourceId": "t2_evidence",
+        "valueFormat": "number",
+        "labels": {
+          "values": "all"
+        },
+        "encodings": {
+          "x": {
+            "field": "domain",
+            "type": "nominal",
+            "label": "Primary domain"
+          },
+          "y": {
+            "field": "idea_count",
+            "type": "quantitative",
+            "label": "Idea cards"
+          },
+          "tooltip": [
+            {
+              "field": "groups_mentioning",
+              "type": "quantitative",
+              "label": "Groups mentioning"
+            },
+            {
+              "field": "share_of_t2_cards",
+              "type": "quantitative",
+              "label": "Share of cards",
+              "format": "percent"
+            }
+          ]
+        }
+      },
+      {
+        "id": "t3_scenario_chart",
+        "title": "Task 3 scenario placement by primary domain",
+        "subtitle": "Thirty-seven normalized concepts; centered cards are coded as both scenarios.",
+        "type": "horizontalStackedBar",
+        "intent": "composition",
+        "question": "How were information domains distributed across high, low, and both driving scenarios?",
+        "rationale": "Stacked horizontal bars preserve domain totals while revealing the scenario composition of each domain.",
+        "comparisonContext": {
+          "denominator": "37 normalized T3 concepts",
+          "grain": "group-level concept",
+          "unit": "concepts"
+        },
+        "dataset": "t3_scenario_long",
+        "sourceId": "t3_evidence",
+        "valueFormat": "number",
+        "palette": {
+          "kind": "categorical",
+          "name": "scenario"
+        },
+        "legend": {
+          "position": "bottom",
+          "title": "Scenario",
+          "sort": "spec"
+        },
+        "labels": {
+          "values": "all"
+        },
+        "encodings": {
+          "x": {
+            "field": "domain",
+            "type": "nominal",
+            "label": "Primary domain"
+          },
+          "y": {
+            "field": "concept_count",
+            "type": "quantitative",
+            "label": "Concepts"
+          },
+          "color": {
+            "field": "scenario",
+            "type": "nominal",
+            "label": "Scenario"
+          },
+          "tooltip": [
+            {
+              "field": "domain_total",
+              "type": "quantitative",
+              "label": "Domain total"
+            }
+          ]
+        }
+      },
+      {
+        "id": "group_scenario_chart",
+        "title": "Task 3 scenario placement by group",
+        "subtitle": "Group totals differ because T3 allowed ideas to be added, refined, or consolidated.",
+        "type": "stackedBar",
+        "intent": "composition",
+        "question": "How did each group distribute concepts across scenario states?",
+        "rationale": "A stacked bar per group makes the contrasting use of high, low, and both states immediately visible.",
+        "comparisonContext": {
+          "denominator": "37 normalized T3 concepts",
+          "grain": "group-level concept",
+          "unit": "concepts"
+        },
+        "dataset": "group_scenario_long",
+        "sourceId": "t3_evidence",
+        "valueFormat": "number",
+        "palette": {
+          "kind": "categorical",
+          "name": "scenario"
+        },
+        "legend": {
+          "position": "bottom",
+          "title": "Scenario",
+          "sort": "spec"
+        },
+        "labels": {
+          "values": "all"
+        },
+        "encodings": {
+          "x": {
+            "field": "group",
+            "type": "nominal",
+            "label": "Workshop group"
+          },
+          "y": {
+            "field": "concept_count",
+            "type": "quantitative",
+            "label": "Concepts"
+          },
+          "color": {
+            "field": "scenario",
+            "type": "nominal",
+            "label": "Scenario"
+          },
+          "tooltip": [
+            {
+              "field": "group_total",
+              "type": "quantitative",
+              "label": "Group total"
+            }
+          ]
+        }
+      },
+      {
+        "id": "lineage_chart",
+        "title": "Task 3 concepts by relationship to Task 2",
+        "subtitle": "Lineage was coded from wording and within-group conceptual correspondence.",
+        "type": "horizontalBar",
+        "intent": "comparison",
+        "question": "Did Task 3 only sort Task 2 ideas or also develop them?",
+        "rationale": "A compact horizontal comparison shows the relative scale of direct, new, merged, and refined concepts.",
+        "comparisonContext": {
+          "denominator": "37 normalized T3 concepts",
+          "grain": "group-level concept",
+          "unit": "concepts"
+        },
+        "dataset": "lineage_summary",
+        "sourceId": "t3_evidence",
+        "valueFormat": "number",
+        "labels": {
+          "values": "all"
+        },
+        "encodings": {
+          "x": {
+            "field": "lineage_status",
+            "type": "nominal",
+            "label": "Relationship to T2"
+          },
+          "y": {
+            "field": "concept_count",
+            "type": "quantitative",
+            "label": "T3 concepts"
+          },
+          "tooltip": [
+            {
+              "field": "share_of_t3_concepts",
+              "type": "quantitative",
+              "label": "Share of T3 concepts",
+              "format": "percent"
+            }
+          ]
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "t2_summary_table",
+        "title": "Task 2 domain summary",
+        "subtitle": "Idea counts and cross-group presence use one primary domain per physical card.",
+        "dataset": "t2_domain_summary",
+        "sourceId": "t2_evidence",
+        "defaultSort": {
+          "field": "idea_count",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "domain",
+            "label": "Primary domain",
+            "type": "text"
+          },
+          {
+            "field": "idea_count",
+            "label": "Idea cards",
+            "format": "number"
+          },
+          {
+            "field": "groups_mentioning",
+            "label": "Groups",
+            "format": "number"
+          },
+          {
+            "field": "share_of_t2_cards",
+            "label": "Share of T2 cards",
+            "format": "percent"
+          }
+        ]
+      },
+      {
+        "id": "t3_matrix_table",
+        "title": "Task 3 domain-by-scenario matrix",
+        "subtitle": "Normalized concept counts; both means a card was centered between the two scenario regions.",
+        "dataset": "t3_scenario_wide",
+        "sourceId": "t3_evidence",
+        "defaultSort": {
+          "field": "total",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "domain",
+            "label": "Primary domain",
+            "type": "text"
+          },
+          {
+            "field": "high",
+            "label": "High",
+            "format": "number"
+          },
+          {
+            "field": "low",
+            "label": "Low",
+            "format": "number"
+          },
+          {
+            "field": "both",
+            "label": "Both",
+            "format": "number"
+          },
+          {
+            "field": "total",
+            "label": "Total",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "priority_table",
+        "title": "Concepts closest to the driver axis",
+        "subtitle": "All rank-1 concepts are retained because groups could place several cards in the same proximity tier.",
+        "dataset": "priority_one",
+        "sourceId": "t3_evidence",
+        "defaultSort": {
+          "field": "group",
+          "direction": "asc"
+        },
+        "columns": [
+          {
+            "field": "group",
+            "label": "Group",
+            "type": "text"
+          },
+          {
+            "field": "scenario",
+            "label": "Scenario",
+            "type": "text"
+          },
+          {
+            "field": "domain",
+            "label": "Primary domain",
+            "type": "text"
+          },
+          {
+            "field": "concept",
+            "label": "Concept",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "codebook_table",
+        "title": "Primary-domain codebook",
+        "subtitle": "Definitions and boundary rules used for all headline counts.",
+        "dataset": "codebook",
+        "sourceId": "codebook",
+        "defaultSort": {
+          "field": "domain",
+          "direction": "asc"
+        },
+        "columns": [
+          {
+            "field": "domain",
+            "label": "Domain",
+            "type": "text"
+          },
+          {
+            "field": "definition",
+            "label": "Definition",
+            "type": "text"
+          },
+          {
+            "field": "boundary_rule",
+            "label": "Boundary rule",
+            "type": "text"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "t2_evidence",
+        "label": "Task 2 evidence ledger",
+        "path": "data/t2_ideas.csv"
+      },
+      {
+        "id": "t3_evidence",
+        "label": "Task 3 placement ledger",
+        "path": "data/t3_placements.csv"
+      },
+      {
+        "id": "combined_analysis",
+        "label": "Reproducible workshop analysis",
+        "path": "scripts/analyze_workshop.py"
+      },
+      {
+        "id": "codebook",
+        "label": "Workshop domain codebook",
+        "path": "data/codebook.csv"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# Workshop results: from feature breadth to scenario fit"
+      },
+      {
+        "id": "technical_summary",
+        "type": "markdown",
+        "sourceId": "combined_analysis",
+        "body": "## The short version\n\n- **Task 2 produced a broad, experience-led feature space.** Media/play, navigation/mobility, and ambient/interface concepts each account for 7 of 40 cards. Media/play is the only domain present in all four groups.\n- **Task 3 sharply separated safety from leisure.** All four safety concepts were assigned to high-demand driving, while all five media/play concepts were assigned to low-demand driving.\n- **Six concepts were explicitly relevant to both scenarios.** These centered cards cover vehicle feedback, destination context, decision support, calm presentation, ambient visuals, and connected information.\n- **Task 3 was not sorting alone.** Twenty-five of 37 normalized concepts directly trace to T2; the remaining twelve were introduced, merged, or refined during scenario work."
+      },
+      {
+        "id": "t2_finding",
+        "type": "markdown",
+        "sourceId": "t2_evidence",
+        "body": "## T2 explored experience as much as utility\n\nThe largest domains were **media/play, navigation/mobility, and ambient/interface mode**, each with seven cards. Cross-group presence adds an important second view: media/play appeared in all four groups, while navigation, ambient/interface, communication, and vehicle state each appeared in three. Safety generated only three cards across two groups, so card volume alone would understate its later importance."
+      },
+      {
+        "id": "t2_chart_block",
+        "type": "chart",
+        "chartId": "t2_domains_chart"
+      },
+      {
+        "id": "t2_table_block",
+        "type": "table",
+        "tableId": "t2_summary_table"
+      },
+      {
+        "id": "t3_finding",
+        "type": "markdown",
+        "sourceId": "t3_evidence",
+        "body": "## T3 turned breadth into a workload-sensitive information hierarchy\n\nThe scenario canvas produced the clearest pattern in the analysis. **Safety was high-only and media/play was low-only.** Communication was mostly low-demand, with four of five concepts placed there. Navigation remained flexible, with four high-demand concepts, one low-demand concept, and one concept spanning both. Connected assistance also crossed all three scenario states, suggesting that appropriateness depends on the assistant function rather than the technology label alone."
+      },
+      {
+        "id": "t3_chart_block",
+        "type": "chart",
+        "chartId": "t3_scenario_chart"
+      },
+      {
+        "id": "t3_table_block",
+        "type": "table",
+        "tableId": "t3_matrix_table"
+      },
+      {
+        "id": "group_finding",
+        "type": "markdown",
+        "sourceId": "t3_evidence",
+        "body": "## The groups followed different scenario strategies\n\nG1 used high, low, and both states. G2 and G3 made a binary high/low split. G4 took a different route: it consolidated fifteen T2 cards into three broad bundles and placed every bundle on the central axis, indicating relevance in both scenarios. This variation is analytically meaningful and should not be flattened into one workshop-wide ranking."
+      },
+      {
+        "id": "group_chart_block",
+        "type": "chart",
+        "chartId": "group_scenario_chart"
+      },
+      {
+        "id": "priority_finding",
+        "type": "markdown",
+        "sourceId": "t3_evidence",
+        "body": "## Closest-to-driver placements reinforce the scenario split\n\nAt rank 1 in high-demand driving, G1 and G3 prioritized collision or unsafe-action alerts; G3 also placed car status there, while G2 prioritized parking and mood background. In low-demand driving, the closest tier is dominated by music, personal media, messages, assistants, smart-home information, and topography. Ranks are ordinal within each group and scenario, so they indicate local priority rather than a shared distance scale."
+      },
+      {
+        "id": "priority_table_block",
+        "type": "table",
+        "tableId": "priority_table"
+      },
+      {
+        "id": "lineage_finding",
+        "type": "markdown",
+        "sourceId": "t3_evidence",
+        "body": "## T3 continued ideation rather than merely sorting T2\n\nTwenty-five normalized T3 concepts directly match a T2 card. Eight concepts are new, three consolidate multiple T2 cards, and one refines an earlier idea. This means the tasks form a design progression: T2 establishes a candidate space, while T3 both evaluates scenario fit and further develops that space."
+      },
+      {
+        "id": "lineage_chart_block",
+        "type": "chart",
+        "chartId": "lineage_chart"
+      },
+      {
+        "id": "scope_methods",
+        "type": "markdown",
+        "sourceId": "combined_analysis",
+        "body": "## How the analysis was built\n\nThe evidence was transcribed card by card and coded with a nine-domain codebook. One primary domain supplies mutually exclusive headline counts; secondary domains preserve cross-domain meaning. Centered T3 cards are coded as **both**, following the confirmed workshop interpretation. Vertical rows are treated as tied ordinal proximity tiers. One exact duplicate ETA and destination-weather card is retained for audit but excluded from normalized counts."
+      },
+      {
+        "id": "codebook_table_block",
+        "type": "table",
+        "tableId": "codebook_table"
+      },
+      {
+        "id": "limitations",
+        "type": "markdown",
+        "sourceId": "combined_analysis",
+        "body": "## What these findings do and do not establish\n\n- Counts describe **group-produced artefacts**, not the prevalence of preferences among 13 independent participants.\n- Coding is an analyst-generated first pass. Ambiguous and bundled cards carry lower confidence in the evidence ledgers.\n- The T3 boards support scenario state and ordinal proximity, not precise spatial distance.\n- Counting the retained duplicate changes low-demand from 15 to 16 raw cards, but does not alter the safety, media, communication, or both-scenario conclusions.\n- No claim in this report uses the earlier spreadsheet clustering or analysis screenshots."
+      },
+      {
+        "id": "next_steps",
+        "type": "markdown",
+        "body": "## Recommended next step\n\nUse this as the auditable first coding pass. Before thesis publication, review the low-confidence cards and the T2→T3 lineage judgments with a second reader, then freeze the codebook and regenerate the report. For Chapter 4, lead with the safety-versus-leisure scenario split, preserve the six both-scenario concepts, and describe T3 as continued concept development rather than a mechanical prioritization exercise."
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-07-20T12:49:37Z",
+    "status": "ready",
+    "datasets": {
+      "overview_metrics": [
+        {
+          "t2_cards": 40,
+          "t3_raw_cards": 38,
+          "t3_concepts": 37,
+          "both_scenario": 6,
+          "direct_lineage": 25
+        }
+      ],
+      "t2_domain_summary": [
+        {
+          "domain": "Media / play",
+          "idea_count": 7,
+          "groups_mentioning": 4,
+          "share_of_t2_cards": 0.175
+        },
+        {
+          "domain": "Ambient / interface mode",
+          "idea_count": 7,
+          "groups_mentioning": 3,
+          "share_of_t2_cards": 0.175
+        },
+        {
+          "domain": "Navigation / mobility",
+          "idea_count": 7,
+          "groups_mentioning": 3,
+          "share_of_t2_cards": 0.175
+        },
+        {
+          "domain": "Communication / social",
+          "idea_count": 5,
+          "groups_mentioning": 3,
+          "share_of_t2_cards": 0.125
+        },
+        {
+          "domain": "Context / environment",
+          "idea_count": 4,
+          "groups_mentioning": 2,
+          "share_of_t2_cards": 0.1
+        },
+        {
+          "domain": "Vehicle state / performance",
+          "idea_count": 3,
+          "groups_mentioning": 3,
+          "share_of_t2_cards": 0.075
+        },
+        {
+          "domain": "Connected assistance / services",
+          "idea_count": 3,
+          "groups_mentioning": 2,
+          "share_of_t2_cards": 0.075
+        },
+        {
+          "domain": "Safety / driving assistance",
+          "idea_count": 3,
+          "groups_mentioning": 2,
+          "share_of_t2_cards": 0.075
+        },
+        {
+          "domain": "Wellbeing / comfort",
+          "idea_count": 1,
+          "groups_mentioning": 1,
+          "share_of_t2_cards": 0.025
+        }
+      ],
+      "t3_scenario_long": [
+        {
+          "domain": "Media / play",
+          "scenario": "high",
+          "concept_count": 0,
+          "domain_total": 5
+        },
+        {
+          "domain": "Media / play",
+          "scenario": "low",
+          "concept_count": 5,
+          "domain_total": 5
+        },
+        {
+          "domain": "Media / play",
+          "scenario": "both",
+          "concept_count": 0,
+          "domain_total": 5
+        },
+        {
+          "domain": "Navigation / mobility",
+          "scenario": "high",
+          "concept_count": 4,
+          "domain_total": 6
+        },
+        {
+          "domain": "Navigation / mobility",
+          "scenario": "low",
+          "concept_count": 1,
+          "domain_total": 6
+        },
+        {
+          "domain": "Navigation / mobility",
+          "scenario": "both",
+          "concept_count": 1,
+          "domain_total": 6
+        },
+        {
+          "domain": "Ambient / interface mode",
+          "scenario": "high",
+          "concept_count": 3,
+          "domain_total": 6
+        },
+        {
+          "domain": "Ambient / interface mode",
+          "scenario": "low",
+          "concept_count": 1,
+          "domain_total": 6
+        },
+        {
+          "domain": "Ambient / interface mode",
+          "scenario": "both",
+          "concept_count": 2,
+          "domain_total": 6
+        },
+        {
+          "domain": "Communication / social",
+          "scenario": "high",
+          "concept_count": 1,
+          "domain_total": 5
+        },
+        {
+          "domain": "Communication / social",
+          "scenario": "low",
+          "concept_count": 4,
+          "domain_total": 5
+        },
+        {
+          "domain": "Communication / social",
+          "scenario": "both",
+          "concept_count": 0,
+          "domain_total": 5
+        },
+        {
+          "domain": "Context / environment",
+          "scenario": "high",
+          "concept_count": 1,
+          "domain_total": 1
+        },
+        {
+          "domain": "Context / environment",
+          "scenario": "low",
+          "concept_count": 0,
+          "domain_total": 1
+        },
+        {
+          "domain": "Context / environment",
+          "scenario": "both",
+          "concept_count": 0,
+          "domain_total": 1
+        },
+        {
+          "domain": "Connected assistance / services",
+          "scenario": "high",
+          "concept_count": 2,
+          "domain_total": 7
+        },
+        {
+          "domain": "Connected assistance / services",
+          "scenario": "low",
+          "concept_count": 3,
+          "domain_total": 7
+        },
+        {
+          "domain": "Connected assistance / services",
+          "scenario": "both",
+          "concept_count": 2,
+          "domain_total": 7
+        },
+        {
+          "domain": "Safety / driving assistance",
+          "scenario": "high",
+          "concept_count": 4,
+          "domain_total": 4
+        },
+        {
+          "domain": "Safety / driving assistance",
+          "scenario": "low",
+          "concept_count": 0,
+          "domain_total": 4
+        },
+        {
+          "domain": "Safety / driving assistance",
+          "scenario": "both",
+          "concept_count": 0,
+          "domain_total": 4
+        },
+        {
+          "domain": "Vehicle state / performance",
+          "scenario": "high",
+          "concept_count": 1,
+          "domain_total": 2
+        },
+        {
+          "domain": "Vehicle state / performance",
+          "scenario": "low",
+          "concept_count": 0,
+          "domain_total": 2
+        },
+        {
+          "domain": "Vehicle state / performance",
+          "scenario": "both",
+          "concept_count": 1,
+          "domain_total": 2
+        },
+        {
+          "domain": "Wellbeing / comfort",
+          "scenario": "high",
+          "concept_count": 0,
+          "domain_total": 1
+        },
+        {
+          "domain": "Wellbeing / comfort",
+          "scenario": "low",
+          "concept_count": 1,
+          "domain_total": 1
+        },
+        {
+          "domain": "Wellbeing / comfort",
+          "scenario": "both",
+          "concept_count": 0,
+          "domain_total": 1
+        }
+      ],
+      "t3_scenario_wide": [
+        {
+          "domain": "Media / play",
+          "high": 0,
+          "low": 5,
+          "both": 0,
+          "total": 5
+        },
+        {
+          "domain": "Navigation / mobility",
+          "high": 4,
+          "low": 1,
+          "both": 1,
+          "total": 6
+        },
+        {
+          "domain": "Ambient / interface mode",
+          "high": 3,
+          "low": 1,
+          "both": 2,
+          "total": 6
+        },
+        {
+          "domain": "Communication / social",
+          "high": 1,
+          "low": 4,
+          "both": 0,
+          "total": 5
+        },
+        {
+          "domain": "Context / environment",
+          "high": 1,
+          "low": 0,
+          "both": 0,
+          "total": 1
+        },
+        {
+          "domain": "Connected assistance / services",
+          "high": 2,
+          "low": 3,
+          "both": 2,
+          "total": 7
+        },
+        {
+          "domain": "Safety / driving assistance",
+          "high": 4,
+          "low": 0,
+          "both": 0,
+          "total": 4
+        },
+        {
+          "domain": "Vehicle state / performance",
+          "high": 1,
+          "low": 0,
+          "both": 1,
+          "total": 2
+        },
+        {
+          "domain": "Wellbeing / comfort",
+          "high": 0,
+          "low": 1,
+          "both": 0,
+          "total": 1
+        }
+      ],
+      "group_scenario_long": [
+        {
+          "group": "G1",
+          "scenario": "high",
+          "concept_count": 3,
+          "group_total": 13
+        },
+        {
+          "group": "G1",
+          "scenario": "low",
+          "concept_count": 7,
+          "group_total": 13
+        },
+        {
+          "group": "G1",
+          "scenario": "both",
+          "concept_count": 3,
+          "group_total": 13
+        },
+        {
+          "group": "G2",
+          "scenario": "high",
+          "concept_count": 7,
+          "group_total": 12
+        },
+        {
+          "group": "G2",
+          "scenario": "low",
+          "concept_count": 5,
+          "group_total": 12
+        },
+        {
+          "group": "G2",
+          "scenario": "both",
+          "concept_count": 0,
+          "group_total": 12
+        },
+        {
+          "group": "G3",
+          "scenario": "high",
+          "concept_count": 6,
+          "group_total": 9
+        },
+        {
+          "group": "G3",
+          "scenario": "low",
+          "concept_count": 3,
+          "group_total": 9
+        },
+        {
+          "group": "G3",
+          "scenario": "both",
+          "concept_count": 0,
+          "group_total": 9
+        },
+        {
+          "group": "G4",
+          "scenario": "high",
+          "concept_count": 0,
+          "group_total": 3
+        },
+        {
+          "group": "G4",
+          "scenario": "low",
+          "concept_count": 0,
+          "group_total": 3
+        },
+        {
+          "group": "G4",
+          "scenario": "both",
+          "concept_count": 3,
+          "group_total": 3
+        }
+      ],
+      "priority_one": [
+        {
+          "group": "G1",
+          "scenario": "high",
+          "domain": "Safety / driving assistance",
+          "concept": "collision detection / proximity to a car"
+        },
+        {
+          "group": "G1",
+          "scenario": "low",
+          "domain": "Ambient / interface mode",
+          "concept": "start screen"
+        },
+        {
+          "group": "G1",
+          "scenario": "low",
+          "domain": "Communication / social",
+          "concept": "summary of messages who calls"
+        },
+        {
+          "group": "G1",
+          "scenario": "low",
+          "domain": "Media / play",
+          "concept": "personal info / gallery"
+        },
+        {
+          "group": "G1",
+          "scenario": "both",
+          "domain": "Vehicle state / performance",
+          "concept": "kickdown visualisation"
+        },
+        {
+          "group": "G2",
+          "scenario": "high",
+          "domain": "Ambient / interface mode",
+          "concept": "mood background"
+        },
+        {
+          "group": "G2",
+          "scenario": "high",
+          "domain": "Navigation / mobility",
+          "concept": "parking lots"
+        },
+        {
+          "group": "G2",
+          "scenario": "low",
+          "domain": "Communication / social",
+          "concept": "messages to other cars"
+        },
+        {
+          "group": "G2",
+          "scenario": "low",
+          "domain": "Connected assistance / services",
+          "concept": "smart home"
+        },
+        {
+          "group": "G2",
+          "scenario": "low",
+          "domain": "Media / play",
+          "concept": "music equalizer"
+        },
+        {
+          "group": "G3",
+          "scenario": "high",
+          "domain": "Safety / driving assistance",
+          "concept": "alert/safety doing something unsafe"
+        },
+        {
+          "group": "G3",
+          "scenario": "high",
+          "domain": "Vehicle state / performance",
+          "concept": "car status speed etc..."
+        },
+        {
+          "group": "G3",
+          "scenario": "low",
+          "domain": "Connected assistance / services",
+          "concept": "chatgpt voice"
+        },
+        {
+          "group": "G3",
+          "scenario": "low",
+          "domain": "Media / play",
+          "concept": "music"
+        },
+        {
+          "group": "G3",
+          "scenario": "low",
+          "domain": "Navigation / mobility",
+          "concept": "3d global topography"
+        },
+        {
+          "group": "G4",
+          "scenario": "both",
+          "domain": "Ambient / interface mode",
+          "concept": "minimal status data calm"
+        }
+      ],
+      "lineage_summary": [
+        {
+          "lineage_status": "direct",
+          "concept_count": 25,
+          "share_of_t3_concepts": 0.676
+        },
+        {
+          "lineage_status": "new",
+          "concept_count": 8,
+          "share_of_t3_concepts": 0.216
+        },
+        {
+          "lineage_status": "merged",
+          "concept_count": 3,
+          "share_of_t3_concepts": 0.081
+        },
+        {
+          "lineage_status": "refined",
+          "concept_count": 1,
+          "share_of_t3_concepts": 0.027
+        }
+      ],
+      "codebook": [
+        {
+          "domain": "Ambient / interface mode",
+          "definition": "Background aesthetics, calm or focus modes, adaptive presentation, and interface atmosphere",
+          "inclusion_examples": "mood background; minimal calm mode; retro particles",
+          "boundary_rule": "Weather, time, and surroundings are coded as Context / environment when the informational content is primary"
+        },
+        {
+          "domain": "Communication / social",
+          "definition": "Messages, calls, notes, or communication between people or vehicles",
+          "inclusion_examples": "message summary; digital post-it; message to another car",
+          "boundary_rule": "General assistant functions are coded as Connected assistance / services"
+        },
+        {
+          "domain": "Connected assistance / services",
+          "definition": "Digital assistants, reminders, translation, smart-home links, or externally connected services",
+          "inclusion_examples": "ChatGPT voice; smart home; reminder icons; live translation",
+          "boundary_rule": "Human-to-human messages are coded as Communication / social"
+        },
+        {
+          "domain": "Context / environment",
+          "definition": "Weather, time, road conditions, seasons, or visual information about the surrounding environment",
+          "inclusion_examples": "weather forecast; analog clock; pictures of surroundings",
+          "boundary_rule": "Route-specific context is coded as Navigation / mobility"
+        },
+        {
+          "domain": "Media / play",
+          "definition": "Entertainment, personal media, games, or companion-like playful content",
+          "inclusion_examples": "music; gaming; personal gallery; car-pet",
+          "boundary_rule": "Atmospheric interface styling without media content is coded as Ambient / interface mode"
+        },
+        {
+          "domain": "Navigation / mobility",
+          "definition": "Route, destination, location, parking, points of interest, or spatial journey information",
+          "inclusion_examples": "parking lots; alternative routes; destination countdown; path to goal",
+          "boundary_rule": "Environmental imagery without an explicit route or location purpose is coded as Context / environment"
+        },
+        {
+          "domain": "Safety / driving assistance",
+          "definition": "Hazard awareness, unsafe-action feedback, collision prevention, or immediate driving support",
+          "inclusion_examples": "collision detection; cyclist/pedestrian warning; unsafe-action alert",
+          "boundary_rule": "Parking and route guidance are coded as Navigation / mobility unless immediate hazard avoidance is the central meaning"
+        },
+        {
+          "domain": "Vehicle state / performance",
+          "definition": "State or behaviour of the vehicle itself",
+          "inclusion_examples": "car status; battery; kickdown visualization",
+          "boundary_rule": "Safety consequences are secondary unless hazard prevention is the stated purpose"
+        },
+        {
+          "domain": "Wellbeing / comfort",
+          "definition": "Health, wellbeing, comfort, or occupant-state information",
+          "inclusion_examples": "health widget",
+          "boundary_rule": "Mood styling alone is coded as Ambient / interface mode"
+        }
+      ]
+    },
+    "accessIssues": []
+  },
+  "sources": [
+    {
+      "id": "t2_evidence",
+      "query": {
+        "engine": "sqlite",
+        "language": "sql",
+        "description": "Manual transcription and primary-domain coding of all 40 physical Task 2 cards from the four source boards.",
+        "sql": "SELECT * FROM t2_ideas ORDER BY \"group\", idea_id",
+        "tables_used": [
+          "t2_ideas"
+        ],
+        "executed_at": "2026-07-20T12:49:37Z"
+      }
+    },
+    {
+      "id": "t3_evidence",
+      "query": {
+        "engine": "sqlite",
+        "language": "sql",
+        "description": "Manual transcription, scenario classification, proximity-tier coding, and T2 lineage coding of the four Task 3 boards.",
+        "sql": "SELECT * FROM t3_placements WHERE analysis_inclusion = 'yes' ORDER BY \"group\", normalized_concept_id",
+        "tables_used": [
+          "t3_placements"
+        ],
+        "executed_at": "2026-07-20T12:49:37Z"
+      }
+    },
+    {
+      "id": "combined_analysis",
+      "query": {
+        "engine": "sqlite",
+        "language": "sql",
+        "description": "Deterministic aggregation of the reviewed T2 and T3 evidence ledgers, including duplicate sensitivity checks.",
+        "sql": "SELECT 't2_cards' AS metric, COUNT(*) AS value FROM t2_ideas\nUNION ALL SELECT 't3_raw_cards', COUNT(*) FROM t3_placements\nUNION ALL SELECT 't3_concepts', COUNT(*) FROM t3_placements WHERE analysis_inclusion = 'yes'\nUNION ALL SELECT 'both_scenario', COUNT(*) FROM t3_placements WHERE analysis_inclusion = 'yes' AND scenario = 'both'\nUNION ALL SELECT 'direct_lineage', COUNT(*) FROM t3_placements WHERE analysis_inclusion = 'yes' AND lineage_status = 'direct'",
+        "tables_used": [
+          "t2_ideas",
+          "t3_placements"
+        ],
+        "executed_at": "2026-07-20T12:49:37Z"
+      }
+    },
+    {
+      "id": "codebook",
+      "query": {
+        "engine": "sqlite",
+        "language": "sql",
+        "description": "Hybrid deductive and inductive primary-domain codebook with inclusion examples and boundary rules.",
+        "sql": "SELECT * FROM codebook ORDER BY domain",
+        "tables_used": [
+          "codebook"
+        ],
+        "executed_at": "2026-07-20T12:49:37Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "validated",
+  "population_rule": "All 72 included participant-trials in the canonical crosswalk; P07 is excluded upstream and P07_t3 is not substituted.",
+  "condition_denominators": {
+    "NT": 24,
+    "V1": 16,
+    "V2": 16,
+    "V3": 16
+  },
+  "available_sources": 72,
+  "missing_sources": [],
+  "p01_t3_condition": "V2",
+  "canonical_map_sha256": "b96b98785aab99629ee066e90757e273481f0b8634dcfe830df5cd2fab9dd362"
+}

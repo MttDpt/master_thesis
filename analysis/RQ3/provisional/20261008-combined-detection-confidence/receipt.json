@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "checks": 401,
+  "failed": 0,
+  "provisional": true,
+  "thesis_adoption": "pending",
+  "sources": {
+    "analysis/dataset/trial-data/trial-data-crosswalk/72-trial-map.csv": "b96b98785aab99629ee066e90757e273481f0b8634dcfe830df5cd2fab9dd362",
+    "analysis/dataset/trigger-data/trigger-data-cleaning/trigger_trials.csv": "2c229d4e0e79885354ef709aaac6b7965cf090cd1a8ce515afc23844ad1be8d9",
+    "analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/tables/sanitized_input.csv": "7f0b2dc46e8034cc709a36e224ea373cef24aedf18ecc993c869724854907781",
+    "analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/receipts/independent_validation.json": "e3827b9021d9207ac028ee0ab8fc154c48248bf9a5d2f7e7818bae2da7a1b4f3",
+    "analysis/RQ3/provisional/coding/full-corpus-trial-codes.csv": "29ea01e45a7fef9953edee664c331562f3ce27397ae1fe19cdafa1beb7bab89e",
+    "analysis/RQ3/provisional/coding/full-corpus-validation.json": "eda0f7ea1cac43fa8722a6131c04c5dcc8489acc6068f46791ec91880031b4eb",
+    "analysis/RQ3/provisional/20261008-cross-rq-gaps/input.csv": "ba396d0144bc05224f1ac8ad81ab5e3547ebf6a934f3ec46d480880db00c5101",
+    "analysis/dataset/originals/questionnaire-data/data-aggregated.xlsx": "d87a3a115ea8d57bd553bc200e5082e209f4eca10569ae6e7a28d49b44d8a6f4"
+  },
+  "settings_sha256": "81a1d60fe68b5b132f397d70de33942c0bca2d18fd95748982e5a4049e787a83",
+  "code_sha256": "775cb73c093727da7c1d9e95dbbc586cf7d9c39a923fdda1a21ed462eca3d149",
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1"
+  },
+  "test_family_size": 30,
+  "bootstrap_draws": 200000,
+  "all_earlier_results_preserved": true
+}

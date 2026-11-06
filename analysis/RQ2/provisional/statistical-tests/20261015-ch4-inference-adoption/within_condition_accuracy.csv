@@ -1,0 +1,5 @@
+test_id,family,method,n_pairs,first_mean,second_mean,gap,positive,negative,tied,condition,first,second,n_trials,raw_p,both,neither,holm_p,supported
+NT__Q1__Q2,accuracy4,exact_mcnemar,24,1.0,0.75,0.25,6,0,18,NT,Q1,Q2,24,0.03125,18,0,0.09375,False
+V1__Q1__Q2,accuracy4,exact_mcnemar,16,0.875,0.875,0.0,0,0,16,V1,Q1,Q2,16,1.0,14,2,1.0,False
+V2__Q1__Q2,accuracy4,exact_mcnemar,16,0.9375,0.5625,0.375,6,0,10,V2,Q1,Q2,16,0.03125,9,1,0.09375,False
+V3__Q1__Q2,accuracy4,exact_mcnemar,16,0.8125,0.125,0.6875,12,1,3,V3,Q1,Q2,16,0.00341796875,1,2,0.013671875,True

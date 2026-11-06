@@ -1,0 +1,45 @@
+table,scope,event,outcome,metric,usable,eligible,M,SD,Md,IQR
+tab:gaze-onset-summaries,all animations,onset,missed,total_ambient_s,5,8,12.4663859,4.238792911459912,10.9216685,6.939803000000001
+tab:gaze-onset-summaries,all animations,onset,detected,total_ambient_s,30,40,12.494674866666665,4.956849167043113,10.95340375,4.304097124999998
+tab:gaze-onset-summaries,sun-to-moon,onset,missed,total_ambient_s,0,0,,,,
+tab:gaze-onset-summaries,sun-to-moon,onset,detected,total_ambient_s,13,16,12.282592000000001,4.402455569956655,12.2146865,5.435933500000001
+tab:gaze-onset-summaries,buildings,onset,missed,total_ambient_s,2,3,12.8378675,4.907181761398747,12.8378675,3.4699015000000024
+tab:gaze-onset-summaries,buildings,onset,detected,total_ambient_s,9,13,12.63374861111111,6.704853598920868,10.7530655,2.2907200000000003
+tab:gaze-onset-summaries,red-sphere,onset,missed,total_ambient_s,3,5,12.218731499999999,4.864618858747902,10.9216685,4.733153
+tab:gaze-onset-summaries,red-sphere,onset,detected,total_ambient_s,8,11,12.6828515625,4.127923990716679,12.16461725,3.3972633749999996
+tab:gaze-onset-summaries,all animations,onset,missed,frequency_per_valid_min,5,8,129.88665506211998,19.358182021251956,137.085445046,11.855406874999986
+tab:gaze-onset-summaries,all animations,onset,detected,frequency_per_valid_min,30,40,126.85136932138333,58.550275144841756,113.660509324,94.17728998430002
+tab:gaze-onset-summaries,sun-to-moon,onset,missed,frequency_per_valid_min,0,0,,,,
+tab:gaze-onset-summaries,sun-to-moon,onset,detected,frequency_per_valid_min,13,16,110.61885328294616,52.06424029998897,105.254246787,55.8814760491
+tab:gaze-onset-summaries,buildings,onset,missed,frequency_per_valid_min,2,3,137.9071522065,16.958238381448187,137.9071522065,11.991285356499986
+tab:gaze-onset-summaries,buildings,onset,detected,frequency_per_valid_min,9,13,141.87633415494443,72.00429105502965,141.510569005,91.33513621990001
+tab:gaze-onset-summaries,red-sphere,onset,missed,frequency_per_valid_min,3,5,124.53965696586666,22.326521010444523,137.085445046,19.50451079919999
+tab:gaze-onset-summaries,red-sphere,onset,detected,frequency_per_valid_min,8,11,136.3261224460875,52.42055052178379,134.3056408245,86.80123379925
+tab:gaze-whole-trial-summaries,\shortstack[l]{all animations\\changes happening},onset,missed,total_ambient_s,4,8,21.741629375,8.88387254088142,19.337632499999998,11.213410874999997
+tab:gaze-whole-trial-summaries,\shortstack[l]{all animations\\changes happening},onset,detected,total_ambient_s,26,40,19.865215346153846,7.001744327408376,18.841894500000002,8.057400999999999
+tab:gaze-whole-trial-summaries,\shortstack[l]{all animations\\finished state},completion,missed,total_ambient_s,20,31,21.304620925000002,6.880257052482316,20.30969825,9.379306749999996
+tab:gaze-whole-trial-summaries,\shortstack[l]{all animations\\finished state},completion,detected,total_ambient_s,10,17,17.7369698,7.380989233206873,18.286811999999998,8.932374625
+tab:gaze-whole-trial-summaries,no-animation,press,press,total_ambient_s,5,8,15.9029867,6.498968742949229,18.7342425,9.686673999999998
+tab:gaze-whole-trial-summaries,no-animation,press,no press,total_ambient_s,8,16,20.2448846875,4.5794454993119835,19.24039625,4.6863385000000015
+tab:gaze-whole-trial-summaries,\shortstack[l]{all animations\\changes happening},onset,missed,frequency_per_valid_min,4,8,131.075678610025,58.7275615037692,117.496947946,38.992578627475
+tab:gaze-whole-trial-summaries,\shortstack[l]{all animations\\changes happening},onset,detected,frequency_per_valid_min,26,40,91.58145109370001,39.793461648352825,83.38269280969999,56.564636039899995
+tab:gaze-whole-trial-summaries,\shortstack[l]{all animations\\finished state},completion,missed,frequency_per_valid_min,20,31,101.447047552595,44.350885954003424,84.3768034118,54.05134467079999
+tab:gaze-whole-trial-summaries,\shortstack[l]{all animations\\finished state},completion,detected,frequency_per_valid_min,10,17,87.64794918244,43.07564452617138,93.67798996754999,65.95591431855
+tab:gaze-whole-trial-summaries,no-animation,press,press,frequency_per_valid_min,5,8,73.5378559511,34.188530855339245,68.6463748467,31.2482711874
+tab:gaze-whole-trial-summaries,no-animation,press,no press,frequency_per_valid_min,8,16,95.229026733475,41.03561603327906,86.4795164583,36.085831579624994
+tab:gaze-fixed-summaries,all animations,completion,missed,total_ambient_s,19,31,8.601536552631579,4.2189453749588095,9.610506,8.044785000000001
+tab:gaze-fixed-summaries,all animations,completion,detected,total_ambient_s,12,17,7.1142855,4.321338351080884,5.983549249999999,6.193531500000001
+tab:gaze-fixed-summaries,sun-to-moon,completion,missed,total_ambient_s,8,11,8.5173321875,4.117084935624867,8.46096725,6.1604301249999995
+tab:gaze-fixed-summaries,sun-to-moon,completion,detected,total_ambient_s,5,5,7.4327776,4.715504746695965,5.8794425,1.3560865
+tab:gaze-fixed-summaries,buildings,completion,missed,total_ambient_s,6,11,7.622374833333333,5.227636458848269,7.05735625,8.28099475
+tab:gaze-fixed-summaries,buildings,completion,detected,total_ambient_s,2,5,7.5555215,7.081883010083724,7.5555215,5.007647499999999
+tab:gaze-fixed-summaries,red-sphere,completion,missed,total_ambient_s,5,9,9.9112576,3.560591697275177,10.6316365,1.6526300000000003
+tab:gaze-fixed-summaries,red-sphere,completion,detected,total_ambient_s,5,7,6.619299,4.006088705853582,6.087656,6.299906999999999
+tab:gaze-fixed-summaries,all animations,completion,missed,frequency_per_valid_min,19,31,103.51899570039474,67.4157336504092,91.5189647723,55.82423907354999
+tab:gaze-fixed-summaries,all animations,completion,detected,frequency_per_valid_min,12,17,114.91410776654168,84.45462920142471,103.25235466545,77.17655053097499
+tab:gaze-fixed-summaries,sun-to-moon,completion,missed,frequency_per_valid_min,8,11,87.4290458257625,66.04174714061298,70.6338107793,62.40431206599999
+tab:gaze-fixed-summaries,sun-to-moon,completion,detected,frequency_per_valid_min,5,5,157.82200341454,98.39071141019448,116.237604316,30.531430654999994
+tab:gaze-fixed-summaries,buildings,completion,missed,frequency_per_valid_min,6,11,89.01429689873333,48.498385285998815,88.5373122842,35.356429953399996
+tab:gaze-fixed-summaries,buildings,completion,detected,frequency_per_valid_min,2,5,31.559156138699997,11.622365080574552,31.559156138699997,8.218253161900002
+tab:gaze-fixed-summaries,red-sphere,completion,missed,frequency_per_valid_min,5,9,146.6685540618,81.96641933918022,112.133056487,15.947763327000004
+tab:gaze-fixed-summaries,red-sphere,completion,detected,frequency_per_valid_min,5,7,105.34819276968001,63.32723244520391,96.6245338529,72.3843451965

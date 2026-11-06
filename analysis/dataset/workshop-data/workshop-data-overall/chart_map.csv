@@ -1,0 +1,5 @@
+section,question,family,chart_type,fields,claim
+Task 2 breadth,Which information domains were most developed in T2?,Comparison and ranking,horizontalBar,domain; idea_count,"Media, navigation, and ambient/interface concepts each account for seven of 40 T2 cards."
+Task 3 scenario fit,"How were domains distributed across high, low, and both scenarios?",Composition,horizontalStackedBar,domain; concept_count; scenario,"Safety is high-only and media is low-only, while navigation and connected assistance span scenarios."
+Group strategies,How did each group use the scenario canvas?,Composition,stackedBar,group; concept_count; scenario,"Groups 1–3 split concepts between scenarios, while Group 4 placed all three bundles on the both-scenario axis."
+T2 to T3 development,Did T3 only sort T2 ideas or also transform them?,Comparison and ranking,horizontalBar,lineage_status; concept_count,"Twenty-five concepts link directly to T2, while twelve are new, merged, or refined."

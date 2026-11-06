@@ -1,0 +1,468 @@
+check,passed
+P01_t1/30-90: rate and missingness,True
+P01_t1/30-90: unchanged eligibility/conversion,True
+P01_t1/90-120: rate and missingness,True
+P01_t1/90-120: unchanged eligibility/conversion,True
+P01_t1/0-120: rate and missingness,True
+P01_t1/0-120: unchanged eligibility/conversion,True
+P01_t2/30-90: rate and missingness,True
+P01_t2/30-90: unchanged eligibility/conversion,True
+P01_t2/90-120: rate and missingness,True
+P01_t2/90-120: unchanged eligibility/conversion,True
+P01_t3/30-90: rate and missingness,True
+P01_t3/90-120: rate and missingness,True
+P01_t3/90-120: unchanged eligibility/conversion,True
+P02_t1/30-90: rate and missingness,True
+P02_t1/30-90: unchanged eligibility/conversion,True
+P02_t1/90-120: rate and missingness,True
+P02_t1/90-120: unchanged eligibility/conversion,True
+P02_t2/30-90: rate and missingness,True
+P02_t2/30-90: unchanged eligibility/conversion,True
+P02_t2/90-120: rate and missingness,True
+P02_t2/90-120: unchanged eligibility/conversion,True
+P02_t2/0-120: rate and missingness,True
+P02_t2/0-120: unchanged eligibility/conversion,True
+P02_t3/30-90: rate and missingness,True
+P02_t3/30-90: unchanged eligibility/conversion,True
+P02_t3/90-120: rate and missingness,True
+P03_t1/30-90: rate and missingness,True
+P03_t1/30-90: unchanged eligibility/conversion,True
+P03_t1/90-120: rate and missingness,True
+P03_t1/90-120: unchanged eligibility/conversion,True
+P03_t1/0-120: rate and missingness,True
+P03_t1/0-120: unchanged eligibility/conversion,True
+P03_t2/30-90: rate and missingness,True
+P03_t2/30-90: unchanged eligibility/conversion,True
+P03_t2/90-120: rate and missingness,True
+P03_t2/90-120: unchanged eligibility/conversion,True
+P03_t3/30-90: rate and missingness,True
+P03_t3/30-90: unchanged eligibility/conversion,True
+P03_t3/90-120: rate and missingness,True
+P03_t3/90-120: unchanged eligibility/conversion,True
+P04_t1/30-90: rate and missingness,True
+P04_t1/30-90: unchanged eligibility/conversion,True
+P04_t1/90-120: rate and missingness,True
+P04_t1/90-120: unchanged eligibility/conversion,True
+P04_t2/30-90: rate and missingness,True
+P04_t2/30-90: unchanged eligibility/conversion,True
+P04_t2/90-120: rate and missingness,True
+P04_t2/90-120: unchanged eligibility/conversion,True
+P04_t2/0-120: rate and missingness,True
+P04_t2/0-120: unchanged eligibility/conversion,True
+P04_t3/30-90: rate and missingness,True
+P04_t3/30-90: unchanged eligibility/conversion,True
+P04_t3/90-120: rate and missingness,True
+P04_t3/90-120: unchanged eligibility/conversion,True
+P05_t1/30-90: rate and missingness,True
+P05_t1/30-90: unchanged eligibility/conversion,True
+P05_t1/90-120: rate and missingness,True
+P05_t1/90-120: unchanged eligibility/conversion,True
+P05_t2/30-90: rate and missingness,True
+P05_t2/30-90: unchanged eligibility/conversion,True
+P05_t2/90-120: rate and missingness,True
+P05_t3/30-90: rate and missingness,True
+P05_t3/30-90: unchanged eligibility/conversion,True
+P05_t3/90-120: rate and missingness,True
+P05_t3/90-120: unchanged eligibility/conversion,True
+P05_t3/0-120: rate and missingness,True
+P08_t1/30-90: rate and missingness,True
+P08_t1/30-90: unchanged eligibility/conversion,True
+P08_t1/90-120: rate and missingness,True
+P08_t1/90-120: unchanged eligibility/conversion,True
+P08_t2/30-90: rate and missingness,True
+P08_t2/30-90: unchanged eligibility/conversion,True
+P08_t2/90-120: rate and missingness,True
+P08_t2/90-120: unchanged eligibility/conversion,True
+P08_t2/0-120: rate and missingness,True
+P08_t2/0-120: unchanged eligibility/conversion,True
+P08_t3/30-90: rate and missingness,True
+P08_t3/30-90: unchanged eligibility/conversion,True
+P08_t3/90-120: rate and missingness,True
+P08_t3/90-120: unchanged eligibility/conversion,True
+P09_t1/30-90: rate and missingness,True
+P09_t1/90-120: rate and missingness,True
+P09_t1/0-120: rate and missingness,True
+P09_t2/30-90: rate and missingness,True
+P09_t2/90-120: rate and missingness,True
+P09_t3/30-90: rate and missingness,True
+P09_t3/90-120: rate and missingness,True
+P10_t1/30-90: rate and missingness,True
+P10_t1/90-120: rate and missingness,True
+P10_t2/30-90: rate and missingness,True
+P10_t2/90-120: rate and missingness,True
+P10_t2/0-120: rate and missingness,True
+P10_t3/30-90: rate and missingness,True
+P10_t3/90-120: rate and missingness,True
+P10_t3/90-120: unchanged eligibility/conversion,True
+P11_t1/30-90: rate and missingness,True
+P11_t1/30-90: unchanged eligibility/conversion,True
+P11_t1/90-120: rate and missingness,True
+P11_t2/30-90: rate and missingness,True
+P11_t2/90-120: rate and missingness,True
+P11_t3/30-90: rate and missingness,True
+P11_t3/90-120: rate and missingness,True
+P11_t3/90-120: unchanged eligibility/conversion,True
+P11_t3/0-120: rate and missingness,True
+P12_t1/30-90: rate and missingness,True
+P12_t1/30-90: unchanged eligibility/conversion,True
+P12_t1/90-120: rate and missingness,True
+P12_t2/30-90: rate and missingness,True
+P12_t2/30-90: unchanged eligibility/conversion,True
+P12_t2/90-120: rate and missingness,True
+P12_t2/90-120: unchanged eligibility/conversion,True
+P12_t3/30-90: rate and missingness,True
+P12_t3/30-90: unchanged eligibility/conversion,True
+P12_t3/90-120: rate and missingness,True
+P12_t3/90-120: unchanged eligibility/conversion,True
+P12_t3/0-120: rate and missingness,True
+P12_t3/0-120: unchanged eligibility/conversion,True
+P13_t1/30-90: rate and missingness,True
+P13_t1/30-90: unchanged eligibility/conversion,True
+P13_t1/90-120: rate and missingness,True
+P13_t1/0-120: rate and missingness,True
+P13_t2/30-90: rate and missingness,True
+P13_t2/90-120: rate and missingness,True
+P13_t3/30-90: rate and missingness,True
+P13_t3/90-120: rate and missingness,True
+P14_t1/30-90: rate and missingness,True
+P14_t1/30-90: unchanged eligibility/conversion,True
+P14_t1/90-120: rate and missingness,True
+P14_t2/30-90: rate and missingness,True
+P14_t2/90-120: rate and missingness,True
+P14_t2/0-120: rate and missingness,True
+P14_t3/30-90: rate and missingness,True
+P14_t3/30-90: unchanged eligibility/conversion,True
+P14_t3/90-120: rate and missingness,True
+P15_t1/30-90: rate and missingness,True
+P15_t1/90-120: rate and missingness,True
+P15_t1/90-120: unchanged eligibility/conversion,True
+P15_t1/0-120: rate and missingness,True
+P15_t2/30-90: rate and missingness,True
+P15_t2/90-120: rate and missingness,True
+P15_t3/30-90: rate and missingness,True
+P15_t3/30-90: unchanged eligibility/conversion,True
+P15_t3/90-120: rate and missingness,True
+P15_t3/90-120: unchanged eligibility/conversion,True
+P16_t1/30-90: rate and missingness,True
+P16_t1/30-90: unchanged eligibility/conversion,True
+P16_t1/90-120: rate and missingness,True
+P16_t1/90-120: unchanged eligibility/conversion,True
+P16_t2/30-90: rate and missingness,True
+P16_t2/30-90: unchanged eligibility/conversion,True
+P16_t2/90-120: rate and missingness,True
+P16_t2/90-120: unchanged eligibility/conversion,True
+P16_t2/0-120: rate and missingness,True
+P16_t2/0-120: unchanged eligibility/conversion,True
+P16_t3/30-90: rate and missingness,True
+P16_t3/30-90: unchanged eligibility/conversion,True
+P16_t3/90-120: rate and missingness,True
+P16_t3/90-120: unchanged eligibility/conversion,True
+P17_t1/30-90: rate and missingness,True
+P17_t1/90-120: rate and missingness,True
+P17_t2/30-90: rate and missingness,True
+P17_t2/30-90: unchanged eligibility/conversion,True
+P17_t2/90-120: rate and missingness,True
+P17_t2/90-120: unchanged eligibility/conversion,True
+P17_t3/30-90: rate and missingness,True
+P17_t3/90-120: rate and missingness,True
+P17_t3/0-120: rate and missingness,True
+P18_t1/30-90: rate and missingness,True
+P18_t1/30-90: unchanged eligibility/conversion,True
+P18_t1/90-120: rate and missingness,True
+P18_t2/30-90: rate and missingness,True
+P18_t2/30-90: unchanged eligibility/conversion,True
+P18_t2/90-120: rate and missingness,True
+P18_t2/90-120: unchanged eligibility/conversion,True
+P18_t3/30-90: rate and missingness,True
+P18_t3/30-90: unchanged eligibility/conversion,True
+P18_t3/90-120: rate and missingness,True
+P18_t3/90-120: unchanged eligibility/conversion,True
+P18_t3/0-120: rate and missingness,True
+P18_t3/0-120: unchanged eligibility/conversion,True
+P19_t1/30-90: rate and missingness,True
+P19_t1/90-120: rate and missingness,True
+P19_t1/90-120: unchanged eligibility/conversion,True
+P19_t1/0-120: rate and missingness,True
+P19_t2/30-90: rate and missingness,True
+P19_t2/30-90: unchanged eligibility/conversion,True
+P19_t2/90-120: rate and missingness,True
+P19_t2/90-120: unchanged eligibility/conversion,True
+P19_t3/30-90: rate and missingness,True
+P19_t3/90-120: rate and missingness,True
+P19_t3/90-120: unchanged eligibility/conversion,True
+P20_t1/30-90: rate and missingness,True
+P20_t1/30-90: unchanged eligibility/conversion,True
+P20_t1/90-120: rate and missingness,True
+P20_t1/90-120: unchanged eligibility/conversion,True
+P20_t2/30-90: rate and missingness,True
+P20_t2/30-90: unchanged eligibility/conversion,True
+P20_t2/90-120: rate and missingness,True
+P20_t2/90-120: unchanged eligibility/conversion,True
+P20_t2/0-120: rate and missingness,True
+P20_t2/0-120: unchanged eligibility/conversion,True
+P20_t3/30-90: rate and missingness,True
+P20_t3/30-90: unchanged eligibility/conversion,True
+P20_t3/90-120: rate and missingness,True
+P20_t3/90-120: unchanged eligibility/conversion,True
+P21_t1/30-90: rate and missingness,True
+P21_t1/30-90: unchanged eligibility/conversion,True
+P21_t1/90-120: rate and missingness,True
+P21_t1/0-120: rate and missingness,True
+P21_t2/30-90: rate and missingness,True
+P21_t2/30-90: unchanged eligibility/conversion,True
+P21_t2/90-120: rate and missingness,True
+P21_t2/90-120: unchanged eligibility/conversion,True
+P21_t3/30-90: rate and missingness,True
+P21_t3/30-90: unchanged eligibility/conversion,True
+P21_t3/90-120: rate and missingness,True
+P21_t3/90-120: unchanged eligibility/conversion,True
+P22_t1/30-90: rate and missingness,True
+P22_t1/30-90: unchanged eligibility/conversion,True
+P22_t1/90-120: rate and missingness,True
+P22_t2/30-90: rate and missingness,True
+P22_t2/30-90: unchanged eligibility/conversion,True
+P22_t2/90-120: rate and missingness,True
+P22_t2/90-120: unchanged eligibility/conversion,True
+P22_t2/0-120: rate and missingness,True
+P22_t2/0-120: unchanged eligibility/conversion,True
+P22_t3/30-90: rate and missingness,True
+P22_t3/30-90: unchanged eligibility/conversion,True
+P22_t3/90-120: rate and missingness,True
+P22_t3/90-120: unchanged eligibility/conversion,True
+P23_t1/30-90: rate and missingness,True
+P23_t1/30-90: unchanged eligibility/conversion,True
+P23_t1/90-120: rate and missingness,True
+P23_t1/90-120: unchanged eligibility/conversion,True
+P23_t2/30-90: rate and missingness,True
+P23_t2/30-90: unchanged eligibility/conversion,True
+P23_t2/90-120: rate and missingness,True
+P23_t2/90-120: unchanged eligibility/conversion,True
+P23_t3/30-90: rate and missingness,True
+P23_t3/30-90: unchanged eligibility/conversion,True
+P23_t3/90-120: rate and missingness,True
+P23_t3/90-120: unchanged eligibility/conversion,True
+P23_t3/0-120: rate and missingness,True
+P23_t3/0-120: unchanged eligibility/conversion,True
+P24_t1/30-90: rate and missingness,True
+P24_t1/30-90: unchanged eligibility/conversion,True
+P24_t1/90-120: rate and missingness,True
+P24_t1/90-120: unchanged eligibility/conversion,True
+P24_t2/30-90: rate and missingness,True
+P24_t2/30-90: unchanged eligibility/conversion,True
+P24_t2/90-120: rate and missingness,True
+P24_t2/90-120: unchanged eligibility/conversion,True
+P24_t3/30-90: rate and missingness,True
+P24_t3/30-90: unchanged eligibility/conversion,True
+P24_t3/90-120: rate and missingness,True
+P24_t3/90-120: unchanged eligibility/conversion,True
+P24_t3/0-120: rate and missingness,True
+P24_t3/0-120: unchanged eligibility/conversion,True
+P25_t1/30-90: rate and missingness,True
+P25_t1/30-90: unchanged eligibility/conversion,True
+P25_t1/90-120: rate and missingness,True
+P25_t1/90-120: unchanged eligibility/conversion,True
+P25_t2/30-90: rate and missingness,True
+P25_t2/30-90: unchanged eligibility/conversion,True
+P25_t2/90-120: rate and missingness,True
+P25_t2/90-120: unchanged eligibility/conversion,True
+P25_t3/30-90: rate and missingness,True
+P25_t3/30-90: unchanged eligibility/conversion,True
+P25_t3/90-120: rate and missingness,True
+P25_t3/90-120: unchanged eligibility/conversion,True
+P25_t3/0-120: rate and missingness,True
+P25_t3/0-120: unchanged eligibility/conversion,True
+P26_t1/30-90: rate and missingness,True
+P26_t1/30-90: unchanged eligibility/conversion,True
+P26_t1/90-120: rate and missingness,True
+P26_t1/90-120: unchanged eligibility/conversion,True
+P26_t1/0-120: rate and missingness,True
+P26_t2/30-90: rate and missingness,True
+P26_t2/90-120: rate and missingness,True
+P26_t2/90-120: unchanged eligibility/conversion,True
+P26_t3/30-90: rate and missingness,True
+P26_t3/90-120: rate and missingness,True
+P01_t1/0-120: rate and missingness,True
+P01_t1/0-120: unchanged eligibility/conversion,True
+P01_t2/0-120: rate and missingness,True
+P01_t2/0-120: unchanged eligibility/conversion,True
+P01_t3/0-120: rate and missingness,True
+P01_t3/0-120: unchanged eligibility/conversion,True
+P02_t1/0-120: rate and missingness,True
+P02_t2/0-120: rate and missingness,True
+P02_t2/0-120: unchanged eligibility/conversion,True
+P02_t3/0-120: rate and missingness,True
+P02_t3/0-120: unchanged eligibility/conversion,True
+P03_t1/0-120: rate and missingness,True
+P03_t1/0-120: unchanged eligibility/conversion,True
+P03_t2/0-120: rate and missingness,True
+P03_t2/0-120: unchanged eligibility/conversion,True
+P03_t3/0-120: rate and missingness,True
+P03_t3/0-120: unchanged eligibility/conversion,True
+P04_t1/0-120: rate and missingness,True
+P04_t1/0-120: unchanged eligibility/conversion,True
+P04_t2/0-120: rate and missingness,True
+P04_t2/0-120: unchanged eligibility/conversion,True
+P04_t3/0-120: rate and missingness,True
+P04_t3/0-120: unchanged eligibility/conversion,True
+P05_t1/0-120: rate and missingness,True
+P05_t1/0-120: unchanged eligibility/conversion,True
+P05_t2/0-120: rate and missingness,True
+P05_t2/0-120: unchanged eligibility/conversion,True
+P05_t3/0-120: rate and missingness,True
+P08_t1/0-120: rate and missingness,True
+P08_t1/0-120: unchanged eligibility/conversion,True
+P08_t2/0-120: rate and missingness,True
+P08_t2/0-120: unchanged eligibility/conversion,True
+P08_t3/0-120: rate and missingness,True
+P08_t3/0-120: unchanged eligibility/conversion,True
+P09_t1/0-120: rate and missingness,True
+P09_t2/0-120: rate and missingness,True
+P09_t3/0-120: rate and missingness,True
+P10_t1/0-120: rate and missingness,True
+P10_t2/0-120: rate and missingness,True
+P10_t3/0-120: rate and missingness,True
+P11_t1/0-120: rate and missingness,True
+P11_t2/0-120: rate and missingness,True
+P11_t3/0-120: rate and missingness,True
+P12_t1/0-120: rate and missingness,True
+P12_t1/0-120: unchanged eligibility/conversion,True
+P12_t2/0-120: rate and missingness,True
+P12_t2/0-120: unchanged eligibility/conversion,True
+P12_t3/0-120: rate and missingness,True
+P12_t3/0-120: unchanged eligibility/conversion,True
+P13_t1/0-120: rate and missingness,True
+P13_t2/0-120: rate and missingness,True
+P13_t3/0-120: rate and missingness,True
+P14_t1/0-120: rate and missingness,True
+P14_t2/0-120: rate and missingness,True
+P14_t3/0-120: rate and missingness,True
+P15_t1/0-120: rate and missingness,True
+P15_t2/0-120: rate and missingness,True
+P15_t3/0-120: rate and missingness,True
+P15_t3/0-120: unchanged eligibility/conversion,True
+P16_t1/0-120: rate and missingness,True
+P16_t1/0-120: unchanged eligibility/conversion,True
+P16_t2/0-120: rate and missingness,True
+P16_t2/0-120: unchanged eligibility/conversion,True
+P16_t3/0-120: rate and missingness,True
+P16_t3/0-120: unchanged eligibility/conversion,True
+P17_t1/0-120: rate and missingness,True
+P17_t2/0-120: rate and missingness,True
+P17_t2/0-120: unchanged eligibility/conversion,True
+P17_t3/0-120: rate and missingness,True
+P18_t1/0-120: rate and missingness,True
+P18_t1/0-120: unchanged eligibility/conversion,True
+P18_t2/0-120: rate and missingness,True
+P18_t2/0-120: unchanged eligibility/conversion,True
+P18_t3/0-120: rate and missingness,True
+P18_t3/0-120: unchanged eligibility/conversion,True
+P19_t1/0-120: rate and missingness,True
+P19_t2/0-120: rate and missingness,True
+P19_t3/0-120: rate and missingness,True
+P20_t1/0-120: rate and missingness,True
+P20_t1/0-120: unchanged eligibility/conversion,True
+P20_t2/0-120: rate and missingness,True
+P20_t2/0-120: unchanged eligibility/conversion,True
+P20_t3/0-120: rate and missingness,True
+P20_t3/0-120: unchanged eligibility/conversion,True
+P21_t1/0-120: rate and missingness,True
+P21_t2/0-120: rate and missingness,True
+P21_t2/0-120: unchanged eligibility/conversion,True
+P21_t3/0-120: rate and missingness,True
+P21_t3/0-120: unchanged eligibility/conversion,True
+P22_t1/0-120: rate and missingness,True
+P22_t2/0-120: rate and missingness,True
+P22_t2/0-120: unchanged eligibility/conversion,True
+P22_t3/0-120: rate and missingness,True
+P22_t3/0-120: unchanged eligibility/conversion,True
+P23_t1/0-120: rate and missingness,True
+P23_t1/0-120: unchanged eligibility/conversion,True
+P23_t2/0-120: rate and missingness,True
+P23_t2/0-120: unchanged eligibility/conversion,True
+P23_t3/0-120: rate and missingness,True
+P23_t3/0-120: unchanged eligibility/conversion,True
+P24_t1/0-120: rate and missingness,True
+P24_t1/0-120: unchanged eligibility/conversion,True
+P24_t2/0-120: rate and missingness,True
+P24_t2/0-120: unchanged eligibility/conversion,True
+P24_t3/0-120: rate and missingness,True
+P24_t3/0-120: unchanged eligibility/conversion,True
+P25_t1/0-120: rate and missingness,True
+P25_t1/0-120: unchanged eligibility/conversion,True
+P25_t2/0-120: rate and missingness,True
+P25_t2/0-120: unchanged eligibility/conversion,True
+P25_t3/0-120: rate and missingness,True
+P25_t3/0-120: unchanged eligibility/conversion,True
+P26_t1/0-120: rate and missingness,True
+P26_t2/0-120: rate and missingness,True
+P26_t3/0-120: rate and missingness,True
+168 current fixed/context windows and 72 unique whole trials,True
+fixed/context eligibility: 114 usable; 66/96 animated fixed windows,True
+"whole trials: 43 usable (13 NT, 30 animated)",True
+"independent median {'window': 'fixed_30_90', 'condition': 'NT', 'condition_name': 'no-animation', 'outcome_group': 'combined'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'NT', 'condition_name': 'no-animation', 'outcome_group': 'no_press'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'NT', 'condition_name': 'no-animation', 'outcome_group': 'any_press'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'V1', 'condition_name': 'sun-to-moon animation', 'outcome_group': 'combined'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'V1', 'condition_name': 'sun-to-moon animation', 'outcome_group': 'detected'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'V1', 'condition_name': 'sun-to-moon animation', 'outcome_group': 'missed'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'V2', 'condition_name': 'buildings animation', 'outcome_group': 'combined'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'V2', 'condition_name': 'buildings animation', 'outcome_group': 'detected'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'V2', 'condition_name': 'buildings animation', 'outcome_group': 'missed'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'V3', 'condition_name': 'red-sphere animation', 'outcome_group': 'combined'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'V3', 'condition_name': 'red-sphere animation', 'outcome_group': 'detected'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'V3', 'condition_name': 'red-sphere animation', 'outcome_group': 'missed'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'NT', 'condition_name': 'no-animation', 'outcome_group': 'combined'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'NT', 'condition_name': 'no-animation', 'outcome_group': 'no_press'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'NT', 'condition_name': 'no-animation', 'outcome_group': 'any_press'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'V1', 'condition_name': 'sun-to-moon animation', 'outcome_group': 'combined'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'V1', 'condition_name': 'sun-to-moon animation', 'outcome_group': 'detected'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'V1', 'condition_name': 'sun-to-moon animation', 'outcome_group': 'missed'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'V2', 'condition_name': 'buildings animation', 'outcome_group': 'combined'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'V2', 'condition_name': 'buildings animation', 'outcome_group': 'detected'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'V2', 'condition_name': 'buildings animation', 'outcome_group': 'missed'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'V3', 'condition_name': 'red-sphere animation', 'outcome_group': 'combined'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'V3', 'condition_name': 'red-sphere animation', 'outcome_group': 'detected'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'V3', 'condition_name': 'red-sphere animation', 'outcome_group': 'missed'}",True
+"independent median {'window': 'nt_full_trial', 'condition': 'NT', 'condition_name': 'no-animation', 'outcome_group': 'combined'}",True
+"independent median {'window': 'nt_full_trial', 'condition': 'NT', 'condition_name': 'no-animation', 'outcome_group': 'no_press'}",True
+"independent median {'window': 'nt_full_trial', 'condition': 'NT', 'condition_name': 'no-animation', 'outcome_group': 'any_press'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'all', 'condition_name': 'all animated trials', 'outcome_group': 'combined'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'all', 'condition_name': 'all animated trials', 'outcome_group': 'detected'}",True
+"independent median {'window': 'fixed_30_90', 'condition': 'all', 'condition_name': 'all animated trials', 'outcome_group': 'missed'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'all', 'condition_name': 'all animated trials', 'outcome_group': 'combined'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'all', 'condition_name': 'all animated trials', 'outcome_group': 'detected'}",True
+"independent median {'window': 'fixed_90_120', 'condition': 'all', 'condition_name': 'all animated trials', 'outcome_group': 'missed'}",True
+all 33 former condition/outcome summaries retained,True
+unchanged share_percent_q1,True
+unchanged share_percent_median,True
+unchanged share_percent_q3,True
+unchanged total_ambient_s_q1,True
+unchanged total_ambient_s_median,True
+unchanged total_ambient_s_q3,True
+unchanged median_contact_ms_q1,True
+unchanged median_contact_ms_median,True
+unchanged median_contact_ms_q3,True
+unchanged longest_contact_ms_q1,True
+unchanged longest_contact_ms_median,True
+unchanged longest_contact_ms_q3,True
+unchanged contact_count_q1,True
+unchanged contact_count_median,True
+unchanged contact_count_q3,True
+unchanged frequency_per_valid_min_q1,True
+unchanged frequency_per_valid_min_median,True
+unchanged frequency_per_valid_min_q3,True
+independent median {'group': 'NT_all'},True
+independent median {'group': 'animations_all'},True
+independent median {'group': 'NT_no_press'},True
+independent median {'group': 'NT_press'},True
+independent median {'group': 'animations_onset_detected'},True
+independent median {'group': 'animations_onset_miss'},True
+independent median {'group': 'animations_completion_detected'},True
+independent median {'group': 'animations_completion_miss'},True
+independent median {'condition': 'NT'},True
+independent median {'condition': 'V1'},True
+independent median {'condition': 'V2'},True
+independent median {'condition': 'V3'},True
+input preserved analysis/RQ1/provisional/20261003-ambient-contacts/window_measures.csv,True
+input preserved analysis/RQ1/provisional/20261008-whole-trial-gaze-response/trial_measures.csv,True
+input preserved analysis/RQ1/provisional/20261003-ambient-contacts/condition_summary.csv,True

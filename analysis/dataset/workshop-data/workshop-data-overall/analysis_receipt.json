@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-07-20T12:49:37Z",
+  "checks": {
+    "t2_cards": 40,
+    "t3_raw_cards": 38,
+    "t3_normalized_concepts": 37,
+    "source_images": 8,
+    "excluded_exact_duplicates": 1
+  },
+  "scenario_counts": {
+    "high": 16,
+    "both": 6,
+    "low": 15
+  },
+  "lineage_counts": {
+    "direct": 25,
+    "new": 8,
+    "refined": 1,
+    "merged": 3
+  }
+}

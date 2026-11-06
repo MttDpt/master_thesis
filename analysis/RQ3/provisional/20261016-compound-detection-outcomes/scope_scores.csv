@@ -1,0 +1,13 @@
+scope,measure,n_trials,n_participants,score_sum,mean_score
+all_trials,S,72,24,44.5,0.6180555555555555
+all_trials,Q1,72,24,66.0,0.9166666666666666
+all_trials,Q2,72,24,43.0,0.5972222222222222
+all_trials,M,72,24,42.0,0.5833333333333334
+animated_trials,S,48,24,28.5,0.59375
+animated_trials,Q1,48,24,42.0,0.875
+animated_trials,Q2,48,24,25.0,0.5208333333333334
+animated_trials,M,48,24,24.0,0.5
+no_animation,S,24,24,16.0,0.6666666666666666
+no_animation,Q1,24,24,24.0,1.0
+no_animation,Q2,24,24,18.0,0.75
+no_animation,M,24,24,18.0,0.75

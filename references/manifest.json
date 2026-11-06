@@ -1,0 +1,1168 @@
+{
+  "date": "2026-11-05",
+  "scope": "48 keys cited in final Overleaf examplethesis.tex; no literature notes or uncited sources",
+  "references": [
+    {
+      "citekey": "BMWPanoramicIDrive2025",
+      "title": "{BMW} panoramic {iDrive}: a new display and operating concept",
+      "doi": "",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0447111EN/new-bmw-panoramic-idrive-revolutionises-vehicle-operation-visionary-technology-package-for-the-neue-klasse-celebrates-world-premiere-at-ces-2025",
+      "zotero_items": [
+        "IZH5Q79G"
+      ],
+      "files": [
+        {
+          "path": "BMWPanoramicIDrive2025.html",
+          "download_url": "https://newsroom.bmwgroup.com/global/new-bmw-panoramic-idrive-revolutionises-vehicle-operation-visionary-technology-package-for-the-neue-klasse-celebrates-world-premiere-at-ces-2025_20260723103915309",
+          "archive_sha256": "ce87eaa8a56cabb05f51454ee41be7c89c8391ad59bcfb700b8ad288c53520cc",
+          "archive_bytes": 229100,
+          "type": "webpage_snapshot",
+          "note": "HTML snapshot; external assets may still require internet access"
+        },
+        {
+          "path": "BMWPanoramicIDrive2025.url",
+          "type": "web_resource_shortcut",
+          "archive_sha256": "eaa6ce69e40197dd478581bdf0aaeb74e03d9c8a1ec951e72ad43d1421e25223",
+          "archive_bytes": 232
+        }
+      ],
+      "status": "saved_web_resource",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "SheltonNesbitt2020",
+      "title": "A Systematic Review of Ambient Display Modalities, Physical Forms and Interactivity",
+      "doi": "",
+      "url": "https://personales.upv.es/thinkmind/AMBIENT/AMBIENT_2020/ambient_2020_2_10_40012.html",
+      "zotero_items": [
+        "N27WBE9E"
+      ],
+      "files": [
+        {
+          "path": "SheltonNesbitt2020.pdf",
+          "attachment_key": "UE2RYH6Q",
+          "source_sha256": "70c0ef5155cf7f35407153685f6d605fabbc105e678a32e1d79ad040bd0880ca",
+          "archive_sha256": "ee84becf9739f913cee0598052478bad8e8c104f60a85871a2d889dd16ad457a",
+          "source_bytes": 530125,
+          "archive_bytes": 533409,
+          "zotero_annotations": 6,
+          "embedded_annotations": 6,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "andersson_sampling_2010",
+      "title": "Sampling frequency and eye-tracking measures: how speed affects durations, latencies, and more",
+      "doi": "10.16910/jemr.3.3.6",
+      "url": "https://doi.org/10.16910/jemr.3.3.6",
+      "zotero_items": [],
+      "files": [
+        {
+          "path": "andersson_sampling_2010.pdf",
+          "download_url": "https://bop.unibe.ch/JEMR/article/download/2300/3496/8524",
+          "archive_sha256": "f47516c153867dd3c0f8c498afd5d048e4902cc7be6b7c4debfe60814acede92",
+          "archive_bytes": 365741,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "note": "Public copy recovered because no local Zotero PDF was available"
+        }
+      ],
+      "status": "saved_public_pdf_not_in_local_zotero"
+    },
+    {
+      "citekey": "bakkerDesignPeripheralInteraction2013",
+      "title": "Design for peripheral interaction",
+      "doi": "10.6100/IR754544",
+      "url": "https://research.tue.nl/en/publications/design-for-peripheral-interaction(2c04024d-c17b-4cdf-92cc-7fec452a6e4f).html",
+      "zotero_items": [
+        "P6QJDRIV"
+      ],
+      "files": [
+        {
+          "path": "bakkerDesignPeripheralInteraction2013.pdf",
+          "attachment_key": "UW8K9E8Y",
+          "source_sha256": "ac2633cea9a7e887b9549f66f872385d3578cc9c8d190aeb3e53f89dfee153ee",
+          "archive_sha256": "ac2633cea9a7e887b9549f66f872385d3578cc9c8d190aeb3e53f89dfee153ee",
+          "source_bytes": 18140311,
+          "archive_bytes": 18140311,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "bakkerInteractionAttentionContinuumConsidering",
+      "title": "The {Interaction}-{Attention} {Continuum}: {Considering} {Various} {Levels} of {Human} {Attention} in {Interaction} {Design}",
+      "doi": "",
+      "url": "https://www.ijdesign.org/index.php/IJDesign/article/view/2341",
+      "zotero_items": [
+        "X44BU8JQ"
+      ],
+      "files": [
+        {
+          "path": "bakkerInteractionAttentionContinuumConsidering.pdf",
+          "attachment_key": "YJGFJXH6",
+          "source_sha256": "2bbd0e04347a7dca0eaeebe512f61e0d800f83bca7b4976f1b4813bef9342391",
+          "archive_sha256": "2bbd0e04347a7dca0eaeebe512f61e0d800f83bca7b4976f1b4813bef9342391",
+          "source_bytes": 1454118,
+          "archive_bytes": 1454118,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "bakkerPeripheralInteractionCharacteristics2015",
+      "title": "Peripheral interaction: characteristics and considerations",
+      "doi": "10.1007/s00779-014-0775-2",
+      "url": "http://link.springer.com/10.1007/s00779-014-0775-2",
+      "zotero_items": [
+        "BJR9CZD5"
+      ],
+      "files": [
+        {
+          "path": "bakkerPeripheralInteractionCharacteristics2015.pdf",
+          "attachment_key": "WFNQ6L8L",
+          "source_sha256": "a210de7a9449604f234a26c2ca6d884906314160def72d78599178c5164eed62",
+          "archive_sha256": "a210de7a9449604f234a26c2ca6d884906314160def72d78599178c5164eed62",
+          "source_bytes": 3176099,
+          "archive_bytes": 3176099,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "bakkerPeripheralInteractionShaping2014",
+      "title": "Peripheral interaction: shaping the research and design space",
+      "doi": "10.1145/2559206.2560470",
+      "url": "https://dl.acm.org/doi/10.1145/2559206.2560470",
+      "zotero_items": [
+        "RY76T624"
+      ],
+      "files": [
+        {
+          "path": "bakkerPeripheralInteractionShaping2014.pdf",
+          "attachment_key": "8NHM3B7S",
+          "source_sha256": "4a67801de42cc5c5c994947eb64a3280cc235280a19ff96694b43e1ab6663da8",
+          "archive_sha256": "4a67801de42cc5c5c994947eb64a3280cc235280a19ff96694b43e1ab6663da8",
+          "source_bytes": 314263,
+          "archive_bytes": 314263,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "dahlinger2018impact",
+      "title": "The impact of numerical vs. symbolic eco-driving feedback on fuel consumption – A randomized control field trial",
+      "doi": "10.1016/j.trd.2018.09.013",
+      "url": "http://dx.doi.org/10.1016/j.trd.2018.09.013",
+      "zotero_items": [
+        "D3QKH6WY"
+      ],
+      "files": [
+        {
+          "path": "dahlinger2018impact.pdf",
+          "attachment_key": "IPE2DU5Z",
+          "source_sha256": "5f26bd1755a1e8ebe90440b944c731d750a94b23d001ff68bfd5bfd9a6409101",
+          "archive_sha256": "f681e1ae6ac83e88758eca8798a158c0119209114688f1643eda7e9e69b84b5f",
+          "source_bytes": 744983,
+          "archive_bytes": 798630,
+          "zotero_annotations": 2,
+          "embedded_annotations": 2,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "ferschaInformativeArtDisplay2007",
+      "title": "Informative Art Display Metaphors",
+      "doi": "10.1007/978-3-540-73281-5_9",
+      "url": "https://doi.org/10.1007/978-3-540-73281-5_9",
+      "zotero_items": [
+        "A6YFCZCY"
+      ],
+      "files": [
+        {
+          "path": "ferschaInformativeArtDisplay2007.pdf",
+          "attachment_key": "JSPRH9EL",
+          "source_sha256": "e13e283e73ebb53483f4e1a8aa32fca2019860e897173631974b47884ee8450a",
+          "archive_sha256": "ef455ed265221d9c6372f0f60c3217f9700f5de69a51b602b68bfd8514dbb76b",
+          "source_bytes": 367944,
+          "archive_bytes": 374872,
+          "zotero_annotations": 9,
+          "embedded_annotations": 9,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "ferschaMatterTaste2007",
+      "title": "A Matter of Taste",
+      "doi": "",
+      "url": "",
+      "zotero_items": [
+        "K2B6XVM3"
+      ],
+      "files": [
+        {
+          "path": "ferschaMatterTaste2007.pdf",
+          "attachment_key": "K2B6XVM3",
+          "source_sha256": "811adcd6bb591cc81009a5bbd6113f96a12f04d6e3d25c7424a6cb33f1971d92",
+          "archive_sha256": "fe709d73337e4afba06ce583ee38f1cf01015eb4c0387afda96cf76f355580eb",
+          "source_bytes": 1489165,
+          "archive_bytes": 1526485,
+          "zotero_annotations": 47,
+          "embedded_annotations": 47,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "googleCrazy8s",
+      "title": "Crazy 8's",
+      "doi": "",
+      "url": "https://designsprintkit.withgoogle.com/methodology/phase3-sketch/crazy-8s",
+      "zotero_items": [],
+      "files": [
+        {
+          "path": "googleCrazy8s.url",
+          "type": "web_resource_shortcut",
+          "archive_sha256": "9f373ddff4560501af2019abf377a51715d0e59407d6dd346960fcb0fd62fece",
+          "archive_bytes": 97
+        }
+      ],
+      "status": "web_resource_url_only",
+      "snapshot_note": "The cited URL now serves a Design Sprint Community landing page, not the cited Crazy 8s method; no replacement content was substituted"
+    },
+    {
+      "citekey": "harmsPeripheralDetectionMeasure2003",
+      "title": "Peripheral detection as a measure of driver distraction. {A} study of memory-based versus system-based navigation in a built-up area",
+      "doi": "10.1016/S1369-8478(02)00044-X",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S136984780200044X",
+      "zotero_items": [
+        "NEUFJJ2B"
+      ],
+      "files": [
+        {
+          "path": "harmsPeripheralDetectionMeasure2003.pdf",
+          "attachment_key": "ZJ5VTFLR",
+          "source_sha256": "9c7785b612934c21bf6c36c284d51792b556d519e8a6746492e4a09a431884cb",
+          "archive_sha256": "9c7785b612934c21bf6c36c284d51792b556d519e8a6746492e4a09a431884cb",
+          "source_bytes": 237085,
+          "archive_bytes": 237085,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": true
+    },
+    {
+      "citekey": "hauslschmidAugmentingDriversView2015",
+      "title": "Augmenting the {Driver}'s {View} with {Peripheral} {Information} on a {Windshield} {Display}",
+      "doi": "10.1145/2678025.2701393",
+      "url": "https://dl.acm.org/doi/10.1145/2678025.2701393",
+      "zotero_items": [
+        "6HRW5R4E"
+      ],
+      "files": [
+        {
+          "path": "hauslschmidAugmentingDriversView2015.pdf",
+          "attachment_key": "23789EB5",
+          "source_sha256": "30e9b39cf2ec0befa295bbba1abb1d8937060b8da9ac6ac211d416e7230c3aab",
+          "archive_sha256": "30e9b39cf2ec0befa295bbba1abb1d8937060b8da9ac6ac211d416e7230c3aab",
+          "source_bytes": 1336200,
+          "archive_bytes": 1336200,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "heijboerFacilitatingPeripheralInteraction2016",
+      "title": "Facilitating peripheral interaction: design and evaluation of peripheral interaction for a gesture-based lighting control with multimodal feedback",
+      "doi": "10.1007/s00779-015-0893-5",
+      "url": "http://link.springer.com/10.1007/s00779-015-0893-5",
+      "zotero_items": [
+        "PUAN2WUY"
+      ],
+      "files": [
+        {
+          "path": "heijboerFacilitatingPeripheralInteraction2016.pdf",
+          "attachment_key": "ASSX2CC7",
+          "source_sha256": "51f2fcb8eb0d73a89a08c3d87fb99913f885a98dc056b46cd34e83127368d15f",
+          "archive_sha256": "51f2fcb8eb0d73a89a08c3d87fb99913f885a98dc056b46cd34e83127368d15f",
+          "source_bytes": 1666470,
+          "archive_bytes": 1666470,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "holmquistEvaluatingComprehensionAmbient2004",
+      "title": "Evaluating the Comprehension of Ambient Displays",
+      "doi": "10.1145/985921.986121",
+      "url": "",
+      "zotero_items": [
+        "YYVQF6YU"
+      ],
+      "files": [
+        {
+          "path": "holmquistEvaluatingComprehensionAmbient2004.pdf",
+          "attachment_key": "WANEAHP4",
+          "source_sha256": "9fe98af393c8389310b74a4605e0c6acf453bb5f3533ba9658901a52aeacc007",
+          "archive_sha256": "a9e64b9a0a1e555f12ea0c017de4c4add9942bed670e786bdd51003908d34940",
+          "source_bytes": 167009,
+          "archive_bytes": 161622,
+          "zotero_annotations": 2,
+          "embedded_annotations": 2,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "holmquistInformativeArtInformation2003",
+      "title": "Informative art: information visualization in everyday environments",
+      "doi": "10.1145/604471.604516",
+      "url": "https://dl.acm.org/doi/10.1145/604471.604516",
+      "zotero_items": [
+        "ZVPK77HB"
+      ],
+      "files": [
+        {
+          "path": "holmquistInformativeArtInformation2003.pdf",
+          "attachment_key": "9LKQL42W",
+          "source_sha256": "d0796e3b2c9a36e5ef8a053e30468a776ea2764b86be033c1851102d43a75b92",
+          "archive_sha256": "92eacae6c95dfeead3681cc09704111ca2222161217af8703a62cf772531fa02",
+          "source_bytes": 13590821,
+          "archive_bytes": 7544606,
+          "zotero_annotations": 20,
+          "embedded_annotations": 20,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "huangCharacteristicsDriverPeripheral2025",
+      "title": "Characteristics of {Driver} {Peripheral} {Vision}: {How} {Drivers} {Respond} to {Ubiquitous} {Information} on {Wide}-{Area} {In}-{Vehicle} {Displays}",
+      "doi": "10.1145/3706599.3719913",
+      "url": "https://dl.acm.org/doi/10.1145/3706599.3719913",
+      "zotero_items": [
+        "EHTXP7IS"
+      ],
+      "files": [
+        {
+          "path": "huangCharacteristicsDriverPeripheral2025.pdf",
+          "attachment_key": "P7QQATPF",
+          "source_sha256": "c27138039244d6191b61188f2ca019c7a75a266e30d2ebe261b2fc950d9f54c3",
+          "archive_sha256": "2fa843e1118c7fbc556d51bb10bf1dade71f941111309d0c274e65835ebe2e80",
+          "source_bytes": 7000248,
+          "archive_bytes": 7159738,
+          "zotero_annotations": 145,
+          "embedded_annotations": 145,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "lambleDetectionThresholdsCar1999",
+      "title": "Detection thresholds in car following situations and peripheral vision: implications for positioning of visually demanding in-car displays",
+      "doi": "10.1080/001401399185306",
+      "url": "https://doi.org/10.1080/001401399185306",
+      "zotero_items": [
+        "QMPQRDK2"
+      ],
+      "files": [
+        {
+          "path": "lambleDetectionThresholdsCar1999.pdf",
+          "attachment_key": "L7HYTLV7",
+          "source_sha256": "485d010f460919ade0b7791496f0586c95c62aacb808a6c0816606fc974c2bd8",
+          "archive_sha256": "485d010f460919ade0b7791496f0586c95c62aacb808a6c0816606fc974c2bd8",
+          "source_bytes": 425059,
+          "archive_bytes": 425059,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "laquaiLargeScaleLEDArray2011",
+      "title": "A large-scale {LED} array to support anticipatory driving",
+      "doi": "10.1109/ICSMC.2011.6083980",
+      "url": "https://doi.org/10.1109/ICSMC.2011.6083980",
+      "zotero_items": [],
+      "files": [
+        {
+          "path": "laquaiLargeScaleLEDArray2011.pdf",
+          "download_url": "https://mediatum.ub.tum.de/doc/1107269/505223.pdf",
+          "archive_sha256": "2d1904a0d58e97ca6bbd24623642b2e77cb3cd2c46ea0e42d73e24a2b2df9076",
+          "archive_bytes": 5357788,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "note": "Public copy recovered because no local Zotero PDF was available"
+        }
+      ],
+      "status": "saved_public_pdf_not_in_local_zotero"
+    },
+    {
+      "citekey": "laugwitzConstructionEvaluationUser2008",
+      "title": "Construction and {Evaluation} of a {User} {Experience} {Questionnaire}",
+      "doi": "10.1007/978-3-540-89350-9\\_6",
+      "url": "http://link.springer.com/10.1007/978-3-540-89350-9_6",
+      "zotero_items": [
+        "ZP5IT3EJ"
+      ],
+      "files": [
+        {
+          "path": "laugwitzConstructionEvaluationUser2008.pdf",
+          "attachment_key": "MPAMNS96",
+          "source_sha256": "8443c12b4bb6743a4bd4f86404cd26c8d6df328e93bff28b2b4b6fac14614bf9",
+          "archive_sha256": "8443c12b4bb6743a4bd4f86404cd26c8d6df328e93bff28b2b4b6fac14614bf9",
+          "source_bytes": 213219,
+          "archive_bytes": 213219,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "lockenAdaptiveAmbientInVehicle2017",
+      "title": "Towards {Adaptive} {Ambient} {In}-{Vehicle} {Displays} and {Interactions}: {Insights} and {Design} {Guidelines} from the 2015 {AutomotiveUI} {Dedicated} {Workshop}",
+      "doi": "10.1007/978-3-319-49448-7\\_12",
+      "url": "https://doi.org/10.1007/978-3-319-49448-7_12",
+      "zotero_items": [
+        "NGN5PXUC"
+      ],
+      "files": [
+        {
+          "path": "lockenAdaptiveAmbientInVehicle2017.pdf",
+          "attachment_key": "R3NHQBDS",
+          "source_sha256": "04b9d50a43bf96a5051cd8f82b333ac41bff3ccf44ea11bdc57872e2e6c81130",
+          "archive_sha256": "729c06b94d76302abe26e4d418f1321cba6a1666eafc3cdff6ffa343b6464435",
+          "source_bytes": 212712,
+          "archive_bytes": 214872,
+          "zotero_annotations": 5,
+          "embedded_annotations": 5,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "lockenEnlighteningDriversSurvey2016",
+      "title": "Enlightening {Drivers}: {A} {Survey} on {In}-{Vehicle} {Light} {Displays}",
+      "doi": "10.1145/3003715.3005416",
+      "url": "https://doi.org/10.1145/3003715.3005416",
+      "zotero_items": [
+        "9K5GC82A"
+      ],
+      "files": [
+        {
+          "path": "lockenEnlighteningDriversSurvey2016.pdf",
+          "attachment_key": "BQ57C5T6",
+          "source_sha256": "b52aad42608649fa2cdd5757e89576227988134b5c280ff22a6861b360cf5d94",
+          "archive_sha256": "d6af3fe5b6db8bace361e213752324b9d7e5be10f9512b21fed58cd7302d6795",
+          "source_bytes": 188051,
+          "archive_bytes": 212207,
+          "zotero_annotations": 36,
+          "embedded_annotations": 36,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "lockenInVehicleAmbientLight2019",
+      "title": "In-vehicle ambient light displays for advanced driver assistant systems",
+      "doi": "",
+      "url": "https://d-nb.info/1195456751",
+      "zotero_items": [
+        "QMY4PTML"
+      ],
+      "files": [
+        {
+          "path": "lockenInVehicleAmbientLight2019.pdf",
+          "attachment_key": "D7AP8MKI",
+          "source_sha256": "9444ef9fe720237eeb634d409f43386a9aff4a95f1b454a3e15caa0f52988038",
+          "archive_sha256": "5edeaed381999993c49ca16a9cbd889270c93dcf7b95bf145496888305f61e9d",
+          "source_bytes": 9551897,
+          "archive_bytes": 9442942,
+          "zotero_annotations": 3,
+          "embedded_annotations": 3,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "lockenSupportingLaneChange2015",
+      "title": "Supporting lane change decisions with ambient light",
+      "doi": "10.1145/2799250.2799259",
+      "url": "https://dl.acm.org/doi/10.1145/2799250.2799259",
+      "zotero_items": [
+        "93FHSLXI"
+      ],
+      "files": [
+        {
+          "path": "lockenSupportingLaneChange2015.pdf",
+          "attachment_key": "G3463W9D",
+          "source_sha256": "047211ce1f1d9d32ca247dbee5363fae7c79fead3004730c112ebd14a851b088",
+          "archive_sha256": "047211ce1f1d9d32ca247dbee5363fae7c79fead3004730c112ebd14a851b088",
+          "source_bytes": 1073486,
+          "archive_bytes": 1073486,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "loehmannHeartbeatExperiencePulse2014",
+      "title": "Heartbeat: {Experience} the {Pulse} of an {Electric} {Vehicle}",
+      "doi": "10.1145/2667317.2667331",
+      "url": "https://dl.acm.org/doi/10.1145/2667317.2667331",
+      "zotero_items": [
+        "G66CZ544"
+      ],
+      "files": [
+        {
+          "path": "loehmannHeartbeatExperiencePulse2014.pdf",
+          "attachment_key": "Q7GE27SE",
+          "source_sha256": "75c27980fb2e392ffb9dc83d4097b8771cbbbcb452ba7caeeb5f11f306c3a19b",
+          "archive_sha256": "5bf62f82878442d72154403c01320732722eb864ebdaaf8cf2604910a2425a99",
+          "source_bytes": 540577,
+          "archive_bytes": 571180,
+          "zotero_annotations": 7,
+          "embedded_annotations": 7,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "matthewsDefiningDesigningEvaluating2007",
+      "title": "Defining, {Designing}, and {Evaluating} {Peripheral} {Displays}: {An} {Analysis} {Using} {Activity} {Theory}",
+      "doi": "10.1080/07370020701307876",
+      "url": "",
+      "zotero_items": [
+        "DFLZ4XZV"
+      ],
+      "files": [
+        {
+          "path": "matthewsDefiningDesigningEvaluating2007.pdf",
+          "attachment_key": "MDJVFGB2",
+          "source_sha256": "0deba47c60d91ce4b35af7e70ce06c430a9c17abd1126d5855d9a47cd8052d74",
+          "archive_sha256": "0deba47c60d91ce4b35af7e70ce06c430a9c17abd1126d5855d9a47cd8052d74",
+          "source_bytes": 295114,
+          "archive_bytes": 295114,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "matthewsDesigningEvaluatingGlanceable2006",
+      "title": "Designing and evaluating glanceable peripheral displays",
+      "doi": "10.1145/1142405.1142457",
+      "url": "https://dl.acm.org/doi/10.1145/1142405.1142457",
+      "zotero_items": [
+        "IT5RCVNR"
+      ],
+      "files": [
+        {
+          "path": "matthewsDesigningEvaluatingGlanceable2006.pdf",
+          "attachment_key": "CIHRQZ4E",
+          "source_sha256": "017c0dee889def3445dc4c371a1c29e6ad463fece9707b781229c48cfeff813a",
+          "archive_sha256": "017c0dee889def3445dc4c371a1c29e6ad463fece9707b781229c48cfeff813a",
+          "source_bytes": 5788240,
+          "archive_bytes": 5788240,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "matthewsToolkitManagingUser2004",
+      "title": "A toolkit for managing user attention in peripheral displays",
+      "doi": "10.1145/1029632.1029676",
+      "url": "https://dl.acm.org/doi/10.1145/1029632.1029676",
+      "zotero_items": [
+        "IRNWBQAV"
+      ],
+      "files": [
+        {
+          "path": "matthewsToolkitManagingUser2004.pdf",
+          "attachment_key": "2QRC4F97",
+          "source_sha256": "78f8c6aacba990fff586705d7feed6a66d63f5e6f7c4703b482f16c5c8569eb9",
+          "archive_sha256": "78f8c6aacba990fff586705d7feed6a66d63f5e6f7c4703b482f16c5c8569eb9",
+          "source_bytes": 1646003,
+          "archive_bytes": 1646003,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "matviienkoDerivingDesignGuidelines2015",
+      "title": "Deriving design guidelines for ambient light systems",
+      "doi": "10.1145/2836041.2836069",
+      "url": "https://dl.acm.org/doi/10.1145/2836041.2836069",
+      "zotero_items": [
+        "7KALPUM7"
+      ],
+      "files": [
+        {
+          "path": "matviienkoDerivingDesignGuidelines2015.pdf",
+          "attachment_key": "VJCBFEQS",
+          "source_sha256": "235dd2bb92a5e1aae5b761a965366d25fe02501f1b7485d48eb3c70151dbe992",
+          "archive_sha256": "235dd2bb92a5e1aae5b761a965366d25fe02501f1b7485d48eb3c70151dbe992",
+          "source_bytes": 1059123,
+          "archive_bytes": 1059123,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": true
+    },
+    {
+      "citekey": "matviienkoNaviLightInvestigatingAmbient2016",
+      "title": "{NaviLight}: investigating ambient light displays for turn-by-turn navigation in cars",
+      "doi": "10.1145/2935334.2935359",
+      "url": "https://dl.acm.org/doi/10.1145/2935334.2935359",
+      "zotero_items": [
+        "UU5K4HRJ"
+      ],
+      "files": [
+        {
+          "path": "matviienkoNaviLightInvestigatingAmbient2016.pdf",
+          "attachment_key": "F6RZQ9T7",
+          "source_sha256": "1dcfbbb15b0109ca6f1ec87d7455ff0d8c68c9205f0f696ac8986065d2b86cae",
+          "archive_sha256": "eefa5c598d43ec174da08927984e3e97692e97ec97d60be661128881d80eb264",
+          "source_bytes": 2572044,
+          "archive_bytes": 2631068,
+          "zotero_annotations": 25,
+          "embedded_annotations": 25,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "matviienkoNewAmbientLight2015",
+      "title": "Towards {New} {Ambient} {Light} {Systems}: a {Close} {Look} at {Existing} {Encodings} of {Ambient} {Light} {Systems}",
+      "doi": "10.55612/s-5002-026-001",
+      "url": "https://doi.org/10.55612/s-5002-026-001",
+      "zotero_items": [
+        "Q5IH5H3H"
+      ],
+      "files": [
+        {
+          "path": "matviienkoNewAmbientLight2015.pdf",
+          "attachment_key": "DIQJHX7E",
+          "source_sha256": "95b50f42ad26fcf67d237dbf90d689facafe9dea1022578737e5e890d99fc134",
+          "archive_sha256": "3475e8dae2bd6b245965c35e904d394415c734fe559544e16a5e63419f42bc6c",
+          "source_bytes": 379057,
+          "archive_bytes": 390702,
+          "zotero_annotations": 8,
+          "embedded_annotations": 8,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "mirnigEnlighteningModeAwareness2023",
+      "title": "Enlightening mode awareness: Guiding drivers in the transition between manual and automated driving modes via ambient light",
+      "doi": "10.1007/s00779-023-01781-6",
+      "url": "https://doi.org/10.1007/s00779-023-01781-6",
+      "zotero_items": [],
+      "files": [
+        {
+          "path": "mirnigEnlighteningModeAwareness2023.pdf",
+          "download_url": "https://link.springer.com/content/pdf/10.1007/s00779-023-01781-6.pdf",
+          "archive_sha256": "3bdbd99fdf4a3bbc2489012ee011947dba6a98bcfeae87cfeb0d3a674cb3ec49",
+          "archive_bytes": 3890973,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "note": "Public copy recovered because no local Zotero PDF was available"
+        }
+      ],
+      "status": "saved_public_pdf_not_in_local_zotero"
+    },
+    {
+      "citekey": "niehorster_fundamentals_2026",
+      "title": "The fundamentals of eye tracking, Part 7: Determining data quality",
+      "doi": "10.3758/s13428-026-03039-4",
+      "url": "https://doi.org/10.3758/s13428-026-03039-4",
+      "zotero_items": [],
+      "files": [
+        {
+          "path": "niehorster_fundamentals_2026.pdf",
+          "download_url": "https://link.springer.com/content/pdf/10.3758/s13428-026-03039-4.pdf",
+          "archive_sha256": "b5e20136002f73fa2b383d91849247c06bf13bb3f7ca35e604b70fdb1f552a88",
+          "archive_bytes": 5574321,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "note": "Public copy recovered because no local Zotero PDF was available"
+        }
+      ],
+      "status": "saved_public_pdf_not_in_local_zotero"
+    },
+    {
+      "citekey": "pomarjanschiSimpleGazeContingentCues2013",
+      "title": "Simple gaze-contingent cues guide eye movements in a realistic driving simulator",
+      "doi": "10.1117/12.2002833",
+      "url": "https://doi.org/10.1117/12.2002833",
+      "zotero_items": [],
+      "files": [
+        {
+          "path": "pomarjanschiSimpleGazeContingentCues2013.pdf",
+          "download_url": "https://www.inb.uni-luebeck.de/fileadmin/files/publications/inb-publications/pdfs/PoDoBeBa13.pdf",
+          "archive_sha256": "4488c73d7bc42f2fbcd5ee208830e938ca6260f0700f1d0baaf1b128f0567ef7",
+          "archive_bytes": 7258921,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "note": "Public copy recovered because no local Zotero PDF was available"
+        }
+      ],
+      "status": "saved_public_pdf_not_in_local_zotero"
+    },
+    {
+      "citekey": "potvinBernalInfluencingGreaterAdoption2020",
+      "title": "Influencing Greater Adoption of Eco-Driving Practices Using an Associative Graphical Display",
+      "doi": "10.1115/1.4045968",
+      "url": "",
+      "zotero_items": [
+        "YL2XZ8CE"
+      ],
+      "files": [
+        {
+          "path": "potvinBernalInfluencingGreaterAdoption2020.pdf",
+          "attachment_key": "7ND7MYQT",
+          "source_sha256": "4fedb715728bf304da9d0e2c3d3e8651d7d1228137000e5fe0f7ef86550b20cb",
+          "archive_sha256": "e1972f58d5d0a36e1cc1f9f03a915729a3d1ebeafcfe6c927ed8aa1844cd9dd0",
+          "source_bytes": 1161505,
+          "archive_bytes": 1164815,
+          "zotero_annotations": 8,
+          "embedded_annotations": 8,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "pousmanTaxonomyAmbientInformation2006",
+      "title": "A taxonomy of ambient information systems: four patterns of design",
+      "doi": "10.1145/1133265.1133277",
+      "url": "http://portal.acm.org/citation.cfm?doid=1133265.1133277",
+      "zotero_items": [
+        "LKHAE7Y9"
+      ],
+      "files": [
+        {
+          "path": "pousmanTaxonomyAmbientInformation2006.pdf",
+          "attachment_key": "PTLP77HF",
+          "source_sha256": "82d3fdf7d8810301810d618088c5687dfc353296b00df4e9e6602a0d5ec4c5c1",
+          "archive_sha256": "38dc4955370b8bea2ced572eafd9614e0c47a0b9e645ad25afaf2dd578640e10",
+          "source_bytes": 612323,
+          "archive_bytes": 671853,
+          "zotero_annotations": 37,
+          "embedded_annotations": 37,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "sheltonAestheticAwarenessDisplay2016",
+      "title": "The aesthetic awareness display: a new design pattern for ambient information systems",
+      "doi": "10.1145/2843043.2843371",
+      "url": "https://dl.acm.org/doi/10.1145/2843043.2843371",
+      "zotero_items": [
+        "6AH2AUXN"
+      ],
+      "files": [
+        {
+          "path": "sheltonAestheticAwarenessDisplay2016.pdf",
+          "attachment_key": "36W4SU5R",
+          "source_sha256": "d7611fa7b0289eecc2b89d0356be2abb57b580748b961973a14f00b8b96184c4",
+          "archive_sha256": "1d62dfd7718142a36e24a0798e1774bb9fc03ae3d1d3454c3f345bf6b25ee250",
+          "source_bytes": 1768484,
+          "archive_bytes": 1883335,
+          "zotero_annotations": 26,
+          "embedded_annotations": 26,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "skogAestheticsUtilityDesigning2003",
+      "title": "Between aesthetics and utility: designing ambient information visualizations",
+      "doi": "10.1109/INFVIS.2003.1249031",
+      "url": "https://ieeexplore.ieee.org/document/1249031/",
+      "zotero_items": [
+        "V5I8ZQ8Y"
+      ],
+      "files": [
+        {
+          "path": "skogAestheticsUtilityDesigning2003.pdf",
+          "attachment_key": "KBNIQKWT",
+          "source_sha256": "3e2971da99671c93080fa88c5977c11324b5fab5ab4b190da4965ed4f5ffcffc",
+          "archive_sha256": "c62f41c87255322c09de4a03e21b9d6ed3bb4377f417988911e419100c9a3a02",
+          "source_bytes": 344370,
+          "archive_bytes": 362149,
+          "zotero_annotations": 23,
+          "embedded_annotations": 23,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "splineSplineOfficial",
+      "title": "Spline: 3D Design Tool in the Browser with Real-Time Collaboration",
+      "doi": "",
+      "url": "https://spline.design/",
+      "zotero_items": [],
+      "files": [
+        {
+          "path": "splineSplineOfficial.html",
+          "download_url": "https://spline.design/",
+          "archive_sha256": "fcd9efd06d83797a17c2332cdf7161c9ff808fafcb03b79233567a4c65f50b88",
+          "archive_bytes": 129238,
+          "type": "webpage_snapshot",
+          "note": "HTML snapshot; external assets may still require internet access"
+        },
+        {
+          "path": "splineSplineOfficial.url",
+          "type": "web_resource_shortcut",
+          "archive_sha256": "7b7f5c6bddac81e5df5b56b1527fd876667ad8a578007869debd2fc6b1ce26fc",
+          "archive_bytes": 46
+        }
+      ],
+      "status": "saved_web_resource"
+    },
+    {
+      "citekey": "staskoPersonalizedPeripheralInformation2004",
+      "title": "Personalized {Peripheral} {Information} {Awareness} {Through} {Information} {Art}",
+      "doi": "10.1007/978-3-540-30119-6\\_2",
+      "url": "http://link.springer.com/10.1007/978-3-540-30119-6_2",
+      "zotero_items": [
+        "2TSXUN29"
+      ],
+      "files": [
+        {
+          "path": "staskoPersonalizedPeripheralInformation2004.pdf",
+          "attachment_key": "TDDPE6QQ",
+          "source_sha256": "9d2649098cfa6db681e332f18fca14d1616f4019409265e560b7476fedc4ba5b",
+          "archive_sha256": "af7a06ac46e97ca9409b3bf98b2beca60d8a3348b90ab8158523d568dc6b320d",
+          "source_bytes": 344177,
+          "archive_bytes": 353837,
+          "zotero_annotations": 13,
+          "embedded_annotations": 13,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "stewartReviewInteractionsPeripheral2020",
+      "title": "A review of interactions between peripheral and foveal vision",
+      "doi": "10.1167/jov.20.12.2",
+      "url": "https://doi.org/10.1167/jov.20.12.2",
+      "zotero_items": [
+        "H6SVQ6P4"
+      ],
+      "files": [
+        {
+          "path": "stewartReviewInteractionsPeripheral2020.pdf",
+          "attachment_key": "J8HVU9A5",
+          "source_sha256": "e6b42cc3071d856346143d86186bc29cdea541eab1315d94308416e9380b377f",
+          "archive_sha256": "e6b42cc3071d856346143d86186bc29cdea541eab1315d94308416e9380b377f",
+          "source_bytes": 3419312,
+          "archive_bytes": 3419312,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "strasburgerPeripheralVisionPattern2011",
+      "title": "Peripheral vision and pattern recognition: {A} review",
+      "doi": "10.1167/11.5.13",
+      "url": "https://jov.arvojournals.org/article.aspx?articleid=2191825",
+      "zotero_items": [
+        "BQIZN49S"
+      ],
+      "files": [
+        {
+          "path": "strasburgerPeripheralVisionPattern2011.pdf",
+          "attachment_key": "457Q3PVK",
+          "source_sha256": "a355c33956ff85258fe4219818dcc91f7d4ba1b7241406d9b4c4352a910d863c",
+          "archive_sha256": "a355c33956ff85258fe4219818dcc91f7d4ba1b7241406d9b4c4352a910d863c",
+          "source_bytes": 2570360,
+          "archive_bytes": 2570360,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "tractinsky2011slow",
+      "title": "Slow down, you move too fast: examining animation aesthetics to promote eco-driving",
+      "doi": "10.1145/2381416.2381447",
+      "url": "http://dx.doi.org/10.1145/2381416.2381447",
+      "zotero_items": [
+        "ZF5H9GIA"
+      ],
+      "files": [
+        {
+          "path": "tractinsky2011slow.pdf",
+          "attachment_key": "YPEZ5C7H",
+          "source_sha256": "2c479c13181a1c6f09f2faaee0f0adbf714e63681baa0bb897bb3729b444c8f5",
+          "archive_sha256": "8b104ea4f959438884cfb8b33378b90fbcf541bb513a0d4937ea1781e108f8c2",
+          "source_bytes": 909679,
+          "archive_bytes": 929303,
+          "zotero_annotations": 30,
+          "embedded_annotations": 30,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "vaterPeripheralVisionRealworld2022",
+      "title": "Peripheral vision in real-world tasks: {A} systematic review",
+      "doi": "10.3758/s13423-022-02117-w",
+      "url": "https://link.springer.com/10.3758/s13423-022-02117-w",
+      "zotero_items": [
+        "SD3WCWB8"
+      ],
+      "files": [
+        {
+          "path": "vaterPeripheralVisionRealworld2022.pdf",
+          "attachment_key": "4WFRSZMC",
+          "source_sha256": "1946853595a3d7ffe6689895852167124067079dab19a19cb282f018176b885a",
+          "archive_sha256": "1946853595a3d7ffe6689895852167124067079dab19a19cb282f018176b885a",
+          "source_bytes": 1390431,
+          "archive_bytes": 1390431,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "weiserComingAgeCalmTechnology1997",
+      "title": "The Coming Age of Calm Technology",
+      "doi": "10.5555/504928.504934",
+      "url": "https://dl.acm.org/doi/10.5555/504928.504934",
+      "zotero_items": [
+        "YD8X69KB"
+      ],
+      "files": [
+        {
+          "path": "weiserComingAgeCalmTechnology1997.pdf",
+          "download_url": "https://www.cs.ucsb.edu/~ebelding/courses/284/papers/calm.pdf",
+          "archive_sha256": "501c9c865f5150cd20b8625acc3d0f4d5f15bcd82cfeded48629a9cac6f13e62",
+          "archive_bytes": 37398,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "note": "Public copy recovered because no local Zotero PDF was available",
+          "version": "1996 author manuscript hosted in a university teaching archive; bibliography cites the 1997 book chapter"
+        }
+      ],
+      "status": "saved_public_pdf_not_in_local_zotero",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "weiserDesigningCalmTechnology",
+      "title": "Designing {Calm} {Technology}",
+      "doi": "",
+      "url": "http://www.ubiq.com/weiser/calmtech/calmtech.htm",
+      "zotero_items": [
+        "E89XRBQI"
+      ],
+      "files": [
+        {
+          "path": "weiserDesigningCalmTechnology.pdf",
+          "attachment_key": "9FTIRUM8",
+          "source_sha256": "b3a1d6bb1e9ec598f525833ec52d88e3c954d7467cd57639f792885eb4181710",
+          "archive_sha256": "15d12dcf9084d7f2a5cba90100c28d53b46538a5cbc68ce1d0a762f8b6a197c1",
+          "source_bytes": 128394,
+          "archive_bytes": 129230,
+          "zotero_annotations": 1,
+          "embedded_annotations": 1,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "wickensMultipleResourcesPerformance2002",
+      "title": "Multiple resources and performance prediction",
+      "doi": "10.1080/14639220210123806",
+      "url": "http://www.tandfonline.com/doi/abs/10.1080/14639220210123806",
+      "zotero_items": [
+        "ZBTW9L96"
+      ],
+      "files": [
+        {
+          "path": "wickensMultipleResourcesPerformance2002.pdf",
+          "attachment_key": "TX4TC9AY",
+          "source_sha256": "5d7ac7c705fcbda31990263c730b6cf3d864218a18f4ee99e6ef7a1cc5f5ccb6",
+          "archive_sha256": "5d7ac7c705fcbda31990263c730b6cf3d864218a18f4ee99e6ef7a1cc5f5ccb6",
+          "source_bytes": 543029,
+          "archive_bytes": 543029,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    },
+    {
+      "citekey": "zhaopingPeripheralVisionMainly2024",
+      "title": "Peripheral vision is mainly for looking rather than seeing",
+      "doi": "10.1016/j.neures.2023.11.006",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0168010223002018",
+      "zotero_items": [
+        "YJMJS5CG"
+      ],
+      "files": [
+        {
+          "path": "zhaopingPeripheralVisionMainly2024.pdf",
+          "attachment_key": "S75MKTXM",
+          "source_sha256": "a660717b475169bd957960f9dc783d98d331a853de512fe83747dbba9c62b99a",
+          "archive_sha256": "a660717b475169bd957960f9dc783d98d331a853de512fe83747dbba9c62b99a",
+          "source_bytes": 2076467,
+          "archive_bytes": 2076467,
+          "zotero_annotations": 0,
+          "embedded_annotations": 0,
+          "native_pdf_annotations": 0,
+          "sidecar_only": []
+        }
+      ],
+      "status": "saved_pdf",
+      "zotero_trashed": false
+    }
+  ],
+  "annotation_export_errors": []
+}

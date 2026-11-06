@@ -1,0 +1,5 @@
+"condition","trials","participants","expected_events","retained_presses"
+"V1",16,16,32,47
+"V2",16,16,32,35
+"V3",16,16,32,33
+"NT",24,24,0,17

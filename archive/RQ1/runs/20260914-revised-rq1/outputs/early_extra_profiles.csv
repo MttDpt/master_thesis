@@ -1,0 +1,13 @@
+condition,early_extra_profile,n,eligible_n,proportion
+V1,neither,4,16,0.25
+V1,early only,0,16,0
+V1,extra only,12,16,0.75
+V1,both,0,16,0
+V2,neither,7,16,0.4375
+V2,early only,1,16,0.0625
+V2,extra only,3,16,0.1875
+V2,both,5,16,0.3125
+V3,neither,10,16,0.625
+V3,early only,0,16,0
+V3,extra only,4,16,0.25
+V3,both,2,16,0.125

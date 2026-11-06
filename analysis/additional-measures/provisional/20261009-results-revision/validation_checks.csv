@@ -1,0 +1,75 @@
+check,passed
+prior source-reconstruction checks,True
+joint input matches current upstream reconstruction,True
+canonical included sample,True
+unique NASA source keys,True
+excluded NASA records are P06/P07 only,True
+NASA join conditions,True
+complete integer six-dimension scores in 1-10,True
+no excluded participants,True
+approved NASA summary NT Mental Demand,True
+approved NASA summary NT Physical Demand,True
+approved NASA summary NT Temporal  Demand,True
+approved NASA summary NT Performance,True
+approved NASA summary NT Effort,True
+approved NASA summary NT Frustration,True
+approved NASA summary NT RTLX,True
+approved NASA summary V1 Mental Demand,True
+approved NASA summary V1 Physical Demand,True
+approved NASA summary V1 Temporal  Demand,True
+approved NASA summary V1 Performance,True
+approved NASA summary V1 Effort,True
+approved NASA summary V1 Frustration,True
+approved NASA summary V1 RTLX,True
+approved NASA summary V2 Mental Demand,True
+approved NASA summary V2 Physical Demand,True
+approved NASA summary V2 Temporal  Demand,True
+approved NASA summary V2 Performance,True
+approved NASA summary V2 Effort,True
+approved NASA summary V2 Frustration,True
+approved NASA summary V2 RTLX,True
+approved NASA summary V3 Mental Demand,True
+approved NASA summary V3 Physical Demand,True
+approved NASA summary V3 Temporal  Demand,True
+approved NASA summary V3 Performance,True
+approved NASA summary V3 Effort,True
+approved NASA summary V3 Frustration,True
+approved NASA summary V3 RTLX,True
+full rank reparameterised model all S,True
+finite estimate all S,True
+independent partial-regression coefficient all S,True
+full rank reparameterised model all Q1,True
+finite estimate all Q1,True
+independent partial-regression coefficient all Q1,True
+full rank reparameterised model all Q2,True
+finite estimate all Q2,True
+independent partial-regression coefficient all Q2,True
+full rank reparameterised model all M,True
+finite estimate all M,True
+independent partial-regression coefficient all M,True
+full rank reparameterised model animated S,True
+finite estimate animated S,True
+independent partial-regression coefficient animated S,True
+full rank reparameterised model animated Q1,True
+finite estimate animated Q1,True
+independent partial-regression coefficient animated Q1,True
+full rank reparameterised model animated Q2,True
+finite estimate animated Q2,True
+independent partial-regression coefficient animated Q2,True
+full rank reparameterised model animated M,True
+finite estimate animated M,True
+independent partial-regression coefficient animated M,True
+full rank reparameterised model NT S,True
+finite estimate NT S,True
+independent partial-regression coefficient NT S,True
+full rank reparameterised model NT Q2,True
+finite estimate NT Q2,True
+independent partial-regression coefficient NT Q2,True
+full rank reparameterised model NT M,True
+finite estimate NT M,True
+independent partial-regression coefficient NT M,True
+unique aggregate UEQ participants,True
+UEQ 24 included participants,True
+UEQ all 624 item scores valid,True
+UEQ mapping partitions 26 items,True
+inputs unchanged,True

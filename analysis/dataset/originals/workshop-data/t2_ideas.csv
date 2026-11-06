@@ -1,0 +1,41 @@
+idea_id,group,source_file,verbatim,primary_domain,secondary_domains,coding_confidence,memo
+G1-T2-01,G1,g01-t02.png,collision detection / proximity to a car,Safety / driving assistance,,high,Immediate hazard and proximity awareness
+G1-T2-02,G1,g01-t02.png,start screen,Ambient / interface mode,,medium,Interface-state concept with limited detail
+G1-T2-03,G1,g01-t02.png,kickdown visualisation,Vehicle state / performance,,high,Vehicle acceleration or power-state feedback
+G1-T2-04,G1,g01-t02.png,full-width gaming,Media / play,,high,Entertainment use of the full display width
+G1-T2-05,G1,g01-t02.png,warning sign for cyclists / pedestrians,Safety / driving assistance,,high,Vulnerable-road-user warning
+G1-T2-06,G1,g01-t02.png,digital post-it for yourself,Communication / social,Connected assistance / services,high,Self-directed reminder or note
+G1-T2-07,G1,g01-t02.png,summary of messages / who calls,Communication / social,,high,Communication status summary
+G1-T2-08,G1,g01-t02.png,leave a message/image for the next driver/passenger,Communication / social,Media / play,high,Asynchronous message to another vehicle user
+G1-T2-09,G1,g01-t02.png,personal image/gallery,Media / play,,high,Personal visual content
+G2-T2-01,G2,g02-t02.png,mood background,Ambient / interface mode,,high,Affective or atmospheric background
+G2-T2-02,G2,g02-t02.png,parking lots,Navigation / mobility,,high,Parking-location information
+G2-T2-03,G2,g02-t02.png,icons don't forget,Connected assistance / services,Communication / social,medium,Reminder icons; exact trigger or content is unspecified
+G2-T2-04,G2,g02-t02.png,music,Media / play,,high,Music-related display content
+G2-T2-05,G2,g02-t02.png,car-pet,Media / play,Ambient / interface mode,high,Entertainment or companion concept
+G2-T2-06,G2,g02-t02.png,smart home,Connected assistance / services,,high,External connected-service control or status
+G2-T2-07,G2,g02-t02.png,adaptive,Ambient / interface mode,,low,Adaptive target and behaviour are not specified
+G3-T2-01,G3,g03-t02.png,car status,Vehicle state / performance,,high,General vehicle-state information
+G3-T2-02,G3,g03-t02.png,customisable weather • road condition • alerts • prediction,Context / environment,Safety / driving assistance,high,Weather and road-context information with predictive elements
+G3-T2-03,G3,g03-t02.png,alert/safety doing something unsafe,Safety / driving assistance,,high,Feedback about unsafe driver action
+G3-T2-04,G3,g03-t02.png,messages + phone,Communication / social,,high,Phone and messaging information
+G3-T2-05,G3,g03-t02.png,chatgpt voice,Connected assistance / services,,high,Conversational voice assistant
+G3-T2-06,G3,g03-t02.png,3D Globe topographic visualisation,Navigation / mobility,Context / environment,high,Spatial or topographic world representation
+G3-T2-07,G3,g03-t02.png,agentic updates for points of interest,Navigation / mobility,Connected assistance / services,high,Proactive point-of-interest information
+G3-T2-08,G3,g03-t02.png,alternative routes + RT prediction,Navigation / mobility,Context / environment,high,Route alternatives and real-time prediction
+G3-T2-09,G3,g03-t02.png,spotify/music,Media / play,,high,Music playback information
+G4-T2-01,G4,g04-t02.png,Pictures of the surroundings,Context / environment,Media / play,high,Visual environmental context
+G4-T2-02,G4,g04-t02.png,minimal calm mode,Ambient / interface mode,,high,Low-clutter interface state
+G4-T2-03,G4,g04-t02.png,retro-style particle,Ambient / interface mode,,high,Decorative or atmospheric particle treatment
+G4-T2-04,G4,g04-t02.png,message status + summary,Communication / social,,high,Communication status summary
+G4-T2-05,G4,g04-t02.png,Weather with images + large animation timeline/forecast,Context / environment,Ambient / interface mode,high,Weather forecast expressed visually over time
+G4-T2-06,G4,g04-t02.png,health widget,Wellbeing / comfort,,high,Driver or occupant health information
+G4-T2-07,G4,g04-t02.png,front parking visualisations,Navigation / mobility,Safety / driving assistance,high,Parking guidance or proximity visualization
+G4-T2-08,G4,g04-t02.png,"Keep it boring (only static useful info, very neutral) GWS2 (?)",Ambient / interface mode,,low,Single physical card; final acronym is uncertain and was not split into another idea
+G4-T2-09,G4,g04-t02.png,K.I.T.T mode haptics/segments,Ambient / interface mode,Vehicle state / performance,medium,Segmented or haptic-inspired interface treatment
+G4-T2-10,G4,g04-t02.png,countdown to destination,Navigation / mobility,,high,Remaining journey time or distance
+G4-T2-11,G4,g04-t02.png,Car status Battery,Vehicle state / performance,,high,Battery-state information
+G4-T2-12,G4,g04-t02.png,dash doll digital version,Media / play,Ambient / interface mode,medium,Digital companion or decorative dashboard object
+G4-T2-13,G4,g04-t02.png,analog clock,Context / environment,,high,Time-of-day information
+G4-T2-14,G4,g04-t02.png,IPA shows mood matching music title,Media / play,Ambient / interface mode,medium,Mood visualization linked to music
+G4-T2-15,G4,g04-t02.png,Path to the goal across the entire width (visualization),Navigation / mobility,Ambient / interface mode,high,Full-width route-progress representation

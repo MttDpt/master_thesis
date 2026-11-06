@@ -1,0 +1,51 @@
+{
+  "status": "validated",
+  "generated_on": "2026-10-01",
+  "population_rule": "All 72 included participant-trials in the canonical crosswalk; P07 is excluded upstream and P07_t3 is not substituted.",
+  "condition_denominators": {
+    "NT": 24,
+    "V1": 16,
+    "V2": 16,
+    "V3": 16
+  },
+  "available_sources": 72,
+  "missing_sources": [],
+  "p01_t3_condition": "V2",
+  "checks": {
+    "unique_trial_keys": true,
+    "expected_coverage": true,
+    "condition_join": true,
+    "valid_layer1_branches": true,
+    "valid_labels_and_accuracy": true,
+    "exact_evidence_and_locators": true,
+    "animated_success_semantic_match": true,
+    "nt_reviewed_assignments": true,
+    "v1_literal_meanings_partial": true,
+    "p01_t3_v2": true,
+    "report_values_match_summary": true
+  },
+  "errors": [],
+  "warnings": [
+    "Explicit NT background-colour reports are coded full; imprecise colour-motion accounts may be partial, while generic unspecified changes are not forced into colour or V1-V3 transition codes.",
+    "Generic animation language is split into partial appearance and movement only where the rules explicitly require that treatment.",
+    "Reaction is left unassigned when no reaction is explicitly stated; absence is not interpreted as neutrality.",
+    "Single-coder detail assignments remain provisional; no consensus or inter-rater reliability claim is made."
+  ],
+  "hashes": {
+    "canonical_map_sha256": "b96b98785aab99629ee066e90757e273481f0b8634dcfe830df5cd2fab9dd362",
+    "coding_rules_sha256": "ce2907ca1874a59f4d7bb74939230bbabb3134e739874d91b68b105073fd825a",
+    "preprocessing_rules_sha256": "a1fb02ce32990695c37a165c987a41f5c39dfde0e9c23b0dc89d6d54231b544e",
+    "rq3_contract_sha256": "f11c1a5a3a7a7ac5399257097f2630d51021d99e95bacdd7832d5cc242721ab4",
+    "build_script_sha256": "44774dc7f7aa485da8c10584bcd108e148e04c218a3d1dd463110d6423944de5"
+  },
+  "outputs": [
+    "full-corpus-trial-codes.csv",
+    "full-corpus-code-evidence.csv",
+    "full-corpus-source-manifest.csv",
+    "full-corpus-summary.json",
+    "full-corpus-report-values.json",
+    "full-corpus-inclusion-receipt.json",
+    "full-corpus-validation.json",
+    "coding-report.md"
+  ]
+}

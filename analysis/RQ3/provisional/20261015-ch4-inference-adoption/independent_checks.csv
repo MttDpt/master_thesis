@@ -1,0 +1,127 @@
+check,passed
+72 unique trial keys,True
+24 independent participant bundles,True
+cross_outcome_tests.csv family size and unique tests,True
+cross_outcome_tests.csv independent Holm,True
+cross_outcome_tests.csv decision labels,True
+all_trials__Q1__S pair denominator and gap,True
+all_trials__Q1__S independent probability,True
+all_trials__Q1__Q2 pair denominator and gap,True
+all_trials__Q1__Q2 independent probability,True
+all_trials__Q1__M pair denominator and gap,True
+all_trials__Q1__M independent probability,True
+all_trials__S__Q2 pair denominator and gap,True
+all_trials__S__Q2 independent probability,True
+all_trials__S__M pair denominator and gap,True
+all_trials__S__M independent probability,True
+all_trials__Q2__M pair denominator and gap,True
+all_trials__Q2__M independent probability,True
+animated_trials__onset__completion pair denominator and gap,True
+animated_trials__onset__completion independent probability,True
+animated_trials__onset__Q1 pair denominator and gap,True
+animated_trials__onset__Q1 independent probability,True
+animated_trials__onset__Q2 pair denominator and gap,True
+animated_trials__onset__Q2 independent probability,True
+animated_trials__onset__M pair denominator and gap,True
+animated_trials__onset__M independent probability,True
+animated_trials__completion__Q1 pair denominator and gap,True
+animated_trials__completion__Q1 independent probability,True
+animated_trials__completion__Q2 pair denominator and gap,True
+animated_trials__completion__Q2 independent probability,True
+animated_trials__completion__M pair denominator and gap,True
+animated_trials__completion__M independent probability,True
+animated_trials__Q1__Q2 pair denominator and gap,True
+animated_trials__Q1__Q2 independent probability,True
+animated_trials__Q1__M pair denominator and gap,True
+animated_trials__Q1__M independent probability,True
+animated_trials__Q2__M pair denominator and gap,True
+animated_trials__Q2__M independent probability,True
+no_animation__Q1__S pair denominator and gap,True
+no_animation__Q1__S independent probability,True
+no_animation__Q1__Q2 pair denominator and gap,True
+no_animation__Q1__Q2 independent probability,True
+no_animation__Q1__M pair denominator and gap,True
+no_animation__Q1__M independent probability,True
+no_animation__S__Q2 pair denominator and gap,True
+no_animation__S__Q2 independent probability,True
+no_animation__S__M pair denominator and gap,True
+no_animation__S__M independent probability,True
+no_animation__Q2__M pair denominator and gap,True
+no_animation__Q2__M independent probability,True
+within_animation_detection.csv family size and unique tests,True
+within_animation_detection.csv independent Holm,True
+within_animation_detection.csv decision labels,True
+V1__onset__completion pair denominator and gap,True
+V1__onset__completion independent probability,True
+V2__onset__completion pair denominator and gap,True
+V2__onset__completion independent probability,True
+V3__onset__completion pair denominator and gap,True
+V3__onset__completion independent probability,True
+within_condition_accuracy.csv family size and unique tests,True
+within_condition_accuracy.csv independent Holm,True
+within_condition_accuracy.csv decision labels,True
+NT__Q1__Q2 pair denominator and gap,True
+NT__Q1__Q2 independent probability,True
+V1__Q1__Q2 pair denominator and gap,True
+V1__Q1__Q2 independent probability,True
+V2__Q1__Q2 pair denominator and gap,True
+V2__Q1__Q2 independent probability,True
+V3__Q1__Q2 pair denominator and gap,True
+V3__Q1__Q2 independent probability,True
+confidence_family15.csv family size and unique tests,True
+confidence_family15.csv independent Holm,True
+confidence_family15.csv decision labels,True
+prior_ordinal_all Wald probability,True
+prior_ordinal_animated Wald probability,True
+prior_ordinal_NT Wald probability,True
+within_ordinal_V1 Wald probability,True
+within_ordinal_V2 Wald probability,True
+within_ordinal_V3 Wald probability,True
+interpretation_tests.csv family size and unique tests,True
+interpretation_tests.csv independent Holm,True
+interpretation_tests.csv decision labels,True
+V2__V1 pair denominator and gap,True
+V2__V1 independent probability,True
+V2__V3 pair denominator and gap,True
+V2__V3 independent probability,True
+V1__V3 pair denominator and gap,True
+V1__V3 independent probability,True
+source hash analysis/dataset/trial-data/trial-data-crosswalk/72-trial-map.csv,True
+source hash analysis/dataset/trigger-data/trigger-data-cleaning/trigger_trials.csv,True
+source hash analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/tables/sanitized_input.csv,True
+source hash analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/receipts/independent_validation.json,True
+source hash analysis/RQ3/provisional/coding/full-corpus-trial-codes.csv,True
+source hash analysis/RQ3/provisional/coding/full-corpus-validation.json,True
+source hash analysis/RQ3/provisional/20261008-cross-rq-gaps/input.csv,True
+source hash analysis/dataset/originals/questionnaire-data/data-aggregated.xlsx,True
+source hash analysis/dataset/trigger-data/trigger-data-cleaning/trigger_presses.csv,True
+source hash analysis/RQ3/provisional/20261008-combined-detection-confidence/input.csv,True
+source hash analysis/RQ3/provisional/20261008-combined-detection-confidence/tests.csv,True
+source hash analysis/RQ3/provisional/20261008-combined-detection-confidence/receipt.json,True
+source hash analysis/RQ3/provisional/20261007-cross-rq/settings.json,True
+analysis/RQ3/provisional/20261015-ch4-inference-adoption/input.csv hash,True
+analysis/RQ3/provisional/20261015-ch4-inference-adoption/run_analysis.py hash,True
+analysis/RQ3/provisional/20261015-ch4-inference-adoption/cross_outcome_leave_one_out.csv hash,True
+analysis/RQ3/provisional/20261015-ch4-inference-adoption/cross_outcome_tests.csv hash,True
+analysis/RQ3/provisional/20261015-ch4-inference-adoption/condition_summaries.csv hash,True
+analysis/RQ3/provisional/20261015-ch4-inference-adoption/interpretation_tests.csv hash,True
+analysis/RQ3/provisional/20261015-ch4-inference-adoption/validation_checks.csv hash,True
+analysis/RQ3/provisional/20261015-ch4-inference-adoption/participant_means.csv hash,True
+analysis/RQ3/provisional/20261015-ch4-inference-adoption/interpretation_pairs.csv hash,True
+analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/input.csv hash,True
+analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/run_analysis.py hash,True
+analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/within_animation_detection.csv hash,True
+analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/validation_checks.csv hash,True
+analysis/RQ1/provisional/statistical-tests/20261015-ch4-inference-adoption/pooled_detection.csv hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/R_session_info.txt hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/input.csv hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/ordinal_contrasts.csv hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/rerun_confidence.R hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/pooled_accuracy.csv hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/R_stdout.txt hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/validation_checks.csv hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/mean_confidence_tests.csv hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/confidence_family15.csv hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/within_condition_accuracy.csv hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/ordinal_fit_diagnostics.txt hash,True
+analysis/RQ2/provisional/statistical-tests/20261015-ch4-inference-adoption/R_stderr.txt hash,True

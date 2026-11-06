@@ -1,0 +1,39 @@
+card_id,normalized_concept_id,group,source_file,verbatim,scenario,priority_rank,primary_domain,secondary_domains,coding_confidence,linked_t2_ids,lineage_status,analysis_inclusion,memo
+G1-T3-01,G1-T3-C01,G1,g01-t03.png,collision detection / proximity to a car,high,1,Safety / driving assistance,,high,G1-T2-01,direct,yes,Top proximity tier in high-demand scenario
+G1-T3-02,G1-T3-C02,G1,g01-t03.png,warning sign for cyclists / pedestrians,high,2,Safety / driving assistance,,high,G1-T2-05,direct,yes,Second proximity tier in high-demand scenario
+G1-T3-03,G1-T3-C03,G1,g01-t03.png,time to maneuver visualization (timing dependent and not distance dependant),high,3,Navigation / mobility,Safety / driving assistance,high,,new,yes,Third proximity tier in high-demand scenario
+G1-T3-04,G1-T3-C04,G1,g01-t03.png,kickdown visualisation,both,1,Vehicle state / performance,,high,G1-T2-03,direct,yes,Card is centered on the high/low divider and therefore coded as both scenarios
+G1-T3-05,G1-T3-C05,G1,g01-t03.png,decision (sound) → yes/no ?,both,2,Connected assistance / services,,low,,new,yes,Meaning is underspecified; centered card is coded as both scenarios
+G1-T3-06,G1-T3-C06,G1,g01-t03.png,ETA • weather for destination viz,both,3,Navigation / mobility,Context / environment,medium,,new,yes,Centered card is coded as both scenarios
+G1-T3-07,G1-T3-C07,G1,g01-t03.png,summary of messages who calls,low,1,Communication / social,,high,G1-T2-07,direct,yes,Top proximity tier in low-demand scenario
+G1-T3-08,G1-T3-C08,G1,g01-t03.png,start screen,low,1,Ambient / interface mode,,medium,G1-T2-02,direct,yes,Top proximity tier in low-demand scenario
+G1-T3-09,G1-T3-C09,G1,g01-t03.png,personal info / gallery,low,1,Media / play,,high,G1-T2-09,direct,yes,Top proximity tier in low-demand scenario
+G1-T3-10,G1-T3-C10,G1,g01-t03.png,digital assistant that provides relevant infos,low,2,Connected assistance / services,,medium,,new,yes,Second proximity tier in low-demand scenario
+G1-T3-11,G1-T3-C11,G1,g01-t03.png,digital post-it for yourself,low,2,Communication / social,Connected assistance / services,high,G1-T2-06,direct,yes,Second proximity tier in low-demand scenario
+G1-T3-12,G1-T3-C12,G1,g01-t03.png,full-width gaming,low,2,Media / play,,high,G1-T2-04,direct,yes,Second proximity tier in low-demand scenario
+G1-T3-13,G1-T3-C06,G1,g01-t03.png,ETA • weather for destination viz,low,3,Navigation / mobility,Context / environment,medium,,duplicate,no,Exact textual duplicate of the central both-scenario card; retained in the ledger but excluded from normalized counts
+G1-T3-14,G1-T3-C13,G1,g01-t03.png,leave a message/image,low,3,Communication / social,Media / play,high,G1-T2-08,direct,yes,Third proximity tier in low-demand scenario
+G2-T3-01,G2-T3-C01,G2,g02-t03.png,parking lots,high,1,Navigation / mobility,,high,G2-T2-02,direct,yes,Top proximity tier in high-demand scenario
+G2-T3-02,G2-T3-C02,G2,g02-t03.png,mood background,high,1,Ambient / interface mode,,high,G2-T2-01,direct,yes,Top proximity tier in high-demand scenario
+G2-T3-03,G2-T3-C03,G2,g02-t03.png,focus mode,high,2,Ambient / interface mode,,medium,G2-T2-07,refined,yes,Interpreted as a refinement of the underspecified adaptive concept
+G2-T3-04,G2-T3-C04,G2,g02-t03.png,icons don't forget,high,2,Connected assistance / services,Communication / social,medium,G2-T2-03,direct,yes,Reminder concept
+G2-T3-05,G2-T3-C05,G2,g02-t03.png,adaptive,high,3,Ambient / interface mode,,low,G2-T2-07,direct,yes,Adaptive target and behaviour remain unspecified
+G2-T3-06,G2-T3-C06,G2,g02-t03.png,translate signs,high,3,Connected assistance / services,Context / environment,high,,new,yes,Live translation or interpretation of roadside signs
+G2-T3-07,G2-T3-C07,G2,g02-t03.png,collision detection cyclists,high,4,Safety / driving assistance,,high,,new,yes,Fourth proximity tier in high-demand scenario
+G2-T3-08,G2-T3-C08,G2,g02-t03.png,music equalizer,low,1,Media / play,Ambient / interface mode,high,G2-T2-04,direct,yes,Top proximity tier in low-demand scenario
+G2-T3-09,G2-T3-C09,G2,g02-t03.png,smart home,low,1,Connected assistance / services,,high,G2-T2-06,direct,yes,Top proximity tier in low-demand scenario
+G2-T3-10,G2-T3-C10,G2,g02-t03.png,messages to other cars,low,1,Communication / social,,high,,new,yes,Top proximity tier in low-demand scenario
+G2-T3-11,G2-T3-C11,G2,g02-t03.png,car pet,low,2,Media / play,Ambient / interface mode,high,G2-T2-05,direct,yes,Second proximity tier in low-demand scenario
+G2-T3-12,G2-T3-C12,G2,g02-t03.png,health,low,2,Wellbeing / comfort,,high,,new,yes,Second proximity tier in low-demand scenario
+G3-T3-01,G3-T3-C01,G3,g03-t03.png,alert/safety doing something unsafe,high,1,Safety / driving assistance,,high,G3-T2-03,direct,yes,Top proximity tier in high-demand scenario
+G3-T3-02,G3-T3-C02,G3,g03-t03.png,car status speed etc...,high,1,Vehicle state / performance,,high,G3-T2-01,direct,yes,Top proximity tier in high-demand scenario
+G3-T3-03,G3-T3-C03,G3,g03-t03.png,alternative routes + RT prediction,high,2,Navigation / mobility,Context / environment,high,G3-T2-08,direct,yes,Second proximity tier in high-demand scenario
+G3-T3-04,G3-T3-C04,G3,g03-t03.png,agentic updates for points of interest,high,2,Navigation / mobility,Connected assistance / services,high,G3-T2-07,direct,yes,Second proximity tier in high-demand scenario
+G3-T3-05,G3-T3-C05,G3,g03-t03.png,customisable weather • road condition • alerts • prediction,high,3,Context / environment,Safety / driving assistance,high,G3-T2-02,direct,yes,Third proximity tier in high-demand scenario
+G3-T3-06,G3-T3-C06,G3,g03-t03.png,messages + phone whatsapp/wechat,high,3,Communication / social,,high,G3-T2-04,direct,yes,Third proximity tier in high-demand scenario
+G3-T3-07,G3-T3-C07,G3,g03-t03.png,music,low,1,Media / play,,high,G3-T2-09,direct,yes,Top proximity tier in low-demand scenario
+G3-T3-08,G3-T3-C08,G3,g03-t03.png,chatgpt voice,low,1,Connected assistance / services,,high,G3-T2-05,direct,yes,Top proximity tier in low-demand scenario
+G3-T3-09,G3-T3-C09,G3,g03-t03.png,3d global topography,low,1,Navigation / mobility,Context / environment,high,G3-T2-06,direct,yes,Top proximity tier in low-demand scenario
+G4-T3-01,G4-T3-C01,G4,g04-t03.png,minimal status data calm,both,1,Ambient / interface mode,Vehicle state / performance,medium,G4-T2-02;G4-T2-08,merged,yes,Centered card merges calm-mode and neutral-status concepts and is coded as both scenarios
+G4-T3-02,G4-T3-C02,G4,g04-t03.png,ambient visuals — Background animation based on music / weather / season,both,2,Ambient / interface mode,Media / play;Context / environment,high,G4-T2-03;G4-T2-05;G4-T2-14,merged,yes,Centered card consolidates several atmospheric concepts and is coded as both scenarios
+G4-T3-03,G4-T3-C03,G4,g04-t03.png,Additional info • Health • Route information • Food recommendations • Displayed across the width,both,3,Connected assistance / services,Wellbeing / comfort;Navigation / mobility,low,G4-T2-06;G4-T2-10;G4-T2-15,merged,yes,Bundled multi-domain concept; centered card is coded as both scenarios

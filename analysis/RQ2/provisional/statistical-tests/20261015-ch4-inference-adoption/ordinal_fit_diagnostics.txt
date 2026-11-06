@@ -1,0 +1,12 @@
+$convergence
+[1] 0
+
+$max_gradient
+[1] 8.197389e-06
+
+$min_hessian_eigenvalue
+[1] 0.2666488
+
+$hessian_condition
+[1] 131.044
+

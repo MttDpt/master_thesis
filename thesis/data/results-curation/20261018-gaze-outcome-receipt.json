@@ -1,0 +1,18 @@
+{
+  "input_sha256": "8ed0598007ab0aefc1828ce6d6a91e50c6cbe066b1c6afd7b779cdddee1fc486",
+  "input_records": 168,
+  "summary_rows": 44,
+  "figure_group_count_median_checks": 32,
+  "fixed_window_usable": 66,
+  "fixed_window_eligible": 96,
+  "whole_trial_usable": 43,
+  "whole_trial_eligible": 72,
+  "SD": "sample (n-1)",
+  "quartiles": "linear interpolation",
+  "sources": [
+    "LLM_wiki/analysis/RQ1/provisional/20261003-ambient-contacts/window_measures.csv",
+    "LLM_wiki/analysis/RQ1/provisional/20261008-whole-trial-gaze-response/trial_measures.csv",
+    "LLM_wiki/analysis/dataset/trigger-data/trigger-data-cleaning/trigger_trials.csv"
+  ],
+  "scope": "descriptive presentation only; fixed windows include post-press gaze; no new tests"
+}

@@ -1,0 +1,7 @@
+condition,event,eligible_n,detected_n,missed_n,detection_rate,cluster_boot_ci_low,cluster_boot_ci_high
+V1,onset,16,16,0,1.0,1.0,1.0
+V1,completion,16,5,11,0.3125,0.0909090909091,0.555555555556
+V2,onset,16,13,3,0.8125,0.6,1.0
+V2,completion,16,5,11,0.3125,0.1,0.555555555556
+V3,onset,16,11,5,0.6875,0.444444444444,0.909090909091
+V3,completion,16,7,9,0.4375,0.2,0.6875

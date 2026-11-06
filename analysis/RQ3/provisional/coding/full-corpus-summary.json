@@ -1,0 +1,110 @@
+{
+  "status": "provisional-single-coder",
+  "trial_count": 72,
+  "condition_denominators": {
+    "NT": 24,
+    "V1": 16,
+    "V2": 16,
+    "V3": 16
+  },
+  "success_by_condition": {
+    "NT": {
+      "no": 6,
+      "yes": 18
+    },
+    "V1": {
+      "yes": 10,
+      "no": 6
+    },
+    "V2": {
+      "no": 2,
+      "yes": 14
+    },
+    "V3": {
+      "no": 16
+    }
+  },
+  "specificity_by_condition": {
+    "NT": {
+      "full": 18
+    },
+    "V1": {
+      "partial": 3,
+      "full": 7
+    },
+    "V2": {
+      "full": 13,
+      "partial": 1
+    },
+    "V3": {}
+  },
+  "failure_by_condition": {
+    "NT": {
+      "false-change": 6
+    },
+    "V1": {
+      "alternative": 6
+    },
+    "V2": {
+      "alternative": 1,
+      "unknown": 1
+    },
+    "V3": {
+      "alternative": 10,
+      "unknown": 6
+    }
+  },
+  "detail_row_count": 534,
+  "detail_counts": {
+    "object": {
+      "hills": 4,
+      "landscape": 8,
+      "sphere": 16,
+      "sun": 19,
+      "none": 19,
+      "buildings": 15,
+      "stars": 13,
+      "moon": 11,
+      "city": 4,
+      "other": 2
+    },
+    "transformation": {
+      "appearance": 29,
+      "movement": 23,
+      "zoom": 5,
+      "colour": 25,
+      "none": 17,
+      "transition": 14,
+      "disappearance": 5,
+      "growth": 11
+    },
+    "stage": {
+      "start": 20,
+      "process": 43,
+      "end": 24,
+      "unclear": 7
+    },
+    "interpretation": {
+      "none": 27,
+      "other": 4,
+      "time": 15,
+      "location": 14,
+      "weather": 3,
+      "fatigue": 2,
+      "warning": 7,
+      "entertainment": 2,
+      "notification": 1,
+      "assistant": 2
+    },
+    "certainty": {
+      "unknown": 11,
+      "unsure": 38,
+      "sure": 23
+    },
+    "reaction": {
+      "distracting": 3,
+      "confusing": 3,
+      "glitch": 1
+    }
+  }
+}

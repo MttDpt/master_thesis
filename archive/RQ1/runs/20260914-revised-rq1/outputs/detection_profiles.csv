@@ -1,0 +1,13 @@
+condition,detection_profile,n,eligible_n,proportion
+V1,both detected,5,16,0.3125
+V1,onset only,11,16,0.6875
+V1,completion only,0,16,0
+V1,neither,0,16,0
+V2,both detected,4,16,0.25
+V2,onset only,9,16,0.5625
+V2,completion only,1,16,0.0625
+V2,neither,2,16,0.125
+V3,both detected,4,16,0.25
+V3,onset only,7,16,0.4375
+V3,completion only,3,16,0.1875
+V3,neither,2,16,0.125

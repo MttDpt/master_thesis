@@ -1,0 +1,33 @@
+metric,scope,phase,outcome,usable,eligible,median
+total_ambient_s,All animated trials,onset,missed,5,8,10.9216685
+total_ambient_s,All animated trials,onset,detected,30,40,10.95340375
+total_ambient_s,All animated trials,completion,missed,19,31,9.610506
+total_ambient_s,All animated trials,completion,detected,12,17,5.983549249999999
+total_ambient_s,Sun-to-moon animation,onset,missed,0,0,
+total_ambient_s,Sun-to-moon animation,onset,detected,13,16,12.2146865
+total_ambient_s,Sun-to-moon animation,completion,missed,8,11,8.46096725
+total_ambient_s,Sun-to-moon animation,completion,detected,5,5,5.8794425
+total_ambient_s,Buildings animation,onset,missed,2,3,12.8378675
+total_ambient_s,Buildings animation,onset,detected,9,13,10.7530655
+total_ambient_s,Buildings animation,completion,missed,6,11,7.05735625
+total_ambient_s,Buildings animation,completion,detected,2,5,7.5555215
+total_ambient_s,Red-sphere animation,onset,missed,3,5,10.9216685
+total_ambient_s,Red-sphere animation,onset,detected,8,11,12.16461725
+total_ambient_s,Red-sphere animation,completion,missed,5,9,10.6316365
+total_ambient_s,Red-sphere animation,completion,detected,5,7,6.087656
+frequency_per_valid_min,All animated trials,onset,missed,5,8,137.085445046
+frequency_per_valid_min,All animated trials,onset,detected,30,40,113.660509324
+frequency_per_valid_min,All animated trials,completion,missed,19,31,91.5189647723
+frequency_per_valid_min,All animated trials,completion,detected,12,17,103.25235466545
+frequency_per_valid_min,Sun-to-moon animation,onset,missed,0,0,
+frequency_per_valid_min,Sun-to-moon animation,onset,detected,13,16,105.254246787
+frequency_per_valid_min,Sun-to-moon animation,completion,missed,8,11,70.6338107793
+frequency_per_valid_min,Sun-to-moon animation,completion,detected,5,5,116.237604316
+frequency_per_valid_min,Buildings animation,onset,missed,2,3,137.9071522065
+frequency_per_valid_min,Buildings animation,onset,detected,9,13,141.510569005
+frequency_per_valid_min,Buildings animation,completion,missed,6,11,88.5373122842
+frequency_per_valid_min,Buildings animation,completion,detected,2,5,31.559156138699997
+frequency_per_valid_min,Red-sphere animation,onset,missed,3,5,137.085445046
+frequency_per_valid_min,Red-sphere animation,onset,detected,8,11,134.3056408245
+frequency_per_valid_min,Red-sphere animation,completion,missed,5,9,112.133056487
+frequency_per_valid_min,Red-sphere animation,completion,detected,5,7,96.6245338529

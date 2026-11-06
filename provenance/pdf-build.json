@@ -1,0 +1,29 @@
+{
+  "compiler": "Tectonic 0.17.0",
+  "success": true,
+  "pages": 78,
+  "source_unchanged": true,
+  "rendered_chapter_pages": [
+    {
+      "chapter": "chapter-3",
+      "pdf_page": 18
+    },
+    {
+      "chapter": "chapter-4",
+      "pdf_page": 30
+    },
+    {
+      "chapter": "chapter-5",
+      "pdf_page": 39
+    },
+    {
+      "chapter": "chapter-6",
+      "pdf_page": 45
+    }
+  ],
+  "undefined_citations_or_references": false,
+  "retained_warnings": [
+    "TeX requests a rerun after its six-pass limit; the PDF resolves citations/references",
+    "IEEEtran hyphenation-pattern notices and underfull/overfull typography diagnostics"
+  ]
+}

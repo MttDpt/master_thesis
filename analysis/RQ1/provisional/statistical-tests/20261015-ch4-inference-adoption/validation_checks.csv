@@ -1,0 +1,2130 @@
+check,passed
+unchanged validated source: analysis/dataset/trial-data/trial-data-crosswalk/72-trial-map.csv,True
+unchanged validated source: analysis/dataset/trigger-data/trigger-data-cleaning/trigger_trials.csv,True
+unchanged validated source: analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/tables/sanitized_input.csv,True
+unchanged validated source: analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/receipts/independent_validation.json,True
+unchanged validated source: analysis/RQ3/provisional/coding/full-corpus-trial-codes.csv,True
+unchanged validated source: analysis/RQ3/provisional/coding/full-corpus-validation.json,True
+unchanged validated source: analysis/RQ3/provisional/20261008-cross-rq-gaps/input.csv,True
+unchanged validated source: analysis/dataset/originals/questionnaire-data/data-aggregated.xlsx,True
+unchanged earlier analysis code,True
+crosswalk unique 72 keys,True
+crosswalk complete key set,True
+triggers unique 72 keys,True
+triggers complete key set,True
+coding unique 72 keys,True
+coding complete key set,True
+questionnaires unique 72 keys,True
+questionnaires complete key set,True
+P01_t1 workbook unique/condition,True
+P01_t1 source identity agreement,True
+P01_t1 included,True
+P01_t1 retained press reconstruction,True
+P01_t1 event statuses,True
+P01_t1 boundary/classification,True
+P01_t1 assigned coding,True
+P01_t1 Q1 source/scoring/confidence,True
+P01_t1 Q2 source/scoring/confidence,True
+P01_t2 workbook unique/condition,True
+P01_t2 source identity agreement,True
+P01_t2 included,True
+P01_t2 retained press reconstruction,True
+P01_t2 event statuses,True
+P01_t2 boundary/classification,True
+P01_t2 assigned coding,True
+P01_t2 Q1 source/scoring/confidence,True
+P01_t2 Q2 source/scoring/confidence,True
+P01_t3 workbook unique/condition,True
+P01_t3 source identity agreement,True
+P01_t3 included,True
+P01_t3 retained press reconstruction,True
+P01_t3 event statuses,True
+P01_t3 boundary/classification,True
+P01_t3 assigned coding,True
+P01_t3 Q1 source/scoring/confidence,True
+P01_t3 Q2 source/scoring/confidence,True
+P02_t1 workbook unique/condition,True
+P02_t1 source identity agreement,True
+P02_t1 included,True
+P02_t1 retained press reconstruction,True
+P02_t1 event statuses,True
+P02_t1 boundary/classification,True
+P02_t1 assigned coding,True
+P02_t1 Q1 source/scoring/confidence,True
+P02_t1 Q2 source/scoring/confidence,True
+P02_t2 workbook unique/condition,True
+P02_t2 source identity agreement,True
+P02_t2 included,True
+P02_t2 retained press reconstruction,True
+P02_t2 event statuses,True
+P02_t2 boundary/classification,True
+P02_t2 assigned coding,True
+P02_t2 Q1 source/scoring/confidence,True
+P02_t2 Q2 source/scoring/confidence,True
+P02_t3 workbook unique/condition,True
+P02_t3 source identity agreement,True
+P02_t3 included,True
+P02_t3 retained press reconstruction,True
+P02_t3 event statuses,True
+P02_t3 boundary/classification,True
+P02_t3 assigned coding,True
+P02_t3 Q1 source/scoring/confidence,True
+P02_t3 Q2 source/scoring/confidence,True
+P03_t1 workbook unique/condition,True
+P03_t1 source identity agreement,True
+P03_t1 included,True
+P03_t1 retained press reconstruction,True
+P03_t1 event statuses,True
+P03_t1 boundary/classification,True
+P03_t1 assigned coding,True
+P03_t1 Q1 source/scoring/confidence,True
+P03_t1 Q2 source/scoring/confidence,True
+P03_t2 workbook unique/condition,True
+P03_t2 source identity agreement,True
+P03_t2 included,True
+P03_t2 retained press reconstruction,True
+P03_t2 event statuses,True
+P03_t2 boundary/classification,True
+P03_t2 assigned coding,True
+P03_t2 Q1 source/scoring/confidence,True
+P03_t2 Q2 source/scoring/confidence,True
+P03_t3 workbook unique/condition,True
+P03_t3 source identity agreement,True
+P03_t3 included,True
+P03_t3 retained press reconstruction,True
+P03_t3 event statuses,True
+P03_t3 boundary/classification,True
+P03_t3 assigned coding,True
+P03_t3 Q1 source/scoring/confidence,True
+P03_t3 Q2 source/scoring/confidence,True
+P04_t1 workbook unique/condition,True
+P04_t1 source identity agreement,True
+P04_t1 included,True
+P04_t1 retained press reconstruction,True
+P04_t1 event statuses,True
+P04_t1 boundary/classification,True
+P04_t1 assigned coding,True
+P04_t1 Q1 source/scoring/confidence,True
+P04_t1 Q2 source/scoring/confidence,True
+P04_t2 workbook unique/condition,True
+P04_t2 source identity agreement,True
+P04_t2 included,True
+P04_t2 retained press reconstruction,True
+P04_t2 event statuses,True
+P04_t2 boundary/classification,True
+P04_t2 assigned coding,True
+P04_t2 Q1 source/scoring/confidence,True
+P04_t2 Q2 source/scoring/confidence,True
+P04_t3 workbook unique/condition,True
+P04_t3 source identity agreement,True
+P04_t3 included,True
+P04_t3 retained press reconstruction,True
+P04_t3 event statuses,True
+P04_t3 boundary/classification,True
+P04_t3 assigned coding,True
+P04_t3 Q1 source/scoring/confidence,True
+P04_t3 Q2 source/scoring/confidence,True
+P05_t1 workbook unique/condition,True
+P05_t1 source identity agreement,True
+P05_t1 included,True
+P05_t1 retained press reconstruction,True
+P05_t1 event statuses,True
+P05_t1 boundary/classification,True
+P05_t1 assigned coding,True
+P05_t1 Q1 source/scoring/confidence,True
+P05_t1 Q2 source/scoring/confidence,True
+P05_t2 workbook unique/condition,True
+P05_t2 source identity agreement,True
+P05_t2 included,True
+P05_t2 retained press reconstruction,True
+P05_t2 event statuses,True
+P05_t2 boundary/classification,True
+P05_t2 assigned coding,True
+P05_t2 Q1 source/scoring/confidence,True
+P05_t2 Q2 source/scoring/confidence,True
+P05_t3 workbook unique/condition,True
+P05_t3 source identity agreement,True
+P05_t3 included,True
+P05_t3 retained press reconstruction,True
+P05_t3 event statuses,True
+P05_t3 boundary/classification,True
+P05_t3 assigned coding,True
+P05_t3 Q1 source/scoring/confidence,True
+P05_t3 Q2 source/scoring/confidence,True
+P08_t1 workbook unique/condition,True
+P08_t1 source identity agreement,True
+P08_t1 included,True
+P08_t1 retained press reconstruction,True
+P08_t1 event statuses,True
+P08_t1 boundary/classification,True
+P08_t1 assigned coding,True
+P08_t1 Q1 source/scoring/confidence,True
+P08_t1 Q2 source/scoring/confidence,True
+P08_t2 workbook unique/condition,True
+P08_t2 source identity agreement,True
+P08_t2 included,True
+P08_t2 retained press reconstruction,True
+P08_t2 event statuses,True
+P08_t2 boundary/classification,True
+P08_t2 assigned coding,True
+P08_t2 Q1 source/scoring/confidence,True
+P08_t2 Q2 source/scoring/confidence,True
+P08_t3 workbook unique/condition,True
+P08_t3 source identity agreement,True
+P08_t3 included,True
+P08_t3 retained press reconstruction,True
+P08_t3 event statuses,True
+P08_t3 boundary/classification,True
+P08_t3 assigned coding,True
+P08_t3 Q1 source/scoring/confidence,True
+P08_t3 Q2 source/scoring/confidence,True
+P09_t1 workbook unique/condition,True
+P09_t1 source identity agreement,True
+P09_t1 included,True
+P09_t1 retained press reconstruction,True
+P09_t1 event statuses,True
+P09_t1 boundary/classification,True
+P09_t1 assigned coding,True
+P09_t1 Q1 source/scoring/confidence,True
+P09_t1 Q2 source/scoring/confidence,True
+P09_t2 workbook unique/condition,True
+P09_t2 source identity agreement,True
+P09_t2 included,True
+P09_t2 retained press reconstruction,True
+P09_t2 event statuses,True
+P09_t2 boundary/classification,True
+P09_t2 assigned coding,True
+P09_t2 Q1 source/scoring/confidence,True
+P09_t2 Q2 source/scoring/confidence,True
+P09_t3 workbook unique/condition,True
+P09_t3 source identity agreement,True
+P09_t3 included,True
+P09_t3 retained press reconstruction,True
+P09_t3 event statuses,True
+P09_t3 boundary/classification,True
+P09_t3 assigned coding,True
+P09_t3 Q1 source/scoring/confidence,True
+P09_t3 Q2 source/scoring/confidence,True
+P10_t1 workbook unique/condition,True
+P10_t1 source identity agreement,True
+P10_t1 included,True
+P10_t1 retained press reconstruction,True
+P10_t1 event statuses,True
+P10_t1 boundary/classification,True
+P10_t1 assigned coding,True
+P10_t1 Q1 source/scoring/confidence,True
+P10_t1 Q2 source/scoring/confidence,True
+P10_t2 workbook unique/condition,True
+P10_t2 source identity agreement,True
+P10_t2 included,True
+P10_t2 retained press reconstruction,True
+P10_t2 event statuses,True
+P10_t2 boundary/classification,True
+P10_t2 assigned coding,True
+P10_t2 Q1 source/scoring/confidence,True
+P10_t2 Q2 source/scoring/confidence,True
+P10_t3 workbook unique/condition,True
+P10_t3 source identity agreement,True
+P10_t3 included,True
+P10_t3 retained press reconstruction,True
+P10_t3 event statuses,True
+P10_t3 boundary/classification,True
+P10_t3 assigned coding,True
+P10_t3 Q1 source/scoring/confidence,True
+P10_t3 Q2 source/scoring/confidence,True
+P11_t1 workbook unique/condition,True
+P11_t1 source identity agreement,True
+P11_t1 included,True
+P11_t1 retained press reconstruction,True
+P11_t1 event statuses,True
+P11_t1 boundary/classification,True
+P11_t1 assigned coding,True
+P11_t1 Q1 source/scoring/confidence,True
+P11_t1 Q2 source/scoring/confidence,True
+P11_t2 workbook unique/condition,True
+P11_t2 source identity agreement,True
+P11_t2 included,True
+P11_t2 retained press reconstruction,True
+P11_t2 event statuses,True
+P11_t2 boundary/classification,True
+P11_t2 assigned coding,True
+P11_t2 Q1 source/scoring/confidence,True
+P11_t2 Q2 source/scoring/confidence,True
+P11_t3 workbook unique/condition,True
+P11_t3 source identity agreement,True
+P11_t3 included,True
+P11_t3 retained press reconstruction,True
+P11_t3 event statuses,True
+P11_t3 boundary/classification,True
+P11_t3 assigned coding,True
+P11_t3 Q1 source/scoring/confidence,True
+P11_t3 Q2 source/scoring/confidence,True
+P12_t1 workbook unique/condition,True
+P12_t1 source identity agreement,True
+P12_t1 included,True
+P12_t1 retained press reconstruction,True
+P12_t1 event statuses,True
+P12_t1 boundary/classification,True
+P12_t1 assigned coding,True
+P12_t1 Q1 source/scoring/confidence,True
+P12_t1 Q2 source/scoring/confidence,True
+P12_t2 workbook unique/condition,True
+P12_t2 source identity agreement,True
+P12_t2 included,True
+P12_t2 retained press reconstruction,True
+P12_t2 event statuses,True
+P12_t2 boundary/classification,True
+P12_t2 assigned coding,True
+P12_t2 Q1 source/scoring/confidence,True
+P12_t2 Q2 source/scoring/confidence,True
+P12_t3 workbook unique/condition,True
+P12_t3 source identity agreement,True
+P12_t3 included,True
+P12_t3 retained press reconstruction,True
+P12_t3 event statuses,True
+P12_t3 boundary/classification,True
+P12_t3 assigned coding,True
+P12_t3 Q1 source/scoring/confidence,True
+P12_t3 Q2 source/scoring/confidence,True
+P13_t1 workbook unique/condition,True
+P13_t1 source identity agreement,True
+P13_t1 included,True
+P13_t1 retained press reconstruction,True
+P13_t1 event statuses,True
+P13_t1 boundary/classification,True
+P13_t1 assigned coding,True
+P13_t1 Q1 source/scoring/confidence,True
+P13_t1 Q2 source/scoring/confidence,True
+P13_t2 workbook unique/condition,True
+P13_t2 source identity agreement,True
+P13_t2 included,True
+P13_t2 retained press reconstruction,True
+P13_t2 event statuses,True
+P13_t2 boundary/classification,True
+P13_t2 assigned coding,True
+P13_t2 Q1 source/scoring/confidence,True
+P13_t2 Q2 source/scoring/confidence,True
+P13_t3 workbook unique/condition,True
+P13_t3 source identity agreement,True
+P13_t3 included,True
+P13_t3 retained press reconstruction,True
+P13_t3 event statuses,True
+P13_t3 boundary/classification,True
+P13_t3 assigned coding,True
+P13_t3 Q1 source/scoring/confidence,True
+P13_t3 Q2 source/scoring/confidence,True
+P14_t1 workbook unique/condition,True
+P14_t1 source identity agreement,True
+P14_t1 included,True
+P14_t1 retained press reconstruction,True
+P14_t1 event statuses,True
+P14_t1 boundary/classification,True
+P14_t1 assigned coding,True
+P14_t1 Q1 source/scoring/confidence,True
+P14_t1 Q2 source/scoring/confidence,True
+P14_t2 workbook unique/condition,True
+P14_t2 source identity agreement,True
+P14_t2 included,True
+P14_t2 retained press reconstruction,True
+P14_t2 event statuses,True
+P14_t2 boundary/classification,True
+P14_t2 assigned coding,True
+P14_t2 Q1 source/scoring/confidence,True
+P14_t2 Q2 source/scoring/confidence,True
+P14_t3 workbook unique/condition,True
+P14_t3 source identity agreement,True
+P14_t3 included,True
+P14_t3 retained press reconstruction,True
+P14_t3 event statuses,True
+P14_t3 boundary/classification,True
+P14_t3 assigned coding,True
+P14_t3 Q1 source/scoring/confidence,True
+P14_t3 Q2 source/scoring/confidence,True
+P15_t1 workbook unique/condition,True
+P15_t1 source identity agreement,True
+P15_t1 included,True
+P15_t1 retained press reconstruction,True
+P15_t1 event statuses,True
+P15_t1 boundary/classification,True
+P15_t1 assigned coding,True
+P15_t1 Q1 source/scoring/confidence,True
+P15_t1 Q2 source/scoring/confidence,True
+P15_t2 workbook unique/condition,True
+P15_t2 source identity agreement,True
+P15_t2 included,True
+P15_t2 retained press reconstruction,True
+P15_t2 event statuses,True
+P15_t2 boundary/classification,True
+P15_t2 assigned coding,True
+P15_t2 Q1 source/scoring/confidence,True
+P15_t2 Q2 source/scoring/confidence,True
+P15_t3 workbook unique/condition,True
+P15_t3 source identity agreement,True
+P15_t3 included,True
+P15_t3 retained press reconstruction,True
+P15_t3 event statuses,True
+P15_t3 boundary/classification,True
+P15_t3 assigned coding,True
+P15_t3 Q1 source/scoring/confidence,True
+P15_t3 Q2 source/scoring/confidence,True
+P16_t1 workbook unique/condition,True
+P16_t1 source identity agreement,True
+P16_t1 included,True
+P16_t1 retained press reconstruction,True
+P16_t1 event statuses,True
+P16_t1 boundary/classification,True
+P16_t1 assigned coding,True
+P16_t1 Q1 source/scoring/confidence,True
+P16_t1 Q2 source/scoring/confidence,True
+P16_t2 workbook unique/condition,True
+P16_t2 source identity agreement,True
+P16_t2 included,True
+P16_t2 retained press reconstruction,True
+P16_t2 event statuses,True
+P16_t2 boundary/classification,True
+P16_t2 assigned coding,True
+P16_t2 Q1 source/scoring/confidence,True
+P16_t2 Q2 source/scoring/confidence,True
+P16_t3 workbook unique/condition,True
+P16_t3 source identity agreement,True
+P16_t3 included,True
+P16_t3 retained press reconstruction,True
+P16_t3 event statuses,True
+P16_t3 boundary/classification,True
+P16_t3 assigned coding,True
+P16_t3 Q1 source/scoring/confidence,True
+P16_t3 Q2 source/scoring/confidence,True
+P17_t1 workbook unique/condition,True
+P17_t1 source identity agreement,True
+P17_t1 included,True
+P17_t1 retained press reconstruction,True
+P17_t1 event statuses,True
+P17_t1 boundary/classification,True
+P17_t1 assigned coding,True
+P17_t1 Q1 source/scoring/confidence,True
+P17_t1 Q2 source/scoring/confidence,True
+P17_t2 workbook unique/condition,True
+P17_t2 source identity agreement,True
+P17_t2 included,True
+P17_t2 retained press reconstruction,True
+P17_t2 event statuses,True
+P17_t2 boundary/classification,True
+P17_t2 assigned coding,True
+P17_t2 Q1 source/scoring/confidence,True
+P17_t2 Q2 source/scoring/confidence,True
+P17_t3 workbook unique/condition,True
+P17_t3 source identity agreement,True
+P17_t3 included,True
+P17_t3 retained press reconstruction,True
+P17_t3 event statuses,True
+P17_t3 boundary/classification,True
+P17_t3 assigned coding,True
+P17_t3 Q1 source/scoring/confidence,True
+P17_t3 Q2 source/scoring/confidence,True
+P18_t1 workbook unique/condition,True
+P18_t1 source identity agreement,True
+P18_t1 included,True
+P18_t1 retained press reconstruction,True
+P18_t1 event statuses,True
+P18_t1 boundary/classification,True
+P18_t1 assigned coding,True
+P18_t1 Q1 source/scoring/confidence,True
+P18_t1 Q2 source/scoring/confidence,True
+P18_t2 workbook unique/condition,True
+P18_t2 source identity agreement,True
+P18_t2 included,True
+P18_t2 retained press reconstruction,True
+P18_t2 event statuses,True
+P18_t2 boundary/classification,True
+P18_t2 assigned coding,True
+P18_t2 Q1 source/scoring/confidence,True
+P18_t2 Q2 source/scoring/confidence,True
+P18_t3 workbook unique/condition,True
+P18_t3 source identity agreement,True
+P18_t3 included,True
+P18_t3 retained press reconstruction,True
+P18_t3 event statuses,True
+P18_t3 boundary/classification,True
+P18_t3 assigned coding,True
+P18_t3 Q1 source/scoring/confidence,True
+P18_t3 Q2 source/scoring/confidence,True
+P19_t1 workbook unique/condition,True
+P19_t1 source identity agreement,True
+P19_t1 included,True
+P19_t1 retained press reconstruction,True
+P19_t1 event statuses,True
+P19_t1 boundary/classification,True
+P19_t1 assigned coding,True
+P19_t1 Q1 source/scoring/confidence,True
+P19_t1 Q2 source/scoring/confidence,True
+P19_t2 workbook unique/condition,True
+P19_t2 source identity agreement,True
+P19_t2 included,True
+P19_t2 retained press reconstruction,True
+P19_t2 event statuses,True
+P19_t2 boundary/classification,True
+P19_t2 assigned coding,True
+P19_t2 Q1 source/scoring/confidence,True
+P19_t2 Q2 source/scoring/confidence,True
+P19_t3 workbook unique/condition,True
+P19_t3 source identity agreement,True
+P19_t3 included,True
+P19_t3 retained press reconstruction,True
+P19_t3 event statuses,True
+P19_t3 boundary/classification,True
+P19_t3 assigned coding,True
+P19_t3 Q1 source/scoring/confidence,True
+P19_t3 Q2 source/scoring/confidence,True
+P20_t1 workbook unique/condition,True
+P20_t1 source identity agreement,True
+P20_t1 included,True
+P20_t1 retained press reconstruction,True
+P20_t1 event statuses,True
+P20_t1 boundary/classification,True
+P20_t1 assigned coding,True
+P20_t1 Q1 source/scoring/confidence,True
+P20_t1 Q2 source/scoring/confidence,True
+P20_t2 workbook unique/condition,True
+P20_t2 source identity agreement,True
+P20_t2 included,True
+P20_t2 retained press reconstruction,True
+P20_t2 event statuses,True
+P20_t2 boundary/classification,True
+P20_t2 assigned coding,True
+P20_t2 Q1 source/scoring/confidence,True
+P20_t2 Q2 source/scoring/confidence,True
+P20_t3 workbook unique/condition,True
+P20_t3 source identity agreement,True
+P20_t3 included,True
+P20_t3 retained press reconstruction,True
+P20_t3 event statuses,True
+P20_t3 boundary/classification,True
+P20_t3 assigned coding,True
+P20_t3 Q1 source/scoring/confidence,True
+P20_t3 Q2 source/scoring/confidence,True
+P21_t1 workbook unique/condition,True
+P21_t1 source identity agreement,True
+P21_t1 included,True
+P21_t1 retained press reconstruction,True
+P21_t1 event statuses,True
+P21_t1 boundary/classification,True
+P21_t1 assigned coding,True
+P21_t1 Q1 source/scoring/confidence,True
+P21_t1 Q2 source/scoring/confidence,True
+P21_t2 workbook unique/condition,True
+P21_t2 source identity agreement,True
+P21_t2 included,True
+P21_t2 retained press reconstruction,True
+P21_t2 event statuses,True
+P21_t2 boundary/classification,True
+P21_t2 assigned coding,True
+P21_t2 Q1 source/scoring/confidence,True
+P21_t2 Q2 source/scoring/confidence,True
+P21_t3 workbook unique/condition,True
+P21_t3 source identity agreement,True
+P21_t3 included,True
+P21_t3 retained press reconstruction,True
+P21_t3 event statuses,True
+P21_t3 boundary/classification,True
+P21_t3 assigned coding,True
+P21_t3 Q1 source/scoring/confidence,True
+P21_t3 Q2 source/scoring/confidence,True
+P22_t1 workbook unique/condition,True
+P22_t1 source identity agreement,True
+P22_t1 included,True
+P22_t1 retained press reconstruction,True
+P22_t1 event statuses,True
+P22_t1 boundary/classification,True
+P22_t1 assigned coding,True
+P22_t1 Q1 source/scoring/confidence,True
+P22_t1 Q2 source/scoring/confidence,True
+P22_t2 workbook unique/condition,True
+P22_t2 source identity agreement,True
+P22_t2 included,True
+P22_t2 retained press reconstruction,True
+P22_t2 event statuses,True
+P22_t2 boundary/classification,True
+P22_t2 assigned coding,True
+P22_t2 Q1 source/scoring/confidence,True
+P22_t2 Q2 source/scoring/confidence,True
+P22_t3 workbook unique/condition,True
+P22_t3 source identity agreement,True
+P22_t3 included,True
+P22_t3 retained press reconstruction,True
+P22_t3 event statuses,True
+P22_t3 boundary/classification,True
+P22_t3 assigned coding,True
+P22_t3 Q1 source/scoring/confidence,True
+P22_t3 Q2 source/scoring/confidence,True
+P23_t1 workbook unique/condition,True
+P23_t1 source identity agreement,True
+P23_t1 included,True
+P23_t1 retained press reconstruction,True
+P23_t1 event statuses,True
+P23_t1 boundary/classification,True
+P23_t1 assigned coding,True
+P23_t1 Q1 source/scoring/confidence,True
+P23_t1 Q2 source/scoring/confidence,True
+P23_t2 workbook unique/condition,True
+P23_t2 source identity agreement,True
+P23_t2 included,True
+P23_t2 retained press reconstruction,True
+P23_t2 event statuses,True
+P23_t2 boundary/classification,True
+P23_t2 assigned coding,True
+P23_t2 Q1 source/scoring/confidence,True
+P23_t2 Q2 source/scoring/confidence,True
+P23_t3 workbook unique/condition,True
+P23_t3 source identity agreement,True
+P23_t3 included,True
+P23_t3 retained press reconstruction,True
+P23_t3 event statuses,True
+P23_t3 boundary/classification,True
+P23_t3 assigned coding,True
+P23_t3 Q1 source/scoring/confidence,True
+P23_t3 Q2 source/scoring/confidence,True
+P24_t1 workbook unique/condition,True
+P24_t1 source identity agreement,True
+P24_t1 included,True
+P24_t1 retained press reconstruction,True
+P24_t1 event statuses,True
+P24_t1 boundary/classification,True
+P24_t1 assigned coding,True
+P24_t1 Q1 source/scoring/confidence,True
+P24_t1 Q2 source/scoring/confidence,True
+P24_t2 workbook unique/condition,True
+P24_t2 source identity agreement,True
+P24_t2 included,True
+P24_t2 retained press reconstruction,True
+P24_t2 event statuses,True
+P24_t2 boundary/classification,True
+P24_t2 assigned coding,True
+P24_t2 Q1 source/scoring/confidence,True
+P24_t2 Q2 source/scoring/confidence,True
+P24_t3 workbook unique/condition,True
+P24_t3 source identity agreement,True
+P24_t3 included,True
+P24_t3 retained press reconstruction,True
+P24_t3 event statuses,True
+P24_t3 boundary/classification,True
+P24_t3 assigned coding,True
+P24_t3 Q1 source/scoring/confidence,True
+P24_t3 Q2 source/scoring/confidence,True
+P25_t1 workbook unique/condition,True
+P25_t1 source identity agreement,True
+P25_t1 included,True
+P25_t1 retained press reconstruction,True
+P25_t1 event statuses,True
+P25_t1 boundary/classification,True
+P25_t1 assigned coding,True
+P25_t1 Q1 source/scoring/confidence,True
+P25_t1 Q2 source/scoring/confidence,True
+P25_t2 workbook unique/condition,True
+P25_t2 source identity agreement,True
+P25_t2 included,True
+P25_t2 retained press reconstruction,True
+P25_t2 event statuses,True
+P25_t2 boundary/classification,True
+P25_t2 assigned coding,True
+P25_t2 Q1 source/scoring/confidence,True
+P25_t2 Q2 source/scoring/confidence,True
+P25_t3 workbook unique/condition,True
+P25_t3 source identity agreement,True
+P25_t3 included,True
+P25_t3 retained press reconstruction,True
+P25_t3 event statuses,True
+P25_t3 boundary/classification,True
+P25_t3 assigned coding,True
+P25_t3 Q1 source/scoring/confidence,True
+P25_t3 Q2 source/scoring/confidence,True
+P26_t1 workbook unique/condition,True
+P26_t1 source identity agreement,True
+P26_t1 included,True
+P26_t1 retained press reconstruction,True
+P26_t1 event statuses,True
+P26_t1 boundary/classification,True
+P26_t1 assigned coding,True
+P26_t1 Q1 source/scoring/confidence,True
+P26_t1 Q2 source/scoring/confidence,True
+P26_t2 workbook unique/condition,True
+P26_t2 source identity agreement,True
+P26_t2 included,True
+P26_t2 retained press reconstruction,True
+P26_t2 event statuses,True
+P26_t2 boundary/classification,True
+P26_t2 assigned coding,True
+P26_t2 Q1 source/scoring/confidence,True
+P26_t2 Q2 source/scoring/confidence,True
+P26_t3 workbook unique/condition,True
+P26_t3 source identity agreement,True
+P26_t3 included,True
+P26_t3 retained press reconstruction,True
+P26_t3 event statuses,True
+P26_t3 boundary/classification,True
+P26_t3 assigned coding,True
+P26_t3 Q1 source/scoring/confidence,True
+P26_t3 Q2 source/scoring/confidence,True
+24 complete participants,True
+one NT per participant,True
+two distinct animations per participant,True
+condition denominators,True
+complete valid outcomes,True
+NT event fields remain inapplicable,True
+no excluded participants,True
+prior animated input reconciled: D,True
+prior animated input reconciled: onset,True
+prior animated input reconciled: completion,True
+prior animated input reconciled: Q1,True
+prior animated input reconciled: Q2,True
+prior animated input reconciled: M,True
+prior animated input reconciled: M_full,True
+prior animated input reconciled: Q1_confidence,True
+prior animated input reconciled: Q2_confidence,True
+reconstructed inputs equal latest Chapter 4 package,True
+all_trials 24 participants,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials 24 participants,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation 24 participants,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+22 cross-outcome tests,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S complete pairs,True
+all_trials__Q1__S independent beta integral,True
+all_trials__Q1__Q2 complete pairs,True
+all_trials__Q1__Q2 independent beta integral,True
+all_trials__Q1__M complete pairs,True
+all_trials__Q1__M independent beta integral,True
+all_trials__S__Q2 complete pairs,True
+all_trials__S__Q2 independent beta integral,True
+all_trials__S__M complete pairs,True
+all_trials__S__M independent beta integral,True
+all_trials__Q2__M complete pairs,True
+all_trials__Q2__M independent beta integral,True
+animated_trials__onset__completion complete pairs,True
+animated_trials__onset__completion independent beta integral,True
+animated_trials__onset__Q1 complete pairs,True
+animated_trials__onset__Q1 independent beta integral,True
+animated_trials__onset__Q2 complete pairs,True
+animated_trials__onset__Q2 independent beta integral,True
+animated_trials__onset__M complete pairs,True
+animated_trials__onset__M independent beta integral,True
+animated_trials__completion__Q1 complete pairs,True
+animated_trials__completion__Q1 independent beta integral,True
+animated_trials__completion__Q2 complete pairs,True
+animated_trials__completion__Q2 independent beta integral,True
+animated_trials__completion__M complete pairs,True
+animated_trials__completion__M independent beta integral,True
+animated_trials__Q1__Q2 complete pairs,True
+animated_trials__Q1__Q2 independent beta integral,True
+animated_trials__Q1__M complete pairs,True
+animated_trials__Q1__M independent beta integral,True
+animated_trials__Q2__M complete pairs,True
+animated_trials__Q2__M independent beta integral,True
+no_animation__Q1__S complete pairs,True
+no_animation__Q1__S binary,True
+no_animation__Q1__S independent exact binomial sum,True
+no_animation__Q1__Q2 complete pairs,True
+no_animation__Q1__Q2 binary,True
+no_animation__Q1__Q2 independent exact binomial sum,True
+no_animation__Q1__M complete pairs,True
+no_animation__Q1__M binary,True
+no_animation__Q1__M independent exact binomial sum,True
+no_animation__S__Q2 complete pairs,True
+no_animation__S__Q2 binary,True
+no_animation__S__Q2 independent exact binomial sum,True
+no_animation__S__M complete pairs,True
+no_animation__S__M binary,True
+no_animation__S__M independent exact binomial sum,True
+no_animation__Q2__M complete pairs,True
+no_animation__Q2__M binary,True
+no_animation__Q2__M independent exact binomial sum,True
+all_trials__Q1__S reproduces previous raw and adjusted p,True
+all_trials__Q1__Q2 reproduces previous raw and adjusted p,True
+all_trials__Q1__M reproduces previous raw and adjusted p,True
+all_trials__S__Q2 reproduces previous raw and adjusted p,True
+all_trials__S__M reproduces previous raw and adjusted p,True
+all_trials__Q2__M reproduces previous raw and adjusted p,True
+animated_trials__onset__completion reproduces previous raw and adjusted p,True
+animated_trials__onset__Q1 reproduces previous raw and adjusted p,True
+animated_trials__onset__Q2 reproduces previous raw and adjusted p,True
+animated_trials__onset__M reproduces previous raw and adjusted p,True
+animated_trials__completion__Q1 reproduces previous raw and adjusted p,True
+animated_trials__completion__Q2 reproduces previous raw and adjusted p,True
+animated_trials__completion__M reproduces previous raw and adjusted p,True
+animated_trials__Q1__Q2 reproduces previous raw and adjusted p,True
+animated_trials__Q1__M reproduces previous raw and adjusted p,True
+animated_trials__Q2__M reproduces previous raw and adjusted p,True
+no_animation__Q1__S reproduces previous raw and adjusted p,True
+no_animation__Q1__Q2 reproduces previous raw and adjusted p,True
+no_animation__Q1__M reproduces previous raw and adjusted p,True
+no_animation__S__Q2 reproduces previous raw and adjusted p,True
+no_animation__S__M reproduces previous raw and adjusted p,True
+no_animation__Q2__M reproduces previous raw and adjusted p,True
+V1__onset__completion complete pairs,True
+V1__onset__completion binary,True
+V1__onset__completion independent exact binomial sum,True
+V2__onset__completion complete pairs,True
+V2__onset__completion binary,True
+V2__onset__completion independent exact binomial sum,True
+V3__onset__completion complete pairs,True
+V3__onset__completion binary,True
+V3__onset__completion independent exact binomial sum,True
+NT__Q1__Q2 complete pairs,True
+NT__Q1__Q2 binary,True
+NT__Q1__Q2 independent exact binomial sum,True
+V1__Q1__Q2 complete pairs,True
+V1__Q1__Q2 binary,True
+V1__Q1__Q2 independent exact binomial sum,True
+V2__Q1__Q2 complete pairs,True
+V2__Q1__Q2 binary,True
+V2__Q1__Q2 independent exact binomial sum,True
+V3__Q1__Q2 complete pairs,True
+V3__Q1__Q2 binary,True
+V3__Q1__Q2 independent exact binomial sum,True
+confidence 15 unique tests,True
+confidence Holm15 recomputed,True
+all confidence raw p reproduced,True
+all confidence supported decisions reproduced,True
+prior_t_all independent scipy t,True
+prior_t_animated independent scipy t,True
+prior_t_NT independent scipy t,True
+prior_t_V1-V2 independent scipy t,True
+prior_t_V1-V3 independent scipy t,True
+prior_t_V2-V3 independent scipy t,True
+within_t_V1 independent scipy t,True
+within_t_V2 independent scipy t,True
+within_t_V3 independent scipy t,True
+V2V1 eight shared participants,True
+V2__V1 complete pairs,True
+V2__V1 binary,True
+V2__V1 independent exact binomial sum,True
+V2V3 eight shared participants,True
+V2__V3 complete pairs,True
+V2__V3 binary,True
+V2__V3 independent exact binomial sum,True
+V1V3 eight shared participants,True
+V1__V3 complete pairs,True
+V1__V3 binary,True
+V1__V3 independent exact binomial sum,True
+interpretation exact tests reproduce binary permutation tests,True
+source/historical file preserved analysis/dataset/trial-data/trial-data-crosswalk/72-trial-map.csv,True
+source/historical file preserved analysis/dataset/trigger-data/trigger-data-cleaning/trigger_trials.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/tables/sanitized_input.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/receipts/independent_validation.json,True
+source/historical file preserved analysis/RQ3/provisional/coding/full-corpus-trial-codes.csv,True
+source/historical file preserved analysis/RQ3/provisional/coding/full-corpus-validation.json,True
+source/historical file preserved analysis/RQ3/provisional/20261008-cross-rq-gaps/input.csv,True
+source/historical file preserved analysis/dataset/originals/questionnaire-data/data-aggregated.xlsx,True
+source/historical file preserved analysis/dataset/trigger-data/trigger-data-cleaning/trigger_presses.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261008-combined-detection-confidence/input.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261008-combined-detection-confidence/tests.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261008-combined-detection-confidence/receipt.json,True
+source/historical file preserved analysis/RQ3/provisional/20261007-cross-rq/settings.json,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/validate_numeric.py,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/input.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/run_analysis.py,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/participant_differences.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/leave_one_out.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/settings.json,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/requirements.txt,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/independent_validation.json,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/descriptive_scores.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/validation_checks.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/tests.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/participant_means.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/render_report.py,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/artifact_validation.json,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/receipt.json,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/report/three_scope_mean_scores.pdf,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/report/index.html,True
+source/historical file preserved analysis/RQ3/provisional/20261014-three-scope-outcome-comparisons/report/three_scope_mean_scores.png,True
+source/historical file preserved analysis/RQ3/provisional/20261015-interpretation-binary-score/run_analysis.py,True
+source/historical file preserved analysis/RQ3/provisional/20261015-interpretation-binary-score/pairwise_tests.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261015-interpretation-binary-score/paired_scores.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261015-interpretation-binary-score/animation_scores.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261015-interpretation-binary-score/trial_scores.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261015-interpretation-binary-score/receipt.json,True
+source/historical file preserved analysis/RQ3/provisional/20261015-interpretation-binary-score/inputs/full-corpus-trial-codes.csv,True
+source/historical file preserved analysis/RQ3/provisional/20261015-interpretation-binary-score/inputs/full-corpus-validation.json,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/dependencies.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/recoded_fit.txt,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/completion_receipt.json,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/validate_numeric.py,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/input.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/auxiliary_nominal_diagnostic.txt,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/contrast_vectors.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/leave_one_out.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/validate_ordinal.R,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/requirements.txt,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/model_summary.txt,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/fit_diagnostics.rds,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/ordinal_contrasts.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/difference_diagnostics.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/ordinal_input.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/threshold_counts.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/settings.txt,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/independent_validation.json,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/run.sh,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/independent_checks.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/ordinal_validation_checks.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/session_info.txt,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/fit_diagnostics.txt,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/ordinal_validation.txt,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/rating_position_cells.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/matched_gaps.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/participant_bundles.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/category_predictions.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/recoded_fit.rds,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/run_analysis.R,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/missingness.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/primary_tests.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/artifact_hashes.json,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/difference_frequencies.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/fits.rds,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-confidence-score-t-ordinal/report/overview.md,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/completion_receipt.json,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/validate_numeric.py,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/paired_tests.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/contrast_vectors.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/ordinal_contrasts.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/settings.txt,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/diagnostics.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/independent_checks.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/expanded_family15.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/session_info.txt,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/paired_input.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/validation_checks.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/validation_receipt.json,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/gap_frequencies.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/run_analysis.R,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/missingness.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261009-within-animation-confidence/report/overview.md,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/input.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/run_analysis.py,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/bootstrap_sensitivity.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/settings.json,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/validate_independent.py,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/position_counts.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/within_conditions.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/independent_validation.json,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/README.md,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/independent_checks.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/between_animation_gaps.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/overlap_diagnostics.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/validation_checks.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/position_sensitivity.csv,True
+source/historical file preserved analysis/RQ2/provisional/statistical-tests/20261014-accuracy-gap-interactions/receipt.json,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/run_analysis.py,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/.DS_Store,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/requirements.txt,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/validate_independent.py,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/verify_report.cjs,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/run.sh,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/README.md,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/receipts/change_audit.json,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/receipts/independent_validation.json,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/receipts/report_validation.json,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/receipts/validation.json,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/receipts/run_spec.json,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/tables/paired_trials.csv,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/tables/results.csv,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/report/mobile_verified.png,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/report/index.html,True
+source/historical file preserved analysis/RQ1/provisional/statistical-tests/exact-mcnemar/report/desktop_verified.png,True

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-06",
+  "verified_frozen_source_files": 533,
+  "original_checkouts_unchanged": {
+    "knowledge": {
+      "status_unchanged": true,
+      "unstaged_diff_unchanged": true,
+      "staged_diff_unchanged": true
+    },
+    "overleaf": {
+      "status_unchanged": true,
+      "unstaged_diff_unchanged": true,
+      "staged_diff_unchanged": true
+    }
+  },
+  "final_numerical_checks_passed": 200,
+  "adopted_independent_checks_passed": 126,
+  "portable_coding_builder": "72 trial codes and 534 evidence details reproduced byte-for-byte",
+  "published_figures_verified": 34,
+  "cited_pdfs": 45,
+  "preserved_zotero_annotations": 453,
+  "citation_archive_crc_and_sha256": "passed",
+  "internal_markdown_links": "passed",
+  "secret_pattern_scan": "no credential matches; Swedish URL false positive resolved by token-boundary matching",
+  "visibility_selection": "private: participant material and unverified paper redistribution rights",
+  "validation_limits": "No fresh ordinal confidence-model refit or full claim-by-claim thesis audit; source-provided validation evidence preserved"
+}

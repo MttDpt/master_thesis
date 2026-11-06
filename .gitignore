@@ -1,0 +1,8 @@
+# Rebuildable local files only; published sources and evidence remain tracked.
+.build/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+._*
+*.synctex.gz

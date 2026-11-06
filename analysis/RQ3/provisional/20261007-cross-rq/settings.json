@@ -1,0 +1,94 @@
+{
+  "status": "registered_before_fitting",
+  "seed": 2026100708,
+  "draws": 2000,
+  "tune": 2000,
+  "chains": 4,
+  "cores": 2,
+  "target_accept": 0.97,
+  "max_treedepth": 12,
+  "links": [
+    [
+      "onset",
+      "Q1"
+    ],
+    [
+      "onset",
+      "Q2"
+    ],
+    [
+      "onset",
+      "meaning"
+    ],
+    [
+      "completion",
+      "Q1"
+    ],
+    [
+      "completion",
+      "Q2"
+    ],
+    [
+      "completion",
+      "meaning"
+    ],
+    [
+      "Q1",
+      "meaning"
+    ],
+    [
+      "Q2",
+      "meaning"
+    ]
+  ],
+  "scoring_key": {
+    "NT": [
+      "None of these",
+      "I did not witness any changes"
+    ],
+    "V1": [
+      "Sun and moon",
+      "A day-to-night timelapse"
+    ],
+    "V2": [
+      "Buildings",
+      "Landscape changing"
+    ],
+    "V3": [
+      "A red glowing sphere",
+      "A progressive camera close up on the scene"
+    ]
+  },
+  "schedule": {
+    "1": 0.5,
+    "2": 0.5,
+    "3": 0
+  },
+  "schedule_justification": "Every animation occurs at positions 1 and 2; V3 is absent at 3. Equal weights specify a common supported target, rather than observed condition-specific schedules. All 48 trials fit, additive categorical position assumes no interactions.",
+  "priors": [
+    {
+      "name": "reference",
+      "scale": 1.5,
+      "participant": 1
+    },
+    {
+      "name": "narrow",
+      "scale": 1,
+      "participant": 0.5
+    },
+    {
+      "name": "wide",
+      "scale": 2.5,
+      "participant": 2
+    }
+  ],
+  "position_sd": 0.75,
+  "association_estimand": "Y probability under x=1 minus x=0, equally weighted animations and positions 1/2, integrating over new-participant Normal random intercept. Statistical association only; counterfactual predictor settings may lack within-condition support.",
+  "bootstrap_draws": 200000,
+  "bootstrap_seed": 2026100709,
+  "bootstrap_estimand": "Pooled unadjusted P(Y=1|X=1)-P(Y=1|X=0), phi, and paired marginal X-minus-Y gap; condition strata descriptive",
+  "multiplicity": "Eight Bayesian links: 99.375% Bonferroni posterior intervals per fit; nine all-success pair contrasts: 99.4444% posterior intervals per fit across three variants. These posterior union-bound summaries are model-conditional, not frequentist familywise guarantees. Full-only and prior sensitivities descriptive. Eight pooled bootstrap links per measure: 99.375% conservative intervals; undefined draws padded to full parameter range. Thirty McNemar tests in one Holm family at .05.",
+  "bootstrap_undefined": "Report finite-draw percentile 95% intervals diagnostically; conservative family intervals pad undefined draws to -100/+100 pp or -1/+1 phi. No conclusive population claim from boundary degeneracy.",
+  "all_success": "Detection variant AND Q1 AND Q2 AND meaning(full+partial); full-only sensitivity at reference prior. No NT models.",
+  "diagnostics": "Zero divergences/depth hits; Rhat<=1.01; bulk/tail ESS>=400; BFMI>.30; finite quadrature and error<.1 pp; posterior predictive observed condition counts within 95% intervals. Failures retained and marked."
+}

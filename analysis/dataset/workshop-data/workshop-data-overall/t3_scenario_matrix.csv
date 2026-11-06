@@ -1,0 +1,10 @@
+domain,high,low,both,total
+Media / play,0,5,0,5
+Navigation / mobility,4,1,1,6
+Ambient / interface mode,3,1,2,6
+Communication / social,1,4,0,5
+Context / environment,1,0,0,1
+Connected assistance / services,2,3,2,7
+Safety / driving assistance,4,0,0,4
+Vehicle state / performance,1,0,1,2
+Wellbeing / comfort,0,1,0,1

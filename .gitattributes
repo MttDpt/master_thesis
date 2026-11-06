@@ -1,0 +1,7 @@
+# Preserve frozen input/output hashes across platforms.
+* -text
+# Frozen evidence/template whitespace is provenance, not a new formatting edit.
+analysis/** -whitespace
+archive/** -whitespace
+thesis/** -whitespace
+*.md whitespace=blank-at-eol,blank-at-eof,space-before-tab

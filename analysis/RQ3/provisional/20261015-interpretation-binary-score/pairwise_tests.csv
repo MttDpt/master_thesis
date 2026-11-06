@@ -1,0 +1,4 @@
+first,second,paired_n,first_paired_mean,second_paired_mean,paired_mean_gap,overall_mean_gap,positive,ties,negative,permutations,p_raw,p_holm
+V2,V1,8,0.875,0.625,0.25,0.25,2,6,0,256,0.5,0.5
+V2,V3,8,0.875,0.0,0.875,0.875,7,1,0,256,0.015625,0.046875
+V1,V3,8,0.625,0.0,0.625,0.625,5,3,0,256,0.0625,0.125

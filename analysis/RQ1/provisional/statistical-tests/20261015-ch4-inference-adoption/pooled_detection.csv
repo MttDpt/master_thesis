@@ -1,0 +1,2 @@
+test_id,family,method,n_pairs,first_mean,second_mean,gap,positive,negative,tied,scope,first,second,n_trials,raw_p,statistic,df,ci95_low,ci95_high,both,neither,holm_p,supported,bootstrap95_low,bootstrap95_high
+animated_trials__onset__completion,cross_outcome22,paired_t,24,0.8333333333333334,0.3541666666666667,0.4791666666666667,17,1,6,animated_trials,onset,completion,48,9.853497595149845e-05,4.699113713400651,23.0,0.26822651239195905,0.6901068209413743,,,0.0016750945911754736,True,0.2708333333333333,0.6666666666666666

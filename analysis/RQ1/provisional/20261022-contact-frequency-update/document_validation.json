@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "document": "analysis/RQ1/provisional/rq1-results.md",
+  "frequency_table_rows_checked_against_condition_summary": 21,
+  "all_non_frequency_table_cells_preserved": true,
+  "scope": "Updated fixed-phase and NT whole-trial median tables; current observations reconciled separately",
+  "report_visual_inspection": "passed; top and whole-trial sections rendered in headless Chrome without horizontal overflow",
+  "figure_visual_inspection": "passed; labels, counts, legend and clipping checked",
+  "overleaf_changed": false,
+  "external_board_changed": false
+}

@@ -1,0 +1,7 @@
+condition,classification,affected_trials_n,eligible_n,press_n,proportion
+V1,early,0,16,0,0
+V1,extra,12,16,26,0.75
+V2,early,6,16,7,0.375
+V2,extra,8,16,9,0.5
+V3,early,2,16,3,0.125
+V3,extra,6,16,9,0.375

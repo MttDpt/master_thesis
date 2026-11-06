@@ -1,0 +1,17 @@
+group,scenario,domain,concept
+G1,high,Safety / driving assistance,collision detection / proximity to a car
+G1,low,Ambient / interface mode,start screen
+G1,low,Communication / social,summary of messages who calls
+G1,low,Media / play,personal info / gallery
+G1,both,Vehicle state / performance,kickdown visualisation
+G2,high,Ambient / interface mode,mood background
+G2,high,Navigation / mobility,parking lots
+G2,low,Communication / social,messages to other cars
+G2,low,Connected assistance / services,smart home
+G2,low,Media / play,music equalizer
+G3,high,Safety / driving assistance,alert/safety doing something unsafe
+G3,high,Vehicle state / performance,car status speed etc...
+G3,low,Connected assistance / services,chatgpt voice
+G3,low,Media / play,music
+G3,low,Navigation / mobility,3d global topography
+G4,both,Ambient / interface mode,minimal status data calm

@@ -1,0 +1,4 @@
+test_id,family,method,n_pairs,first_mean,second_mean,gap,positive,negative,tied,condition,first,second,n_trials,raw_p,both,neither,holm_p,supported
+V1__onset__completion,detection3,exact_mcnemar,16,1.0,0.3125,0.6875,11,0,5,V1,onset,completion,16,0.0009765625,5,0,0.0029296875,True
+V2__onset__completion,detection3,exact_mcnemar,16,0.8125,0.3125,0.5,9,1,6,V2,onset,completion,16,0.021484375,4,2,0.04296875,True
+V3__onset__completion,detection3,exact_mcnemar,16,0.6875,0.4375,0.25,7,3,6,V3,onset,completion,16,0.34375,4,2,0.34375,False

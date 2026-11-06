@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-05",
+  "final_figure_mirrors_sha256_passed": 34,
+  "active_document_link_audits_passed": 12,
+  "original_zotero_pdf_hashes_unchanged": 39,
+  "ueq_eligible_participants": 24,
+  "ueq_scales_checked_against_corrected_csv": 6,
+  "citation_keys": 48,
+  "pdfs": 45,
+  "zotero_annotations": 453,
+  "zip_crc_and_payload_hashes_passed": true,
+  "scoped_git_diff_check_passed": true,
+  "scope_limit": "Archived execution snapshots and unrelated existing work were not pruned or globally relinked in this change set; no full thesis claim-by-claim re-audit or GitHub upload was performed."
+}

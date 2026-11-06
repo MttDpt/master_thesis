@@ -1,0 +1,16 @@
+{
+  "status": "provisional exploratory analysis requested by user",
+  "date": "2026-10-09",
+  "primary_measure": "RTLX: complete-case unweighted mean of six modified 1-10 dimensions",
+  "comparisons": ["mean of each participant's two animated trials minus their NT trial", "V1-V2, V1-V3, V2-V3 within exposed participant pairs"],
+  "comparison_method": "two-sided paired t-tests of mean differences; exact sign tests as direction sensitivity",
+  "association_method": "OLS RTLX ~ outcome + participant fixed effects + condition + categorical trial position; participant-cluster covariance with small-sample correction and t(G-1) reference; NT uses OLS with position and HC3 covariance",
+  "association_outcomes": ["S: combined detection for animation / no retained press for NT", "Q1 correctness", "Q2 correctness", "M: full-or-partial meaning success for animation / condition recognition for NT"],
+  "association_populations": ["all", "animated", "NT"],
+  "multiplicity": "Holm across four RTLX contrasts and all 12 prespecified RTLX associations; non-estimable NT Q1 contributes p=1. Separate Holm family for 24 six-dimension contrasts. Sensitivity sign tests adjusted across four RTLX contrasts.",
+  "reporting_rule": "Conclusive difference/association means Holm p<0.05, not evidence of equivalence when non-significant. Majority means >half estimable tests in each requested group; retain all results in package regardless of significance. No alternative tests selected after seeing p-values.",
+  "all_trials": "Descriptive overall summary only: it contains the animated and NT subsets, so no independent all-versus-subset tests",
+  "uncertainty": "95% individual confidence intervals are not multiplicity-adjusted",
+  "limits": "Exploratory, small incomplete overlapping animation samples, fixed schedule, workload measured after each trial, no causality, no equivalence margin, Q3 provisional single-coder",
+  "ueq_source": "canonical aggregate workbook 04a_UEQ, participant IDs matched to included crosswalk; original mapping from existing scoring code; no condition assignment"
+}

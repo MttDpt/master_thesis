@@ -1,0 +1,24 @@
+R version 4.6.1 (2026-06-24)
+Platform: aarch64-apple-darwin25.4.0
+Running under: macOS Golden Gate 27.0.1
+
+Matrix products: default
+BLAS:   /opt/homebrew/Cellar/openblas/0.3.34/lib/libopenblasp-r0.3.34.dylib 
+LAPACK: /opt/homebrew/Cellar/r/4.6.1/lib/R/lib/libRlapack.dylib;  LAPACK version 3.12.1
+
+locale:
+[1] C.UTF-8/C.UTF-8/C.UTF-8/C/C.UTF-8/C.UTF-8
+
+time zone: Europe/Rome
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] ordinal_2026.7-26
+
+loaded via a namespace (and not attached):
+[1] MASS_7.3-65         compiler_4.6.1      Matrix_1.7-5       
+[4] nlme_3.1-169        ucminf_1.2.3        grid_4.6.1         
+[7] numDeriv_2016.8-1.1 lattice_0.22-9     

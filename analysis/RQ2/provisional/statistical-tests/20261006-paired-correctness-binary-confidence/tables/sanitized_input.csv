@@ -1,0 +1,73 @@
+participant_trial_key,participant_id,condition,trial_number,Q1_correct,Q1_confidence,Q1_response,Q1_expected,Q2_correct,Q2_confidence,Q2_response,Q2_expected
+P01_t1,P01,NT,1,1.0,2,None of these,None of these,0.0,2,Landscape changing,I did not witness any changes
+P01_t2,P01,V3,2,0.0,3,None of these,A red glowing sphere,0.0,3,Landscape changing,A progressive camera close up on the scene
+P01_t3,P01,V2,3,0.0,4,A red glowing sphere,Buildings,0.0,3,A day-to-night timelapse,Landscape changing
+P02_t1,P02,V3,1,1.0,2,A red glowing sphere,A red glowing sphere,0.0,2,I did not witness any changes,A progressive camera close up on the scene
+P02_t2,P02,NT,2,1.0,2,None of these,None of these,1.0,2,I did not witness any changes,I did not witness any changes
+P02_t3,P02,V2,3,1.0,4,Buildings,Buildings,0.0,2,I did not witness any changes,Landscape changing
+P03_t1,P03,NT,1,1.0,2,None of these,None of these,1.0,3,I did not witness any changes,I did not witness any changes
+P03_t2,P03,V3,2,1.0,4,A red glowing sphere,A red glowing sphere,0.0,3,I did not witness any changes,A progressive camera close up on the scene
+P03_t3,P03,V1,3,1.0,3,Sun and moon,Sun and moon,1.0,2,A day-to-night timelapse,A day-to-night timelapse
+P04_t1,P04,V3,1,0.0,3,None of these,A red glowing sphere,0.0,3,I did not witness any changes,A progressive camera close up on the scene
+P04_t2,P04,NT,2,1.0,4,None of these,None of these,1.0,4,I did not witness any changes,I did not witness any changes
+P04_t3,P04,V1,3,1.0,4,Sun and moon,Sun and moon,1.0,4,A day-to-night timelapse,A day-to-night timelapse
+P05_t1,P05,V1,1,0.0,4,A red glowing sphere,Sun and moon,0.0,4,Landscape changing,A day-to-night timelapse
+P05_t2,P05,V2,2,1.0,4,Buildings,Buildings,1.0,4,Landscape changing,Landscape changing
+P05_t3,P05,NT,3,1.0,4,None of these,None of these,1.0,4,I did not witness any changes,I did not witness any changes
+P08_t1,P08,V3,1,1.0,4,A red glowing sphere,A red glowing sphere,0.0,2,I did not witness any changes,A progressive camera close up on the scene
+P08_t2,P08,NT,2,1.0,4,None of these,None of these,1.0,4,I did not witness any changes,I did not witness any changes
+P08_t3,P08,V2,3,1.0,4,Buildings,Buildings,1.0,4,Landscape changing,Landscape changing
+P09_t1,P09,NT,1,1.0,1,None of these,None of these,1.0,1,I did not witness any changes,I did not witness any changes
+P09_t2,P09,V3,2,1.0,4,A red glowing sphere,A red glowing sphere,0.0,1,A day-to-night timelapse,A progressive camera close up on the scene
+P09_t3,P09,V1,3,1.0,3,Sun and moon,Sun and moon,1.0,2,A day-to-night timelapse,A day-to-night timelapse
+P10_t1,P10,V3,1,1.0,4,A red glowing sphere,A red glowing sphere,0.0,1,I did not witness any changes,A progressive camera close up on the scene
+P10_t2,P10,NT,2,1.0,2,None of these,None of these,0.0,1,Landscape changing,I did not witness any changes
+P10_t3,P10,V1,3,1.0,4,Sun and moon,Sun and moon,1.0,3,A day-to-night timelapse,A day-to-night timelapse
+P11_t1,P11,V1,1,1.0,4,Sun and moon,Sun and moon,1.0,4,A day-to-night timelapse,A day-to-night timelapse
+P11_t2,P11,V2,2,1.0,4,Buildings,Buildings,0.0,1,A day-to-night timelapse,Landscape changing
+P11_t3,P11,NT,3,1.0,3,None of these,None of these,1.0,3,I did not witness any changes,I did not witness any changes
+P12_t1,P12,V2,1,1.0,4,Buildings,Buildings,0.0,3,A progressive camera close up on the scene,Landscape changing
+P12_t2,P12,V1,2,1.0,4,Sun and moon,Sun and moon,1.0,4,A day-to-night timelapse,A day-to-night timelapse
+P12_t3,P12,NT,3,1.0,4,None of these,None of these,1.0,4,I did not witness any changes,I did not witness any changes
+P13_t1,P13,NT,1,1.0,1,None of these,None of these,1.0,2,I did not witness any changes,I did not witness any changes
+P13_t2,P13,V3,2,1.0,4,A red glowing sphere,A red glowing sphere,1.0,1,A progressive camera close up on the scene,A progressive camera close up on the scene
+P13_t3,P13,V2,3,1.0,4,Buildings,Buildings,1.0,4,Landscape changing,Landscape changing
+P14_t1,P14,V3,1,1.0,4,A red glowing sphere,A red glowing sphere,0.0,1,Landscape changing,A progressive camera close up on the scene
+P14_t2,P14,NT,2,1.0,2,None of these,None of these,1.0,2,I did not witness any changes,I did not witness any changes
+P14_t3,P14,V2,3,1.0,4,Buildings,Buildings,1.0,4,Landscape changing,Landscape changing
+P15_t1,P15,NT,1,1.0,4,None of these,None of these,1.0,1,I did not witness any changes,I did not witness any changes
+P15_t2,P15,V3,2,1.0,4,A red glowing sphere,A red glowing sphere,0.0,4,Landscape changing,A progressive camera close up on the scene
+P15_t3,P15,V1,3,1.0,4,Sun and moon,Sun and moon,1.0,3,A day-to-night timelapse,A day-to-night timelapse
+P16_t1,P16,V3,1,1.0,3,A red glowing sphere,A red glowing sphere,0.0,2,I did not witness any changes,A progressive camera close up on the scene
+P16_t2,P16,NT,2,1.0,4,None of these,None of these,1.0,4,I did not witness any changes,I did not witness any changes
+P16_t3,P16,V1,3,1.0,4,Sun and moon,Sun and moon,1.0,4,A day-to-night timelapse,A day-to-night timelapse
+P17_t1,P17,V1,1,1.0,4,Sun and moon,Sun and moon,1.0,2,A day-to-night timelapse,A day-to-night timelapse
+P17_t2,P17,V2,2,1.0,4,Buildings,Buildings,1.0,3,Landscape changing,Landscape changing
+P17_t3,P17,NT,3,1.0,3,None of these,None of these,1.0,3,I did not witness any changes,I did not witness any changes
+P18_t1,P18,V2,1,1.0,4,Buildings,Buildings,1.0,3,Landscape changing,Landscape changing
+P18_t2,P18,V1,2,1.0,4,Sun and moon,Sun and moon,1.0,4,A day-to-night timelapse,A day-to-night timelapse
+P18_t3,P18,NT,3,1.0,3,None of these,None of these,1.0,3,I did not witness any changes,I did not witness any changes
+P19_t1,P19,NT,1,1.0,1,None of these,None of these,0.0,1,Landscape changing,I did not witness any changes
+P19_t2,P19,V3,2,1.0,4,A red glowing sphere,A red glowing sphere,0.0,1,I did not witness any changes,A progressive camera close up on the scene
+P19_t3,P19,V2,3,1.0,4,Buildings,Buildings,0.0,4,A day-to-night timelapse,Landscape changing
+P20_t1,P20,V3,1,1.0,3,A red glowing sphere,A red glowing sphere,0.0,2,Landscape changing,A progressive camera close up on the scene
+P20_t2,P20,NT,2,1.0,2,None of these,None of these,1.0,2,I did not witness any changes,I did not witness any changes
+P20_t3,P20,V2,3,1.0,4,Buildings,Buildings,0.0,2,A progressive camera close up on the scene,Landscape changing
+P21_t1,P21,NT,1,1.0,2,None of these,None of these,0.0,3,A day-to-night timelapse,I did not witness any changes
+P21_t2,P21,V3,2,1.0,4,A red glowing sphere,A red glowing sphere,0.0,3,A day-to-night timelapse,A progressive camera close up on the scene
+P21_t3,P21,V1,3,1.0,4,Sun and moon,Sun and moon,1.0,4,A day-to-night timelapse,A day-to-night timelapse
+P22_t1,P22,V3,1,0.0,3,Sun and moon,A red glowing sphere,1.0,2,A progressive camera close up on the scene,A progressive camera close up on the scene
+P22_t2,P22,NT,2,1.0,4,None of these,None of these,1.0,3,I did not witness any changes,I did not witness any changes
+P22_t3,P22,V1,3,1.0,4,Sun and moon,Sun and moon,1.0,4,A day-to-night timelapse,A day-to-night timelapse
+P23_t1,P23,V1,1,0.0,3,A red glowing sphere,Sun and moon,0.0,2,I did not witness any changes,A day-to-night timelapse
+P23_t2,P23,V2,2,1.0,3,Buildings,Buildings,0.0,2,A day-to-night timelapse,Landscape changing
+P23_t3,P23,NT,3,1.0,2,None of these,None of these,1.0,2,I did not witness any changes,I did not witness any changes
+P24_t1,P24,V2,1,1.0,3,Buildings,Buildings,1.0,2,Landscape changing,Landscape changing
+P24_t2,P24,V1,2,1.0,4,Sun and moon,Sun and moon,1.0,4,A day-to-night timelapse,A day-to-night timelapse
+P24_t3,P24,NT,3,1.0,2,None of these,None of these,1.0,2,I did not witness any changes,I did not witness any changes
+P25_t1,P25,V2,1,1.0,3,Buildings,Buildings,1.0,3,Landscape changing,Landscape changing
+P25_t2,P25,V1,2,1.0,2,Sun and moon,Sun and moon,1.0,3,A day-to-night timelapse,A day-to-night timelapse
+P25_t3,P25,NT,3,1.0,1,None of these,None of these,0.0,2,A progressive camera close up on the scene,I did not witness any changes
+P26_t1,P26,NT,1,1.0,4,None of these,None of these,0.0,4,Landscape changing,I did not witness any changes
+P26_t2,P26,V3,2,1.0,4,A red glowing sphere,A red glowing sphere,0.0,4,A day-to-night timelapse,A progressive camera close up on the scene
+P26_t3,P26,V2,3,1.0,4,Buildings,Buildings,1.0,3,Landscape changing,Landscape changing

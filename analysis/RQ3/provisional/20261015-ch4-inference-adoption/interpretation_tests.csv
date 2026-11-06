@@ -1,0 +1,4 @@
+test_id,family,method,n_pairs,first_mean,second_mean,gap,positive,negative,tied,first,second,n_trials,first_overall_mean,second_overall_mean,raw_p,both,neither,holm_p,supported
+V2__V1,interpretation3,exact_mcnemar,8,0.875,0.625,0.25,2,0,6,V2,V1,16,0.875,0.625,0.5,5,1,0.5,False
+V2__V3,interpretation3,exact_mcnemar,8,0.875,0.0,0.875,7,0,1,V2,V3,16,0.875,0.0,0.015625,0,1,0.046875,True
+V1__V3,interpretation3,exact_mcnemar,8,0.625,0.0,0.625,5,0,3,V1,V3,16,0.625,0.0,0.0625,0,3,0.125,False

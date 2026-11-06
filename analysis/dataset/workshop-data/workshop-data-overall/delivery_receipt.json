@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "html": "analysis/workshop/report.html",
+  "stages": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "structural_only"
+  },
+  "counts": {
+    "blocks": 18,
+    "charts": 4,
+    "tables": 4
+  },
+  "browser_warning": "No compatible Chromium executable was available to the packaged verifier, and the in-app browser security policy blocks local file URLs.",
+  "verified_separately": [
+    "semantic HTML fallback is present",
+    "report is self-contained and contains no external HTTP or HTTPS dependencies",
+    "T2 counts sum to 40",
+    "T3 normalized counts sum to 37: high 16, low 15, both 6",
+    "SQLite source queries return the reviewed ledger rows",
+    "artifact contains four charts, four tables, and eighteen ordered blocks"
+  ]
+}

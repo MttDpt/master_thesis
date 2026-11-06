@@ -1,0 +1,206 @@
+check,passed
+manual paired statistic Mental Demand animated-NT,True
+exact combinatorial sign Mental Demand animated-NT,True
+manual paired statistic Mental Demand V1-V2,True
+exact combinatorial sign Mental Demand V1-V2,True
+manual paired statistic Mental Demand V1-V3,True
+exact combinatorial sign Mental Demand V1-V3,True
+manual paired statistic Mental Demand V2-V3,True
+exact combinatorial sign Mental Demand V2-V3,True
+manual paired statistic Physical Demand animated-NT,True
+exact combinatorial sign Physical Demand animated-NT,True
+manual paired statistic Physical Demand V1-V2,True
+exact combinatorial sign Physical Demand V1-V2,True
+manual paired statistic Physical Demand V1-V3,True
+exact combinatorial sign Physical Demand V1-V3,True
+manual paired statistic Physical Demand V2-V3,True
+exact combinatorial sign Physical Demand V2-V3,True
+manual paired statistic Temporal  Demand animated-NT,True
+exact combinatorial sign Temporal  Demand animated-NT,True
+manual paired statistic Temporal  Demand V1-V2,True
+exact combinatorial sign Temporal  Demand V1-V2,True
+manual paired statistic Temporal  Demand V1-V3,True
+exact combinatorial sign Temporal  Demand V1-V3,True
+manual paired statistic Temporal  Demand V2-V3,True
+exact combinatorial sign Temporal  Demand V2-V3,True
+manual paired statistic Performance animated-NT,True
+exact combinatorial sign Performance animated-NT,True
+manual paired statistic Performance V1-V2,True
+exact combinatorial sign Performance V1-V2,True
+manual paired statistic Performance V1-V3,True
+exact combinatorial sign Performance V1-V3,True
+manual paired statistic Performance V2-V3,True
+exact combinatorial sign Performance V2-V3,True
+manual paired statistic Effort animated-NT,True
+exact combinatorial sign Effort animated-NT,True
+manual paired statistic Effort V1-V2,True
+exact combinatorial sign Effort V1-V2,True
+manual paired statistic Effort V1-V3,True
+exact combinatorial sign Effort V1-V3,True
+manual paired statistic Effort V2-V3,True
+exact combinatorial sign Effort V2-V3,True
+manual paired statistic Frustration animated-NT,True
+exact combinatorial sign Frustration animated-NT,True
+manual paired statistic Frustration V1-V2,True
+exact combinatorial sign Frustration V1-V2,True
+manual paired statistic Frustration V1-V3,True
+exact combinatorial sign Frustration V1-V3,True
+manual paired statistic Frustration V2-V3,True
+exact combinatorial sign Frustration V2-V3,True
+manual paired statistic RTLX animated-NT,True
+exact combinatorial sign RTLX animated-NT,True
+manual paired statistic RTLX V1-V2,True
+exact combinatorial sign RTLX V1-V2,True
+manual paired statistic RTLX V1-V3,True
+exact combinatorial sign RTLX V1-V3,True
+manual paired statistic RTLX V2-V3,True
+exact combinatorial sign RTLX V2-V3,True
+manual Holm primary family,True
+same participants contribute all/animated/NT,True
+all-trial mean equals 2/3 animated plus 1/3 NT,True
+independent UEQ P01 Attractiveness,True
+independent UEQ P01 Perspicuity,True
+independent UEQ P01 Efficiency,True
+independent UEQ P01 Dependability,True
+independent UEQ P01 Stimulation,True
+independent UEQ P01 Novelty,True
+independent UEQ P02 Attractiveness,True
+independent UEQ P02 Perspicuity,True
+independent UEQ P02 Efficiency,True
+independent UEQ P02 Dependability,True
+independent UEQ P02 Stimulation,True
+independent UEQ P02 Novelty,True
+independent UEQ P03 Attractiveness,True
+independent UEQ P03 Perspicuity,True
+independent UEQ P03 Efficiency,True
+independent UEQ P03 Dependability,True
+independent UEQ P03 Stimulation,True
+independent UEQ P03 Novelty,True
+independent UEQ P04 Attractiveness,True
+independent UEQ P04 Perspicuity,True
+independent UEQ P04 Efficiency,True
+independent UEQ P04 Dependability,True
+independent UEQ P04 Stimulation,True
+independent UEQ P04 Novelty,True
+independent UEQ P05 Attractiveness,True
+independent UEQ P05 Perspicuity,True
+independent UEQ P05 Efficiency,True
+independent UEQ P05 Dependability,True
+independent UEQ P05 Stimulation,True
+independent UEQ P05 Novelty,True
+independent UEQ P08 Attractiveness,True
+independent UEQ P08 Perspicuity,True
+independent UEQ P08 Efficiency,True
+independent UEQ P08 Dependability,True
+independent UEQ P08 Stimulation,True
+independent UEQ P08 Novelty,True
+independent UEQ P09 Attractiveness,True
+independent UEQ P09 Perspicuity,True
+independent UEQ P09 Efficiency,True
+independent UEQ P09 Dependability,True
+independent UEQ P09 Stimulation,True
+independent UEQ P09 Novelty,True
+independent UEQ P10 Attractiveness,True
+independent UEQ P10 Perspicuity,True
+independent UEQ P10 Efficiency,True
+independent UEQ P10 Dependability,True
+independent UEQ P10 Stimulation,True
+independent UEQ P10 Novelty,True
+independent UEQ P11 Attractiveness,True
+independent UEQ P11 Perspicuity,True
+independent UEQ P11 Efficiency,True
+independent UEQ P11 Dependability,True
+independent UEQ P11 Stimulation,True
+independent UEQ P11 Novelty,True
+independent UEQ P12 Attractiveness,True
+independent UEQ P12 Perspicuity,True
+independent UEQ P12 Efficiency,True
+independent UEQ P12 Dependability,True
+independent UEQ P12 Stimulation,True
+independent UEQ P12 Novelty,True
+independent UEQ P13 Attractiveness,True
+independent UEQ P13 Perspicuity,True
+independent UEQ P13 Efficiency,True
+independent UEQ P13 Dependability,True
+independent UEQ P13 Stimulation,True
+independent UEQ P13 Novelty,True
+independent UEQ P14 Attractiveness,True
+independent UEQ P14 Perspicuity,True
+independent UEQ P14 Efficiency,True
+independent UEQ P14 Dependability,True
+independent UEQ P14 Stimulation,True
+independent UEQ P14 Novelty,True
+independent UEQ P15 Attractiveness,True
+independent UEQ P15 Perspicuity,True
+independent UEQ P15 Efficiency,True
+independent UEQ P15 Dependability,True
+independent UEQ P15 Stimulation,True
+independent UEQ P15 Novelty,True
+independent UEQ P16 Attractiveness,True
+independent UEQ P16 Perspicuity,True
+independent UEQ P16 Efficiency,True
+independent UEQ P16 Dependability,True
+independent UEQ P16 Stimulation,True
+independent UEQ P16 Novelty,True
+independent UEQ P17 Attractiveness,True
+independent UEQ P17 Perspicuity,True
+independent UEQ P17 Efficiency,True
+independent UEQ P17 Dependability,True
+independent UEQ P17 Stimulation,True
+independent UEQ P17 Novelty,True
+independent UEQ P18 Attractiveness,True
+independent UEQ P18 Perspicuity,True
+independent UEQ P18 Efficiency,True
+independent UEQ P18 Dependability,True
+independent UEQ P18 Stimulation,True
+independent UEQ P18 Novelty,True
+independent UEQ P19 Attractiveness,True
+independent UEQ P19 Perspicuity,True
+independent UEQ P19 Efficiency,True
+independent UEQ P19 Dependability,True
+independent UEQ P19 Stimulation,True
+independent UEQ P19 Novelty,True
+independent UEQ P20 Attractiveness,True
+independent UEQ P20 Perspicuity,True
+independent UEQ P20 Efficiency,True
+independent UEQ P20 Dependability,True
+independent UEQ P20 Stimulation,True
+independent UEQ P20 Novelty,True
+independent UEQ P21 Attractiveness,True
+independent UEQ P21 Perspicuity,True
+independent UEQ P21 Efficiency,True
+independent UEQ P21 Dependability,True
+independent UEQ P21 Stimulation,True
+independent UEQ P21 Novelty,True
+independent UEQ P22 Attractiveness,True
+independent UEQ P22 Perspicuity,True
+independent UEQ P22 Efficiency,True
+independent UEQ P22 Dependability,True
+independent UEQ P22 Stimulation,True
+independent UEQ P22 Novelty,True
+independent UEQ P23 Attractiveness,True
+independent UEQ P23 Perspicuity,True
+independent UEQ P23 Efficiency,True
+independent UEQ P23 Dependability,True
+independent UEQ P23 Stimulation,True
+independent UEQ P23 Novelty,True
+independent UEQ P24 Attractiveness,True
+independent UEQ P24 Perspicuity,True
+independent UEQ P24 Efficiency,True
+independent UEQ P24 Dependability,True
+independent UEQ P24 Stimulation,True
+independent UEQ P24 Novelty,True
+independent UEQ P25 Attractiveness,True
+independent UEQ P25 Perspicuity,True
+independent UEQ P25 Efficiency,True
+independent UEQ P25 Dependability,True
+independent UEQ P25 Stimulation,True
+independent UEQ P25 Novelty,True
+independent UEQ P26 Attractiveness,True
+independent UEQ P26 Perspicuity,True
+independent UEQ P26 Efficiency,True
+independent UEQ P26 Dependability,True
+independent UEQ P26 Stimulation,True
+independent UEQ P26 Novelty,True
+categorical detection model full rank all,True
+categorical detection model full rank animated,True

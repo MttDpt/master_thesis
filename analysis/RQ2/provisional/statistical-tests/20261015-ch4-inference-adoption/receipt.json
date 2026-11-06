@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "approval": "user-adopted inferential methods; provisional single-coder RQ3 outcomes",
+  "thread_id": "01a13f05-e6c5-71e2-93a8-bccf8ecaf9e3",
+  "date": "2026-10-15",
+  "rq": 2,
+  "source_hashes": {
+    "analysis/dataset/trial-data/trial-data-crosswalk/72-trial-map.csv": "b96b98785aab99629ee066e90757e273481f0b8634dcfe830df5cd2fab9dd362",
+    "analysis/dataset/trigger-data/trigger-data-cleaning/trigger_trials.csv": "2c229d4e0e79885354ef709aaac6b7965cf090cd1a8ce515afc23844ad1be8d9",
+    "analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/tables/sanitized_input.csv": "7f0b2dc46e8034cc709a36e224ea373cef24aedf18ecc993c869724854907781",
+    "analysis/RQ2/provisional/statistical-tests/20261006-paired-correctness-binary-confidence/receipts/independent_validation.json": "e3827b9021d9207ac028ee0ab8fc154c48248bf9a5d2f7e7818bae2da7a1b4f3",
+    "analysis/RQ3/provisional/coding/full-corpus-trial-codes.csv": "29ea01e45a7fef9953edee664c331562f3ce27397ae1fe19cdafa1beb7bab89e",
+    "analysis/RQ3/provisional/coding/full-corpus-validation.json": "eda0f7ea1cac43fa8722a6131c04c5dcc8489acc6068f46791ec91880031b4eb",
+    "analysis/RQ3/provisional/20261008-cross-rq-gaps/input.csv": "ba396d0144bc05224f1ac8ad81ab5e3547ebf6a934f3ec46d480880db00c5101",
+    "analysis/dataset/originals/questionnaire-data/data-aggregated.xlsx": "d87a3a115ea8d57bd553bc200e5082e209f4eca10569ae6e7a28d49b44d8a6f4",
+    "analysis/dataset/trigger-data/trigger-data-cleaning/trigger_presses.csv": "dcd8a11173ee1937bc92839376703c80cea5f1f3bf965a3e936e334b8aa49d01",
+    "analysis/RQ3/provisional/20261008-combined-detection-confidence/input.csv": "6fa2f2e338df617238185f5dbf210c2060210ff85abbce83c2ca049fcc0d065c",
+    "analysis/RQ3/provisional/20261008-combined-detection-confidence/tests.csv": "94775dcc3d30557f1a82fbe6ce73cef9e99f4e097a5a5d2a0a51677b68b92c3e",
+    "analysis/RQ3/provisional/20261008-combined-detection-confidence/receipt.json": "9ce50e452d41e914dfb7111fa77bae637afa0cb7438b6dc239fdbddc6b968b0a",
+    "analysis/RQ3/provisional/20261007-cross-rq/settings.json": "bf83a70b6a0ea19d43321ae36fb1415566dc051aad130650ae54d3add9abd3e5"
+  },
+  "historical_files_checked": 111,
+  "checks": 2129,
+  "failed": 0,
+  "chapter_revision": "7405d76",
+  "families": {
+    "cross_outcome22": 22,
+    "detection3": 3,
+    "accuracy4": 4,
+    "confidence15": 15,
+    "interpretation3": 3
+  },
+  "bootstrap_draws": 200000,
+  "seed": 20261014,
+  "limitations": [
+    "post hoc selection after inspection of earlier results",
+    "incomplete overlapping exposure and possible order/carryover effects",
+    "unequal onset/completion windows",
+    "numerical confidence means assume equal rating steps",
+    "interpretation contrasts use eight shared participants, not full condition marginals",
+    "provisional single-coder interpretation"
+  ],
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1"
+  },
+  "outputs": {
+    "R_session_info.txt": "100fd34562c5f20c499493e6ec06a3fc82197c03c57174ba124156a171c19f93",
+    "input.csv": "0986275159ad327d826bf684329af47a96ca26bad8705e79f58c23a554b3eac5",
+    "ordinal_contrasts.csv": "584c23c8980c86f25197c79646418781205dc959c4ab54c2576a3bfa6b8eba4c",
+    "rerun_confidence.R": "0ae35aac54e2ce622f6b24126fab53dbd916f239024d7ecdd91b6fdf10a1c6cf",
+    "pooled_accuracy.csv": "0c0dfcd9ece7595f7172a2144134a72ebc624612139d5484956ac16b20456d76",
+    "R_stdout.txt": "d76025a656a363360cc2155b5660c7df4cacdd34834ed0418578f13eb0d8b475",
+    "validation_checks.csv": "a4ac3ebcf55d2e03879f99e8685fb7f998d80377009c95653939fe3e2a1bc305",
+    "mean_confidence_tests.csv": "320535e918346bd42aeec16998cb97542bff0c3726466f38ff451d254a9a73b3",
+    "confidence_family15.csv": "5872f5a58f48a50ebe63d62ec586f8d04e4e0904a8baa80510e9338df32bdde6",
+    "within_condition_accuracy.csv": "3c18ddf24f4636437215feda09d5a3c0dfed6feec8031323edf2ad2efc39d609",
+    "ordinal_fit_diagnostics.txt": "0e98c9030efe37d43640ce6dacf58f2f80e96e8f30648be333ead49455488143",
+    "R_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

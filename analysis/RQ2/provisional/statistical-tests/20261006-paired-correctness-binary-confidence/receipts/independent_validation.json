@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checks": 426,
+  "failed": 0,
+  "provisional": true,
+  "scope": "workbook/key/crosswalk; exact arithmetic; independent interval inversion; Holm; Pearson equivalence; direct row-expanded cluster resamples; failure retention; manual quantiles",
+  "source_hashes_unchanged": true
+}

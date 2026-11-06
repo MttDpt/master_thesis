@@ -1,0 +1,2588 @@
+
+%%
+%% forked from https://gits-15.sys.kth.se/giampi/kthlatex kthlatex-0.2rc4 on 2020-02-13
+%% expanded upon by Gerald Q. Maguire Jr.
+%% This template has been adapted by Anders Sjögren to the University
+%% Engineering Program in Computer Science at KTH ICT. This adaptation was
+%% translation of English headings into Swedish with the addition of Swedish.
+%% Many thanks to others who have provided constructive input regarding the template.
+
+% Make it possible to conditionally depend on the TeX engine used
+\RequirePackage{ifxetex}
+\RequirePackage{ifluatex}
+\newif\ifxeorlua
+\ifxetex\xeorluatrue\fi
+\ifluatex\xeorluatrue\fi
+
+\ifxeorlua
+% The following is to ensure that the PDF uses a recent version rather than the typical PDF 1-5
+%  This same version of PDF should be set as an option for hyperef
+
+\RequirePackage{expl3}
+\RequirePackage{etoolbox}
+
+
+\ExplSyntaxOn
+%pdf_version_gset:n{2.0}
+%\pdf_version_gset:n{1.5}
+
+%% Alternatively, if you have a LaTeX newer than June 2022, you can use the following. However, then you have to remove the pdfversion from hyperef. It also breaks hyperxmp. So perhaps it is too early to try using it!
+%\DocumentMetadata
+%{
+%% testphase = phase-I, % tagging without paragraph tagging
+% testphase = phase-II % tagging with paragraph tagging and other new stuff.
+%pdfversion = 2.0 % pdfversion must be set here.
+%}
+
+% Optionally, you can set the uncompress flag to make it easier to examine the PDF
+%\pdf_uncompress: % to check the pdf
+\ExplSyntaxOff
+\else
+\RequirePackage{expl3}
+\ExplSyntaxOn
+%\pdf_version_gset:n{2.0}
+\pdf_version_gset:n{1.5}
+\ExplSyntaxOff
+\fi
+
+%% Define a pair of commands to disable and reenable specific packages - see https://tex.stackexchange.com/questions/39415/unload-a-latex-package
+\makeatletter
+\newcommand{\disablepackage}[2]{%
+  \disable@package@load{#1}{#2}%
+}
+\newcommand{\reenablepackage}[1]{%
+  \reenable@package@load{#1}%
+}
+\makeatother
+%% To avoid the warning: "Package transparent Warning: Loading aborted, because pdfTeX is not running in PDF mode."
+\ifxeorlua
+\disablepackage{transparent}{}
+\fi
+
+%% The template is designed to handle a thesis in English or Swedish
+\documentclass[
+english,                 % the language of the body of the document: english or swedish       (note this must be in lower case)
+bibtex,                  % the bibliographic processor to use: biblatex or bibtex
+%nomenclature,           % add the option nomenclature
+%digitaloutput,          % optimize for digital output (this changes the color palette)
+includeExtraAbstracts, % uncomment to allow abstracts in languages beyond English & Swedish
+]{kththesis}
+
+% if pdflatex \usepackage[utf8]{inputenc}
+
+%% Conventions for todo notes:
+% Informational
+%% \generalExpl{Comments/directions/... in English}
+\newcommand*{\generalExpl}[1]{\todo[inline]{#1}}                
+
+% Language-specific information (currently in English or Swedish)
+\newcommand*{\engExpl}[1]{\todo[inline, backgroundcolor=kth-lightgreen40]{#1}} %% \engExpl{English descriptions about formatting}
+\newcommand*{\sweExpl}[1]{\todo[inline, backgroundcolor=kth-lightblue40]{#1}}  %% % \sweExpl{Text på svenska}
+
+% warnings
+\newcommand*{\warningExpl}[1]{\todo[inline, backgroundcolor=kth-lightred40]{#1}} %% \warningExpl{warnings}
+
+% Uncomment to hide specific comments, to hide **all** ToDos add `final` to
+% document class
+% \renewcommand\warningExpl[1]{}
+% \renewcommand\generalExpl[1]{}
+% \renewcommand\engExpl[1]{}
+% For example uncommenting the following line hides the Swedish language explanations
+% \renewcommand\sweExpl[1]{}
+
+
+% \usepackage[style=numeric,sorting=none,backend=biber]{biblatex}
+\iftoggle{biblatex}{
+    %\usepackage[language=english,bibstyle=authoryear,citestyle=authoryear, maxbibnames=99]{biblatex}
+    % Alternatively you might use another style, such as IEEE and use citestyle=numeric-comp  to put multiple citations in a single pair of square brackets
+    \usepackage[style=ieee,citestyle=numeric-comp,backref=true,backrefstyle=three]{biblatex}
+    \addbibresource{references.bib}
+    %\DeclareLanguageMapping{norsk}{norwegian}
+}{
+    % The line(s) below are for BibTeX
+    \bibliographystyle{bibstyle/myIEEEtran}
+    %\bibliographystyle{apalike}
+}
+
+
+% include a variety of packages that are useful
+\input{lib/includes}
+\input{lib/kthcolors}
+
+%\glsdisablehyper
+%\makeglossaries
+%\makenoidxglossaries
+%\input{lib/acronyms}                %load the acronyms file
+
+\input{lib/defines}  % load some additional definitions to make writing more consistent
+
+% The following is needed in conjunction with generating the DiVA data with abstracts and keywords using the scontents package and a modified listings environment
+%\usepackage{listings}   %  already included
+
+\makeatletter
+\let\verbatimsc\@undefined
+\let\endverbatimsc\@undefined
+\lst@AddToHook{Init}{\hyphenpenalty=50\relax}
+\makeatother
+
+
+\lstnewenvironment{verbatimsc}
+    {
+    \lstset{%
+        basicstyle=\ttfamily\tiny,
+        backgroundcolor=\color{white},
+        %basicstyle=\tiny,
+        %columns=fullflexible,
+        columns=[l]fixed,
+        language=[LaTeX]TeX,
+        %numbers=left,
+        %numberstyle=\tiny\color{gray},
+        keywordstyle=\color{red},
+        breaklines=true,                 % sets automatic line breaking
+        breakatwhitespace=true,          % sets if automatic breaks should only happen at whitespace
+        %keepspaces=false,
+        breakindent=0em,
+        %fancyvrb=true,
+        frame=none,                     % turn off any box
+        postbreak={}                    % turn off any hook arrow for continuation lines
+    }
+}{}
+
+%% Add some more keywords to bring out the structure more
+\lstdefinestyle{[LaTeX]TeX}{
+morekeywords={begin, todo, textbf, textit, texttt}
+}
+
+%% definition of new command for bytefield package
+\newcommand{\colorbitbox}[3]{%
+	\rlap{\bitbox{#2}{\color{#1}\rule{\width}{\height}}}%
+	\bitbox{#2}{#3}}
+
+
+\usepackage{needspace}
+\titlespacing*{\chapter}{0pt}{12pt}{24pt}
+\titlespacing*{\section}{0pt}{15pt plus 3pt minus 2pt}{7pt plus 2pt}
+\titlespacing*{\subsection}{0pt}{11pt plus 2pt minus 1pt}{5pt plus 1pt}
+% Keep each visual with explanatory body text; no float-only pages.
+\newenvironment{evidenceblock}{\par\addvspace{6pt}\noindent\begin{minipage}{\linewidth}}{\end{minipage}\par\addvspace{6pt}}
+
+% Consistent full-cell table grids throughout the thesis.
+\setlength{\arrayrulewidth}{0.3pt}
+\setlength{\tabcolsep}{2pt}
+\arrayrulecolor{black}
+
+% define a left aligned table cell that is ragged right
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+% Render dataset field names consistently without relying on typewriter text,
+% which is not preserved by every PDF renderer used for this project.
+\newcommand{\fieldname}[1]{\textsf{\detokenize{#1}}}
+
+% Use \figcaption{short title}{full caption} for every figure so the List of
+% Figures stays concise while the complete explanation remains in the text.
+\newcommand{\figcaption}[2]{\caption[#1]{#2}}
+
+% Because backref is not compatible with biblatex
+\iftoggle{biblatex}{
+    \usepackage[plainpages=false]{hyperref}
+}{
+    \usepackage[
+    backref=page,
+    pagebackref=true,
+    plainpages=false,
+                            % PDF related options
+    unicode=true,           % Unicode encoded PDF strings
+    bookmarks=true,         % generate bookmarks in PDF files
+    bookmarksopen=false,    % Do not automatically open the bookmarks in the PDF reading program
+    pdfpagemode=UseNone,    % None, UseOutlines, UseThumbs, or FullScreen
+    destlabel,              % better naming of destinations
+    pdfencoding=auto,       % for unicode in 
+    ]{hyperref}
+   %% Removed use of backref package as it is incompatible with using attachfile
+}
+
+\usepackage[all]{hypcap}	%% prevents an issue related to hyperref and caption linking
+
+%% Acronyms
+% note that nonumberlist - removes the cross references to the pages where the acronym appears
+% note that super will set the descriptions text aligned
+% note that nomain - does not produce a main glossary, thus only acronyms will be in the glossary
+% note that nopostdot - will prevent there being a period at the end of each entry
+\usepackage[acronym, style=super, section=section, nonumberlist, nomain,
+nopostdot,noredefwarn]{glossaries}
+\setlength{\glsdescwidth}{0.55\textwidth}
+\usepackage[]{glossaries-extra}
+\ifinswedish
+    %\usepackage{glossaries-swedish}
+\fi
+
+%% For use with the README_notes
+% Define a new type of glossary so that the acronyms defined in the README_notes document can be distinct from those in the thesis template
+% the tlg, tld, and dn will be the file extensions used for this glossary
+\newglossary[tlg]{readme}{tld}{tdn}{README acronyms}
+
+
+\input{lib/includes-after-hyperref}
+
+%\glsdisablehyper
+% Build the acronym list without an external indexing pass so local Tectonic
+% and Overleaf produce the same complete front matter.
+\newglossary*{omittedacronym}{Acronyms omitted from the front-matter list}
+\makenoidxglossaries
+
+% The following bit of ugliness is because of the problems PDFLaTeX has handling a non-breaking hyphen
+% unless it is converted to UTF-8 encoding.
+% If you do not use such characters in your acronyms, this could be simplified to just include the acronyms file.
+\ifxeorlua
+\input{lib/acronyms}                %load the acronyms file
+\else
+\input{lib/acronyms-for-pdflatex}
+\fi
+
+% place holders for languages lacking .lbx files
+\input{lib/placeHolder_lbx_files}
+
+% insert the configuration information with author(s), examiner, supervisor(s), ...
+\input{custom_configuration}
+
+% read in the plain text definitions, if they exist
+\IfFileExists{custom_configuration_plaintext.tex}{\input{custom_configuration_plaintext.tex}}{}
+
+
+% Enter the English and Swedish keywords here for use in the PDF metadata _and_ for later use
+% following the respective abstract.
+% Try to put the words in the same order in both languages to facilitate matching. For example:
+\EnglishKeywords{Placeholder: keywords to be added.}
+\SwedishKeywords{Placeholder: Swedish keywords to be added.}
+
+%%%%% For the oral presentation
+%% Add this information once your examiner has scheduled your oral presentation
+\presentationDateAndTimeISO{2022-03-15 13:00}
+\presentationLanguage{XXX}  % generally: eng or swe
+\presentationRoom{via Zoom https://kth-se.zoom.us/j/ddddddddddd}
+\presentationAddress{Isafjordsgatan 22 (Kistagången 16)}
+\presentationCity{Stockholm}
+
+% When there are multiple opponents, separate their names with '\&'
+% Opponent's information
+%\opponentsNames{A. B. Normal \& A. X. E. Normalè}
+\opponentsNames{XXX}
+
+% It is possible to have a cover illustration
+%\coverIllustration{figures/image1.png}
+% if so, the author might acknowledge this or give the copyright information for it with:
+%\coverIllustrationCredit{A. B. Normal}
+
+% Once a thesis is approved by the examiner, add the TRITA number
+% The TRITA number for a thesis consists of two parts: a series (unique to each school)
+% and the number in the series, which is formatted as the year followed by a colon and
+% then a unique series number for the thesis - starting with 1 each year.
+\trita{TRITA -- XXX-EX}{2025:0000}
+
+% Put the title, author, and keyword information into the PDF meta information
+\input{lib/pdf_related_includes}
+
+
+% the custom colors and the commands are defined in defines.tex    
+\hypersetup{
+	colorlinks  = true,
+	breaklinks  = true,
+	linkcolor   = \linkscolor,
+	urlcolor    = \urlscolor,
+	citecolor   = \refscolor,
+	anchorcolor = black
+}
+
+\ifnomenclature
+% The following lines make the page numbers and equations hyperlinks in the Nomenclature list
+\renewcommand*{\pagedeclaration}[1]{\unskip, \dotfill\hyperlink{page.#1}{page\nobreakspace#1}}
+% The following does not work correctly, as the name of the cross-reference is incorrect
+%\renewcommand*{\eqdeclaration}[1]{, see equation\nobreakspace(\hyperlink{equation.#1}{#1})}
+
+% You can also change the page heading for the nomenclature
+\renewcommand{\nomname}{List of Symbols Used}
+
+% You can even add customization text before the list
+\renewcommand{\nompreamble}{The following symbols will be later used within the body of the thesis.}
+\makenomenclature
+\fi
+
+%
+% The commands below are to configure JSON listings
+% 
+% format for JSON listings
+\colorlet{punct}{red!60!black}
+\definecolor{delim}{RGB}{20,105,176}
+\definecolor{numb}{RGB}{106, 109, 32}
+\definecolor{string}{RGB}{0, 0, 0}
+
+\lstdefinelanguage{json}{
+    numbers=none,
+    numberstyle=\small,
+    frame=none,
+    rulecolor=\color{black},
+    showspaces=false,
+    showtabs=false,
+    breaklines=true,
+    postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{gray}\hookrightarrow\space}},
+    breakatwhitespace=true,
+    basicstyle=\ttfamily\small,
+    extendedchars=false,
+    upquote=true,
+    morestring=[b]",
+    stringstyle=\color{string},
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1}
+      {’}{{\char13}}1,
+}
+
+\lstdefinelanguage{XML}
+{
+  basicstyle=\ttfamily\color{blue}\bfseries\small,
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{blue},
+  keywordstyle=\color{cyan},
+  breaklines=true,
+  postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{gray}\hookrightarrow\space}},
+  breakatwhitespace=true,
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+
+% If you use both listing and lstlisting environments - the following makes them both use the same counter and the same formatting in the List of Listings
+\makeatletter
+\AtBeginDocument{\let\c@listing\c@lstlisting}
+\AtBeginDocument{\let\l@listing\l@lstlisting}
+\makeatother
+
+% Change the heading for the "List of Listings" to simply "Listings"
+\renewcommand{\lstlistlistingname}{Listings}
+
+% number each listing within the chapter
+\ifcsname c@listing\endcsname
+  \numberwithin{listing}{chapter}
+\fi
+
+\usepackage{subfiles}
+
+% To have Creative Commons (CC) license and logos use the doclicense package
+% Note that the lowercase version of the license has to be used in the modifier
+% i.e., one of by, by-nc, by-nd, by-nc-nd, by-sa, by-nc-sa, zero.
+% For background see:
+% https://www.kb.se/samverkan-och-utveckling/oppen-tillgang-och-bibsamkonsortiet/open-access-and-bibsam-consortium/open-access/creative-commons-faq-for-researchers.html
+% https://kib.ki.se/en/publish-analyse/publish-your-article-open-access/open-licence-your-publication-cc
+\begin{comment}
+\usepackage[
+    type={CC},
+    %modifier={by-nc-nd},
+    %version={4.0},
+    modifier={by-nc},
+    imagemodifier={-eu-88x31},  % to get Euro symbol rather than Dollar sign
+    hyphenation={RaggedRight},
+    version={4.0},
+    %modifier={zero},
+    %version={1.0},
+]{doclicense}
+\end{comment}
+\listfiles
+
+\begin{document}
+\selectlanguage{english}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\setlength{\intextsep}{7pt plus 2pt minus 1pt}
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+
+\pagenumbering{alph}
+{\hfuzz=18pt\kthcover}
+\titlepage
+\bookinfopage
+
+\frontmatter
+\setcounter{page}{1}
+
+\begin{abstract}
+  \markboth{\abstractname}{}
+\begin{scontents}[store-env=lang]
+eng
+\end{scontents}
+\begin{scontents}[store-env=abstracts,print-env=true]
+As vehicle displays grow, more information competes for drivers’ attention. Ambient lighting has been explored as a way to communicate information unobtrusively to drivers, while non-urgent information about the surrounding environment remains less explored. We propose that this contextual information could be better represented through visual metaphors, which allow richer encodings through imagery, colour, shape and movement. This study explores their use on BMW’s Panoramic Vision, which offers extensive space for peripheral interaction and could support awareness of the surrounding context. A workshop with $n = 13$ participants informed three animations conveying different messages within an aesthetically pleasing scene. These were evaluated alongside a static no-animation condition in a driving simulator with $n = 24$ participants. We examined how participants detected changes while driving, recognised the displayed content afterwards, and interpreted the visual stimuli. Participants noticed ongoing changes more often than their completion. They also recognised displayed elements more often than the changes themselves, while interpretation of the animations’ meanings varied. The findings suggest that ambient displays need understandable links between visual elements and messages, alongside a clear distinction between ongoing updates and settled states. They provide a basis for developing a shared visual language that could help larger displays keep drivers informed while respecting the attention needed for the road.
+\end{scontents}
+\subsection*{Keywords}
+\begin{scontents}[store-env=keywords,print-env=true]
+Automotive HCI, Peripheral Interaction, calm technology, Ambient Displays, Panoramic Displays, Automotive Dashboards.
+\end{scontents}
+\end{abstract}
+\clearpage
+
+\babelpolyLangStart{swedish}
+\begin{abstract}
+  \markboth{\abstractname}{}
+\begin{scontents}[store-env=lang]
+swe
+\end{scontents}
+\begin{scontents}[store-env=abstracts,print-env=true]
+När fordonsdisplayer blir större konkurrerar mer information om förarnas uppmärksamhet. Omgivningsbelysning kan förmedla enkla budskap perifert, men dess förmåga att förmedla komplex information är begränsad. Rikare visuella uttryck kan hantera denna begränsning genom att ge budskapen ett igenkännbart visuellt sammanhang. Denna studie omtolkar BMW:s panoramic vision som ett omgivande gränssnitt och utvärderar dess potential för perifer interaktion. En workshop med $n = 13$ deltagare låg till grund för tre animationer som förmedlade olika budskap inom en estetiskt tilltalande scen. Dessa utvärderades tillsammans med ett statiskt villkor utan animation i en körsimulator med $n = 24$ deltagare. Vi undersökte hur deltagarna upptäckte förändringar under körning, kände igen det visade innehållet efteråt och tolkade de visuella stimuli som presenterades. Deltagarna märkte oftare att förändringar pågick än att förändringar hade avslutats, kände oftare igen visade element än vad som hade förändrats och tolkade animationernas betydelser på olika sätt. Resultaten tyder på att omgivande displayer behöver begripliga kopplingar mellan visuella element och budskap, tillsammans med en tydlig skillnad mellan pågående uppdateringar och stabila tillstånd. De ger en grund för att utveckla ett gemensamt visuellt språk som skulle kunna hjälpa större displayer att hålla förarna informerade samtidigt som hänsyn tas till den uppmärksamhet som krävs för vägen.
+\end{scontents}
+\subsection*{Nyckelord}
+\begin{scontents}[store-env=keywords,print-env=true]
+Människa–datorinteraktion inom fordonsområdet, perifer interaktion, lugn teknik, omgivande displayer, panoramadisplayer, fordonsinstrumentpaneler.
+\end{scontents}
+\end{abstract}
+\clearpage
+\babelpolyLangStop{swedish}
+
+\listoffigures
+\clearpage
+
+{\footnotesize\listoftables}
+\clearpage
+
+\markboth{List of Acronyms and Abbreviations}{}
+\glsaddall[types=\acronymtype]
+\begingroup
+\setglossarystyle{list}
+\printnoidxglossary[type=\acronymtype,title={List of Acronyms and Abbreviations}]
+\endgroup
+\clearpage
+
+\tableofcontents
+\markboth{\contentsname}{}
+\clearpage
+
+\label{pg:lastPageofPreface}
+\let\cleardoublepage\clearpage
+\mainmatter
+\glsresetall
+\selectlanguage{english}
+
+\chapter{Introduction}
+\label{ch:introduction}
+
+Vehicle dashboards increasingly feature larger displays extending beyond instrument clusters and central screens, as illustrated by BMW's Panoramic Vision \cite{BMWPanoramicIDrive2025}. This creates space for navigation, vehicle status and entertainment, but poorly designed content can compete for drivers' attention. Reading or repeatedly checking content can draw attention away from driving \cite{lambleDetectionThresholdsCar1999}, even near the windscreen \cite{hauslschmidAugmentingDriversView2015}.
+
+The additional space also offers opportunities for peripheral interaction: cues at the edge of the driver's view could support awareness of the surrounding context without requiring direct inspection \cite{huangCharacteristicsDriverPeripheral2025}. The challenge is to communicate information through changes that remain perceptible and understandable despite peripheral vision's limited resolution for fine details and complex patterns \cite{strasburgerPeripheralVisionPattern2011}.
+
+Peripheral communication in cars has largely been explored through ambient lighting \cite{lockenEnlighteningDriversSurvey2016}, while communicating non-urgent contextual information, such as weather and characteristics of the surrounding environment, remains less explored. Panoramic Vision already offers weather, navigation and music widgets alongside the instrument cluster \cite{BMWPanoramicIDrive2025}. We propose visual metaphors as a richer approach to encoding contextual information, combining recognisable imagery with changes in colour, shape, movement and spatial relationships.
+
+Beyond communicating information, these representations could help manufacturers strengthen the vehicle's aesthetic identity and shape the sensory character of its interior \cite{tractinsky2011slow,loehmannHeartbeatExperiencePulse2014}. Offering choices of visual themes and imagery could also allow drivers to personalise the interior's digital appearance to suit their preferences, potentially strengthening their emotional attachment to the vehicle over time.
+
+Grounded in calm technology \cite{weiserDesigningCalmTechnology,bakkerDesignPeripheralInteraction2013}, this work introduces an aesthetic ambient display featuring an immersive 3D scene that communicates data through dynamic visual changes. An exploratory workshop with $n = 13$ BMW employees informed three metaphor-based animations: sun-to-moon for time of day, buildings for the surrounding location and terrain, and a red sphere for progress towards a destination. Twenty-four participants evaluated the animations on an A-pillar-to-A-pillar Panoramic Vision display in a driving simulator, each experiencing no-animation and two animated trials.
+
+The study addressed three research questions:
+
+\begin{itemize}
+  \item \textbf{RQ1:} How effectively do drivers detect changes in a peripheral ambient display, and how much visual attention does the display receive?
+  \item \textbf{RQ2:} How accurately and confidently can drivers recognise which element was shown and what kind of change occurred?
+  \item \textbf{RQ3:} How do drivers interpret the intended meaning of metaphor-based visual changes in a peripheral ambient display?
+\end{itemize}
+
+Participants reported ongoing changes more often than their completion, although the reporting windows differed in length. They recognised displayed elements more accurately and confidently than their visual changes. Understanding also varied by metaphor: the intended meaning was identified most often for buildings, less often for sun-to-moon and never for red-sphere in the observed trials. Recognising an element therefore did not guarantee understanding its message (Chapter~\ref{ch:results}).
+
+The thesis makes three contributions:
+
+\begin{itemize}
+  \item \textbf{C1:} An aesthetic ambient display with three implemented metaphor-based animations for an A-pillar to A-pillar panoramic dashboard.
+  \item \textbf{C2:} Evidence about drivers' detection, recognition and interpretation of these animations under simulator conditions.
+  \item \textbf{C3:} An adapted evaluation approach for automotive aesthetic ambient displays that distinguishes detection of visual changes, recognition of displayed elements and changes, and interpretation of their meaning, extending Holmquist's comprehension framework \cite{holmquistEvaluatingComprehensionAmbient2004}.
+\end{itemize}
+
+\chapter{Background}
+\label{ch:background}
+
+\section{Calm Technology}
+\label{sec:calm-technolog}
+
+Calm technology aims to inform without continually demanding focused attention. It keeps information at the edge of awareness, where it remains perceptible, and brings it to the foreground when a change or its relevance warrants attention \cite{weiserDesigningCalmTechnology}.
+
+This approach reflects how vision works. The fovea, at the centre of our gaze, supports detailed recognition, while the wider peripheral field is more sensitive to motion and changes in brightness \cite{strasburgerPeripheralVisionPattern2011,stewartReviewInteractionsPeripheral2020} \cite{zhaopingPeripheralVisionMainly2024}.
+
+Information in peripheral vision can draw attention either by standing out (\textit{e.g. a sudden change in intensity}) or by aligning with our goals and expectations \cite{bakkerDesignPeripheralInteraction2013}. How much attention such cues require becomes crucial when multitasking, as limited cognitive capacity must be divided among activities \cite{wickensMultipleResourcesPerformance2002}. Fortunately, monitoring peripheral information is significantly less resource-intensive than engaging in controlled tasks (\textit{e.g. reading, understanding and interpreting text}) \cite{bakkerDesignPeripheralInteraction2013,heijboerFacilitatingPeripheralInteraction2016,bakkerPeripheralInteractionCharacteristics2015}.
+
+\section{Peripheral Interaction}
+\label{sec:peripheral-interaction}
+
+Peripheral interaction builds on the principle of calm technology by allowing information to shift fluidly between the periphery and the centre of attention, enabling users to engage more deeply whenever necessary \cite{weiserComingAgeCalmTechnology1997,bakkerPeripheralInteractionShaping2014}. This transition between states depends on both design and context: while familiarity allows an interaction to remain unobtrusive in the background, factors like task difficulty, information urgency, or a prominent visual cue can pull it into focus \cite{bakkerInteractionAttentionContinuumConsidering,bakkerPeripheralInteractionCharacteristics2015}. In driving, peripheral vision supports lane keeping and awareness of the surroundings, but can be limited by cognitive load and distraction \cite{vaterPeripheralVisionRealworld2022}.
+
+Designing for peripheral interaction consequently requires considering what users need from a display while carrying out their main activity. Matthews and colleagues use Activity Theory to guide this decision: the display should provide information relevant to that activity, with greater emphasis on changes whose consequences make them important to notice \cite{matthewsDefiningDesigningEvaluating2007}. Glanceable displays aim to make this information understandable through brief looks, reducing the need to interrupt the main task \cite{matthewsDesigningEvaluatingGlanceable2006}. Designers can support this by simplifying the information (\textit{abstraction}), controlling how strongly it attracts attention (\textit{notification level}), and choosing how changes appear (\textit{transitions}) \cite{matthewsToolkitManagingUser2004,matthewsDesigningEvaluatingGlanceable2006}. These decisions also shape how much information an ambient display communicates and how it fits into its surroundings: Pousman and Stasko describe this balance through information capacity, notification level, representational fidelity, and aesthetic emphasis \cite{pousmanTaxonomyAmbientInformation2006}.
+
+\section{Ambient Displays}
+\label{sec:ambient-displays-applications}
+
+Ambient displays are designed to communicate information
+at the periphery of users' attention, embodying the
+principles of calm technology. These systems employ a range of communication modalities, including visual (light, colour, projected imagery and graphical representations), auditory (non-speech sounds and sonification), kinetic (physical movement
+of objects), haptic (vibration and temperature) and olfactory (scent-based signals). Among these, visual communication remains the dominant modality, with ambient lighting output being the most widely adopted approach \cite{SheltonNesbitt2020}.
+
+\setcounter{secnumdepth}{2}
+
+\subsection{In-Car Ambient Lighting}
+\label{sec:automotive-ambient-displays}
+
+Ambient lighting research in driving assistance focuses primarily on lane-change support and hazard visualisation, with secondary applications in speed regulation, gaze orientation, and vehicle status display \cite{lockenEnlighteningDriversSurvey2016}.
+
+Across these domains, ambient cues effectively contextualise information spatially and temporally. They direct driver gaze towards key road zones \cite{pomarjanschiSimpleGazeContingentCues2013}, induce earlier braking \cite{laquaiLargeScaleLEDArray2011}, and widen safety margins \cite{lockenSupportingLaneChange2015}. Compared with graphical navigation displays, light-based signals foster shorter and less frequent glances \cite{matviienkoNaviLightInvestigatingAmbient2016}.
+
+However, light cues can be visually imprecise or distracting. Intricate patterns are difficult to memorise and interpret without prior familiarity with colour coding and driving context, often requiring supplementary information in complex situations \cite{lockenEnlighteningDriversSurvey2016,matviienkoDerivingDesignGuidelines2015,matviienkoNaviLightInvestigatingAmbient2016}.
+
+Current research focuses largely on ambient lighting for immediate driving manoeuvres, leaving open how ambient communication might support broader contextual awareness of non-urgent information.
+
+\subsection{Aesthetic Awareness Displays}
+\label{sec:aesthetic-awareness-displays}
+
+A discussed application within these categories is using ambient displays to inform drivers of external conditions, like the weather \cite{lockenAdaptiveAmbientInVehicle2017}. For this purpose, traditional ambient lighting offers limited expressiveness due to its reliance on a restricted set of encoding parameters, such as colour, brightness, and LED position \cite{matviienkoNewAmbientLight2015}. In contrast, aesthetic awareness displays \cite{sheltonAestheticAwarenessDisplay2016} enable richer information representation by employing visual metaphors based on colour, space, shape, abstraction, dimension, and orientation \cite{ferschaInformativeArtDisplay2007} to map underlying data to visual changes.
+
+For example, Holmquist and Skog developed a Mondrian-inspired weather display using coloured squares to represent weather data across six cities, with square position identifying the city, size indicating temperature, and colour conveying weather conditions \cite{holmquistInformativeArtInformation2003}. Similarly, the InfoCanvas platform allowed users to personalise peripheral visual scenes, in which individual elements encoded relevant information, such as a bird’s flying height representing stock market trends \cite{staskoPersonalizedPeripheralInformation2004}. Skog et al.\ also developed a Mondrian-inspired display to communicate bus departure information, where each square represented a bus, its size decreased as departure approached, its colour indicated the urgency of leaving, and its position conveyed the direction of travel \cite{skogAestheticsUtilityDesigning2003}.
+
+A key challenge of such visualisations lies in the difficulty users may face in interpreting abstract metaphors without explicit guidance \cite{holmquistInformativeArtInformation2003}. Evaluating such displays must distinguish whether viewers can identify what information is represented from whether they can interpret its visual representation correctly \cite{skogAestheticsUtilityDesigning2003}. In automotive contexts, assessments must also establish whether drivers can detect unobtrusive visual changes while maintaining their attention on the road ahead.
+
+While visual metaphors have been explored to promote eco-driving \cite{tractinsky2011slow,dahlinger2018impact,potvinBernalInfluencingGreaterAdoption2020}, their potential for peripheral ambient communication remains underexplored.
+
+\subsection{BMW Panoramic Vision}
+\label{sec:bmw-panoramic-idrive-and-panoramic-vision}
+
+\begin{evidenceblock}
+\normalsize
+BMW's Panoramic Vision provides extensive space for peripheral interaction and shows promise in enhancing drivers' situational awareness \cite{huangCharacteristicsDriverPeripheral2025}. The display projects the instrument cluster and configurable widgets onto a black-printed area at the base of the windscreen, spanning from A-pillar to A-pillar \cite{BMWPanoramicIDrive2025} (Figure~\ref{fig:bmw-panoramic-idrive}). Prior research favoured the below-windscreen position over other cockpit locations for ambient communication due to its proximity to the driver's line of sight \cite{lockenInVehicleAmbientLight2019}, particularly when displaying persistent information \cite{mirnigEnlighteningModeAwareness2023}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/ch2_bmw_panoramic_idrive.jpeg}
+\figcaption{BMW Panoramic iDrive cockpit concept}{BMW Panoramic iDrive cockpit concept. The panoramic vision shows the instrument cluster on the left; users can choose up to six widgets for the remaining two-thirds or leave it empty.}
+\label{fig:bmw-panoramic-idrive}
+\end{figure}
+\end{evidenceblock}
+
+\setcounter{secnumdepth}{1}
+
+\section{Chapter Synthesis}
+\label{sec:chapter-synthesis}
+
+Ambient communication of non-urgent contextual information, such as weather, remains underexplored. Aesthetic displays offer richer encodings than ambient lighting, but their automotive use requires evaluating whether drivers can detect changes, recognise visual metaphors and interpret their meaning while driving. Panoramic Vision provides an expansive display area close to the driver's line of sight for exploring this approach.
+
+\chapter{Design and Evaluation Methodology}
+\label{ch:methods}
+
+Driven by an exploratory workshop on driver preferences for ambient information design, the study informed the creation of a panoramic vision prototype comprising three visual stimuli and a baseline condition, which was evaluated in a controlled driving simulator.
+
+\section{Exploratory Workshop}
+\label{sec:exploratory-workshop}
+
+A 1-hour exploratory workshop informed feature selection and visual-metaphor development for the prototype. BMW employees ($n = 13$) participated in four groups: three groups of three and one of four, each combining mostly junior employees with at least one senior employee. The workshop comprised four tasks and a final group presentation (Table~\ref{tab:workshop-tasks}).
+
+Workshop templates and examples from Tasks~1 and~2 are reproduced in Figures~\ref{fig:app-workshop-templates} and~\ref{fig:app-workshop-task1-task2}, with visual-metaphor artefacts from Task~4 in Figures~\ref{fig:app-workshop-task4-a} and~\ref{fig:app-workshop-task4-b}.
+
+Readable cards were transcribed and assigned one main category, with additional categories where needed. Repeated ideas were merged, and idea frequencies were counted by category and driving scenario, retaining a separate category for concepts spanning both scenarios. The workshop produced concepts ($n = 37$) across nine information domains, summarised in Tables~\ref{tab:workshop-t2-domains} and~\ref{tab:workshop-t3-scenarios}.
+
+\begin{evidenceblock}
+\normalsize
+A four-person panel comprising the researcher, two senior BMW employees and an external KTH researcher voted on all concepts. Support from at least three panel members indicated strong agreement, yielding nine candidates. These were screened for visual-metaphor feasibility, fit with BMW identity, graphic quality and progression in abstraction. Three concepts were selected for implementation in the prototype: the sun-to-moon animation represented time of day, the buildings animation represented the surrounding location and terrain and the red-sphere animation represented progress towards a destination through remaining distance or time.
+
+\begin{table}[H]
+\centering
+\small
+\caption[Exploratory workshop tasks]{Exploratory workshop tasks.}
+\label{tab:workshop-tasks}
+\begin{tabularx}{\textwidth}{@{}r >{\raggedright\arraybackslash}X c l@{}}
+\toprule
+Task & Description & Duration & Type \\
+\midrule
+1 & Propose information types and display features through Crazy 8s-style ideation \cite{googleCrazy8s}. & 8 min & Individual \\
+2 & Refine and select the individual ideas. & 12 min & Group \\
+3 & Assign features to low-demand and high-demand driving scenarios and rank their placement by proximity to the driver-axis region. & 10 min & Group \\
+4 & Translate prioritised features into non-textual 3D forms using shapes, artefacts, symbolism, and visual metaphors. & 20 min & Group \\
+5 & Present and discuss each group's work. & 10 min & Group \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+Task~1 materials are shown in Figures~\ref{fig:app-workshop-templates} and~\ref{fig:app-workshop-task1-task2}; Task~4 materials are shown in Figures~\ref{fig:app-workshop-task4-a} and~\ref{fig:app-workshop-task4-b}.
+
+Nine concepts received at least three votes, from which three were carried into the prototype: time-of-day, buildings and red-sphere.
+
+\section{Prototype}
+\label{sec:prototype}
+
+\subsection{Display Type}
+\label{sec:screen-type}
+
+\begin{evidenceblock}
+\normalsize
+Following the placement rationale in Section~\ref{sec:bmw-panoramic-idrive-and-panoramic-vision}, the prototype was built for BMW Panoramic Vision (Figure~\ref{fig:phud-reference}) and tested on the simulator's \(3{,}840 \times 656\)~px display (Figure~\ref{fig:prototype-cockpit}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/ch3_phud_reference.png}
+\figcaption{BMW Panoramic Vision display}{BMW Panoramic Vision display used for prototype development and simulator testing.}
+\label{fig:phud-reference}
+\end{figure}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Text-free changes to a 3D scene occupied the panoramic widget region (\(1{,}280\)–\(3{,}839\) px), leaving the driver-axis region (\(0\)–\(1{,}279\) px) unchanged.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\textwidth]{figures/ch3_prototype_cockpit.png}
+\figcaption{Prototype in the driving simulator}{Prototype displayed on BMW Panoramic Vision in the driving simulator.}
+\label{fig:prototype-cockpit}
+\end{figure}
+\end{evidenceblock}
+
+\subsection{Visual Stimuli}
+\label{sec:stimuli}
+
+The three workshop mappings became animated conditions, with a no-animation baseline added for comparison.
+
+\begin{evidenceblock}
+\normalsize
+In the sun-to-moon animation (Figure~\ref{fig:condition-v1}), the time of day was represented by a sun moving from left to right as the sky changed from day to night. The sun was depicted as a sphere that changed colour along its path, while the background colour also shifted. After setting on the right, the sun gave way to a moon that rose from the left and came to rest at the centre of the screen, as stars twinkled in the background.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\linewidth,height=0.16\textheight,keepaspectratio]{figures/V1_01.png}
+\par\smallskip
+\includegraphics[width=0.70\linewidth,height=0.16\textheight,keepaspectratio]{figures/V1_02.png}
+\par\smallskip
+\includegraphics[width=0.70\linewidth,height=0.16\textheight,keepaspectratio]{figures/V1_03.png}
+\figcaption{sun-to-moon animation}{Start, midpoint and end states of the sun-to-moon animation}
+\label{fig:condition-v1}
+\end{figure}
+\end{evidenceblock}
+
+
+\begin{evidenceblock}
+\normalsize
+In the buildings animation (Figure~\ref{fig:condition-v2}), hills transformed into a city to represent the surrounding location and terrain. The buildings rose from the ground as the landscape collapsed; once fully formed, they moved towards the camera and stopped.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\linewidth,height=0.16\textheight,keepaspectratio]{figures/V2_01.png}
+\par\smallskip
+\includegraphics[width=0.70\linewidth,height=0.16\textheight,keepaspectratio]{figures/V2_02.png}
+\par\smallskip
+\includegraphics[width=0.70\linewidth,height=0.16\textheight,keepaspectratio]{figures/V2_03.png}
+\figcaption{buildings animation}{Start, midpoint and end states of the buildings animation}
+\label{fig:condition-v2}
+\end{figure}
+\end{evidenceblock}
+
+
+\begin{evidenceblock}
+\normalsize
+In the red-sphere animation, a continuous zoom towards a red sphere represented progress towards a destination, with the sphere marking the arrival point (Figure~\ref{fig:condition-v3}). The sphere emerged from behind the landscape and remained above it, surrounded by a glow and moving particles.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\linewidth,height=0.16\textheight,keepaspectratio]{figures/V3_01.png}
+\par\smallskip
+\includegraphics[width=0.70\linewidth,height=0.16\textheight,keepaspectratio]{figures/V3_02.png}
+\par\smallskip
+\includegraphics[width=0.70\linewidth,height=0.16\textheight,keepaspectratio]{figures/V3_03.png}
+\figcaption{red-sphere animation}{Start, midpoint and end states of the red-sphere animation}
+\label{fig:condition-v3}
+\end{figure}
+\end{evidenceblock}
+
+
+\begin{evidenceblock}
+\normalsize
+In the no-animation condition, the initial scene showed blue hills beneath a dark sky alongside the fixed driving information, and remained unchanged throughout the trial (Figure~\ref{fig:condition-nt}). The sun, buildings and red sphere were absent from this scene and appeared only in their respective animations: recognising them required noticing the change.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\linewidth,height=0.16\textheight,keepaspectratio]{figures/NT.png}
+\figcaption{no-animation}{no-animation}
+\label{fig:condition-nt}
+\end{figure}
+\end{evidenceblock}
+
+
+The animated scenes moved from fixed starting states to fixed final states, independent of the simulated route: sun-to-moon was not synchronised with a live clock, buildings did not reflect live location or terrain, and red-sphere did not show actual remaining distance or travel time. The mappings moved from straightforward day-to-night imagery in sun-to-moon, through a transition from hills to an emerging city in buildings, to the more abstract idea of a destination in red-sphere.
+
+
+
+\begin{evidenceblock}
+\normalsize
+All animated stimuli followed the same 120-second schedule shown in Figure~\ref{fig:animation-timeline}. The 30-second idle period let drivers settle into the task and made the change less predictable. The 60-second animation gave them time to notice the changes as they unfolded, while the final 30 seconds allowed them to notice that the animation had ended and record their response while continuing to drive. At 120 seconds, the panoramic vision blacked out, and simulator and iPad recordings stopped.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/new.png}
+\figcaption{One hundred and twenty-second stimulus structure}{One hundred and twenty-second stimulus structure}
+\label{fig:animation-timeline}
+\end{figure}
+\end{evidenceblock}
+
+\section{Study Design}
+\label{sec:study-design}
+
+Participants drove the simulator as their primary task while reporting display changes. Each participant completed three trials: one non-animated and two with different animations, resulting in $n = 24$ non-animated trials and $n = 16$ per animated condition (for a total of $n = 72$ trials). Six sequences were assigned to four participants each, so everyone saw both animated and non-animated visuals (see Appendix Table~\ref{tab:app-condition-sequences}). Full counterbalancing was not feasible within the recruitment period, resulting in red-sphere being the first condition in two sequences and the first animation encountered in all four sequences that included it.
+
+The peripheral detection task (PDT) typically adds a separate cue-detection task alongside driving, using response times and missed cues to assess workload and distraction \cite{harmsPeripheralDetectionMeasure2003}. Here, we adapt the button-response procedure to assess whether drivers notice ambient animations starting and stopping, rather than using separate cues to infer workload.
+
+\subsection{Apparatus}
+\label{sec:apparatus}
+
+\begin{evidenceblock}
+\normalsize
+The setup included a driving-simulator cockpit running on BMW's SPIDER framework, the panoramic vision, a phone mounted centrally on the steering wheel, an iPad used by the researcher and a Tobii Pro Spark eye tracker operating at 60~Hz, mounted on the dashboard in front of the driver. The prototype was built in Spline \cite{splineSplineOfficial} and ran on the simulator PC, which streamed it directly to the panoramic display. Both the phone on the steering wheel and the researcher iPad ran separate ProtoPie projects. The phone recorded presses for the PDT, while the iPad controlled the trial timer, started and stopped gaze recording, and recorded up to five received PDT triggers per trial (see Figure~\ref{fig:protopie-interfaces}). A Python script using the Tobii software development kit (SDK) controlled gaze recording. Figure~\ref{fig:simulator-setup} shows the setup.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/ch3-simulator-setup-photos.png}
+\figcaption{Driving-simulator setup}{Driving-simulator setup: steering-wheel-mounted PDT phone (1), eye tracker (2) and simulated drive (3); exterior view of the cockpit (right).}
+\label{fig:simulator-setup}
+\end{figure}
+\end{evidenceblock}
+
+\subsection{Participants}
+\label{sec:participants}
+
+We initially recruited $n = 27$ participants. One session was excluded as pilot, while two formal sessions were excluded because they exceeded the system’s limit of five reliably recorded PDT triggers per trial, leaving $n = 24$ participants for analysis. The design target of $n = 24$ participants was a multiple of six matching the six stimuli sequences, within a 7-working-day window of approximately 5 hours per day.
+
+Participants were aged 21--45 years and included more men than women; all were BMW staff, and some had also taken part in the workshop. Annual driving distance ranged from 0 to 50,000~km ($M = 11{,}146$~km, $SD = 10{,}373$~km). Most had previous experience with driving simulators, some used vision correction and nobody reported colour-vision deficiency (Table~\ref{tab:demographics}).
+
+\subsection{Procedure}
+\label{sec:study-procedure}
+
+\begin{evidenceblock}
+\normalsize
+Figure~\ref{fig:study-design} shows the study sequence and trials. At the start of each session, participants received a standardised briefing, gave verbal consent, and completed a demographic questionnaire (Appendix~\ref{sec:app-demographic-questionnaire}). The briefing did not disclose the meaning of any animation used across trials; it introduced the PDT with generic examples of pressing when a visual change began and ended. Participants were also told to avoid looking at the panoramic vision while driving and were informed that the system could record up to five trigger presses per trial.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\linewidth]{figures/study-overview-three-trial-rows.pdf}
+\figcaption{Study-session design and evidence sequence}{Study-session design and evidence sequence.}
+\label{fig:study-design}
+\end{figure}
+\end{evidenceblock}
+
+Each participant completed the Tobii calibration tutorial, followed by approximately 3 minutes of familiarisation on a route running in the opposite direction to the experimental route; both routes were set in an urban environment without traffic, with a speed limit of 50 km/h. All trials followed the same route, comprising four turns and a roundabout taken at the first exit before continuing beyond the distance reachable in 120 s at 50 km/h; because trials were capped at 120 s, the distance covered varied with participants’ driving speed.
+
+This introduced the ambient display and PDT procedure, and allowed participants to adjust to the researcher's speed prompts (as the speedometer in the prototype did not show real-time speed, but a fixed 50 km/h placeholder).
+
+At trial start, the simulator started first, followed by the iPad timer and visual-animation timeline together. Starting the timer issued the gaze-recording command, and each PDT press was received by the iPad and logged against the same timer.
+
+\begin{samepage}
+Each trial then followed the fixed 120-second schedule in Figure~\ref{fig:animation-timeline}. Participants used the steering-wheel-mounted phone PDT when they perceived the display starting to change and again when it stopped changing; they did not press it when they perceived no stimuli.
+\par
+\end{samepage}
+
+When the iPad timer reached 2 minutes, stopping it ended gaze recording and created the gaze export. The researcher then stopped the simulator and its separate vehicle recording.
+
+\begin{evidenceblock}
+\normalsize
+After each trial, participants completed both a modified National Aeronautics and Space Administration Task Load Index (NASA-TLX) questionnaire (six 1--10 ratings without pairwise weighting; see Table~\ref{tab:app-nasa-items}) and a discrimination questionnaire (Table~\ref{tab:discrimination-items}) in alternating order, followed by an oral account of what they thought the stimulus shown represented. This process was repeated for all three trials.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+\caption[Post-trial discrimination questionnaire]{Post-trial discrimination questionnaire.}
+\label{tab:discrimination-items}
+\begin{tabularx}{\textwidth}{@{}L{0.08\textwidth} L{0.42\textwidth} >{\raggedright\arraybackslash}X@{}}
+\toprule
+Item & Prompt & Response options \\ \midrule
+Q1 & In the scene that was played on the panoramic vision, which element was visible? &
+\begin{minipage}[t]{\linewidth}
+\vspace{0pt}\raggedright\setlength{\parindent}{0pt}
+\textbullet\ Sun and moon\par
+\textbullet\ A red glowing sphere\par
+\textbullet\ None of these\par
+\textbullet\ Buildings
+\end{minipage} \\ \addlinespace
+Q2 & Which of the following best describes the changes that were shown on the panoramic vision? &
+\begin{minipage}[t]{\linewidth}
+\vspace{0pt}\raggedright\setlength{\parindent}{0pt}
+\textbullet\ A day-to-night timelapse\par
+\textbullet\ Landscape changing\par
+\textbullet\ A progressive camera close-up on the scene\par
+\textbullet\ I did not witness any changes
+\end{minipage} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+After the third trial, participants reviewed all three animated conditions without driving and completed a User Experience Questionnaire (UEQ) (see Table~\ref{tab:app-ueq-items}). This marked the end of the study.
+
+\section{Data Preparation and Analysis}
+\label{sec:data-analysis}
+
+
+
+
+Lane position, NASA-TLX and UEQ provide supplementary context rather than direct answers to the three research questions (\S\ref{sec:additional-results}).
+
+\subsection{Detection}
+\label{sec:detection}
+
+We aligned each PDT press with the 120 s timeline and classified it using the categories in Appendix Table~\ref{tab:rq1-trigger-classifications}.
+
+ 
+For animated trials, detection success was calculated separately for onset (30–90~s) and completion (90–120~s) as the number of matched detections within each window divided by the number of eligible trials. Rates were averaged into a single score only when comparing against non-animated trials or summarising all trials. Scores were assigned as 1 for full detection (both 30–90~s and 90–120~s windows), 0.5 for partial detection (one window), and 0 for none. For non-animated trials, a trial with
+no press was counted as successful (1). Onset (30--90~s) and completion (90--120~s) detection were compared using a two-sided paired $t$-test on $n = 24$ participants' mean scores across their two animated trials, retaining misses as zero. To account for multiple testing, Holm correction was applied jointly to this comparison and 21 other comparisons involving detection, recognition accuracy and interpretation across all trials, animated trials and no-animation trials (see Table~\ref{tab:holm-detection-family}). Within each animation, two-sided exact McNemar tests compared $n = 16$ paired onset and completion scores, with Holm adjustment across the three animations.
+
+We then defined reaction time as \(RT = t_{\mathrm{press}} - t_{\mathrm{anchor}}\), where \(t_{\mathrm{anchor}}\in\{30,90\}\)~s, and summarised it descriptively among detected
+events. Presses not matched to an onset or completion detection were analysed separately using descriptive statistics.  Trigger events, reaction times, and non-detection presses were compared across all trials ($n = 72$), between animated ($n = 48$) vs. non-animated ($n = 24$) conditions, and by time window within animated trials.
+
+\subsection{Gaze}
+\label{sec:gaze}
+
+We retained gaze records within the 0--120~s trial interval. Valid samples inside the \emph{\(3{,}840 \times 656\) px} canvas were classified as \emph{driver-axis} when \(0 \leq X < 1{,}280\)~px or \emph{ambient-display} when \(1{,}280 \leq X < 3{,}840\)~px. Samples outside this frame or marked unclassified were labelled off-display, while intervals without samples remained missing.
+
+An \emph{ambient contact} was a continuous sequence of valid ambient-display samples no more than 25~ms apart. At 60~Hz, samples were expected every 16.7~ms; a 25~ms tolerance allowed timing variation, while longer gaps remained unassigned \cite{niehorster_fundamentals_2026}.
+
+For intervals up to 25~ms, we placed any change between gaze regions halfway between the two recorded times, because its exact timing between observations was unknown \cite{andersson_sampling_2010}. No minimum contact duration or fixation classification was applied; contacts therefore represented recorded segments rather than confirmed intentional looks.
+
+Contacts were constructed before retaining fixed windows: 30--90~s and 90--120~s for animated trials, and 0--120~s for no-animation trials. Animated windows retained detected and missed changes, including gaze after presses.
+
+Coverage was checked separately for each window using only valid ambient-display and driver-axis samples:
+\[
+\text{Coverage} =
+\frac{N_{\text{ambient}} + N_{\text{driver-axis}}}
+{T_{\text{window}} \times 60}
+\]
+Here, \(T_{\text{window}}\) is duration in seconds (expected samples: \(3{,}600\) for 30--90~s; \(1{,}800\) for 90--120~s; \(7{,}200\) for 0--120~s), following \cite{niehorster_fundamentals_2026}. Off-display samples did not contribute to the numerator. Windows required at least 80\% coverage and positive allocated valid duration; otherwise, they were classified as indeterminate.
+
+\begin{evidenceblock}
+\normalsize
+Total ambient gaze time and contact frequency (Table~\ref{tab:gaze-allocation-measures}) were compared descriptively, with frequency expressed per minute of the full window. Together, they distinguished fewer, longer recorded contacts from more frequent, shorter ones when cumulative time and window length were comparable. Adequately covered windows without contacts retained zero values.
+
+\begin{table}[H]
+\centering
+\caption[Gaze allocation and ambient contacts]{Gaze allocation and ambient-contact measures within each analysis window.}
+\label{tab:gaze-allocation-measures}
+\scriptsize
+\renewcommand{\arraystretch}{1.05}
+\setlength{\tabcolsep}{4pt}
+\setlength{\extrarowheight}{0pt}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.28\linewidth} >{\raggedright\arraybackslash}X@{}}
+\toprule
+Measure & Definition \\ \midrule
+Total ambient gaze time (s)
+& Total gaze duration on the ambient display. \\
+Contact frequency (contacts/min)
+& Number of ambient-display contacts divided by the analysis-window duration in minutes. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\subsection{Recognition Accuracy and Confidence}
+\label{sec:recognition-accuracy-confidence}
+
+We scored element recognition (Q1) and change recognition (Q2) as correct (1) or incorrect (0), using the questionnaire answer key (Table~\ref{tab:app-q1-q2-answer-key}), and reported correct-answer counts, percentages and mean accuracy scores---the proportion correct; two-sided paired $t$-tests compared Q1 and Q2 participant means across all $n = 72$ trials and the $n = 48$ animated trials ($n = 24$ participant pairs per comparison; Holm adjustment), while exact McNemar tests compared paired answers within each condition ($n = 24$ no-animation pairs and $n = 16$ per animation; Holm adjustment across four tests).
+
+Confidence ratings ranged from 1 (\emph{guessing}) to 4 (\emph{very sure}) and were summarised descriptively by question, condition and correctness; two-sided paired $t$-tests compared Q1 and Q2 using $n = 24$ participant means overall and for animated trials, and paired trial ratings within each condition ($n = 24$ no-animation pairs and $n = 16$ per animation), with Holm adjustment.
+
+\subsection{Interpretation}
+\label{sec:interpretation}
+We used thematic analysis to compare every participant's oral interpretation of visual metaphors with their intended meaning while retaining additional details (Tables~\ref{tab:rq3-meaning-codebook} and~\ref{tab:rq3-detail-codebook}).
+
+Each trial received one main \texttt{success} outcome, marked \texttt{full} or \texttt{partial} depending on how clearly the intended meaning was expressed, or \texttt{failure}. Success meant identifying time passing in the sun-to-moon animation, location or surroundings in the buildings animation, destination progress in the red-sphere animation, or recognising that no meaningful animation occurred in a non-animated trial, while failures were coded as an \texttt{alternative meaning} (a different interpretation), \texttt{unknown} (no meaning offered), or \texttt{false-change} (reporting a visual change that did not happen). 
+
+Coding retained additional details such as which element from the scene was described (\texttt{object}), the visual cue witnessed (\texttt{transformation}), point in the animation when it was noticed (\texttt{stage}), meaning assigned (\texttt{interpretation}), link between a visual cue and its meaning (\texttt{reason}), confidence about the meaning (\texttt{certainty}) and stated reaction (\texttt{reaction}).
+
+We summarised outcomes and response details descriptively by condition, counting full and partial success as 1 and failure as 0, while qualitatively reporting additional response details.
+
+\subsection{Additional Results}
+\label{sec:additional-results}
+
+The following measures provide supplementary context on driving behaviour, workload and user experience. Summaries are reported in Section~\ref{sec:add-results}, with details in the appendices referenced below; they are secondary to the three research questions.
+
+Absolute distance from the lane centre \(d = |\texttt{laneOffsetLeft} + \texttt{laneOffsetRight}|/2\), was compared across conditions and press behaviours, (see Appendix ~\ref{sec:driving-behaviour}).
+
+NASA-TLX analysis reported means and standard deviations for the six 1--10 dimensions and their unweighted mean (Raw TLX, see Appendix ~\ref{sec:nasa-tlx-results}).
+
+UEQ 7-point ratings were converted to $-3$ to $+3$ (higher scores indicate more favourable responses) and averaged into Attractiveness (six items), Perspicuity, Efficiency, Dependability, Stimulation and Novelty (four items each, \cite{laugwitzConstructionEvaluationUser2008}; see Appendix ~\ref{sec:ueq-results}).
+
+% Keep Results visuals near their explanatory text.
+\begingroup
+\raggedbottom
+% Allow explanatory paragraphs and visuals to share available page space.
+\renewenvironment{evidenceblock}{\par\addvspace{4pt}}{\par\addvspace{4pt}}
+\renewcommand{\topfraction}{0.72}
+\renewcommand{\bottomfraction}{0.50}
+\renewcommand{\textfraction}{0.16}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{3}
+\setlength{\intextsep}{8pt plus 2pt minus 1pt}
+\widowpenalty=10000
+\clubpenalty=10000
+\chapter{Results}
+\setcounter{secnumdepth}{2}
+\label{ch:results}
+
+To understand if the ambient display supports peripheral interaction while driving, we examine how well participants detected, recognised and interpreted visual changes. We first compare performance across these three stages, then examine each stage in relation to participants’ behaviour. Because each participant saw only two of the three animations ($n = 16$ trials each), comparisons between animations are descriptive; we report exact 95\% confidence intervals (CIs) for each animation's binary outcomes and interquartile ranges (IQRs) alongside medians.
+
+\section{The Element Recognition Gap}
+\label{sec:detection-recognition-interpretation-gap}
+
+Success at an earlier stage might be expected to support success at the next, yet performance did not follow a consistent progression across detection, recognition and interpretation, with different patterns in animated and no-animation trials.
+
+\begin{evidenceblock}
+\normalsize
+Participants were most successful at recognising the displayed element, both overall and in animated trials. These advantages were supported after Holm correction, whereas differences in non-animated trials were inconclusive (Figure~\ref{fig:cross-rq-mean-scores}; Tables~\ref{tab:cross-rq-paired-t-full} and~\ref{tab:cross-rq-mcnemar}).
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{figures/A_mean_scores_with_brackets.pdf}
+\caption[Mean outcome scores across trial sets]{Mean outcome scores ($n = 24$ participants per trial set). Animated detection averages onset/completion (0, 0.5, 1); non-animated requires no press. Analysed via paired $t$-tests and McNemar's.}
+\label{fig:cross-rq-mean-scores}
+\end{figure}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Among the remaining outcomes, detection scores were higher than change recognition and interpretation in animated trials; in no-animation trials, correct rejection was lower than both. None of these differences was reliable after Holm correction (Table~\ref{tab:cross-rq-paired-t}).
+
+\begin{table}[htb]
+\centering
+\footnotesize
+\caption[Detection versus recognition and interpretation]{Mean detection-minus-comparison differences, compared via paired $t$-tests for animated trials and exact McNemar tests for non-animated trials.}
+\label{tab:cross-rq-paired-t}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X *{4}{>{\centering\arraybackslash}p{.13\textwidth}}@{}}
+\toprule
+ & \multicolumn{2}{c}{Animated trials} & \multicolumn{2}{c}{Non-animated trials} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+\multicolumn{1}{c}{Comparison} & $\symup{\delta}$ & $p_{\mathrm{Holm}}$ & $\symup{\delta}$ & $p_{\mathrm{Holm}}$ \\
+\midrule
+Detection $-$ Change recognition & $+.07$ & $1.000$ & $-.08$ & $1.000$ \\
+Detection $-$ Interpretation & $+.09$ & $1.000$ & $-.08$ & $1.000$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Across all three animations, mean scores were highest for element recognition; the relative scores of the other measures varied by animation (see Figure~\ref{fig:animation-mean-scores}). See Table~\ref{tab:animation-outcomes}.
+
+\begin{table}[htb]
+\centering
+\scriptsize
+\caption{Detection, recognition and interpretation by animation.}
+\label{tab:animation-outcomes}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c c c@{}}
+\toprule
+Outcome & Sun-to-moon & Buildings & Red-sphere \\
+\midrule
+Compound detection & \shortstack{$10.5/16$\\$M = .66$} & \shortstack{$9/16$\\$M = .56$} & \shortstack{$9/16$\\$M = .56$} \\[3pt]
+\hspace{0.5em}Changes happening detected (onset) & \shortstack{$16/16$ [79.4--100.0\%]\\$M = 1.00$} & \shortstack{$13/16$ [54.4--96.0\%]\\$M = .81$} & \shortstack{$11/16$ [41.3--89.0\%]\\$M = .69$} \\[3pt]
+\hspace{0.5em}Changes finished detected (completion) & \shortstack{$5/16$ [11.0--58.7\%]\\$M = .31$} & \shortstack{$5/16$ [11.0--58.7\%]\\$M = .31$} & \shortstack{$7/16$ [19.8--70.1\%]\\$M = .44$} \\[3pt]
+Element recognised (\textit{Q1}) & \shortstack{$14/16$ [61.7--98.4\%]\\$M = .88$} & \shortstack{$15/16$ [69.8--99.8\%]\\$M = .94$} & \shortstack{$13/16$ [54.4--96.0\%]\\$M = .81$} \\[3pt]
+Change recognised (\textit{Q2}) & \shortstack{$14/16$ [61.7--98.4\%]\\$M = .88$} & \shortstack{$9/16$ [29.9--80.2\%]\\$M = .56$} & \shortstack{$2/16$ [1.6--38.3\%]\\$M = .13$} \\[3pt]
+Interpretation & \shortstack{$10/16$ [35.4--84.8\%]\\$M = .63$} & \shortstack{$14/16$ [61.7--98.4\%]\\$M = .88$} & \shortstack{$0/16$ [0.0--20.6\%]\\$M = .00$} \\[3pt]
+\bottomrule
+\end{tabularx}
+\par\smallskip
+\begin{minipage}{\textwidth}
+\scriptsize Each animation has $n = 16$ trials. Cells show totals and mean scores (0--1). Compound detection averages onset and completion scores, yielding values of 0, 0.5, or 1, and has no confidence interval; other rows show successful-trial counts with exact 95\% Clopper--Pearson confidence intervals.
+\end{minipage}
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+The animation-level means show how the relative pattern of detection, recognition and interpretation differed across the three visual metaphors.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.90\linewidth]{figures/animation_mean_scores.pdf}
+\caption[Mean outcome scores by animation]{Mean outcome scores by animation ($n = 16$ trials each); detection averages onset and completion scores. See Table~\ref{tab:animation-outcomes}.}
+\label{fig:animation-mean-scores}
+\end{figure}
+\end{evidenceblock}
+
+\section{Detection and Visual Behaviour}
+\label{sec:rq1-detection-visual-attention}
+
+\begin{evidenceblock}
+\normalsize
+Mean detection scores were higher in no-animation than animated trials; the former measure correct rejection and the latter average onset and completion detection (Figure~\ref{fig:cross-rq-mean-scores}).
+Within animated trials, drivers detected onsets more often than completions. The sun-to-moon comparison supported this difference after Holm correction; the red-sphere estimate pointed in the same direction but was inconclusive (Figure~\ref{fig:rq1-onset-completion-detection}; Table~\ref{tab:rq1-detection-score-comparisons}).
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{figures/table42_43_onset_completion_bars.pdf}
+\caption[Onset and completion detection scores]{Detection scores during (30--90~s) and post-change (90--120~s; $1$/$0$). Brackets show Holm-adjusted paired $t$-tests (all animated) and McNemar tests (per animation).}
+\label{fig:rq1-onset-completion-detection}
+\end{figure}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Paired score differences compare onset with completion while retaining missed reports; the pooled test and within-animation tests have separate correction scopes.
+
+\begin{table}[htb]
+\centering
+\caption[Onset--completion detection comparisons]{Paired \textit{t}-test for all animated trials; McNemar tests per animation. $\symup{\delta}$: 30--90 s minus 90--120 s; $p_{\mathrm{Holm}}$: Holm-adjusted.}
+\label{tab:rq1-detection-score-comparisons}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c c c c@{}}
+\toprule
+Scope & Mean score (30--90 s) & Mean score (90--120 s) & $\symup{\delta}$ & $p_{\mathrm{Holm}}$ \\
+\midrule
+\shortstack[l]{All animated trials\\($n = 48$)} & .83 & .35 & $+.48$ & $.002$ \\
+\midrule
+\shortstack[l]{Sun-to-moon\\($n = 16$)} & 1.00 & .31 & $+.69$ & $.003$ \\
+\midrule
+\shortstack[l]{Buildings\\($n = 16$)} & .81 & .31 & $+.50$ & $.043$ \\
+\midrule
+\shortstack[l]{Red-sphere\\($n = 16$)} & .69 & .44 & $+.25$ & $.344$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\subsection{Visual Behaviour}
+
+Participants did not consistently require more display-looking time to detect changes successfully.
+
+\begin{evidenceblock}
+\normalsize
+During the 30–90~s onset window, median time spent looking at the display was similar in trials with detected and missed changes (Figure~\ref{fig:rq1-gaze-measure-illustration}). Median contact frequency was lower in detected than missed trials (Figure~\ref{fig:rq1-contact-frequency-detection}; Table~\ref{tab:gaze-onset-summaries}). Drivers detected the \textit{sun-to-moon} transition in every trial, even though the animation had the lowest median contact frequency, while time spent looking at the display showed no clear difference across animations (Tables~\ref{tab:rq1-detection-latency} and~\ref{tab:gaze-onset-summaries}).
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{figures/ch4_display_looking_time_restyled.png}
+\caption[Display-looking time by detection outcome]{Time looking at the display in missed and detected events, across all animations and for each animation, for $n = 66/96$ usable windows; labels at the top give usable/eligible counts. See Tables~\ref{tab:gaze-onset-summaries}, Table~\ref{tab:gaze-fixed-summaries} for more detailed results.}
+\label{fig:rq1-gaze-measure-illustration}
+\end{figure}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Reaction times describe detected events only, while detection counts retain every eligible trial and identify the different reporting-window lengths.
+
+\begin{table}[htb]
+\centering
+\scriptsize
+\caption[Reaction times in seconds for detected events only]{Reaction times in seconds for detected events only.}
+\label{tab:rq1-detection-latency}
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c c c r r r r@{}}
+\toprule
+Condition & \shortstack{Window\\(s)} & \shortstack{Detected/\\eligible} & \shortstack{Detection\\(\%)} & \textit{Mdn} & \textit{IQR} \\
+\midrule
+All animated & 30--90 & $40/48$ & 83.3 & 18.00 & 35.25 \\
+All animated & 90--120 & $17/48$ & 35.4 & 7.00 & 11.00 \\
+
+sun-to-moon & 30--90 & $16/16$ & 100.0 & 2.50 & 2.25 \\
+sun-to-moon & 90--120 & $5/16$ & 31.3 & 11.00 & 7.00 \\
+
+buildings & 30--90 & $13/16$ & 81.3 & 21.00 & 16.00 \\
+buildings & 90--120 & $5/16$ & 31.3 & 4.00 & 2.00 \\
+
+red-sphere & 30--90 & $11/16$ & 68.8 & 40.00 & 16.00 \\
+red-sphere & 90--120 & $7/16$ & 43.8 & 16.00 & 8.00 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+Once changes had finished (90--120~s), drivers detected fewer events than during the onset window, but reaction times among detected events had a lower median (see Table~\ref{tab:rq1-detection-latency}). This comparison is partly constrained by unequal window lengths: completion RTs were capped at 30~s, while onset RTs could reach 60~s.
+
+Within this window, participants reported completion more often for \textit{red-sphere} than for the other animations, although its median reaction time was longer (Table~\ref{tab:rq1-detection-latency}) and its median contact frequency was lower (Table~\ref{tab:gaze-fixed-summaries}). Of these, $n = 3/7$ reports were first presses at 91, 106, and 108~s, without an earlier onset report, suggesting that its higher completion rate may partly reflect delayed onset reports classified as completion by the timing rules.
+
+\begin{evidenceblock}
+\normalsize
+During completion windows, median time spent looking at the display was lower in trials with detected than missed changes, particularly in the \textit{red-sphere} and \textit{sun-to-moon} animations; median contact frequency was similar overall (Table~\ref{tab:gaze-fixed-summaries}).
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth]{figures/figure_4_5_contacts_per_minute.pdf}
+\caption[Display contact frequency by detection outcome]{Display contact frequency in missed and detected events, across all animations and for each animation. Frequency is measured per minute of the full analysis window; see Tables~\ref{tab:gaze-onset-summaries}, Table~\ref{tab:gaze-fixed-summaries} for more detailed results.}
+\label{fig:rq1-contact-frequency-detection}
+\end{figure}
+\end{evidenceblock}
+
+In non-animated trials (0--120~s), median time spent looking at the display and median contact frequency were higher in trials with no presses than in trials with at least one press (Table~\ref{tab:gaze-whole-trial-summaries}).
+
+
+
+
+
+\subsection{Extra, early and false-alarm presses}
+
+The mean number of extra presses per trial was 0.88 during animations (30–90~s; $SD = 1.02$) and 0.04 after they ended (90–120~s; $SD = 0.20$), with the highest condition mean during \textit{sun-to-moon} trials. Early presses before the scheduled change ($<30$~s) occurred in \textit{buildings} and \textit{red-sphere} trials (Table~\ref{tab:rq1-response-patterns}).
+
+Drivers also reported non-existent changes (false alarms) during non-animated trials (Table~\ref{tab:rq1-nt-false-alarms}).
+
+\section{Recognition accuracy and confidence}
+\label{sec:rq2-discrimination}
+
+\begin{evidenceblock}
+\normalsize
+Participants recognised the \textit{element shown} on the display \textit{more accurately} and \textit{with greater confidence} than what changed, both overall and in animated trials alone; these differences were supported after Holm correction (Figure~\ref{fig:rq2-recognition}; Tables~\ref{tab:rq2-mean-accuracy-comparisons} and~\ref{tab:rq2-mean-confidence-comparisons}).
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=\textwidth,trim=0 279 0 0,clip]{figures/recognition_thesis_reordered.pdf}
+\caption[Recognition accuracy and confidence]{Mean element- and change-recognition accuracy (a). See Table~\ref{tab:rq2-mean-accuracy-comparisons}; confidence is shown in the continued figure.}
+\label{fig:rq2-recognition}
+\end{figure}
+\end{evidenceblock}
+
+
+
+Among the animation conditions, buildings had the highest observed element-recognition accuracy and mean confidence, while sun-to-moon had the highest observed change-recognition accuracy and mean confidence (Tables~\ref{tab:rq2-condition-accuracy}, \ref{tab:rq2-confidence-element} and~\ref{tab:rq2-confidence-change}). See Table~\ref{tab:animation-outcomes}.
+
+\begin{evidenceblock}
+\normalsize
+Participants recognised the red sphere more accurately than its progressive camera close-up, with a difference supported after Holm correction (Table~\ref{tab:rq2-mean-accuracy-comparisons}).
+
+\begin{figure}[htb]
+\ContinuedFloat
+\centering
+\includegraphics[width=\textwidth,trim=0 0 0 306,clip]{figures/recognition_thesis_reordered.pdf}
+\caption[]{Continued: recognition confidence (b). Solid bars: element; hatched bars: change. See Table~\ref{tab:rq2-mean-confidence-comparisons}.}
+\end{figure}
+\end{evidenceblock}
+
+Observed mean confidence in identifying the red-sphere change was higher for incorrect than correct answers, although the correct-answer group was small (Table~\ref{tab:rq2-confidence-change}). Incorrect responses most often described no change, followed by a landscape change or a day-to-night timelapse (Table~\ref{tab:rq2-incorrect-answers}).
+
+When participants failed to recognise the landscape change in the buildings animation, they most commonly mistook it for a day-to-night timelapse or a progressive camera close-up (Table~\ref{tab:rq2-incorrect-answers}). Participants showed the same observed accuracy for recognising the sun and moon elements and identifying the time-of-day timelapse; mean confidence was higher for element recognition, but this difference was inconclusive after Holm correction (Tables~\ref{tab:rq2-condition-accuracy} and~\ref{tab:rq2-mean-confidence-comparisons}).
+
+During non-animated trials, all participants correctly identified that none of the listed elements were present, albeit with lower confidence than in animated trials. Fewer correctly reported that nothing had changed; confidence among those giving this correct response was similar to confidence for correctly identifying the absence of the listed elements (Tables~\ref{tab:rq2-condition-accuracy}, \ref{tab:rq2-confidence-element} and~\ref{tab:rq2-confidence-change}).
+
+\section{Qualitative interpretation results}
+\label{sec:rq3-interpretation-results}
+
+\begin{evidenceblock}
+\normalsize
+Accurate visual descriptions did not always lead to the intended interpretation: participants sometimes connected the cues to familiar meanings suggested by their shape, colour or movement. See Table~\ref{tab:rq3-interpretation-counts}.
+
+\begin{table}[htb]
+\centering
+\scriptsize
+\caption[Interpretation outcomes by condition]{Interpretation outcomes by condition. Success combines full and partial interpretations; intervals are exact 95\% binomial confidence intervals (Clopper--Pearson). No-animation success denotes baseline recognition.}
+\label{tab:rq3-interpretation-counts}
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X r r c r r@{\hspace{1.5em}}r r r r@{}}
+\toprule
+ & & \multicolumn{4}{c}{Successes} & \multicolumn{4}{c}{Failures} \\
+\cmidrule(lr){3-6}\cmidrule(l){7-10}
+Condition & $N$ & All & \shortstack{95\% CI for\\success (\%)} & Full & Part. & All & Alt. & Unknown & False \\
+\midrule
+Sun-to-moon & 16 & 10 & 35.4--84.8 & 7 & 3 & 6 & 6 & 0 & --- \\
+Buildings & 16 & 14 & 61.7--98.4 & 13 & 1 & 2 & 1 & 1 & --- \\
+Red-sphere & 16 & 0 & 0.0--20.6 & 0 & 0 & 16 & 10 & 6 & --- \\
+No-animation & 24 & 18 & 53.3--90.2 & 18 & 0 & 6 & --- & --- & 6 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+\begin{minipage}{\textwidth}
+\scriptsize $n = 72$ responses; Part.: partial; Alt.: alternative meaning; Unknown: unknown meaning; False: false change. Dashes: inapplicable.
+\end{minipage}
+\end{table}
+\end{evidenceblock}
+
+In the sun-to-moon animation, one participant described a moving red dot (the sun) followed by white dots, interpreting these as an assistant \textit{``waiting for you to say something''}. Another recognised the sun, moon and stars but suggested \textit{``You're getting sleepy?''} and a break reminder. One participant interpreted the animation as entertainment, while another called it \textit{``just a background thing''} despite finding it harder not to look at the passing sun and \textit{``little shiny things appearing''}.
+
+The buildings animation was interpreted most successfully. Buildings were described as rising and changing colour, with some colours incorrectly recalled as blue turning green. One participant explained the endpoint difficulty: \textit{``I found it hardest to notice when this animation stops''}, describing it as \textit{``a very slow and subtle thing''}. See Table~\ref{tab:rq3-interpretation-counts}.
+
+Red-sphere accounts emphasised the sphere's glowing, bubbling and pulsing features rather than the zoom effect. One participant mistook the sphere for a sun, described it as \textit{``getting bigger and smaller''}, and interpreted it as time of day. Red-orange colour suggested warnings, while a red, pulsing sphere suggested a sporty driving mode; changing colours suggested a phone notification. Its appearance felt \textit{``a bit unnerving, maybe like alarm ish''}; another said the red colour was distracting at first but stopped being distracting once they had noticed it.
+
+\section{Additional Results}
+\label{sec:add-results}
+
+Drivers stayed closer to the lane centre in no-animation trials (Table~\ref{tab:rq1-lane}), while Raw TLX scores were higher in animated trials (Table~\ref{tab:questionnaire-summaries}). Ratings from the UEQ completed after a replay without driving were positive for perspicuity, attractiveness, novelty and stimulation, and neutral for efficiency and dependability (Table~\ref{tab:ueq-summaries}).
+
+\setcounter{secnumdepth}{1}
+
+
+\FloatBarrier
+\endgroup
+\setcounter{topnumber}{2}
+\setcounter{totalnumber}{3}
+
+\chapter{Discussion}
+\label{ch:discussion}
+
+Participants often reported animation onset and recognised the displayed elements, while the intended meaning was identified in only half of the animated trials (Tables~\ref{tab:rq1-detection-latency}, \ref{tab:rq2-condition-accuracy} and~\ref{tab:rq3-interpretation-counts}). The central design difficulty was connecting the visible elements and their changes with the information they represented.
+
+\section{Communicating meaning through visual metaphors}
+\label{sec:discussion-meaning}
+
+The scene provided recognisable symbols, but their intended meanings were not always accessible through their appearance or behaviour \cite{ferschaInformativeArtDisplay2007}. This difficulty was particularly evident in the red-sphere animation, where participants usually recognised the sphere, rarely recognised its progressive camera close-up and never identified destination progress in the observed trials (Table~\ref{tab:animation-outcomes}). Their explanations instead emphasised colour, glow and pulse, sometimes associating these features with warnings or a driving mode. Previous research describes associations of red with danger and its use to signal a need to act, consistent with these warning-related interpretations \cite{ferschaMatterTaste2007,matviienkoNewAmbientLight2015}.
+
+The choice of symbol may consequently have placed too much interpretative weight on the transition. Understanding destination progress required participants both to recognise the camera close up as an approach and to interpret the sphere as its endpoint; recognising the sphere alone provided little support for that connection. The slow transition may have made the camera close up difficult to distinguish during brief views. Background variation can make an attended figure harder to perceive and interpret \cite{ferschaMatterTaste2007}; in this prototype, the reverse may also have occurred. The sphere's colour, upward movement, glow and surrounding particles may have made the scene's approach harder to distinguish, leaving participants with a recognisable object but without the movement needed to interpret destination progress.
+
+For this prototype, we propose that the main symbol convey the message while movement and background changes reinforce it, helping users connect what they see with what it means \cite{ferschaMatterTaste2007}. A destination marker such as a pin or flag would offer an alternative symbol to test, potentially making the destination association available even when the approach is missed.
+
+The sun-to-moon animation illustrates how several visual changes can reinforce the same transition. Horizontal movement and changes in the sphere's and background's colours may together explain its prompt detection and successful recognition, making the transition apparent through several features of a familiar day-to-night sequence. Participants recognised this change more often than the buildings transition, where gradual vertical movement may have produced less distinguishable differences during brief views (Table~\ref{tab:animation-outcomes}). This suggests a role for coordinated changes across the symbol and background in making an update perceptible, consistent with the importance of visible activity in ambient displays \cite{skogAestheticsUtilityDesigning2003}.
+
+However, this recognition advantage did not translate into more successful interpretation: the buildings animation was interpreted correctly more often than the more literal sun-to-moon animation. The buildings' recognisable form may have provided a useful connection to surroundings even when their movement was missed, supporting the value of linking visual cues to the information they represent \cite{skogAestheticsUtilityDesigning2003}. The symbol should show what the information is about, while movement and background changes help users notice when it changes.
+
+\section{Distinguishing updates from stable states}
+\label{sec:discussion-updates}
+
+The display should clearly distinguish an idle scene, an ongoing update, and a completed change. Although every participant recognised the no-animation scene, some still reported changes, possibly reflecting uncertainty under the reporting instructions. Median looking time was similar with and without animation, while recorded contact frequency was slightly higher with animation (Tables~\ref{tab:gaze-whole-trial-time} and~\ref{tab:gaze-whole-trial-frequency}), showing that the absence of animation did not eliminate looking at the display.
+
+Continued sparkling and gradual stopping points may also have obscured completion. During the 90--120-second completion window, median looking time was longer without a completion report than with one (Table~\ref{tab:gaze-fixed-summaries}), possibly reflecting continued checking. Transitions should therefore be perceptible during brief views and settle clearly when the information becomes stable, extending the balance between visible activity and excessive fluctuation to the recognition of endpoints \cite{skogAestheticsUtilityDesigning2003}. Holding the updated scene still could help distinguish completion from an ongoing update.
+
+\section{Adapting ambient information to driving}
+\label{sec:discussion-driving}
+
+These difficulties arose during a single brief encounter with each animation, leaving open whether familiarity would improve understanding. For driving, however, we argue that information needed during a journey should be understandable from first use, in contrast to the view that immediate comprehension is unnecessary for informative art \cite{holmquistInformativeArtInformation2003}.
+
+The gaps between detection, recognition and interpretation support evaluating these outcomes separately, because success in one did not guarantee success in another. This approach adapts the comprehension framework proposed by Holmquist \cite{holmquistEvaluatingComprehensionAmbient2004}. Participants were already told that Panoramic Vision conveyed information, so the present study explicitly assessed detection of changes while driving rather than discovery of the display's informative role. We propose detectability as an additional evaluation dimension: contextual information should remain perceptually available so that drivers can notice an update and decide whether it warrants further attention according to their immediate goals. Assessing recognition and interpretation alongside detection then reveals difficulties that would remain hidden if noticing a change were taken as evidence of understanding its message.
+
+Beyond recognising an update and its meaning, drivers may need more detail than an ambient overview provides. A broad impression of time passing may support routine awareness, but a driver concerned about arriving late may need the exact time or remaining journey duration. Although the informative-art account allows users to obtain detail from other sources, we argue that an in-car overview should be accompanied by access to precise information within the vehicle interface whenever the task requires it, rather than depend on consulting a separate source \cite{holmquistInformativeArtInformation2003}. Requests for greater precision in earlier ambient-display use reinforce this requirement \cite{staskoPersonalizedPeripheralInformation2004}: the overview can remain visually simple, while exact information remains available when needed.
+
+\section{Limitations}
+\label{sec:limitations}
+
+The study setup limits how directly the findings reflect spontaneous awareness in everyday driving. Participants drove in a simulator, were instructed to avoid looking at the display, and received both a fixed speed value and spoken speed prompts. Asking participants to report changes with a trigger may have encouraged active monitoring of the animations. Detection rates therefore describe awareness under explicit reporting instructions and cannot establish how often drivers would spontaneously notice these changes during everyday use. The animations were also disconnected from road events and driving actions, leaving open whether linking them to the driving situation would have supported interpretation.
+
+The measurement setup introduces further uncertainty. Although participants completed calibration, the panoramic display exceeded the Tobii Pro Spark's optimal screen size, potentially reducing gaze accuracy. The five-press limit also affected both the sample and reporting behaviour: two participants were excluded from all analyses after exceeding it, potentially lowering estimates of false alarms and additional presses. Knowing about the cap may also have discouraged participants from reporting uncertain changes, including early presses, false alarms, and additional presses. Unrestricted reporting could therefore have provided a fuller account of these behaviours.
+
+Comparisons between animations are constrained by differences in exposure, presentation order, and visual design. Participants did not experience every animation, and earlier trials may have influenced later performance. In particular, the red-sphere animation was always the first animation encountered, so its poorer recognition and interpretation cannot be separated from possible learning or familiarisation effects. The animations also differed in colour, movement, timing, and meaning, preventing performance differences from being attributed to any single feature.
+
+Comparisons between onset and completion are further limited by how reports were classified. The onset reporting window was longer than the completion window (60 versus 30~s), allowing more time for an onset report and potentially contributing to detection differences. This also restricted completion reaction times to 30~s, compared with 60~s for onset, so the shorter mean completion reaction time may partly reflect the available reporting time. Moreover, classification relied on trigger-press timing without confirming which change participants had noticed. Some completion reports could therefore have been delayed onset reports, limiting conclusions about participants' ability to distinguish the two events.
+
+Finally, the oral explanations do not provide a fully unaided account of interpretation because they followed multiple-choice questions containing suggested descriptions and meanings. These options may have helped participants formulate their answers, but could also have narrowed or influenced their explanations.
+
+\section{Future research}
+\label{sec:futureWork}
+
+Future research could address uncertainty in the visual mappings through repeated workshops and user testing, identifying common associations between information and visual encodings to inform symbol selection and design guidelines. A complementary approach would let participants design their own ambient displays, revealing their preferred themes, symbols and mappings. Comparing user-designed and designer-designed displays over longer periods could establish how familiarity and learnability influence recognition and interpretation.
+
+Another direction concerns the transition from an ambient overview to precise information. Studies could examine how drivers express a need for detail, how the system responds, and whether detailed information should remain visible until dismissed or automatically return to the overview. These interactions should be evaluated during driving to understand their attention demands.
+
+Finally, future work could investigate how a shared visual theme accommodates several pieces of information simultaneously. Combining the sun-to-moon, buildings and red-sphere stimuli would provide one starting point for examining how drivers notice, distinguish and interpret concurrent updates, and whether presenting them together supports broader contextual awareness or makes individual messages harder to understand.
+
+\chapter{Conclusions}
+\label{ch:conclusions}
+
+This thesis explored how an aesthetic ambient display on BMW’s Panoramic Vision could communicate non-urgent contextual information through visual metaphors while participants drove in a simulator. Participants often noticed ongoing changes and recognised displayed elements, but had greater difficulty recognising what had changed, identifying when an update had finished and interpreting its intended meaning, showing that noticing a change did not always mean understanding its message.
+
+These findings suggest that aesthetic displays offer a promising way to communicate non-urgent contextual information while driving, with scope to explore a wider range of data through visual metaphors; they also suggest potential for large automotive displays, particularly those at the base of the windscreen, to present peripheral information and support drivers’ contextual awareness, encouraging exploration of richer visual communication beyond ambient lighting.
+
+Beyond communication, aesthetic displays could strengthen manufacturers’ brand identity and shape the sensory character of vehicle interiors, with customisable themes, imagery and information mappings allowing drivers to express their preferences and potentially develop a stronger emotional attachment to the vehicle.
+
+\appendix
+
+\chapter{Workshop Materials}
+\label{app:study-materials}
+
+This appendix reproduces the participant-facing instructions, templates, and available artefacts from the exploratory workshop.
+
+\section{Workshop Templates and Artefacts}
+\label{app:workshop-artefacts}
+
+\begin{evidenceblock}
+\normalsize
+Figures~\ref{fig:app-workshop-templates}--\ref{fig:app-workshop-task4-b} reproduce templates given to participants and available workshop images.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{figures/workshop-template-crazy8.png}
+  \figcaption{Task~1 Crazy 8 ideation template}{Blank eight-cell Crazy 8 ideation template used for Task~1.}
+  \label{fig:app-workshop-template-crazy8}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{figures/workshop-template-scenario-canvas.png}
+  \figcaption{Task~4 panoramic-display scenario canvas}{Blank low-demand and high-demand panoramic-display scenario canvas used for Task~4.}
+  \label{fig:app-workshop-template-scenario}
+\end{subfigure}
+\figcaption{Participant-facing workshop templates}{Participant-facing exploratory workshop templates.}
+\label{fig:app-workshop-templates}
+\end{figure}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+These participant sheets document the transition from individual Crazy 8 ideation to group selection of candidate concepts.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.31\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{figures/workshop-group1-task1-crazy8.png}
+  \figcaption{Group~1 Task~1 Crazy 8 sheet}{Group~1, Task~1 Crazy 8 sheet.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.47\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{figures/workshop-group4-task1-crazy8.png}
+  \figcaption{Group~4 Task~1 Crazy 8 sheet}{Group~4, Task~1 Crazy 8 sheet.}
+\end{subfigure}
+\par\medskip
+\begin{subfigure}[t]{0.35\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{figures/workshop-group3-task2-selection.png}
+  \figcaption{Group~3 Task~2 selection board}{Group~3, Task~2 selection board.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.35\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{figures/workshop-group4-task2-selection.png}
+  \figcaption{Group~4 Task~2 selection board}{Group~4, Task~2 selection board.}
+\end{subfigure}
+\figcaption{Participant artefacts from Tasks~1 and~2}{Available participant artefacts from Tasks~1 and~2.}
+\label{fig:app-workshop-task1-task2}
+\end{figure}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+The first pair of completed scenario canvases records visual-metaphor concepts for low-demand and high-demand driving.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{figures/workshop-task4-artefact-01.png}
+  \figcaption{Task~4 artefact 1}{Task~4 artefact 1, low-demand scenario canvas.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{figures/workshop-task4-artefact-02.png}
+  \figcaption{Task~4 artefact 2}{Task~4 artefact 2, high-demand scenario canvas.}
+\end{subfigure}
+\figcaption{Task~4 scenario-canvas artefacts 1 and 2}{Available Task~4 scenario-canvas artefacts, 1 and 2.}
+\label{fig:app-workshop-task4-a}
+\end{figure}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+The remaining scenario canvases provide further examples of the groups' visual-metaphor proposals for high-demand driving.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{figures/workshop-task4-artefact-03.png}
+  \figcaption{Task~4 artefact 3}{Task~4 artefact 3, high-demand scenario canvas.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.24\textheight,keepaspectratio]{figures/workshop-task4-artefact-04.png}
+  \figcaption{Task~4 artefact 4}{Task~4 artefact 4, high-demand scenario canvas.}
+\end{subfigure}
+\figcaption{Task~4 scenario-canvas artefacts 3 and 4}{Available Task~4 scenario-canvas artefacts, 3 and 4.}
+\label{fig:app-workshop-task4-b}
+\end{figure}
+\end{evidenceblock}
+
+\chapter{Prototype and Study Materials}
+\label{app:prototype-stimuli}
+
+This appendix collects the prototype specifications and participant-facing materials used in the simulator study.
+
+\section{Evidence and Analysis Overview}
+\label{sec:app-evidence-overview}
+
+\begin{evidenceblock}
+\normalsize
+The overview distinguishes the timing, unit and analytical role of the evidence used to address each research question.
+
+\begin{table}[H]
+\centering
+\small
+\caption[Research questions, evidence and analysis]{Research questions, evidence and analysis.}
+\label{tab:rq-evidence-overview}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{@{}p{.08\linewidth} >{\raggedright\arraybackslash}p{.39\linewidth} >{\raggedright\arraybackslash}X@{}}
+\toprule
+RQ & Evidence and timing & Unit and analytical role \\ \midrule
+RQ1 & During driving: change reports and gaze records. & Trial/event detection scores and paired comparisons; reaction times among detected events; descriptive gaze time and contact frequency in fixed windows (\S\ref{sec:detection}--\ref{sec:gaze}). \\
+RQ2 & After each trial: Q1 element recognition, Q2 change recognition and confidence ratings. & Trial-level correctness and ratings, with participant aggregation for pooled paired comparisons; condition-specific paired tests and descriptive confidence summaries (\S\ref{sec:recognition-accuracy-confidence}). \\
+RQ3 & After each trial's questionnaires: oral interpretation of the display. & One coded response per trial; intended-meaning outcomes and qualitative response details by condition (\S\ref{sec:interpretation}). \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\section{Condition Sequences}
+\label{sec:app-condition-sequences}
+
+\begin{evidenceblock}
+\normalsize
+The realised sequences show which two animations each participant encountered and where the no-animation trial occurred.
+
+\begin{table}[H]
+\centering
+\caption[Realised three-trial condition sequences]{Realised three-trial condition sequences.}
+\label{tab:app-condition-sequences}
+\scriptsize
+\begin{tabular}{ccccc}
+\toprule
+Sequence & Trial 1 & Trial 2 & Trial 3 & \shortstack{Included\\participants} \\ \midrule
+1 & non-animated & red-sphere & buildings & 4 \\
+2 & red-sphere & non-animated & buildings & 4 \\
+3 & non-animated & red-sphere & sun-to-moon & 4 \\
+4 & red-sphere & non-animated & sun-to-moon & 4 \\
+5 & sun-to-moon & buildings & non-animated & 4 \\
+6 & buildings & sun-to-moon & non-animated & 4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{evidenceblock}
+
+\section{Q1 and Q2 Answer Key}
+\label{sec:app-q1-q2-answer-key}
+
+\begin{evidenceblock}
+\normalsize
+Correct answers distinguish recognising the displayed element from recognising the visual change; the no-animation condition requires recognising absence in both questions.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Correct Q1 and Q2 answers by condition]{Correct Q1 and Q2 answers by condition.}
+\label{tab:app-q1-q2-answer-key}
+\begin{tabularx}{\textwidth}{l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+Condition & Q1 correct answer & Q2 correct answer \\ \midrule
+no-animation & None of these & I did not witness any changes \\
+sun-to-moon & Sun and moon & A day-to-night timelapse \\
+buildings & Buildings & Landscape changing \\
+red-sphere & A red glowing sphere & A progressive camera close up on the scene \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\section{Demographic Questionnaire}
+\label{sec:app-demographic-questionnaire}
+
+
+{\scriptsize
+\begingroup
+\scriptsize
+\begin{evidenceblock}
+\normalsize
+The demographic questionnaire recorded participant characteristics, vision correction, driving exposure and previous simulator experience.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Demographic questionnaire]{Demographic questionnaire.}\label{tab:app-demographic-questions}
+\begin{tabularx}{\linewidth}{L{0.40\textwidth}L{0.51\textwidth}}
+\toprule
+Question & Response options \\ \midrule
+
+Current date & Date entry \\
+Participant identifier (ID) & Identifier entry \\
+Gender & Female; Male; Diverse; Prefer not to say \\
+Year of birth & Year entry \\
+Current position & Full-time employee; PhD student; Intern/thesis student/working student; Other \\
+Vision correction & No; Glasses; Contact lenses; Both \\
+Colour-vision deficiency & Yes; No; Unsure \\
+Usual vision in normal viewing conditions, with correction where normally worn & Very poor; Poor; Fair; Good; Excellent; I do not use vision correction \\
+Estimated annual driving distance & 0--5,000 km; 5,000--20,000 km; 20,000--50,000 km; 50,000--100,000 km; more than 100,000 km \\
+Familiarity with driving simulations & Yes; No; Other (optional explanation) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+\endgroup
+}
+
+\section{NASA-TLX Workload Questionnaire}
+
+
+\begingroup
+\scriptsize
+\begin{evidenceblock}
+\normalsize
+The modified workload questionnaire used the same numerical range for every dimension, with higher performance ratings indicating poorer perceived performance.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Modified NASA-TLX items]{Modified NASA-TLX items used after each trial.}\label{tab:app-nasa-items}
+\begin{tabularx}{\linewidth}{L{0.20\textwidth}L{0.45\textwidth}L{0.25\textwidth}}
+\toprule
+Dimension & Prompt & Scale anchors \\ \midrule
+
+Mental demand & How mentally demanding was the task? & 1, Very low; 10, Very high \\
+Physical demand & How physically demanding was the task? & 1, Very low; 10, Very high \\
+Temporal demand & How hurried or rushed did the task feel? & 1, Very low pressure; 10, Very high pressure \\
+Performance & How successful do you think you were in accomplishing the task? & 1, Perfect performance; 10, Failed completely \\
+Effort & How hard did you have to work to accomplish your level of performance? & 1, Very little effort; 10, Very high effort \\
+Frustration & How insecure, discouraged, irritated, stressed, or annoyed did you feel? & 1, Not frustrated; 10, Extremely frustrated \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+\endgroup
+
+\section{User Experience Questionnaire}
+
+
+{\scriptsize
+\begingroup
+\scriptsize
+\begin{evidenceblock}
+\normalsize
+The UEQ presents opposing word pairs; their left-to-right direction varies, so responses were recoded before calculating scale means.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[UEQ semantic-differential items]{UEQ semantic-differential items.}\label{tab:app-ueq-items}
+\begin{tabularx}{\linewidth}{rL{0.42\textwidth}L{0.42\textwidth}}
+\toprule
+No. & Left anchor, 1 & Right anchor, 7 \\ \midrule
+
+1 & Annoying & Enjoyable \\
+2 & Not understandable & Understandable \\
+3 & Creative & Dull \\
+4 & Easy to learn & Difficult to learn \\
+5 & Valuable & Inferior \\
+6 & Boring & Exciting \\
+7 & Not interesting & Interesting \\
+8 & Unpredictable & Predictable \\
+9 & Fast & Slow \\
+10 & Inventive & Conventional \\
+11 & Obstructive & Supportive \\
+12 & Good & Bad \\
+13 & Complicated & Easy \\
+14 & Unlikeable & Pleasing \\
+15 & Usual & Leading edge \\
+16 & Unpleasant & Pleasant \\
+17 & Secure & Not secure \\
+18 & Motivating & Demotivating \\
+19 & Meets expectations & Does not meet expectations \\
+20 & Inefficient & Efficient \\
+21 & Clear & Confusing \\
+22 & Impractical & Practical \\
+23 & Organised & Cluttered \\
+24 & Attractive & Unattractive \\
+25 & Friendly & Unfriendly \\
+26 & Conservative & Innovative \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+\endgroup
+}
+
+\section{Interpretation Coding}
+\label{app:interpretation-coding}
+
+\begin{evidenceblock}
+\normalsize
+The first coding layer records whether an account conveyed the intended meaning and distinguishes full or partial success from different forms of failure.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Layer 1: meaning-success codes]{Layer 1: meaning-success codes.}
+\label{tab:rq3-meaning-codebook}
+\begin{tabularx}{\textwidth}{@{}l >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}
+\toprule
+Code & When used & Values \\
+\midrule
+\texttt{success} & Every included transcript & \texttt{yes}, \texttt{no} \\
+\texttt{specificity} & Only when \texttt{success = yes} & \texttt{full}, \texttt{partial} \\
+\texttt{failure} & Only when \texttt{success = no} & \texttt{alternative}, \texttt{unknown}, \texttt{false-change} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+The second coding layer preserves the visual cues, interpretations and reactions mentioned in each account, allowing several supported labels within one response.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Layer 2 response-detail codes]{Layer 2: response-detail codes and values. Codes permit multiple labels where supported by the transcript.}
+\label{tab:rq3-detail-codebook}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}l >{\raggedright\arraybackslash}X@{}}
+\toprule
+Code & Values \\
+\midrule
+\texttt{object} & \texttt{sun}, \texttt{moon}, \texttt{stars}, \texttt{sky}, \texttt{hills}, \texttt{buildings}, \texttt{city}, \texttt{sphere}, \texttt{landscape}, \texttt{other}, \texttt{none} \\
+\texttt{transformation} & \texttt{movement}, \texttt{appearance}, \texttt{disappearance}, \texttt{growth}, \texttt{zoom}, \texttt{colour}, \texttt{transition}, \texttt{none} \\
+\texttt{stage} & \texttt{start}, \texttt{process}, \texttt{end}, \texttt{unclear} \\
+\texttt{interpretation} & \texttt{time}, \texttt{location}, \texttt{destination}, \texttt{warning}, \texttt{weather}, \texttt{fatigue}, \texttt{entertainment}, \texttt{notification}, \texttt{assistant}, \texttt{other}, \texttt{none} \\
+\texttt{reason} & A link from mentioned visual cues to an \texttt{interpretation} code; retain alternatives and whether a cue was inferred or rejected \\
+\texttt{certainty} & \texttt{sure}, \texttt{unsure}, \texttt{unknown}; confidence in the interpreted meaning, not in whether a visual event occurred \\
+\texttt{reaction} & \texttt{distracting}, \texttt{calming}, \texttt{decorative}, \texttt{confusing}, \texttt{glitch}, \texttt{useful} \\
+\texttt{evidence} & Exact transcript wording supporting the detail \\
+\texttt{locator} & Participant-trial key and timestamp \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\section{Trial-Control Interfaces}
+
+\begin{evidenceblock}
+\normalsize
+The paired interfaces separate the researcher's trial controls and event record from the participant's steering-wheel response area.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[t]{0.47\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.18\textheight,keepaspectratio]{figures/ch3_protopie_ipad.png}
+  \figcaption{Researcher-facing iPad interface}{Researcher-facing iPad interface with trial controls, timer, and the five recorded PDT-event slots.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.47\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.18\textheight,keepaspectratio]{figures/ch3_protopie_iphone.png}
+  \figcaption{Participant-facing iPhone interface}{Participant-facing iPhone interface. Only the green area on the right was sensitive to PDT presses.}
+\end{subfigure}
+\figcaption{ProtoPie trial interfaces}{ProtoPie interfaces used during each trial.}
+\label{fig:protopie-interfaces}
+\end{figure}
+\end{evidenceblock}
+
+\section{Detection Analysis}
+
+\begin{evidenceblock}
+\normalsize
+Press timing determines whether a report is matched to a scheduled change or retained as an early press, extra press or false alarm.
+
+\begin{table}[H]
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{4pt}
+  \caption[trigger classifications]{RQ1 trigger classifications.}
+  \label{tab:rq1-trigger-classifications}
+  \renewcommand{\arraystretch}{1.05}
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.25\linewidth} >{\raggedright\arraybackslash}X@{}}
+    \toprule
+    Class & Rule\\ \midrule
+    Onset Detection & Earliest press in \([30,90)\)~s\\
+    Completion Detection & Earliest press in \([90,120]\)~s\\
+    Miss & No eligible press for the matching event\\
+    Early & Any press before 30~s in an animated trial\\
+    Extra & Any press after a detection one\\
+    False Alarm & Any press during a non-animated trial\\
+
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+The pooled onset--completion test shares its correction family with the listed cross-outcome comparisons; overlapping trial sets are retained rather than treated as independent samples.
+
+\begin{table}[H]
+\centering
+\caption[Holm correction family for pooled detection]{Comparisons included in the Holm correction for the pooled
+onset--completion detection test. The 22 post-hoc comparisons were
+corrected jointly, with significance assessed at Holm-adjusted
+$p < .05$. The all-trial analysis includes the animated and no-animation
+trials, so rows represent overlapping samples.}
+\label{tab:holm-detection-family}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\newcommand{\pairitem}[1]{\textbullet\ #1\par}
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}p{0.13\textwidth}
+    >{\raggedright\arraybackslash}X
+    >{\centering\arraybackslash}p{0.06\textwidth}
+    >{\raggedright\arraybackslash}p{0.25\textwidth}
+    @{}
+}
+\toprule
+Trials included & Pairwise comparisons & Tests & Test and analysis unit \\
+\midrule
+All trials ($n = 72$)
+&
+\pairitem{Combined detection/correct rejection vs Q1 accuracy}
+\pairitem{Combined detection/correct rejection vs Q2 accuracy}
+\pairitem{Combined detection/correct rejection vs interpretation success}
+\pairitem{Q1 accuracy vs Q2 accuracy}
+\pairitem{Q1 accuracy vs interpretation success}
+\pairitem{Q2 accuracy vs interpretation success}
+&
+6
+&
+Paired $t$-tests on $n = 24$ participants' mean scores across their three trials ($df = 23$).
+\\
+\midrule
+Animated trials ($n = 48$)
+&
+\pairitem{Onset detection vs completion detection}
+\pairitem{Onset detection vs Q1 accuracy}
+\pairitem{Onset detection vs Q2 accuracy}
+\pairitem{Onset detection vs interpretation success}
+\pairitem{Completion detection vs Q1 accuracy}
+\pairitem{Completion detection vs Q2 accuracy}
+\pairitem{Completion detection vs interpretation success}
+\pairitem{Q1 accuracy vs Q2 accuracy}
+\pairitem{Q1 accuracy vs interpretation success}
+\pairitem{Q2 accuracy vs interpretation success}
+&
+10
+&
+Paired $t$-tests on $n = 24$ participants' mean scores across their two animated trials ($df = 23$).
+\\
+\midrule
+No-animation trials ($n = 24$)
+&
+\pairitem{Correct rejection vs Q1 accuracy}
+\pairitem{Correct rejection vs Q2 accuracy}
+\pairitem{Correct rejection vs unchanged-condition recognition}
+\pairitem{Q1 accuracy vs Q2 accuracy}
+\pairitem{Q1 accuracy vs unchanged-condition recognition}
+\pairitem{Q2 accuracy vs unchanged-condition recognition}
+&
+6
+&
+Exact McNemar tests on $n = 24$ paired binary outcomes.
+\\
+\midrule
+\textbf{Total}
+&
+\textbf{One shared Holm correction}
+&
+\textbf{22}
+&
+\textbf{All tests two-sided}
+\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\chapter{Results Tables}
+\label{app:results-tables}
+
+This appendix contains the compact numerical tables cited in Chapter~\ref{ch:results}.
+
+\section{Workshop Results}
+\label{app:workshop-results}
+
+\begin{evidenceblock}
+\normalsize
+Task 2 counts describe idea cards and the groups mentioning each domain, rather than participant-level preferences.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Task 2 ideas by information domain]{Task 2 group-level idea cards by primary information domain ($n = 40$ cards).}
+\label{tab:workshop-t2-domains}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrr@{}}
+\toprule
+Information domain & Cards & \% & Groups mentioning \\
+\midrule
+Media / play & 7 & 17.5 & 4 \\
+Ambient / interface mode & 7 & 17.5 & 3 \\
+Navigation / mobility & 7 & 17.5 & 3 \\
+Communication / social & 5 & 12.5 & 3 \\
+Context / environment & 4 & 10.0 & 2 \\
+Vehicle state / performance & 3 & 7.5 & 3 \\
+Connected assistance / services & 3 & 7.5 & 2 \\
+Safety / driving assistance & 3 & 7.5 & 2 \\
+Wellbeing / comfort & 1 & 2.5 & 1 \\
+\midrule
+Total & 40 & 100.0 & -- \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Task 3 separates concepts by driving scenario after repeated ideas were normalised; concepts spanning both scenarios retain their own column.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Task 3 concepts by domain and scenario]{Task 3 placement of $n = 37$ normalised concepts by primary information domain and driving scenario.}
+\label{tab:workshop-t3-scenarios}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xrrrr@{}}
+\toprule
+Information domain & High-demand & Low-demand & Both & Total \\
+\midrule
+Media / play & 0 & 5 & 0 & 5 \\
+Navigation / mobility & 4 & 1 & 1 & 6 \\
+Ambient / interface mode & 3 & 1 & 2 & 6 \\
+Communication / social & 1 & 4 & 0 & 5 \\
+Context / environment & 1 & 0 & 0 & 1 \\
+Connected assistance / services & 2 & 3 & 2 & 7 \\
+Safety / driving assistance & 4 & 0 & 0 & 4 \\
+Vehicle state / performance & 1 & 0 & 1 & 2 \\
+Wellbeing / comfort & 0 & 1 & 0 & 1 \\
+\midrule
+Total & 16 & 15 & 6 & 37 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+\section{Participant Demographics}
+\label{app:demographic-tables}
+
+\begin{evidenceblock}
+\normalsize
+The retained sample is described by demographic category, vision correction, driving exposure and previous simulator experience; percentages use the full participant denominator.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Demographic summary]{Demographic summary for the $n = 24$ simulator-study participants.}
+\label{tab:demographics}
+\begin{tabular}{llrr}
+\toprule
+Measure & Category & \(n\) & \% \\ \midrule
+Gender & Male & 16 & 66.7 \\
+ & Female & 8 & 33.3 \\
+Age & \textit{M} & \multicolumn{2}{c}{28.2 years} \\
+ & \textit{SD} & \multicolumn{2}{c}{5.3 years} \\
+ & \textit{Mdn} & \multicolumn{2}{c}{27 years} \\
+ & Range & \multicolumn{2}{c}{21--45 years} \\
+Position & Intern/thesis/working student & 17 & 70.8 \\
+ & PhD student & 5 & 20.8 \\
+ & Full-time employee & 2 & 8.3 \\
+Vision correction & Wears correction & 11 & 45.8 \\
+Colour vision & No deficiency reported & 23 & 95.8 \\
+Simulator familiarity & Familiar & 15 & 62.5 \\
+Annual driving distance & 0--5,000~km & 10 & 41.7 \\
+ & 5,000--20,000~km & 11 & 45.8 \\
+ & 20,000--50,000~km & 3 & 12.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{evidenceblock}
+
+\section{Detection, recognition and interpretation gap}
+\label{app:cross-rq-tables}
+
+
+
+\begin{evidenceblock}
+\normalsize
+Outcome totals use different operational definitions: animated detection sums averaged event scores, whereas recognition and interpretation count successful trials.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Outcome totals and mean scores by trial set]{Outcome totals and mean scores (0--1) by trial set ($n = 24$ participants each). Animated detection averages onset and completion (0, 0.5 or 1), and its totals sum these scores. Non-animated detection counts trials with no press; all-trial detection totals combine both. Other totals are counts.}
+\label{tab:trial-set-outcomes}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X r r@{\hspace{1em}}r r@{\hspace{1em}}r r@{}}
+\toprule
+Outcome & \multicolumn{2}{c@{\hspace{1em}}}{All trials} & \multicolumn{2}{c@{\hspace{1em}}}{Animated} & \multicolumn{2}{c}{No-animation} \\
+ & Total / trials & Mean score & Total / trials & Mean score & Total / trials & Mean score \\
+\midrule
+Detection & $44.5/72$ & .62 & $28.5/48$ & .59 & $16/24$ & .67 \\
+
+Element recognition (Q1) & $66/72$ & .92 & $42/48$ & .88 & $24/24$ & 1.00 \\
+
+Change recognition (Q2) & $43/72$ & .60 & $25/48$ & .52 & $18/24$ & .75 \\
+
+Interpretation & $42/72$ & .58 & $24/48$ & .50 & $18/24$ & .75 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+
+\begin{evidenceblock}
+\normalsize
+These paired comparisons use participant means within each trial set; adjusted probabilities account for the shared correction family and do not make the outcomes a common ability scale.
+
+\begin{table}[H]
+\centering
+\caption[Paired outcome comparisons]{Complete paired $t$-tests for all-trial and animated-trial mean scores. Animated detection averages onset and completion; non-animated trials contribute detection success when no press occurs. Gaps are first minus second mean.}
+\label{tab:cross-rq-paired-t-full}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{@{}l >{\raggedright\arraybackslash}X r r r r@{}}
+\toprule
+Trial set & Comparison & \shortstack{First / second\\mean score} & \multicolumn{1}{c}{$\symup{\delta}$} & Raw $p$ & $p_{\mathrm{Holm}}$ \\
+\midrule
+\shortstack[l]{All trials\\($n = 72$)} & Element recognition (Q1) $-$ Detection & .92 / .62 & $+.30$ & $< .001$ & $< .001$ \\
+
+ & Element recognition (Q1) $-$ Change recognition (Q2) & .92 / .60 & $+.32$ & $< .001$ & $< .001$ \\
+
+ & Element recognition (Q1) $-$ Interpretation & .92 / .58 & $+.33$ & $< .001$ & $< .001$ \\
+
+ & Detection $-$ Change recognition (Q2) & .62 / .60 & $+.02$ & $.718$ & $1.000$ \\
+
+ & Detection $-$ Interpretation & .62 / .58 & $+.04$ & $.598$ & $1.000$ \\
+
+ & Change recognition (Q2) $-$ Interpretation & .60 / .58 & $+.01$ & $.770$ & $1.000$ \\
+
+\midrule
+\shortstack[l]{Animated trials\\($n = 48$)} & Element recognition (Q1) $-$ Detection (onset+completion) & .88 / .59 & $+.28$ & $< .001$ & $.010$ \\
+
+ & Element recognition (Q1) $-$ Change recognition (Q2) & .88 / .52 & $+.35$ & $< .001$ & $.002$ \\
+
+ & Element recognition (Q1) $-$ Interpretation & .88 / .50 & $+.38$ & $< .001$ & $< .001$ \\
+
+ & Detection (onset+completion) $-$ Change recognition (Q2) & .59 / .52 & $+.07$ & $.411$ & $1.000$ \\
+
+ & Detection (onset+completion) $-$ Interpretation & .59 / .50 & $+.09$ & $.273$ & $1.000$ \\
+
+ & Change recognition (Q2) $-$ Interpretation & .52 / .50 & $+.02$ & $.770$ & $1.000$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+No-animation comparisons use paired binary outcomes, with detection defined as correctly withholding a response throughout the unchanged trial.
+
+\begin{table}[H]
+\centering
+\caption[Paired outcomes in no-animation trials]{Complete exact McNemar tests for paired outcomes in $n = 24$ non-animated trials from $n = 24$ participants. Detection counts trials with no press; recognition refers to the unchanged condition. Gaps are first minus second mean.}
+\label{tab:cross-rq-mcnemar}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X r r r r r@{}}
+\toprule
+Comparison & First mean score & Second mean score & \multicolumn{1}{c}{$\symup{\delta}$} & Raw $p$ & $p_{\mathrm{Holm}}$ \\
+\midrule
+Element recognition (Q1) $-$ Detection (no press) & 1.00 & .67 & $+.33$ & $.008$ & $.094$ \\
+
+Element recognition (Q1) $-$ Change recognition (Q2) & 1.00 & .75 & $+.25$ & $.031$ & $.344$ \\
+
+Element recognition (Q1) $-$ Recognition & 1.00 & .75 & $+.25$ & $.031$ & $.344$ \\
+
+Detection (no press) $-$ Change recognition (Q2) & .67 & .75 & $-.08$ & $.688$ & $1.000$ \\
+
+Detection (no press) $-$ Recognition & .67 & .75 & $-.08$ & $.625$ & $1.000$ \\
+
+Change recognition (Q2) $-$ Recognition & .75 & .75 & $+.00$ & $1.000$ & $1.000$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+
+\section{Detection}
+\label{app:rq1-tables}
+
+\begin{evidenceblock}
+\normalsize
+The detection counts distinguish reporting an ongoing update or its completion from correctly withholding a response when the scene did not change.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Detection and correct rejection]{Detection in animated trials and correct rejection in no-animation trials. No-trigger denotes no reported change throughout the 0--120 s trial.}
+\label{tab:rq1-detection-by-trial-type}
+\begin{tabularx}{\textwidth}{@{}l l >{\raggedright\arraybackslash}X r r r@{}}
+\toprule
+Trials & Interval (s) & Outcome & Count / eligible & \% & Mean score \\
+\midrule
+Animated & 30--90 & Onset detected & $40/48$ & 83.3 & .83 \\
+Animated & 90--120 & Completion detected & $17/48$ & 35.4 & .35 \\
+
+No-animation & 0--120 & No-trigger (correct rejection) & $16/24$ & 66.7 & .67 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+
+
+
+
+\begin{evidenceblock}
+\normalsize
+Onset and completion scores retain missed events as zero; the pooled and within-animation comparisons use their separately specified correction families.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Onset--completion detection counts and scores]{Detection counts and mean scores (count/eligible). Paired \textit{t}-test overall; McNemar per animation. $\symup{\delta}$: 30--90 s minus 90--120 s; Holm families: 22 overall comparisons, 3 per-animation comparisons.}
+\label{tab:detection-mcnemar-inputs}
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c c c c c c c@{}}
+\toprule
+Scope & \shortstack{Onset\\detected} & \shortstack{Mean score\\(30--90 s)} & \shortstack{Completion\\detected} & \shortstack{Mean score\\(90--120 s)} & $\symup{\delta}$ & $p$ & $p_{\mathrm{Holm}}$ \\
+\midrule
+\shortstack[l]{All animated\\($n = 48$)} & $40/48$ & .83 & $17/48$ & .35 & $+.48$ & $< .001$ & $.002$ \\
+
+\shortstack[l]{Sun-to-moon\\($n = 16$)} & $16/16$ & 1.00 & $5/16$ & .31 & $+.69$ & $< .001$ & $.003$ \\
+
+\shortstack[l]{Buildings\\($n = 16$)} & $13/16$ & .81 & $5/16$ & .31 & $+.50$ & $.021$ & $.043$ \\
+
+\shortstack[l]{Red-sphere\\($n = 16$)} & $11/16$ & .69 & $7/16$ & .44 & $+.25$ & $.344$ & $.344$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+
+
+
+
+
+\section{Visual Attention}
+\label{app:gaze-details}
+
+\begin{evidenceblock}
+\normalsize
+Whole-trial durations provide context for looking at animated and unchanged scenes, including trials with and without successful reports.
+
+\begin{table}[H]
+\centering\scriptsize
+\caption[Whole-trial time looking at the display]{Time looking at the display (s), across 0--120~s trials and all response outcomes. $n/N$: evaluable/eligible trials; insufficient gaze coverage is excluded. All animated pools evaluable trials across animations.}
+\label{tab:gaze-whole-trial-time}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}X c r r r r@{}}
+\toprule
+Condition & $n/N$ & \textit{Mdn} (s) & \textit{IQR} (s) & \textit{M} (s) & \textit{SD} (s) \\
+\midrule
+All animated & $30/48$ & 18.84 & 8.67 & 20.12 & 7.13 \\
+Sun-to-moon & $12/16$ & 18.54 & 5.84 & 20.61 & 7.63 \\
+Buildings & $11/16$ & 18.96 & 8.83 & 19.68 & 7.99 \\
+Red-sphere & $7/16$ & 20.73 & 8.66 & 19.96 & 5.64 \\
+No-animation & $13/24$ & 18.88 & 4.51 & 18.57 & 5.58 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Whole-trial contact frequencies count continuous recorded gaze segments per minute; these segments are not confirmed intentional glances.
+
+\begin{table}[H]
+\centering\scriptsize
+\caption[Whole-trial display contact frequency]{Recorded contacts per minute of the full 0--120~s trial, across all response outcomes. $n/N$: evaluable/eligible trials; insufficient gaze coverage is excluded. All animated pools evaluable trials across animations.}
+\label{tab:gaze-whole-trial-frequency}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}X c r r r r@{}}
+\toprule
+Condition & $n/N$ & \textit{Mdn} & \textit{IQR} & \textit{M} & \textit{SD} \\
+\midrule
+All animated & $30/48$ & 77.00 & 45.38 & 83.70 & 35.87 \\
+Sun-to-moon & $12/16$ & 64.50 & 49.62 & 74.83 & 32.90 \\
+Buildings & $11/16$ & 96.50 & 50.50 & 93.41 & 45.80 \\
+Red-sphere & $7/16$ & 90.00 & 35.75 & 83.64 & 20.19 \\
+No-animation & $13/24$ & 73.50 & 32.50 & 75.88 & 31.60 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Whole-trial summaries group the same animated trial separately by onset and completion outcome, while no-animation trials are grouped by whether any press occurred.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Whole-trial gaze by response]{Whole-trial gaze descriptors (0--120 s), grouped by response. Animated trials are grouped separately by detection of changes happening and of the finished state. No-animation groups denote press (false alarm) versus no press.}
+\label{tab:gaze-whole-trial-summaries}
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c r r r r c r r r r@{}}
+\toprule
+ & \multicolumn{5}{c}{Missed / press} & \multicolumn{5}{c}{Detected / no press} \\
+\cmidrule(lr){2-6}\cmidrule(l){7-11}
+Trials & $n/N$ & \textit{M} & \textit{SD} & \textit{Mdn} & \textit{IQR} & $n/N$ & \textit{M} & \textit{SD} & \textit{Mdn} & \textit{IQR} \\
+\midrule
+\multicolumn{11}{@{}l}{\textit{Time looking at the display (s)}} \\
+\shortstack[l]{all animations\\changes happening} & $4/8$ & 21.74 & 8.88 & 19.34 & 11.21 & $26/40$ & 19.87 & 7.00 & 18.84 & 8.06 \\
+\shortstack[l]{all animations\\finished state} & $20/31$ & 21.30 & 6.88 & 20.31 & 9.38 & $10/17$ & 17.74 & 7.38 & 18.29 & 8.93 \\
+no-animation & $5/8$ & 15.90 & 6.50 & 18.73 & 9.69 & $8/16$ & 20.24 & 4.58 & 19.24 & 4.69 \\
+\midrule
+\multicolumn{11}{@{}l}{\textit{Contact frequency (recorded contacts per minute of the full analysis window)}} \\
+\shortstack[l]{all animations\\changes happening} & $4/8$ & 111.50 & 47.17 & 98.00 & 29.50 & $26/40$ & 79.42 & 32.91 & 72.25 & 47.88 \\
+\shortstack[l]{all animations\\finished state} & $20/31$ & 87.38 & 36.37 & 73.25 & 46.50 & $10/17$ & 76.35 & 35.53 & 84.00 & 55.00 \\
+no-animation & $5/8$ & 66.00 & 29.77 & 63.00 & 35.00 & $8/16$ & 82.06 & 33.04 & 76.25 & 25.38 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+During the fixed onset window, gaze summaries include both detected and missed events; evaluable counts identify the records meeting the gaze-coverage criterion.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Gaze during changes by detection outcome]{Gaze descriptors during changes (30--90 s), grouped by detection outcome.}
+\label{tab:gaze-onset-summaries}
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c r r r r c r r r r@{}}
+\toprule
+ & \multicolumn{5}{c}{Missed} & \multicolumn{5}{c}{Detected} \\
+\cmidrule(lr){2-6}\cmidrule(l){7-11}
+Trials & $n/N$ & \textit{M} & \textit{SD} & \textit{Mdn} & \textit{IQR} & $n/N$ & \textit{M} & \textit{SD} & \textit{Mdn} & \textit{IQR} \\
+\midrule
+\multicolumn{11}{@{}l}{\textit{Time looking at the display (s)}} \\
+all animations & $5/8$ & 12.47 & 4.24 & 10.92 & 6.94 & $30/40$ & 12.49 & 4.96 & 10.95 & 4.30 \\
+sun-to-moon & $0/0$ & -- & -- & -- & -- & $13/16$ & 12.28 & 4.40 & 12.21 & 5.44 \\
+buildings & $2/3$ & 12.84 & 4.91 & 12.84 & 3.47 & $9/13$ & 12.63 & 6.70 & 10.75 & 2.29 \\
+red-sphere & $3/5$ & 12.22 & 4.86 & 10.92 & 4.73 & $8/11$ & 12.68 & 4.13 & 12.16 & 3.40 \\
+\midrule
+\multicolumn{11}{@{}l}{\textit{Contact frequency (recorded contacts per minute of the full analysis window)}} \\
+all animations & $5/8$ & 113.60 & 12.88 & 120.00 & 6.00 & $30/40$ & 110.77 & 47.82 & 102.00 & 73.50 \\
+sun-to-moon & $0/0$ & -- & -- & -- & -- & $13/16$ & 97.92 & 43.84 & 97.00 & 48.00 \\
+buildings & $2/3$ & 117.50 & 3.54 & 117.50 & 2.50 & $9/13$ & 122.78 & 58.20 & 116.00 & 78.00 \\
+red-sphere & $3/5$ & 111.00 & 17.32 & 121.00 & 15.00 & $8/11$ & 118.12 & 41.90 & 127.00 & 64.75 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+
+
+\begin{evidenceblock}
+\normalsize
+During the fixed completion window, gaze summaries include time before and after any report and therefore describe the full phase rather than only the lead-up to detection.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Gaze after changes by detection outcome]{Gaze descriptors after changes finished (90--120 s), grouped by detection outcome.}
+\label{tab:gaze-fixed-summaries}
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c r r r r c r r r r@{}}
+\toprule
+ & \multicolumn{5}{c}{Missed} & \multicolumn{5}{c}{Detected} \\
+\cmidrule(lr){2-6}\cmidrule(l){7-11}
+Trials & $n/N$ & \textit{M} & \textit{SD} & \textit{Mdn} & \textit{IQR} & $n/N$ & \textit{M} & \textit{SD} & \textit{Mdn} & \textit{IQR} \\
+\midrule
+\multicolumn{11}{@{}l}{\textit{Time looking at the display (s)}} \\
+all animations & $19/31$ & 8.60 & 4.22 & 9.61 & 8.04 & $12/17$ & 7.11 & 4.32 & 5.98 & 6.19 \\
+sun-to-moon & $8/11$ & 8.52 & 4.12 & 8.46 & 6.16 & $5/5$ & 7.43 & 4.72 & 5.88 & 1.36 \\
+buildings & $6/11$ & 7.62 & 5.23 & 7.06 & 8.28 & $2/5$ & 7.56 & 7.08 & 7.56 & 5.01 \\
+red-sphere & $5/9$ & 9.91 & 3.56 & 10.63 & 1.65 & $5/7$ & 6.62 & 4.01 & 6.09 & 6.30 \\
+\midrule
+\multicolumn{11}{@{}l}{\textit{Contact frequency (recorded contacts per minute of the full analysis window)}} \\
+all animations & $19/31$ & 91.05 & 55.66 & 84.00 & 53.00 & $12/17$ & 100.67 & 74.72 & 90.00 & 64.00 \\
+sun-to-moon & $8/11$ & 79.00 & 58.90 & 63.00 & 57.50 & $5/5$ & 140.80 & 88.75 & 110.00 & 20.00 \\
+buildings & $6/11$ & 77.33 & 38.96 & 77.00 & 33.50 & $2/5$ & 29.00 & 9.90 & 29.00 & 7.00 \\
+red-sphere & $5/9$ & 126.80 & 61.64 & 100.00 & 14.00 & $5/7$ & 89.20 & 52.03 & 82.00 & 64.00 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+
+
+\section{Early, Extra and False-Alarm Presses}
+\label{app:rq1-press-patterns}
+
+\begin{evidenceblock}
+\normalsize
+Early and extra presses are reported separately from matched detections, and their trial means include eligible trials with no such press.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Early and extra trigger presses]{Early and extra trigger presses in animated trials. Extra presses are unmatched to scheduled changes. \textit{M} and \textit{SD} are presses per eligible trial, including trials with no press.}
+\label{tab:rq1-response-patterns}
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l *{8}{r}@{}}
+\toprule
+ & \multicolumn{4}{c}{Early ($<30$ s)} & \multicolumn{4}{c}{Extra (30--120 s)} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+Condition & \shortstack{Affected/\\trials} & \shortstack{Total\\triggers} & \textit{M} & \textit{SD} & \shortstack{Affected/\\trials} & \shortstack{Total\\triggers} & \textit{M} & \textit{SD} \\
+\midrule
+All animated & $8/48$ & 10 & 0.21 & 0.50 & $26/48$ & 44 & 0.92 & 1.01 \\
+\midrule
+sun-to-moon & $0/16$ & 0 & 0.00 & 0.00 & $12/16$ & 26 & 1.63 & 1.15 \\
+\midrule
+buildings & $6/16$ & 7 & 0.44 & 0.63 & $8/16$ & 9 & 0.56 & 0.63 \\
+\midrule
+red-sphere & $2/16$ & 3 & 0.19 & 0.54 & $6/16$ & 9 & 0.56 & 0.81 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Every press during an unchanged trial is a false alarm; the affected-trial count and total presses describe different aspects of this behaviour.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[False alarms in no-animation trials]{False alarms in no-animation trials. \textit{M} and \textit{SD} are presses per trial across all $n = 24$ trials, including trials with no press.}
+\label{tab:rq1-nt-false-alarms}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c c r r@{}}
+\toprule
+Trials & False-alarm trials/eligible & Total triggers & \textit{M} & \textit{SD} \\
+\midrule
+No-animation & $8/24$ & 17 & 0.71 & 1.20 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\section{Additional Measures}
+\label{app:lane-details}
+
+\subsection{Driving Behaviour}
+\label{sec:driving-behaviour}
+
+The simulator recorded \texttt{laneOffsetLeft}, \texttt{laneOffsetRight}, and \texttt{laneId} at 100~Hz. The trigger and gaze recordings began in sync, while simulator recording started earlier; because all three streams ended together, we aligned each simulator file to the shared 120-second endpoint using \(t_{\mathrm{aligned}} = \texttt{SimTime} - (\texttt{SimTime}_{\mathrm{final}} - 120\,\mathrm{s})\).
+
+For each eligible sample, we derived the car’s absolute distance from the lane centre as \(d = \left|\frac{\texttt{laneOffsetLeft} + \texttt{laneOffsetRight}}{2}\right|\), calculated the mean distance for each trial and analysis window, and compared trial-level means descriptively across all trials, between animated and non-animated trials, across animation conditions, and between non-animated trials with and without a trigger press.
+
+\begin{evidenceblock}
+\normalsize
+Participants drove closer to the lane centre overall during no-animation than animated trials (Table~\ref{tab:rq1-lane}). Within animated trials, distances were lower while changes were unfolding (30--90~s) than after they had finished (90--120~s), with buildings having the lowest median during onset; across whole no-animation trials, distances were lower in trials with trigger presses than in those without presses.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Distance from the lane centre]{Distance from the lane centre in metres. Each trial contributes its mean absolute lane-midpoint distance within the stated window; \textit{Mdn}, \textit{IQR}, \textit{M} and sample \textit{SD} summarise those trial means, with equal weight per trial. All values are in metres.}
+\label{tab:rq1-lane}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}c >{\raggedright\arraybackslash}X r r r r r@{}}
+\toprule
+Window (s) & Trial set & Trials & \textit{Mdn} (m) & \textit{IQR} (m) & \textit{M} (m) & \textit{SD} (m) \\
+\midrule
+0--120 & All animated & 48 & 0.62 & 0.16 & 0.62 & 0.14 \\
+0--120 & No-animation & 24 & 0.56 & 0.20 & 0.61 & 0.14 \\
+0--120 & sun-to-moon & 16 & 0.59 & 0.21 & 0.63 & 0.14 \\
+0--120 & buildings & 16 & 0.60 & 0.18 & 0.59 & 0.12 \\
+0--120 & red-sphere & 16 & 0.63 & 0.16 & 0.64 & 0.16 \\
+\midrule
+30--90 & All animated & 48 & 0.62 & 0.19 & 0.65 & 0.14 \\
+30--90 & sun-to-moon & 16 & 0.63 & 0.14 & 0.66 & 0.14 \\
+30--90 & buildings & 16 & 0.60 & 0.10 & 0.62 & 0.12 \\
+30--90 & red-sphere & 16 & 0.64 & 0.17 & 0.68 & 0.16 \\
+\midrule
+90--120 & All animated & 48 & 0.67 & 0.37 & 0.66 & 0.21 \\
+90--120 & sun-to-moon & 16 & 0.58 & 0.31 & 0.64 & 0.21 \\
+90--120 & buildings & 16 & 0.70 & 0.41 & 0.67 & 0.24 \\
+90--120 & red-sphere & 16 & 0.63 & 0.37 & 0.67 & 0.21 \\
+\midrule
+0--120 & No-animation, with press & 8 & 0.53 & 0.27 & 0.58 & 0.16 \\
+0--120 & No-animation, without press & 16 & 0.60 & 0.17 & 0.63 & 0.13 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\subsection{NASA-TLX}
+\label{sec:nasa-tlx-results}
+Across all six ratings, the overall Raw TLX (RTLX) mean was slightly higher for animated than no-animation trials. Participants reported higher physical demand and effort during animated trials, while differences across the other individual dimensions were small; descriptively, among the animations, the red-sphere condition had the highest mean effort and frustration (see Table~\ref{tab:questionnaire-summaries}).
+
+\begin{evidenceblock}
+\normalsize
+The workload summaries retain each dimension separately alongside the unweighted overall mean, so small differences in the total do not conceal variation between dimensions.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[Modified NASA-TLX summaries]{Modified NASA-TLX ratings ($n = 24$ participants; 1--10 scale). RTLX is the mean of six ratings; higher performance ratings indicate poorer perceived performance.}
+\label{tab:questionnaire-summaries}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X *{6}{r}@{}}
+\toprule
+Dimension & \multicolumn{2}{c}{\shortstack{All trials\\($n = 72$)}} & \multicolumn{2}{c}{\shortstack{All animated\\($n = 48$)}} & \multicolumn{2}{c}{\shortstack{No-animation\\($n = 24$)}} \\
+ & \textit{M} & \textit{SD} & \textit{M} & \textit{SD} & \textit{M} & \textit{SD} \\ \midrule
+Mental Demand & 4.4 & 2.2 & 4.4 & 2.2 & 4.5 & 2.2 \\
+Physical Demand & 3.2 & 2.0 & 3.3 & 2.1 & 3.0 & 1.8 \\
+Temporal Demand & 3.0 & 1.7 & 3.1 & 1.7 & 2.8 & 1.6 \\
+Performance & 5.1 & 2.2 & 5.2 & 2.0 & 5.0 & 2.5 \\
+Effort & 4.3 & 1.9 & 4.5 & 2.0 & 4.0 & 1.7 \\
+Frustration & 3.1 & 1.9 & 3.1 & 1.6 & 3.2 & 2.4 \\
+RTLX & 3.9 & 1.4 & 3.9 & 1.4 & 3.8 & 1.3 \\
+\bottomrule
+\end{tabularx}
+\par\medskip
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X *{6}{r}@{}}
+\toprule
+Dimension & \multicolumn{2}{c}{\shortstack{Sun-to-moon\\($n = 16$)}} & \multicolumn{2}{c}{\shortstack{Buildings\\($n = 16$)}} & \multicolumn{2}{c}{\shortstack{Red-sphere\\($n = 16$)}} \\
+ & \textit{M} & \textit{SD} & \textit{M} & \textit{SD} & \textit{M} & \textit{SD} \\ \midrule
+Mental Demand & 4.4 & 2.4 & 4.3 & 2.2 & 4.4 & 2.3 \\
+Physical Demand & 3.4 & 2.0 & 3.2 & 1.8 & 3.4 & 2.5 \\
+Temporal Demand & 2.6 & 1.6 & 3.5 & 1.6 & 3.1 & 2.0 \\
+Performance & 4.6 & 2.1 & 5.5 & 2.4 & 5.5 & 1.4 \\
+Effort & 4.3 & 2.0 & 4.3 & 1.7 & 4.9 & 2.3 \\
+Frustration & 2.8 & 1.9 & 3.1 & 1.4 & 3.4 & 1.5 \\
+RTLX & 3.7 & 1.4 & 4.0 & 1.3 & 4.1 & 1.5 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\end{evidenceblock}
+
+\subsection{UEQ}
+\label{sec:ueq-results}
+
+\begin{evidenceblock}
+\normalsize
+Participants rated the display positively for being easy to understand (perspicuity), appealing (attractiveness), innovative (novelty) and engaging (stimulation); they gave neutral ratings for how efficiently it could be used (efficiency) and how predictable and controllable it felt (dependability). See Table~\ref{tab:ueq-summaries}.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption[UEQ scale summaries]{UEQ scores after replay without driving, from the $n = 24$ eligible participants.}
+\label{tab:ueq-summaries}
+\begin{tabular}{lrrrl}
+\toprule
+Scale & Participants & \textit{M} & \textit{SD} & Classification \\ \midrule
+Attractiveness & 24 & 1.3 & 1.1 & Positive \\
+Perspicuity & 24 & 1.3 & 1.0 & Positive \\
+Efficiency & 24 & 0.4 & 1.1 & Neutral \\
+Dependability & 24 & 0.4 & 0.6 & Neutral \\
+Stimulation & 24 & 0.9 & 1.2 & Positive \\
+Novelty & 24 & 1.1 & 1.2 & Positive \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{evidenceblock}
+
+\section{Recognition accuracy and confidence}
+\label{app:rq2-tables}
+
+\begin{evidenceblock}
+\normalsize
+Accuracy summaries retain all eligible answers within each trial set and distinguish element recognition from change recognition.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption[Recognition accuracy by trial set]{Recognition accuracy by trial set. Counts and percentages use all eligible trials in each row; mean scores range from 0 to 1.}
+\label{tab:rq2-condition-accuracy}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X c c c c c c@{}}
+\toprule
+& \multicolumn{3}{c}{Element recognition} & \multicolumn{3}{c}{Change recognition} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+\multicolumn{1}{c}{Scope} & Correct/all & \% & \shortstack{Mean\\score} & Correct/all & \% & \shortstack{Mean\\score} \\
+\midrule
+All trials & $66/72$ & 91.7 & .92 & $43/72$ & 59.7 & .60 \\
+Animated trials & $42/48$ & 87.5 & .88 & $25/48$ & 52.1 & .52 \\
+No-animation & $24/24$ & 100.0 & 1.00 & $18/24$ & 75.0 & .75 \\
+Sun-to-moon & $14/16$ & 87.5 & .88 & $14/16$ & 87.5 & .88 \\
+Buildings & $15/16$ & 93.8 & .94 & $9/16$ & 56.3 & .56 \\
+Red-sphere & $13/16$ & 81.3 & .81 & $2/16$ & 12.5 & .13 \\
+\bottomrule
+\end{tabularx}
+
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Element-recognition confidence is summarised separately for correct and incorrect answers; a single answer has no estimable sample standard deviation.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption[Element-recognition confidence]{Element recognition confidence (1--4), by correctness.}
+\label{tab:rq2-confidence-element}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{@{}p{.24\linewidth} >{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X@{}}
+\toprule
+& \multicolumn{3}{c}{All} & \multicolumn{3}{c}{Correct} & \multicolumn{3}{c}{Incorrect} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+\multicolumn{1}{c}{Scope} & $n$ & \textit{M} & \textit{SD} & $n$ & \textit{M} & \textit{SD} & $n$ & \textit{M} & \textit{SD} \\
+\midrule
+All trials & 72 & 3.3 & 0.9 & 66 & 3.3 & 1.0 & 6 & 3.3 & 0.5 \\
+Animated trials & 48 & 3.7 & 0.6 & 42 & 3.7 & 0.5 & 6 & 3.3 & 0.5 \\
+No-animation & 24 & 2.6 & 1.1 & 24 & 2.6 & 1.1 & 0 & -- & -- \\
+Sun-to-moon & 16 & 3.7 & 0.6 & 14 & 3.7 & 0.6 & 2 & 3.5 & 0.7 \\
+Buildings & 16 & 3.8 & 0.4 & 15 & 3.8 & 0.4 & 1 & 4.0 & -- \\
+Red-sphere & 16 & 3.6 & 0.6 & 13 & 3.7 & 0.6 & 3 & 3.0 & 0.0 \\
+\bottomrule
+\end{tabularx}
+
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Change-recognition confidence uses the original rating scale, with correct and incorrect answers kept separate rather than treating confidence as a probability of being correct.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption[Change-recognition confidence]{Change recognition confidence (1--4), by correctness. Trial-level summaries.}
+\label{tab:rq2-confidence-change}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{@{}p{.24\linewidth} >{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X@{}}
+\toprule
+& \multicolumn{3}{c}{All} & \multicolumn{3}{c}{Correct} & \multicolumn{3}{c}{Incorrect} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+\multicolumn{1}{c}{Scope} & $n$ & \textit{M} & \textit{SD} & $n$ & \textit{M} & \textit{SD} & $n$ & \textit{M} & \textit{SD} \\
+\midrule
+All trials & 72 & 2.7 & 1.0 & 43 & 3.0 & 1.0 & 29 & 2.3 & 1.0 \\
+Animated trials & 48 & 2.8 & 1.0 & 25 & 3.2 & 0.9 & 23 & 2.4 & 1.0 \\
+No-animation & 24 & 2.6 & 1.1 & 18 & 2.7 & 1.0 & 6 & 2.2 & 1.2 \\
+Sun-to-moon & 16 & 3.3 & 0.9 & 14 & 3.4 & 0.8 & 2 & 3.0 & 1.4 \\
+Buildings & 16 & 2.9 & 0.9 & 9 & 3.3 & 0.7 & 7 & 2.4 & 1.0 \\
+Red-sphere & 16 & 2.2 & 1.0 & 2 & 1.5 & 0.7 & 14 & 2.3 & 1.1 \\
+\bottomrule
+\end{tabularx}
+
+\end{table}
+\end{evidenceblock}
+
+
+\begin{evidenceblock}
+\normalsize
+Accuracy differences compare element and change recognition within the same participants or trials; pooled and condition-specific rows retain their respective correction families.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption[Paired recognition-accuracy differences]{Paired differences in recognition accuracy ($\symup{\delta}$ = element mean score minus change mean score). Pooled comparisons use two-sided paired $t$-tests of $n = 24$ participant means (Holm-18); condition comparisons use exact McNemar tests (Holm-four).}
+\label{tab:rq2-mean-accuracy-comparisons}
+\label{tab:recognition-inference}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{@{}p{.24\linewidth} c >{\centering\arraybackslash}X>{\centering\arraybackslash}X c c c@{}}
+\toprule
+\multicolumn{1}{c}{Scope} & Pairs & \shortstack{Element\\mean score} & \shortstack{Change\\mean score} & $\symup{\delta}$ & $p$ & $p_{\mathrm{Holm}}$ \\
+\midrule
+All trials & 24 & .92 & .60 & $+.32$ & $< .001$ & $< .001$ \\
+Animated trials & 24 & .88 & .52 & $+.35$ & $< .001$ & $.002$ \\
+No-animation & 24 & 1.00 & .75 & $+.25$ & $.031$ & $.094$ \\
+Sun-to-moon & 16 & .88 & .88 & $+.00$ & $1.000$ & $1.000$ \\
+Buildings & 16 & .94 & .56 & $+.38$ & $.031$ & $.094$ \\
+Red-sphere & 16 & .81 & .13 & $+.69$ & $.003$ & $.014$ \\
+\bottomrule
+\end{tabularx}
+
+\end{table}
+\end{evidenceblock}
+
+\begin{evidenceblock}
+\normalsize
+Confidence differences compare the original numerical ratings within participants or trials, with adjusted probabilities from the adopted confidence family.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption[Paired differences in recognition confidence (1--4)]{Paired differences in recognition confidence (1--4).}
+\label{tab:rq2-mean-confidence-comparisons}
+\label{tab:condition-confidence-tests}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{@{}p{.24\linewidth} c >{\centering\arraybackslash}X>{\centering\arraybackslash}X c c c@{}}
+\toprule
+\multicolumn{1}{c}{Scope} & Pairs & \shortstack{Element\\mean score} & \shortstack{Change\\mean score} & $\symup{\delta}$ & $p$ & $p_{\mathrm{Holm}}$ \\
+\midrule
+All trials & 24 & 3.3 & 2.7 & $+0.60$ & $< .001$ & $< .001$ \\
+Animated trials & 24 & 3.7 & 2.8 & $+0.88$ & $< .001$ & $< .001$ \\
+No-animation & 24 & 2.6 & 2.6 & $+0.04$ & $.802$ & $1.000$ \\
+Sun-to-moon & 16 & 3.7 & 3.3 & $+0.38$ & $.054$ & $.381$ \\
+Buildings & 16 & 3.8 & 2.9 & $+0.88$ & $.001$ & $.010$ \\
+Red-sphere & 16 & 3.6 & 2.2 & $+1.38$ & $< .001$ & $.005$ \\
+\bottomrule
+\end{tabularx}
+
+\end{table}
+\end{evidenceblock}
+
+
+\begin{evidenceblock}
+\normalsize
+The incorrect-answer breakdown shows which alternatives participants selected, helping distinguish failure to notice a change from mistaking it for a different transition.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption[Incorrect element- and change-recognition answers]{Incorrect element- and change-recognition answers.}
+\label{tab:rq2-incorrect-answers}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{@{}l c >{\raggedright\arraybackslash}X c@{}}
+\toprule
+\multicolumn{1}{c}{Condition} & Recognition & \multicolumn{1}{c}{Answer selected} & Count \\
+\midrule
+No-animation & Element & -- & 0 \\
+No-animation & Change & Landscape changing & 4 \\
+No-animation & Change & A day-to-night timelapse & 1 \\
+No-animation & Change & A progressive camera close up on the scene & 1 \\
+\midrule
+Sun-to-moon & Element & A red glowing sphere & 2 \\
+Sun-to-moon & Change & I did not witness any changes & 1 \\
+Sun-to-moon & Change & Landscape changing & 1 \\
+\midrule
+Buildings & Element & A red glowing sphere & 1 \\
+Buildings & Change & A day-to-night timelapse & 4 \\
+Buildings & Change & A progressive camera close up on the scene & 2 \\
+Buildings & Change & I did not witness any changes & 1 \\
+\midrule
+Red-sphere & Element & None of these & 2 \\
+Red-sphere & Element & Sun and moon & 1 \\
+Red-sphere & Change & I did not witness any changes & 7 \\
+Red-sphere & Change & Landscape changing & 4 \\
+Red-sphere & Change & A day-to-night timelapse & 3 \\
+\bottomrule
+\end{tabularx}
+
+\end{table}
+\end{evidenceblock}
+
+
+
+
+
+
+\iftoggle{biblatex}{
+    \printbibliography
+}{
+    \bibliography{references}
+}
+
+\end{document}
